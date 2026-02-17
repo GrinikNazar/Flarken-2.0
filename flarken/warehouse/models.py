@@ -18,6 +18,10 @@ class PhoneModel(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = 'Модель телефону'
+        verbose_name_plural = 'Моделі телефонів'
+
 
 # Тип запчастини (АКБ, Скло і так далі ... )
 class PartType(models.Model):
@@ -29,6 +33,10 @@ class PartType(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = 'Тип запчастини'
+        verbose_name_plural = 'Типи запчастин'
+
 
 # Таблиця кольору
 class Color(models.Model):
@@ -38,6 +46,10 @@ class Color(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = 'Колір'
+        verbose_name_plural = 'Кольори'
+
 
 # Таблиця для сенсорів з чіпом чи без
 class ChipType(models.Model):
@@ -46,6 +58,10 @@ class ChipType(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name = 'Тип чіпу'
+        verbose_name_plural = 'Типи чіпів'
 
 
 # Основна модель, конкретна запчастина. Наприклад АКБ iPhone 7
@@ -89,7 +105,7 @@ class Part(models.Model):
             "chip_type",
         )
         verbose_name = 'Запчастина'
-        verbose_name_plural = 'Запчастини'
+        verbose_name_plural = 'Запчастин'
 
     def clean(self):
 
@@ -133,6 +149,10 @@ class Supplier(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = 'Постачальник'
+        verbose_name_plural = 'Постачальники'
+
 
 class SupplierPartName(models.Model):
     part = models.ForeignKey(
@@ -167,6 +187,10 @@ class PartDependency(models.Model):
         on_delete=models.CASCADE,
         related_name="used_in"
     )
+
+    class Meta:
+        verbose_name = 'Залежність деталі'
+        verbose_name_plural = 'Залежності деталей'
 
     quantity = models.PositiveIntegerField(default=1)
 

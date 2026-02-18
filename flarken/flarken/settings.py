@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -120,3 +121,34 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Склад",
+    "site_header": "Склад сервісного центру",
+    "site_brand": "iPhone склад",
+    "welcome_sign": "Вітаємо у системі складу",
+    "copyright": "Nazar Hrynyk",
+
+    "topmenu_links": [
+        {"name": "Головна", "url": "admin:index", "permissions": ["auth.view_user"]},
+    ],
+
+    "show_sidebar": True,
+    "navigation_expanded": True,
+    "show_ui_builder": True,
+}
+
+JAZZMIN_UI_TWEAKS = {
+    # Основна тема інтерфейсу (темна)
+    "theme": "darkly",
+
+    # Колір верхньої панелі (navbar)
+    "navbar": "navbar-dark",
+
+    # Колір бічного меню
+    "sidebar": "sidebar-dark-primary",
+
+    # Акцентний колір для кнопок та посилань
+    "accent": "accent-primary",
+}
+

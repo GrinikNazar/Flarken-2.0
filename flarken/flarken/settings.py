@@ -117,6 +117,10 @@ USE_L10N = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
@@ -135,20 +139,17 @@ JAZZMIN_SETTINGS = {
 
     "show_sidebar": True,
     "navigation_expanded": True,
-    "show_ui_builder": True,
+    "custom_css": "styles/admin-styles.css",
+
 }
 
 JAZZMIN_UI_TWEAKS = {
-    # Основна тема інтерфейсу (темна)
     "theme": "darkly",
 
-    # Колір верхньої панелі (navbar)
     "navbar": "navbar-dark",
 
-    # Колір бічного меню
     "sidebar": "sidebar-dark-primary",
 
-    # Акцентний колір для кнопок та посилань
     "accent": "accent-primary",
 }
 

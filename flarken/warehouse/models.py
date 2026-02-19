@@ -79,7 +79,7 @@ class Part(models.Model):
         verbose_name='Запчастина'
     )
 
-    current_quantity = models.IntegerField(default=0, verbose_name='Поточна кількість')
+    current_quantity = models.PositiveIntegerField(default=0, verbose_name='Поточна кількість')
     min_quantity = models.IntegerField(default=0, verbose_name='Мінімальна кількість')
     max_quantity = models.IntegerField(default=0, verbose_name='Максимум')
 
@@ -87,14 +87,16 @@ class Part(models.Model):
         Color,
         on_delete=models.SET_NULL,
         null=True,
-        blank=True
+        blank=True,
+        verbose_name='Колір'
     )
 
     chip_type = models.ForeignKey(
         ChipType,
         on_delete=models.SET_NULL,
         null=True,
-        blank=True
+        blank=True,
+        verbose_name = 'Тип чіпа'
     )
 
     class Meta:
@@ -105,7 +107,7 @@ class Part(models.Model):
             "chip_type",
         )
         verbose_name = 'Запчастина'
-        verbose_name_plural = 'Запчастин'
+        verbose_name_plural = 'Запчастини'
 
     def clean(self):
 
@@ -158,18 +160,21 @@ class SupplierPartName(models.Model):
     part = models.ForeignKey(
         Part,
         on_delete=models.CASCADE,
-        related_name="supplier_names"
+        related_name="supplier_names",
     )
     supplier = models.ForeignKey(
         Supplier,
         on_delete=models.CASCADE,
-        related_name="parts"
+        related_name="parts",
+        verbose_name = "Компанія"
     )
 
-    supplier_name = models.CharField(max_length=255)
+    supplier_name = models.CharField(max_length=255, verbose_name="Назва у постачальника")
 
     class Meta:
         unique_together = ("part", "supplier")
+        verbose_name = 'Постачальник'
+        verbose_name_plural = 'Постачальники'
 
     def __str__(self):
         return f"{self.supplier.name} → {self.supplier_name}"
@@ -189,8 +194,8 @@ class PartDependency(models.Model):
     )
 
     class Meta:
-        verbose_name = 'Залежність деталі'
-        verbose_name_plural = 'Залежності деталей'
+        verbose_name = 'Залежність'
+        verbose_name_plural = 'Залежності'
 
     quantity = models.PositiveIntegerField(default=1)
 

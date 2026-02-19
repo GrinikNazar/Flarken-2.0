@@ -129,7 +129,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 JAZZMIN_SETTINGS = {
     "site_title": "Склад",
     "site_header": "Склад сервісного центру",
-    "site_brand": "iPhone склад",
+    "site_brand": "iPhone Parts",
     "welcome_sign": "Вітаємо у системі складу",
     "copyright": "Nazar Hrynyk",
 
@@ -139,17 +139,15 @@ JAZZMIN_SETTINGS = {
 
     "show_sidebar": True,
     "navigation_expanded": True,
-    "custom_css": "styles/admin-styles.css",
-
+    # "related_modal_active": False,
+    # "custom_css": "styles/admin-styles.css",
+    "changeform_format": "single"
 }
 
 JAZZMIN_UI_TWEAKS = {
-    "theme": "darkly",
-
+    "theme": "flatly",
     "navbar": "navbar-dark",
-
     "sidebar": "sidebar-dark-primary",
 
-    "accent": "accent-primary",
 }
 

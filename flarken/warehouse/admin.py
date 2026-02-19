@@ -47,7 +47,7 @@ class SupplierAdmin(admin.ModelAdmin):
 class SupplierPartNameInline(admin.TabularInline):
     model = SupplierPartName
     extra = 1
-    autocomplete_fields = ("supplier",)
+    # autocomplete_fields = ("supplier",)
 
 
 class BelowMinimumFilter(admin.SimpleListFilter):

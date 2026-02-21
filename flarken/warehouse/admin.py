@@ -1,5 +1,7 @@
 from django.contrib import admin
 from django.db.models import F
+from django.utils.html import format_html
+
 from .models import (
     PhoneModel,
     PartType,
@@ -40,8 +42,11 @@ class ChipTypeAdmin(admin.ModelAdmin):
 
 @admin.register(Supplier)
 class SupplierAdmin(admin.ModelAdmin):
+    list_display = ("id","name",)
     search_fields = ("name",)
     ordering = ("name",)
+    list_display_links =("name",)
+
 
 
 class SupplierPartNameInline(admin.TabularInline):
@@ -50,33 +55,23 @@ class SupplierPartNameInline(admin.TabularInline):
     # autocomplete_fields = ("supplier",)
 
 
-class BelowMinimumFilter(admin.SimpleListFilter):
-    title = "Менше мінімуму"
-    parameter_name = "below_minimum"
+class StockLevelFilter(admin.SimpleListFilter):
+    title = "Рівень складу"
+    parameter_name = "stock_level"
 
     def lookups(self, request, model_admin):
         return (
-            ("yes", "Менше мінімуму"),
+            ("below_min", "Менше мінімуму"),
+            ("below_max", "Менше максимуму"),
         )
 
     def queryset(self, request, queryset):
-        if self.value() == "yes":
+        if self.value() == "below_min":
             return queryset.filter(current_quantity__lt=F("min_quantity"))
-        return queryset
 
-
-class BelowMaximumFilter(admin.SimpleListFilter):
-    title = "Менше максимуму"
-    parameter_name = "below_maximum"
-
-    def lookups(self, request, model_admin):
-        return (
-            ("yes", "Менше максимуму"),
-        )
-
-    def queryset(self, request, queryset):
-        if self.value() == "yes":
+        if self.value() == "below_max":
             return queryset.filter(current_quantity__lt=F("max_quantity"))
+
         return queryset
 
 
@@ -89,7 +84,9 @@ class PartAdmin(admin.ModelAdmin):
         "color",
         "chip_type",
         "current_quantity",
+        # "min_quantity",
         "max_quantity",
+        "stock_status"
     )
 
     list_filter = (
@@ -97,6 +94,7 @@ class PartAdmin(admin.ModelAdmin):
         "part_type",
         "color",
         "chip_type",
+        StockLevelFilter,
     )
 
     search_fields = (
@@ -124,6 +122,21 @@ class PartAdmin(admin.ModelAdmin):
     )
 
     ordering = ("current_quantity",)
+
+    def stock_status(self, obj):
+        if obj.current_quantity < obj.min_quantity:
+            color = "red"
+        elif obj.current_quantity < obj.max_quantity:
+            color = "orange"
+        else:
+            color = "green"
+
+        return format_html(
+            '<span style="color: {}; font-size: 25px;">●</span>',
+            color
+        )
+
+    stock_status.short_description = "Статус"
 
 
 @admin.register(PartDependency)

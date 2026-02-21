@@ -16,8 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.shortcuts import redirect
+
+# Щоб перекидати відразу на модель з запчастинами
+# def redirect_to_model(request):
+#     return redirect('admin:warehouse_part_changelist')
 
 urlpatterns = [
+    # path('admin/', redirect_to_model), # це теж під редірект
+
     path('admin/', admin.site.urls),
 ]
 

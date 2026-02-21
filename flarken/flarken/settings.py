@@ -137,17 +137,25 @@ JAZZMIN_SETTINGS = {
         {"name": "Головна", "url": "admin:index", "permissions": ["auth.view_user"]},
     ],
 
+    "order_with_respect_to": [
+        "warehouse",
+        'warehouse.Part',
+        'warehouse.PhoneModel',
+        'warehouse.PartType',
+        "users",
+        "auth",
+    ],
+
+
     "show_sidebar": True,
     "navigation_expanded": True,
-    # "related_modal_active": False,
     # "custom_css": "styles/admin-styles.css",
-    "changeform_format": "single"
+    "changeform_format": "single",
 }
 
 JAZZMIN_UI_TWEAKS = {
     "theme": "flatly",
     "navbar": "navbar-dark",
     "sidebar": "sidebar-dark-primary",
-
 }
 

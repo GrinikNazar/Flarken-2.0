@@ -40,7 +40,7 @@ class PartType(models.Model):
 
 # Таблиця кольору
 class Color(models.Model):
-    name = models.CharField(max_length=50, unique=True)
+    name = models.CharField(max_length=50, unique=True, verbose_name="Колір")
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
@@ -53,7 +53,7 @@ class Color(models.Model):
 
 # Таблиця для сенсорів з чіпом чи без
 class ChipType(models.Model):
-    name = models.CharField(max_length=50, unique=True)
+    name = models.CharField(max_length=50, unique=True, verbose_name='Тип чіпа')
     is_active = models.BooleanField(default=True)
 
     def __str__(self):

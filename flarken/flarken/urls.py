@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.shortcuts import redirect
 
 # Щоб перекидати відразу на модель з запчастинами
@@ -24,7 +24,7 @@ from django.shortcuts import redirect
 
 urlpatterns = [
     # path('admin/', redirect_to_model), # це теж під редірект
-
+    path('warehouse/', include('warehouse.urls')),
     path('admin/', admin.site.urls),
 ]
 

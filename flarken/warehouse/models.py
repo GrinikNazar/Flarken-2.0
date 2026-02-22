@@ -46,10 +46,10 @@ class PhoneModel(models.Model):
 
 # Тип запчастини (АКБ, Скло і так далі ... )
 class PartType(models.Model):
-    name = models.CharField(max_length=100, unique=True)
+    name = models.CharField(max_length=100, unique=True, verbose_name='Назва запчастини')
 
-    has_color = models.BooleanField(default=False)
-    has_chip = models.BooleanField(default=False)
+    has_color = models.BooleanField(default=False, verbose_name='З кольором')
+    has_chip = models.BooleanField(default=False, verbose_name='Тип чіпа')
 
     def __str__(self):
         return self.name

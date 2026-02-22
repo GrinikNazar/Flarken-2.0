@@ -24,6 +24,7 @@ class PhoneModelRangeAdmin(admin.ModelAdmin):
 class PhoneModelAdmin(admin.ModelAdmin):
     search_fields = ("name",)
     ordering = ("name",)
+    list_filter = ("phone_model_range",)
 
 
 @admin.register(PartType)

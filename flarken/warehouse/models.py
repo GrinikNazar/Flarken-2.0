@@ -5,14 +5,35 @@ from django.core.exceptions import ValidationError
 User = get_user_model()
 
 
+# Модельний ряд
+class PhoneModelRange(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Модельний ряд'
+        verbose_name_plural = 'Модельні ряди'
+
+
 # Молель телефонів
 class PhoneModel(models.Model):
-    name = models.CharField(max_length=100, unique=True)
+    name = models.CharField(max_length=100, unique=True, verbose_name="Назва моделі")
 
     supported_part_types = models.ManyToManyField(
         "PartType",
         related_name="supported_phone_models",
-        blank=True
+        blank=True,
+        verbose_name="Запчастини які підтримуються"
+    )
+
+    phone_model_range = models.ForeignKey(
+        PhoneModelRange,
+        on_delete=models.CASCADE,
+        verbose_name='Модельний ряд',
+        null=True,
+        blank=True,
     )
 
     def __str__(self):
@@ -85,7 +106,7 @@ class Part(models.Model):
 
     color = models.ForeignKey(
         Color,
-        on_delete=models.SET_NULL,
+        on_delete=models.CASCADE,
         null=True,
         blank=True,
         verbose_name='Колір'
@@ -93,11 +114,28 @@ class Part(models.Model):
 
     chip_type = models.ForeignKey(
         ChipType,
-        on_delete=models.SET_NULL,
+        on_delete=models.CASCADE,
         null=True,
         blank=True,
         verbose_name = 'Тип чіпа'
     )
+
+    def clean(self):
+
+        # Перевірка підтримки типу запчастини
+        if not self.phone_model.supported_part_types.filter(id=self.part_type.id).exists():
+            raise ValidationError(
+                "Цей тип запчастини не підтримується для цієї моделі телефону."
+            )
+
+        # Якщо тип НЕ має кольору — його не можна вказувати
+        if not self.part_type.has_color and self.color:
+            raise ValidationError("Для цього типу запчастини колір не потрібен.")
+
+
+        # Якщо тип НЕ має чіпа — його не можна вказувати
+        if not self.part_type.has_chip and self.chip_type:
+            raise ValidationError("Для цього типу запчастини чіп не потрібен.")
 
     class Meta:
         unique_together = (
@@ -108,30 +146,6 @@ class Part(models.Model):
         )
         verbose_name = 'Запчастина'
         verbose_name_plural = 'Запчастини'
-
-    def clean(self):
-
-        # Перевірка підтримки типу запчастини
-        if not self.phone_model.supported_part_types.filter(id=self.part_type.id).exists():
-            raise ValidationError(
-                "Цей тип запчастини не підтримується для цієї моделі телефону."
-            )
-
-        # Якщо тип має колір — він обовʼязковий
-        if self.part_type.has_color and not self.color:
-            raise ValidationError("Цей тип запчастини вимагає вибору кольору.")
-
-        # Якщо тип НЕ має кольору — його не можна вказувати
-        if not self.part_type.has_color and self.color:
-            raise ValidationError("Для цього типу запчастини колір не потрібен.")
-
-        # Якщо тип має чіп — він обовʼязковий
-        if self.part_type.has_chip and not self.chip_type:
-            raise ValidationError("Цей тип запчастини вимагає вибору чіпа.")
-
-        # Якщо тип НЕ має чіпа — його не можна вказувати
-        if not self.part_type.has_chip and self.chip_type:
-            raise ValidationError("Для цього типу запчастини чіп не потрібен.")
 
     def __str__(self):
         parts = [self.part_type.name, self.phone_model.name]
@@ -201,3 +215,4 @@ class PartDependency(models.Model):
 
     def __str__(self):
         return f"{self.parent_part} → {self.dependent_part}"
+

@@ -11,7 +11,13 @@ from .models import (
     Color,
     ChipType,
     PartDependency,
+    PhoneModelRange,
 )
+
+@admin.register(PhoneModelRange)
+class PhoneModelRangeAdmin(admin.ModelAdmin):
+    list_display = ("name",)
+    search_fields = ("name",)
 
 
 @admin.register(PhoneModel)
@@ -94,6 +100,7 @@ class PartAdmin(admin.ModelAdmin):
         "part_type",
         "color",
         "chip_type",
+        "phone_model__phone_model_range",
         StockLevelFilter,
     )
 

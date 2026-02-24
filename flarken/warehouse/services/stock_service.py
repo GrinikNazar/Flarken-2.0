@@ -15,12 +15,27 @@ def write_off_part(
     chip_type: str | None = None,
 ):
     try:
-        part = Part.objects.select_for_update().get(
-            phone_model__name=phone_model,
-            part_type__name=part_type,
-            color__name=color,
-            chip_type__name=chip_type,
-            )
+
+        filters = {
+            "part_type__name": part_type,
+            "phone_models__name": phone_model,
+            "color__name": color,
+            "chip_type__name": chip_type,
+        }
+
+        part_id = (
+            Part.objects
+            .filter(**filters)
+            .values_list("id", flat=True)
+            .first()
+        )
+
+        part = (
+            Part.objects
+            .select_for_update()
+            .get(id=part_id)
+        )
+
 
     except Part.DoesNotExist:
         raise ValidationError("Такої запчастини не існує")

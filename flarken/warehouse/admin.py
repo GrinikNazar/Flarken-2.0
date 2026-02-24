@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.db.models import F
 from django.utils.html import format_html
 
+from .forms import PartAdminForm
 from .models import (
     PhoneModel,
     PartType,
@@ -90,35 +91,50 @@ class StockLevelFilter(admin.SimpleListFilter):
 
 @admin.register(Part)
 class PartAdmin(admin.ModelAdmin):
+    form = PartAdminForm
 
     list_display = (
-        "phone_model",
+        "get_phone_models",
         "part_type",
         "color",
         "chip_type",
         "current_quantity",
-        # "min_quantity",
         "max_quantity",
         "stock_status"
     )
 
+    filter_horizontal = ("phone_models",)
+
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        return qs.select_related(
+            "part_type",
+            "color",
+            "chip_type",
+        ).prefetch_related("phone_models")
+
+    def get_phone_models(self, obj):
+        return " | ".join([m.name for m in obj.phone_models.all()])
+
+    get_phone_models.short_description = "Моделі телефонів"
+
     list_filter = (
-        "phone_model",
+        "phone_models",
         "part_type",
         "color",
         "chip_type",
-        "phone_model__phone_model_range",
+        "phone_models__phone_model_range",
         StockLevelFilter,
     )
 
     search_fields = (
-        "phone_model__name",
+        "phone_models__name",
         "part_type__name",
         "color__name",
     )
 
     autocomplete_fields = (
-        "phone_model",
+        "phone_models",
         "part_type",
         "color",
         "chip_type",
@@ -127,7 +143,6 @@ class PartAdmin(admin.ModelAdmin):
     inlines = [SupplierPartNameInline]
 
     list_select_related = (
-        "phone_model",
         "part_type",
     )
 

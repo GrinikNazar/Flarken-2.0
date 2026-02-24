@@ -89,9 +89,8 @@ class ChipType(models.Model):
 
 # Основна модель, конкретна запчастина. Наприклад АКБ iPhone 7
 class Part(models.Model):
-    phone_model = models.ForeignKey(
+    phone_models = models.ManyToManyField(
         PhoneModel,
-        on_delete=models.CASCADE,
         related_name="parts",
         verbose_name='Модель телефону'
     )
@@ -122,26 +121,9 @@ class Part(models.Model):
         verbose_name = 'Тип чіпа'
     )
 
-    def clean(self):
-
-        # Перевірка підтримки типу запчастини
-        if not self.phone_model.supported_part_types.filter(id=self.part_type.id).exists():
-            raise ValidationError(
-                "Цей тип запчастини не підтримується для цієї моделі телефону."
-            )
-
-        # Якщо тип НЕ має кольору — його не можна вказувати
-        if not self.part_type.has_color and self.color:
-            raise ValidationError("Для цього типу запчастини колір не потрібен.")
-
-
-        # Якщо тип НЕ має чіпа — його не можна вказувати
-        if not self.part_type.has_chip and self.chip_type:
-            raise ValidationError("Для цього типу запчастини чіп не потрібен.")
 
     class Meta:
         unique_together = (
-            "phone_model",
             "part_type",
             "color",
             "chip_type",
@@ -149,16 +131,16 @@ class Part(models.Model):
         verbose_name = 'Запчастина'
         verbose_name_plural = 'Запчастини'
 
-    def __str__(self):
-        parts = [self.part_type.name, self.phone_model.name]
-
-        if self.color:
-            parts.append(self.color.name)
-
-        if self.chip_type:
-            parts.append(self.chip_type.name)
-
-        return " - ".join(parts)
+    # def __str__(self):
+    #     parts = [self.part_type.name, self.phone_model.name]
+    #
+    #     if self.color:
+    #         parts.append(self.color.name)
+    #
+    #     if self.chip_type:
+    #         parts.append(self.chip_type.name)
+    #
+    #     return " - ".join(parts)
 
 
 class Supplier(models.Model):

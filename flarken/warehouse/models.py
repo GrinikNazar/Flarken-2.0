@@ -36,6 +36,8 @@ class PhoneModel(models.Model):
         blank=True,
     )
 
+    release_year = models.PositiveIntegerField(default=0, verbose_name='Рік випуску')
+
     def __str__(self):
         return self.name
 

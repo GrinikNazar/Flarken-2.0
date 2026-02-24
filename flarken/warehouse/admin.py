@@ -22,9 +22,17 @@ class PhoneModelRangeAdmin(admin.ModelAdmin):
 
 @admin.register(PhoneModel)
 class PhoneModelAdmin(admin.ModelAdmin):
-    search_fields = ("name",)
-    ordering = ("name",)
+    list_display = ("name", "phone_model_range", "release_year", "display_supported_parts")
+    search_fields = ("name", "release_year")
     list_filter = ("phone_model_range",)
+
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        return qs.select_related('phone_model_range').prefetch_related('supported_part_types')
+
+    @admin.display(description='Запчастини які підтримуються')
+    def display_supported_parts(self, obj):
+        return " | ".join([part.name for part in obj.supported_part_types.all()])
 
 
 @admin.register(PartType)
@@ -36,14 +44,12 @@ class PartTypeAdmin(admin.ModelAdmin):
 @admin.register(Color)
 class ColorAdmin(admin.ModelAdmin):
     list_display = ("name",)
-    # list_filter = ("is_active",)
     search_fields = ("name",)
 
 
 @admin.register(ChipType)
 class ChipTypeAdmin(admin.ModelAdmin):
     list_display = ("name",)
-    # list_filter = ("is_active",)
     search_fields = ("name",)
 
 

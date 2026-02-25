@@ -5,7 +5,6 @@ from django.core.exceptions import ValidationError
 User = get_user_model()
 
 
-# Модельний ряд
 class PhoneModelRange(models.Model):
     name = models.CharField(max_length=100, unique=True)
 
@@ -17,7 +16,6 @@ class PhoneModelRange(models.Model):
         verbose_name_plural = 'Модельні ряди'
 
 
-# Молель телефонів
 class PhoneModel(models.Model):
     name = models.CharField(max_length=100, unique=True, verbose_name="Назва моделі")
 
@@ -46,7 +44,6 @@ class PhoneModel(models.Model):
         verbose_name_plural = 'Моделі телефонів'
 
 
-# Тип запчастини (АКБ, Скло і так далі ... )
 class PartType(models.Model):
     name = models.CharField(max_length=100, unique=True, verbose_name='Назва запчастини')
 
@@ -61,7 +58,6 @@ class PartType(models.Model):
         verbose_name_plural = 'Типи запчастин'
 
 
-# Таблиця кольору
 class Color(models.Model):
     name = models.CharField(max_length=50, unique=True, verbose_name="Колір")
     is_active = models.BooleanField(default=True)
@@ -74,7 +70,6 @@ class Color(models.Model):
         verbose_name_plural = 'Кольори'
 
 
-# Таблиця для сенсорів з чіпом чи без
 class ChipType(models.Model):
     name = models.CharField(max_length=50, unique=True, verbose_name='Тип чіпа')
     is_active = models.BooleanField(default=True)
@@ -87,7 +82,6 @@ class ChipType(models.Model):
         verbose_name_plural = 'Типи чіпів'
 
 
-# Основна модель, конкретна запчастина. Наприклад АКБ iPhone 7
 class Part(models.Model):
     phone_models = models.ManyToManyField(
         PhoneModel,
@@ -131,16 +125,17 @@ class Part(models.Model):
         verbose_name = 'Запчастина'
         verbose_name_plural = 'Запчастини'
 
-    # def __str__(self):
-    #     parts = [self.part_type.name, self.phone_model.name]
-    #
-    #     if self.color:
-    #         parts.append(self.color.name)
-    #
-    #     if self.chip_type:
-    #         parts.append(self.chip_type.name)
-    #
-    #     return " - ".join(parts)
+    def __str__(self):
+        model_names = ', '.join([model.name for model in self.phone_models.all()])
+        parts = [self.part_type.name, model_names]
+
+        if self.color:
+            parts.append(self.color.name)
+
+        if self.chip_type:
+            parts.append(self.chip_type.name)
+
+        return " - ".join(parts)
 
 
 class Supplier(models.Model):
@@ -199,4 +194,3 @@ class PartDependency(models.Model):
 
     def __str__(self):
         return f"{self.parent_part} → {self.dependent_part}"
-

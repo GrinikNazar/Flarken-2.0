@@ -70,16 +70,20 @@ def write_off_part(
     return part
 
 
-def generate_purchase_list(supplier_id: int):
-    supplier_parts = SupplierPartName.objects.select_related("part").filter(supplier_id=supplier_id)
+def generate_purchase_list(supplier_id: int, part_type_id: int = None):
+    queryset = SupplierPartName.objects.select_related("part", "part__part_type").filter(
+        supplier_id=supplier_id,
+    )
+    if part_type_id:
+        queryset = queryset.filter(part__part_type_id=part_type_id)
 
     result = []
 
-    for item in supplier_parts:
+    for item in queryset:
         part = item.part
 
         if part.current_quantity < part.max_quantity:
             to_order = part.max_quantity - part.current_quantity
-            result.append(f"{part.phone_model} {item.supplier_name} - {to_order}")
+            result.append(f"{item.supplier_name} {part.phone_models.all()[0]} - {to_order}")
 
     return '\n'.join(result)

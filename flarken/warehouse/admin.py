@@ -38,8 +38,10 @@ class PhoneModelAdmin(admin.ModelAdmin):
 
 @admin.register(PartType)
 class PartTypeAdmin(admin.ModelAdmin):
+    list_display = ("id", "name")
     search_fields = ("name",)
     ordering = ("name",)
+    list_display_links =("name",)
 
 
 @admin.register(Color)
@@ -66,7 +68,7 @@ class SupplierAdmin(admin.ModelAdmin):
 class SupplierPartNameInline(admin.TabularInline):
     model = SupplierPartName
     extra = 1
-    # autocomplete_fields = ("supplier",)
+    autocomplete_fields = ("supplier",)
 
 
 class StockLevelFilter(admin.SimpleListFilter):

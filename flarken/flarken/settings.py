@@ -141,7 +141,7 @@ JAZZMIN_SETTINGS = {
 
     "show_sidebar": True,
     "navigation_expanded": True,
-    # "custom_css": "styles/admin-styles.css",
+    "custom_css": "styles/admin-styles.css",
     "changeform_format": "single",
 }
 

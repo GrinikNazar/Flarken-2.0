@@ -4,9 +4,10 @@ from rest_framework import status
 
 from warehouse.services.stock_service import write_off_part
 from warehouse.services.stock_service import generate_purchase_list
-from warehouse.models import Supplier
 
+from warehouse.models import Supplier
 from warehouse.models import PartType
+from warehouse.models import Part
 
 
 class WriteOffAPIView(APIView):
@@ -35,9 +36,7 @@ class WriteOffAPIView(APIView):
 
 class PurchaseListAPIView(APIView):
 
-    def post(self, request):
-        supplier_id = request.data.get("supplier_id")
-        part_type_id = request.data.get("part_type_id")
+    def get(self, request, supplier_id, part_type_id=None):
 
         purchase_list = generate_purchase_list(supplier_id, part_type_id) # передаєм id постачальника в stock_service
 
@@ -46,4 +45,22 @@ class PurchaseListAPIView(APIView):
         return Response({
             "supplier_name": supplier_name.name,
             "list": purchase_list
+        })
+
+
+class ListOfPartAPIView(APIView):
+    def get(self, request, part_type_id):
+
+        list_of_parts = Part.objects.filter(part_type=part_type_id) # Вибираємо запчастини з певним типом
+
+        result = []
+
+        for part in list_of_parts:
+
+
+        part_type_name = PartType.objects.get(pk=part_type_id).name
+
+        return Response({
+            "part_type_name": part_type_name,
+            "list_of_parts": list_of_parts
         })

@@ -1,7 +1,7 @@
 from django.db import transaction
 from django.core.exceptions import ValidationError
 
-from warehouse.models import Part
+from warehouse.models import Part, PartType
 from warehouse.models import SupplierPartName
 from warehouse.models import PartDependency
 
@@ -87,3 +87,22 @@ def generate_purchase_list(supplier_id: int, part_type_id: int = None):
             result.append(f"{item.supplier_name} {part.phone_models.all()[0]} - {to_order}")
 
     return '\n'.join(result)
+
+
+def generate_list_of_type(part_type_id: int):
+    list_of_parts = Part.objects.filter(part_type=part_type_id)  # Список запчастин певного типу
+
+    result = []
+
+    for part in list_of_parts:
+        result.append(
+            f"{part.phone_models.all()[0].name} - {part.current_quantity}"
+        )
+
+    part_type_name = PartType.objects.get(pk=part_type_id).name  # Назва типу запчастини
+
+    return {
+            "part_type_name": part_type_name,
+            "list_of_parts": '\n'.join(result)
+    }
+

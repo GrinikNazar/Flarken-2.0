@@ -2,12 +2,10 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
-from warehouse.services.stock_service import write_off_part
+from warehouse.services.stock_service import write_off_part, generate_list_of_type
 from warehouse.services.stock_service import generate_purchase_list
 
 from warehouse.models import Supplier
-from warehouse.models import PartType
-from warehouse.models import Part
 
 
 class WriteOffAPIView(APIView):
@@ -51,16 +49,6 @@ class PurchaseListAPIView(APIView):
 class ListOfPartAPIView(APIView):
     def get(self, request, part_type_id):
 
-        list_of_parts = Part.objects.filter(part_type=part_type_id) # Вибираємо запчастини з певним типом
+        result = generate_list_of_type(part_type_id)
 
-        result = []
-
-        for part in list_of_parts:
-
-
-        part_type_name = PartType.objects.get(pk=part_type_id).name
-
-        return Response({
-            "part_type_name": part_type_name,
-            "list_of_parts": list_of_parts
-        })
+        return Response(result)

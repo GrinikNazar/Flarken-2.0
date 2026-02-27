@@ -1,1 +1,2457 @@
-[{"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2026-02-22T21:46:25.581Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "└╩┴", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2026-02-22T21:46:41.779Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "╤ъыю", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2026-02-22T21:47:03.116Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "╤хэёюЁ", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2026-02-22T21:47:17.580Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "╨рьър", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2026-02-22T21:47:32.700Z", "user": 1, "content_type": 7, "object_id": "5", "object_repr": "╩Ёш°ър", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2026-02-22T21:48:02.477Z", "user": 1, "content_type": 7, "object_id": "6", "object_repr": "┼ъЁрэ", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2026-02-22T21:48:14.555Z", "user": 1, "content_type": 7, "object_id": "7", "object_repr": "┼ъЁрэ ъюя│ ", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2026-02-22T21:54:34.149Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "6", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 9, "fields": {"action_time": "2026-02-22T21:54:37.727Z", "user": 1, "content_type": 15, "object_id": "2", "object_repr": "7", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 10, "fields": {"action_time": "2026-02-22T21:54:40.461Z", "user": 1, "content_type": 15, "object_id": "3", "object_repr": "8", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 11, "fields": {"action_time": "2026-02-22T21:54:55.418Z", "user": 1, "content_type": 15, "object_id": "4", "object_repr": "X", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 12, "fields": {"action_time": "2026-02-22T21:55:13.577Z", "user": 1, "content_type": 15, "object_id": "5", "object_repr": "11", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 13, "fields": {"action_time": "2026-02-22T21:55:18.599Z", "user": 1, "content_type": 15, "object_id": "6", "object_repr": "12", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 14, "fields": {"action_time": "2026-02-22T21:55:21.285Z", "user": 1, "content_type": 15, "object_id": "7", "object_repr": "13", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 15, "fields": {"action_time": "2026-02-22T21:55:24.764Z", "user": 1, "content_type": 15, "object_id": "8", "object_repr": "14", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 16, "fields": {"action_time": "2026-02-22T21:55:28.955Z", "user": 1, "content_type": 15, "object_id": "9", "object_repr": "15", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 17, "fields": {"action_time": "2026-02-22T21:55:33.172Z", "user": 1, "content_type": 15, "object_id": "10", "object_repr": "16", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 18, "fields": {"action_time": "2026-02-22T21:57:10.310Z", "user": 1, "content_type": 8, "object_id": "1", "object_repr": "iPhone 6", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 19, "fields": {"action_time": "2026-02-22T21:59:39.130Z", "user": 1, "content_type": 8, "object_id": "2", "object_repr": "iPhone 6+", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 20, "fields": {"action_time": "2026-02-23T21:49:33.091Z", "user": 1, "content_type": 8, "object_id": "3", "object_repr": "iPhone 6s", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 21, "fields": {"action_time": "2026-02-23T21:50:06.061Z", "user": 1, "content_type": 8, "object_id": "4", "object_repr": "iPhone 6s+", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 22, "fields": {"action_time": "2026-02-23T21:50:53.548Z", "user": 1, "content_type": 13, "object_id": "1", "object_repr": "Black", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 23, "fields": {"action_time": "2026-02-23T21:50:58.107Z", "user": 1, "content_type": 13, "object_id": "2", "object_repr": "White", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 24, "fields": {"action_time": "2026-02-23T21:51:11.114Z", "user": 1, "content_type": 13, "object_id": "3", "object_repr": "Space Gray", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 25, "fields": {"action_time": "2026-02-23T21:51:20.791Z", "user": 1, "content_type": 13, "object_id": "4", "object_repr": "Silver", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 26, "fields": {"action_time": "2026-02-23T21:51:26.820Z", "user": 1, "content_type": 13, "object_id": "5", "object_repr": "Gold", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 27, "fields": {"action_time": "2026-02-23T21:51:34.758Z", "user": 1, "content_type": 13, "object_id": "6", "object_repr": "Red", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 28, "fields": {"action_time": "2026-02-23T21:51:51.505Z", "user": 1, "content_type": 13, "object_id": "7", "object_repr": "Purple", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 29, "fields": {"action_time": "2026-02-23T21:52:43.991Z", "user": 1, "content_type": 13, "object_id": "8", "object_repr": "Green", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 30, "fields": {"action_time": "2026-02-23T21:52:52.467Z", "user": 1, "content_type": 13, "object_id": "9", "object_repr": "Yellow", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 31, "fields": {"action_time": "2026-02-23T21:53:27.718Z", "user": 1, "content_type": 13, "object_id": "10", "object_repr": "Midnight Green", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 32, "fields": {"action_time": "2026-02-23T21:53:43.174Z", "user": 1, "content_type": 13, "object_id": "11", "object_repr": "Blue", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 33, "fields": {"action_time": "2026-02-23T21:54:07.365Z", "user": 1, "content_type": 13, "object_id": "12", "object_repr": "Pasific Blue", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 34, "fields": {"action_time": "2026-02-23T21:54:15.801Z", "user": 1, "content_type": 13, "object_id": "13", "object_repr": "Graphite", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 35, "fields": {"action_time": "2026-02-23T21:54:48.766Z", "user": 1, "content_type": 13, "object_id": "14", "object_repr": "Midnight", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 36, "fields": {"action_time": "2026-02-23T21:55:00.234Z", "user": 1, "content_type": 13, "object_id": "15", "object_repr": "Starlight", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 37, "fields": {"action_time": "2026-02-23T22:02:53.236Z", "user": 1, "content_type": 12, "object_id": "1", "object_repr": "With Chip", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 38, "fields": {"action_time": "2026-02-23T22:02:58.553Z", "user": 1, "content_type": 12, "object_id": "2", "object_repr": "No Chip", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 39, "fields": {"action_time": "2026-02-23T22:03:18.861Z", "user": 1, "content_type": 9, "object_id": "1", "object_repr": "Apple Zone", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 40, "fields": {"action_time": "2026-02-23T22:03:29.750Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": "GSM Forsage", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 41, "fields": {"action_time": "2026-02-23T22:03:55.601Z", "user": 1, "content_type": 9, "object_id": "3", "object_repr": "Ref Parts", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 42, "fields": {"action_time": "2026-02-23T22:09:15.340Z", "user": 1, "content_type": 15, "object_id": "11", "object_repr": "SE", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 43, "fields": {"action_time": "2026-02-23T22:35:18.756Z", "user": 1, "content_type": 8, "object_id": "1", "object_repr": "iPhone 6", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0456\\u043a \\u0432\\u0438\\u043f\\u0443\\u0441\\u043a\\u0443\"]}}]"}}, {"model": "admin.logentry", "pk": 44, "fields": {"action_time": "2026-02-23T22:35:25.036Z", "user": 1, "content_type": 8, "object_id": "2", "object_repr": "iPhone 6+", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0456\\u043a \\u0432\\u0438\\u043f\\u0443\\u0441\\u043a\\u0443\"]}}]"}}, {"model": "admin.logentry", "pk": 45, "fields": {"action_time": "2026-02-23T22:35:33.010Z", "user": 1, "content_type": 8, "object_id": "3", "object_repr": "iPhone 6s", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0456\\u043a \\u0432\\u0438\\u043f\\u0443\\u0441\\u043a\\u0443\"]}}]"}}, {"model": "admin.logentry", "pk": 46, "fields": {"action_time": "2026-02-23T22:35:39.852Z", "user": 1, "content_type": 8, "object_id": "4", "object_repr": "iPhone 6s+", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0456\\u043a \\u0432\\u0438\\u043f\\u0443\\u0441\\u043a\\u0443\"]}}]"}}, {"model": "admin.logentry", "pk": 47, "fields": {"action_time": "2026-02-23T22:37:35.702Z", "user": 1, "content_type": 8, "object_id": "5", "object_repr": "iPhone SE", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 48, "fields": {"action_time": "2026-02-23T22:38:04.995Z", "user": 1, "content_type": 8, "object_id": "6", "object_repr": "iPhone 7", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 49, "fields": {"action_time": "2026-02-23T22:38:51.628Z", "user": 1, "content_type": 8, "object_id": "7", "object_repr": "iPhone 7+", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 50, "fields": {"action_time": "2026-02-23T22:39:54.108Z", "user": 1, "content_type": 8, "object_id": "8", "object_repr": "iPhone 8", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 51, "fields": {"action_time": "2026-02-23T22:40:16.693Z", "user": 1, "content_type": 8, "object_id": "9", "object_repr": "iPhone 8+", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 52, "fields": {"action_time": "2026-02-23T22:40:50.827Z", "user": 1, "content_type": 8, "object_id": "10", "object_repr": "iPhone X", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 53, "fields": {"action_time": "2026-02-23T22:41:51.341Z", "user": 1, "content_type": 8, "object_id": "11", "object_repr": "iPhone Xs", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 54, "fields": {"action_time": "2026-02-23T22:43:04.199Z", "user": 1, "content_type": 8, "object_id": "12", "object_repr": "iPhone XsMax", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 55, "fields": {"action_time": "2026-02-23T22:52:54.849Z", "user": 1, "content_type": 8, "object_id": "13", "object_repr": "iPhone XR", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 56, "fields": {"action_time": "2026-02-23T22:53:27.772Z", "user": 1, "content_type": 8, "object_id": "14", "object_repr": "iPhone 11", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 57, "fields": {"action_time": "2026-02-23T22:53:50.705Z", "user": 1, "content_type": 8, "object_id": "15", "object_repr": "iPhone 11Pro", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 58, "fields": {"action_time": "2026-02-23T22:54:13.165Z", "user": 1, "content_type": 8, "object_id": "16", "object_repr": "iPhone 11ProMax", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 59, "fields": {"action_time": "2026-02-23T22:58:12.408Z", "user": 1, "content_type": 8, "object_id": "17", "object_repr": "iPhone SE2", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 60, "fields": {"action_time": "2026-02-23T22:58:47.416Z", "user": 1, "content_type": 8, "object_id": "18", "object_repr": "iPhone 12", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 61, "fields": {"action_time": "2026-02-23T22:59:05.721Z", "user": 1, "content_type": 8, "object_id": "19", "object_repr": "iPhone 12Pro", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 62, "fields": {"action_time": "2026-02-23T22:59:34.614Z", "user": 1, "content_type": 8, "object_id": "20", "object_repr": "iPhone 12ProMax", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 63, "fields": {"action_time": "2026-02-23T23:00:14.690Z", "user": 1, "content_type": 8, "object_id": "21", "object_repr": "iPhone 13", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 64, "fields": {"action_time": "2026-02-23T23:00:49.322Z", "user": 1, "content_type": 8, "object_id": "22", "object_repr": "iPhone 13mini", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 65, "fields": {"action_time": "2026-02-23T23:01:13.498Z", "user": 1, "content_type": 8, "object_id": "23", "object_repr": "iPhone 13Pro", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 66, "fields": {"action_time": "2026-02-23T23:01:35.179Z", "user": 1, "content_type": 8, "object_id": "24", "object_repr": "iPhone 13ProMax", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 67, "fields": {"action_time": "2026-02-23T23:02:53.118Z", "user": 1, "content_type": 8, "object_id": "25", "object_repr": "iPhone SE3", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 68, "fields": {"action_time": "2026-02-23T23:03:12.852Z", "user": 1, "content_type": 8, "object_id": "26", "object_repr": "iPhone 14", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 69, "fields": {"action_time": "2026-02-23T23:03:30.188Z", "user": 1, "content_type": 8, "object_id": "27", "object_repr": "iPhone 14+", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 70, "fields": {"action_time": "2026-02-23T23:03:58.443Z", "user": 1, "content_type": 8, "object_id": "28", "object_repr": "iPhone 14Pro", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 71, "fields": {"action_time": "2026-02-23T23:04:23.752Z", "user": 1, "content_type": 8, "object_id": "29", "object_repr": "iPhone 14ProMax", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 72, "fields": {"action_time": "2026-02-23T23:05:09.999Z", "user": 1, "content_type": 8, "object_id": "30", "object_repr": "iPhone 15", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 73, "fields": {"action_time": "2026-02-23T23:05:27.554Z", "user": 1, "content_type": 8, "object_id": "31", "object_repr": "iPhone 15+", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 74, "fields": {"action_time": "2026-02-23T23:05:57.003Z", "user": 1, "content_type": 8, "object_id": "32", "object_repr": "iPhone 15Pro", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 75, "fields": {"action_time": "2026-02-23T23:06:15.035Z", "user": 1, "content_type": 8, "object_id": "33", "object_repr": "iPhone 15ProMax", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 76, "fields": {"action_time": "2026-02-23T23:07:26.501Z", "user": 1, "content_type": 8, "object_id": "34", "object_repr": "iPhone 16", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 77, "fields": {"action_time": "2026-02-23T23:07:50.968Z", "user": 1, "content_type": 8, "object_id": "35", "object_repr": "iPhone 16+", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 78, "fields": {"action_time": "2026-02-23T23:08:11.849Z", "user": 1, "content_type": 8, "object_id": "36", "object_repr": "iPhone 16Pro", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 79, "fields": {"action_time": "2026-02-23T23:08:27.903Z", "user": 1, "content_type": 8, "object_id": "37", "object_repr": "iPhone 16ProMax", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 80, "fields": {"action_time": "2026-02-23T23:10:39.062Z", "user": 1, "content_type": 13, "object_id": "15", "object_repr": "Starlight", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"}}, {"model": "admin.logentry", "pk": 81, "fields": {"action_time": "2026-02-23T23:10:44.492Z", "user": 1, "content_type": 13, "object_id": "15", "object_repr": "Starlight", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"}}, {"model": "admin.logentry", "pk": 82, "fields": {"action_time": "2026-02-23T23:19:24.506Z", "user": 1, "content_type": 8, "object_id": "25", "object_repr": "iPhone SE3", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u043e\\u0434\\u0435\\u043b\\u044c\\u043d\\u0438\\u0439 \\u0440\\u044f\\u0434\"]}}]"}}, {"model": "admin.logentry", "pk": 83, "fields": {"action_time": "2026-02-23T23:23:59.362Z", "user": 1, "content_type": 8, "object_id": "17", "object_repr": "iPhone SE2", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u043f\\u0447\\u0430\\u0441\\u0442\\u0438\\u043d\\u0438 \\u044f\\u043a\\u0456 \\u043f\\u0456\\u0434\\u0442\\u0440\\u0438\\u043c\\u0443\\u044e\\u0442\\u044c\\u0441\\u044f\"]}}]"}}, {"model": "admin.logentry", "pk": 84, "fields": {"action_time": "2026-02-23T23:24:09.241Z", "user": 1, "content_type": 8, "object_id": "25", "object_repr": "iPhone SE3", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u043f\\u0447\\u0430\\u0441\\u0442\\u0438\\u043d\\u0438 \\u044f\\u043a\\u0456 \\u043f\\u0456\\u0434\\u0442\\u0440\\u0438\\u043c\\u0443\\u044e\\u0442\\u044c\\u0441\\u044f\"]}}]"}}, {"model": "admin.logentry", "pk": 85, "fields": {"action_time": "2026-02-24T21:42:18.281Z", "user": 1, "content_type": 10, "object_id": "1", "object_repr": "Part object (1)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 86, "fields": {"action_time": "2026-02-24T22:02:10.976Z", "user": 1, "content_type": 10, "object_id": "2", "object_repr": "Part object (2)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 87, "fields": {"action_time": "2026-02-24T22:06:44.957Z", "user": 1, "content_type": 10, "object_id": "3", "object_repr": "Part object (3)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 88, "fields": {"action_time": "2026-02-24T22:35:55.081Z", "user": 1, "content_type": 10, "object_id": "1", "object_repr": "Part object (1)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"}}, {"model": "admin.logentry", "pk": 89, "fields": {"action_time": "2026-02-24T22:42:17.608Z", "user": 1, "content_type": 10, "object_id": "4", "object_repr": "Part object (4)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 90, "fields": {"action_time": "2026-02-25T21:50:03.658Z", "user": 1, "content_type": 10, "object_id": "5", "object_repr": "└╩┴ - iPhone 6+", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 91, "fields": {"action_time": "2026-02-25T21:50:11.919Z", "user": 1, "content_type": 10, "object_id": "4", "object_repr": "╨рьър - iPhone 12, iPhone 12Pro", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 92, "fields": {"action_time": "2026-02-25T22:05:15.160Z", "user": 1, "content_type": 10, "object_id": "1", "object_repr": "╤ъыю - iPhone 12, iPhone 12Pro", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0421\\u043a\\u043b\\u043e \\u0434\\u043b\\u044f \\u043f\\u0435\\u0440\\u0435\\u043a\\u043b\\u0435\\u0439\\u043a\\u0438\"}}]"}}, {"model": "admin.logentry", "pk": 93, "fields": {"action_time": "2026-02-25T22:05:34.208Z", "user": 1, "content_type": 10, "object_id": "3", "object_repr": "└╩┴ - iPhone 6", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0410\\u041a\\u0411 \\u043e\\u0440\\u0438\\u0433\\u0456\\u043d\\u0430\\u043b\"}}]"}}, {"model": "admin.logentry", "pk": 94, "fields": {"action_time": "2026-02-25T22:05:46.011Z", "user": 1, "content_type": 10, "object_id": "5", "object_repr": "└╩┴ - iPhone 6+", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0410\\u041a\\u0411 \\u043e\\u0440\\u0438\\u0433\\u0456\\u043d\\u0430\\u043b\"}}]"}}, {"model": "admin.logentry", "pk": 95, "fields": {"action_time": "2026-02-25T22:06:01.974Z", "user": 1, "content_type": 10, "object_id": "4", "object_repr": "╨рьър - iPhone 12, iPhone 12Pro", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0420\\u0430\\u043c\\u043a\\u0430 \\u0434\\u043b\\u044f \\u043f\\u0435\\u0440\\u0435\\u043a\\u043b\\u0435\\u0439\\u043a\\u0438\"}}]"}}, {"model": "admin.logentry", "pk": 96, "fields": {"action_time": "2026-02-25T22:06:21.423Z", "user": 1, "content_type": 10, "object_id": "2", "object_repr": "╤хэёюЁ - iPhone 12, iPhone 12Pro - With Chip", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0421\\u0435\\u043d\\u0441\\u043e\\u0440 \\u0431\\u0435\\u0437 \\u0447\\u0456\\u043f\\u0430\"}}]"}}, {"model": "admin.logentry", "pk": 97, "fields": {"action_time": "2026-02-25T22:40:33.245Z", "user": 1, "content_type": 10, "object_id": "2", "object_repr": "╤хэёюЁ - iPhone 12, iPhone 12Pro - With Chip", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 98, "fields": {"action_time": "2026-02-25T22:42:44.926Z", "user": 1, "content_type": 10, "object_id": "1", "object_repr": "╤ъыю - iPhone 12, iPhone 12Pro", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0421\\u043a\\u043b\\u043e+\\u041e\\u0421\\u0410 Feaglet\"}}]"}}, {"model": "admin.logentry", "pk": 99, "fields": {"action_time": "2026-02-25T22:43:16.091Z", "user": 1, "content_type": 10, "object_id": "3", "object_repr": "└╩┴ - iPhone 6", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0410\\u041a\\u0411 \\u043e\\u0440\\u0438\\u0433\\u0456\\u043d\\u0430\\u043b\"}}, {\"changed\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0410\\u041a\\u0411\", \"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430 \\u0443 \\u043f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\\u0430\"]}}]"}}, {"model": "admin.logentry", "pk": 100, "fields": {"action_time": "2026-02-25T22:43:30.903Z", "user": 1, "content_type": 10, "object_id": "5", "object_repr": "└╩┴ - iPhone 6+", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0410\\u041a\\u0411\"}}, {\"changed\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0410\\u041a\\u0411\", \"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430 \\u0443 \\u043f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\\u0430\"]}}]"}}, {"model": "admin.logentry", "pk": 101, "fields": {"action_time": "2026-02-25T22:43:37.360Z", "user": 1, "content_type": 10, "object_id": "3", "object_repr": "└╩┴ - iPhone 6", "action_flag": 2, "change_message": "[{\"changed\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0410\\u041a\\u0411\", \"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430 \\u0443 \\u043f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\\u0430\"]}}]"}}, {"model": "admin.logentry", "pk": 102, "fields": {"action_time": "2026-02-25T22:43:50.958Z", "user": 1, "content_type": 10, "object_id": "3", "object_repr": "└╩┴ - iPhone 6", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0410\\u041a\\u0411\"}}]"}}, {"model": "admin.logentry", "pk": 103, "fields": {"action_time": "2026-02-25T22:44:00.526Z", "user": 1, "content_type": 10, "object_id": "5", "object_repr": "└╩┴ - iPhone 6+", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0410\\u041a\\u0411\"}}]"}}, {"model": "admin.logentry", "pk": 104, "fields": {"action_time": "2026-02-25T22:44:53.792Z", "user": 1, "content_type": 10, "object_id": "1", "object_repr": "╤ъыю - iPhone 12, iPhone 12Pro", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 105, "fields": {"action_time": "2026-02-25T22:46:14.804Z", "user": 1, "content_type": 10, "object_id": "4", "object_repr": "╨рьър - iPhone 12, iPhone 12Pro", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0420\\u0430\\u043c\\u043a\\u0430 \\u0434\\u0438\\u0441\\u043f\\u043b\\u0435\\u044f G+OCA pro\"}}, {\"changed\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0420\\u0430\\u043c\\u043a\\u0430 \\u0434\\u0438\\u0441\\u043f\\u043b\\u0435\\u044f OCA Pro\", \"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430 \\u0443 \\u043f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\\u0430\"]}}]"}}, {"model": "admin.logentry", "pk": 106, "fields": {"action_time": "2026-02-25T22:48:00.201Z", "user": 1, "content_type": 10, "object_id": "2", "object_repr": "╤хэёюЁ - iPhone 12, iPhone 12Pro - With Chip", "action_flag": 2, "change_message": "[{\"changed\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0421\\u043a\\u043b\\u043e+\\u0442\\u0430\\u0447+\\u041e\\u0421\\u0410+\\u0441\\u0456\\u0442\\u043e\\u0447\\u043a\\u0430 \\u043f\\u0456\\u0434 \\u043e\\u0440\\u0438\\u0433\\u0456\\u043d\\u0430\\u043b\", \"fields\": [\"\\u041a\\u043e\\u043c\\u043f\\u0430\\u043d\\u0456\\u044f\", \"\\u041d\\u0430\\u0437\\u0432\\u0430 \\u0443 \\u043f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\\u0430\"]}}]"}}, {"model": "admin.logentry", "pk": 107, "fields": {"action_time": "2026-02-25T23:34:59.591Z", "user": 1, "content_type": 10, "object_id": "4", "object_repr": "╨рьър - iPhone 12, iPhone 12Pro", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0420\\u0430\\u043c\\u043a\\u0430\"}}]"}}, {"model": "auth.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$1000000$sJgs1ovJgLgf33obqgSU3X$MsHh6y6pXqQzrAqsj59mllorP60JyFNTm8/gq9FAnNo=", "last_login": "2026-02-22T21:42:27.271Z", "is_superuser": true, "username": "admin", "first_name": "", "last_name": "", "email": "", "is_staff": true, "is_active": true, "date_joined": "2026-02-22T21:42:20.505Z", "groups": [], "user_permissions": []}}, {"model": "sessions.session", "pk": "j8gtu3qfwaferkzi3dg4iqyadst9omyv", "fields": {"session_data": ".eJxVjDsOwjAQBe_iGln2Zm0IJT1niPZnEkCJFCcV4u4QKQW0b2bey3W0Ln23Vpu7Qd3ZRXf43ZjkYeMG9E7jbfIyjcs8sN8Uv9Pqr5Pa87K7fwc91f5bI7HyKbVFYgyhIVSAUlKrzNRmAM25EBgmbLDAUcwyKhELQRIM5t4f_kc42A:1vuHDf:JrnNqbfoeRMuNqooCgr8xqVCcsvyQ8hkm-jBbndCMHw", "expire_date": "2026-03-08T21:42:27.273Z"}}, {"model": "warehouse.phonemodelrange", "pk": 1, "fields": {"name": "6"}}, {"model": "warehouse.phonemodelrange", "pk": 2, "fields": {"name": "7"}}, {"model": "warehouse.phonemodelrange", "pk": 3, "fields": {"name": "8"}}, {"model": "warehouse.phonemodelrange", "pk": 4, "fields": {"name": "X"}}, {"model": "warehouse.phonemodelrange", "pk": 5, "fields": {"name": "11"}}, {"model": "warehouse.phonemodelrange", "pk": 6, "fields": {"name": "12"}}, {"model": "warehouse.phonemodelrange", "pk": 7, "fields": {"name": "13"}}, {"model": "warehouse.phonemodelrange", "pk": 8, "fields": {"name": "14"}}, {"model": "warehouse.phonemodelrange", "pk": 9, "fields": {"name": "15"}}, {"model": "warehouse.phonemodelrange", "pk": 10, "fields": {"name": "16"}}, {"model": "warehouse.phonemodelrange", "pk": 11, "fields": {"name": "SE"}}, {"model": "warehouse.phonemodel", "pk": 1, "fields": {"name": "iPhone 6", "phone_model_range": 1, "release_year": 2014, "supported_part_types": [1, 2, 7]}}, {"model": "warehouse.phonemodel", "pk": 2, "fields": {"name": "iPhone 6+", "phone_model_range": 1, "release_year": 2014, "supported_part_types": [1, 2, 7]}}, {"model": "warehouse.phonemodel", "pk": 3, "fields": {"name": "iPhone 6s", "phone_model_range": 1, "release_year": 2015, "supported_part_types": [1, 2, 7]}}, {"model": "warehouse.phonemodel", "pk": 4, "fields": {"name": "iPhone 6s+", "phone_model_range": 1, "release_year": 2015, "supported_part_types": [1, 2, 7]}}, {"model": "warehouse.phonemodel", "pk": 5, "fields": {"name": "iPhone SE", "phone_model_range": 11, "release_year": 2016, "supported_part_types": [1]}}, {"model": "warehouse.phonemodel", "pk": 6, "fields": {"name": "iPhone 7", "phone_model_range": 2, "release_year": 2016, "supported_part_types": [1, 2, 7]}}, {"model": "warehouse.phonemodel", "pk": 7, "fields": {"name": "iPhone 7+", "phone_model_range": 2, "release_year": 2016, "supported_part_types": [1, 2, 7]}}, {"model": "warehouse.phonemodel", "pk": 8, "fields": {"name": "iPhone 8", "phone_model_range": 3, "release_year": 2017, "supported_part_types": [1, 2, 5, 7]}}, {"model": "warehouse.phonemodel", "pk": 9, "fields": {"name": "iPhone 8+", "phone_model_range": 3, "release_year": 2017, "supported_part_types": [1, 2, 5, 7]}}, {"model": "warehouse.phonemodel", "pk": 10, "fields": {"name": "iPhone X", "phone_model_range": 4, "release_year": 2017, "supported_part_types": [1, 2, 3, 4, 5, 6, 7]}}, {"model": "warehouse.phonemodel", "pk": 11, "fields": {"name": "iPhone Xs", "phone_model_range": 4, "release_year": 2018, "supported_part_types": [1, 2, 3, 4, 5, 6, 7]}}, {"model": "warehouse.phonemodel", "pk": 12, "fields": {"name": "iPhone XsMax", "phone_model_range": 4, "release_year": 2018, "supported_part_types": [1, 2, 3, 4, 5, 6, 7]}}, {"model": "warehouse.phonemodel", "pk": 13, "fields": {"name": "iPhone XR", "phone_model_range": 4, "release_year": 2018, "supported_part_types": [1, 2, 3, 5, 6]}}, {"model": "warehouse.phonemodel", "pk": 14, "fields": {"name": "iPhone 11", "phone_model_range": 5, "release_year": 2019, "supported_part_types": [1, 2, 3, 5, 6]}}, {"model": "warehouse.phonemodel", "pk": 15, "fields": {"name": "iPhone 11Pro", "phone_model_range": 5, "release_year": 2019, "supported_part_types": [1, 2, 3, 4, 5, 6, 7]}}, {"model": "warehouse.phonemodel", "pk": 16, "fields": {"name": "iPhone 11ProMax", "phone_model_range": 5, "release_year": 2019, "supported_part_types": [1, 2, 3, 4, 5, 6, 7]}}, {"model": "warehouse.phonemodel", "pk": 17, "fields": {"name": "iPhone SE2", "phone_model_range": 11, "release_year": 2020, "supported_part_types": [1, 5, 7]}}, {"model": "warehouse.phonemodel", "pk": 18, "fields": {"name": "iPhone 12", "phone_model_range": 6, "release_year": 2020, "supported_part_types": [1, 2, 3, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 19, "fields": {"name": "iPhone 12Pro", "phone_model_range": 6, "release_year": 2020, "supported_part_types": [1, 2, 3, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 20, "fields": {"name": "iPhone 12ProMax", "phone_model_range": 6, "release_year": 2020, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 21, "fields": {"name": "iPhone 13", "phone_model_range": 7, "release_year": 2021, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 22, "fields": {"name": "iPhone 13mini", "phone_model_range": 7, "release_year": 2021, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 23, "fields": {"name": "iPhone 13Pro", "phone_model_range": 7, "release_year": 2021, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 24, "fields": {"name": "iPhone 13ProMax", "phone_model_range": 7, "release_year": 2021, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 25, "fields": {"name": "iPhone SE3", "phone_model_range": 11, "release_year": 2022, "supported_part_types": [1, 5, 7]}}, {"model": "warehouse.phonemodel", "pk": 26, "fields": {"name": "iPhone 14", "phone_model_range": 8, "release_year": 2022, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 27, "fields": {"name": "iPhone 14+", "phone_model_range": 8, "release_year": 2022, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 28, "fields": {"name": "iPhone 14Pro", "phone_model_range": 8, "release_year": 2022, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 29, "fields": {"name": "iPhone 14ProMax", "phone_model_range": 8, "release_year": 2022, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 30, "fields": {"name": "iPhone 15", "phone_model_range": 9, "release_year": 2023, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 31, "fields": {"name": "iPhone 15+", "phone_model_range": 9, "release_year": 2023, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 32, "fields": {"name": "iPhone 15Pro", "phone_model_range": 9, "release_year": 2023, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 33, "fields": {"name": "iPhone 15ProMax", "phone_model_range": 9, "release_year": 2023, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 34, "fields": {"name": "iPhone 16", "phone_model_range": 10, "release_year": 2024, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 35, "fields": {"name": "iPhone 16+", "phone_model_range": 10, "release_year": 2023, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 36, "fields": {"name": "iPhone 16Pro", "phone_model_range": 10, "release_year": 2023, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.phonemodel", "pk": 37, "fields": {"name": "iPhone 16ProMax", "phone_model_range": 10, "release_year": 2024, "supported_part_types": [1, 2, 4, 5]}}, {"model": "warehouse.parttype", "pk": 1, "fields": {"name": "└╩┴", "has_color": false, "has_chip": false}}, {"model": "warehouse.parttype", "pk": 2, "fields": {"name": "╤ъыю", "has_color": true, "has_chip": false}}, {"model": "warehouse.parttype", "pk": 3, "fields": {"name": "╤хэёюЁ", "has_color": false, "has_chip": true}}, {"model": "warehouse.parttype", "pk": 4, "fields": {"name": "╨рьър", "has_color": false, "has_chip": false}}, {"model": "warehouse.parttype", "pk": 5, "fields": {"name": "╩Ёш°ър", "has_color": true, "has_chip": false}}, {"model": "warehouse.parttype", "pk": 6, "fields": {"name": "┼ъЁрэ", "has_color": true, "has_chip": false}}, {"model": "warehouse.parttype", "pk": 7, "fields": {"name": "┼ъЁрэ ъюя│ ", "has_color": true, "has_chip": false}}, {"model": "warehouse.color", "pk": 1, "fields": {"name": "Black", "is_active": true}}, {"model": "warehouse.color", "pk": 2, "fields": {"name": "White", "is_active": true}}, {"model": "warehouse.color", "pk": 3, "fields": {"name": "Space Gray", "is_active": true}}, {"model": "warehouse.color", "pk": 4, "fields": {"name": "Silver", "is_active": true}}, {"model": "warehouse.color", "pk": 5, "fields": {"name": "Gold", "is_active": true}}, {"model": "warehouse.color", "pk": 6, "fields": {"name": "Red", "is_active": true}}, {"model": "warehouse.color", "pk": 7, "fields": {"name": "Purple", "is_active": true}}, {"model": "warehouse.color", "pk": 8, "fields": {"name": "Green", "is_active": true}}, {"model": "warehouse.color", "pk": 9, "fields": {"name": "Yellow", "is_active": true}}, {"model": "warehouse.color", "pk": 10, "fields": {"name": "Midnight Green", "is_active": true}}, {"model": "warehouse.color", "pk": 11, "fields": {"name": "Blue", "is_active": true}}, {"model": "warehouse.color", "pk": 12, "fields": {"name": "Pasific Blue", "is_active": true}}, {"model": "warehouse.color", "pk": 13, "fields": {"name": "Graphite", "is_active": true}}, {"model": "warehouse.color", "pk": 14, "fields": {"name": "Midnight", "is_active": true}}, {"model": "warehouse.color", "pk": 15, "fields": {"name": "Starlight", "is_active": true}}, {"model": "warehouse.chiptype", "pk": 1, "fields": {"name": "With Chip", "is_active": true}}, {"model": "warehouse.chiptype", "pk": 2, "fields": {"name": "No Chip", "is_active": true}}, {"model": "warehouse.part", "pk": 1, "fields": {"part_type": 2, "current_quantity": 1, "min_quantity": 1, "max_quantity": 10, "color": null, "chip_type": null, "phone_models": [18, 19]}}, {"model": "warehouse.part", "pk": 2, "fields": {"part_type": 3, "current_quantity": 4, "min_quantity": 1, "max_quantity": 10, "color": null, "chip_type": 1, "phone_models": [18, 19]}}, {"model": "warehouse.part", "pk": 3, "fields": {"part_type": 1, "current_quantity": 2, "min_quantity": 1, "max_quantity": 5, "color": null, "chip_type": null, "phone_models": [1]}}, {"model": "warehouse.part", "pk": 4, "fields": {"part_type": 4, "current_quantity": 3, "min_quantity": 1, "max_quantity": 5, "color": null, "chip_type": null, "phone_models": [18, 19]}}, {"model": "warehouse.part", "pk": 5, "fields": {"part_type": 1, "current_quantity": 3, "min_quantity": 1, "max_quantity": 5, "color": null, "chip_type": null, "phone_models": [2]}}, {"model": "warehouse.supplier", "pk": 1, "fields": {"name": "Apple Zone"}}, {"model": "warehouse.supplier", "pk": 2, "fields": {"name": "GSM Forsage"}}, {"model": "warehouse.supplier", "pk": 3, "fields": {"name": "Ref Parts"}}, {"model": "warehouse.supplierpartname", "pk": 1, "fields": {"part": 1, "supplier": 2, "supplier_name": "╤ъыю фы  яхЁхъыхщъш"}}, {"model": "warehouse.supplierpartname", "pk": 2, "fields": {"part": 3, "supplier": 2, "supplier_name": "└╩┴"}}, {"model": "warehouse.supplierpartname", "pk": 3, "fields": {"part": 5, "supplier": 2, "supplier_name": "└╩┴"}}, {"model": "warehouse.supplierpartname", "pk": 4, "fields": {"part": 4, "supplier": 2, "supplier_name": "╨рьър фшёяых  OCA Pro"}}, {"model": "warehouse.supplierpartname", "pk": 5, "fields": {"part": 2, "supplier": 3, "supplier_name": "╤ъыю+Єрў+╬╤└+ё│Єюўър я│ф юЁшу│эры"}}, {"model": "warehouse.supplierpartname", "pk": 6, "fields": {"part": 1, "supplier": 3, "supplier_name": "╤ъыю+╬╤└ Feaglet"}}, {"model": "warehouse.supplierpartname", "pk": 7, "fields": {"part": 3, "supplier": 3, "supplier_name": "└╩┴"}}, {"model": "warehouse.supplierpartname", "pk": 8, "fields": {"part": 5, "supplier": 3, "supplier_name": "└╩┴"}}, {"model": "warehouse.supplierpartname", "pk": 9, "fields": {"part": 3, "supplier": 1, "supplier_name": "└╩┴"}}, {"model": "warehouse.supplierpartname", "pk": 10, "fields": {"part": 5, "supplier": 1, "supplier_name": "└╩┴"}}, {"model": "warehouse.supplierpartname", "pk": 11, "fields": {"part": 4, "supplier": 3, "supplier_name": "╨рьър фшёяых  G+OCA pro"}}, {"model": "warehouse.supplierpartname", "pk": 12, "fields": {"part": 4, "supplier": 1, "supplier_name": "╨рьър"}}]
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-02-22T21:46:25.581Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "АКБ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2026-02-22T21:46:41.779Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Скло",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2026-02-22T21:47:03.116Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Сенсор",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2026-02-22T21:47:17.580Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Рамка",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2026-02-22T21:47:32.700Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "Кришка",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2026-02-22T21:48:02.477Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Екран",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2026-02-22T21:48:14.555Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "Екран копія",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2026-02-22T21:54:34.149Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "6",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2026-02-22T21:54:37.727Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "7",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2026-02-22T21:54:40.461Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "8",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2026-02-22T21:54:55.418Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "4",
+        "object_repr": "X",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2026-02-22T21:55:13.577Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "5",
+        "object_repr": "11",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2026-02-22T21:55:18.599Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "6",
+        "object_repr": "12",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2026-02-22T21:55:21.285Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "7",
+        "object_repr": "13",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2026-02-22T21:55:24.764Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "8",
+        "object_repr": "14",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2026-02-22T21:55:28.955Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "9",
+        "object_repr": "15",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2026-02-22T21:55:33.172Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "10",
+        "object_repr": "16",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2026-02-22T21:57:10.310Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "iPhone 6",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2026-02-22T21:59:39.130Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "iPhone 6+",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2026-02-23T21:49:33.091Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "iPhone 6s",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2026-02-23T21:50:06.061Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "iPhone 6s+",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2026-02-23T21:50:53.548Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Black",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2026-02-23T21:50:58.107Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "White",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2026-02-23T21:51:11.114Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "Space Gray",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2026-02-23T21:51:20.791Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "4",
+        "object_repr": "Silver",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2026-02-23T21:51:26.820Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "5",
+        "object_repr": "Gold",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2026-02-23T21:51:34.758Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "6",
+        "object_repr": "Red",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2026-02-23T21:51:51.505Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "7",
+        "object_repr": "Purple",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2026-02-23T21:52:43.991Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "8",
+        "object_repr": "Green",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2026-02-23T21:52:52.467Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "9",
+        "object_repr": "Yellow",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2026-02-23T21:53:27.718Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "10",
+        "object_repr": "Midnight Green",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2026-02-23T21:53:43.174Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "11",
+        "object_repr": "Blue",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2026-02-23T21:54:07.365Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "12",
+        "object_repr": "Pasific Blue",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2026-02-23T21:54:15.801Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "13",
+        "object_repr": "Graphite",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2026-02-23T21:54:48.766Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "14",
+        "object_repr": "Midnight",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2026-02-23T21:55:00.234Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "15",
+        "object_repr": "Starlight",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2026-02-23T22:02:53.236Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "With Chip",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2026-02-23T22:02:58.553Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "No Chip",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2026-02-23T22:03:18.861Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Apple Zone",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2026-02-23T22:03:29.750Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "GSM Forsage",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2026-02-23T22:03:55.601Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Ref Parts",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2026-02-23T22:09:15.340Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "11",
+        "object_repr": "SE",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2026-02-23T22:35:18.756Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "iPhone 6",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0456\\u043a \\u0432\\u0438\\u043f\\u0443\\u0441\\u043a\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2026-02-23T22:35:25.036Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "iPhone 6+",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0456\\u043a \\u0432\\u0438\\u043f\\u0443\\u0441\\u043a\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2026-02-23T22:35:33.010Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "iPhone 6s",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0456\\u043a \\u0432\\u0438\\u043f\\u0443\\u0441\\u043a\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2026-02-23T22:35:39.852Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "iPhone 6s+",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0456\\u043a \\u0432\\u0438\\u043f\\u0443\\u0441\\u043a\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2026-02-23T22:37:35.702Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "iPhone SE",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2026-02-23T22:38:04.995Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "iPhone 7",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2026-02-23T22:38:51.628Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "iPhone 7+",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2026-02-23T22:39:54.108Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "8",
+        "object_repr": "iPhone 8",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2026-02-23T22:40:16.693Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "iPhone 8+",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2026-02-23T22:40:50.827Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "10",
+        "object_repr": "iPhone X",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2026-02-23T22:41:51.341Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "11",
+        "object_repr": "iPhone Xs",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2026-02-23T22:43:04.199Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "12",
+        "object_repr": "iPhone XsMax",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2026-02-23T22:52:54.849Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "13",
+        "object_repr": "iPhone XR",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2026-02-23T22:53:27.772Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "14",
+        "object_repr": "iPhone 11",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2026-02-23T22:53:50.705Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "15",
+        "object_repr": "iPhone 11Pro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2026-02-23T22:54:13.165Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "16",
+        "object_repr": "iPhone 11ProMax",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2026-02-23T22:58:12.408Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "17",
+        "object_repr": "iPhone SE2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2026-02-23T22:58:47.416Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "18",
+        "object_repr": "iPhone 12",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2026-02-23T22:59:05.721Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "19",
+        "object_repr": "iPhone 12Pro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2026-02-23T22:59:34.614Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "20",
+        "object_repr": "iPhone 12ProMax",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2026-02-23T23:00:14.690Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "21",
+        "object_repr": "iPhone 13",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2026-02-23T23:00:49.322Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "22",
+        "object_repr": "iPhone 13mini",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2026-02-23T23:01:13.498Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "23",
+        "object_repr": "iPhone 13Pro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2026-02-23T23:01:35.179Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "24",
+        "object_repr": "iPhone 13ProMax",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2026-02-23T23:02:53.118Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "25",
+        "object_repr": "iPhone SE3",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2026-02-23T23:03:12.852Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "26",
+        "object_repr": "iPhone 14",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2026-02-23T23:03:30.188Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "27",
+        "object_repr": "iPhone 14+",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2026-02-23T23:03:58.443Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "28",
+        "object_repr": "iPhone 14Pro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2026-02-23T23:04:23.752Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "29",
+        "object_repr": "iPhone 14ProMax",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2026-02-23T23:05:09.999Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "30",
+        "object_repr": "iPhone 15",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2026-02-23T23:05:27.554Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "31",
+        "object_repr": "iPhone 15+",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2026-02-23T23:05:57.003Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "32",
+        "object_repr": "iPhone 15Pro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2026-02-23T23:06:15.035Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "33",
+        "object_repr": "iPhone 15ProMax",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2026-02-23T23:07:26.501Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "34",
+        "object_repr": "iPhone 16",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2026-02-23T23:07:50.968Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "35",
+        "object_repr": "iPhone 16+",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2026-02-23T23:08:11.849Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "36",
+        "object_repr": "iPhone 16Pro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2026-02-23T23:08:27.903Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "37",
+        "object_repr": "iPhone 16ProMax",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2026-02-23T23:10:39.062Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "15",
+        "object_repr": "Starlight",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2026-02-23T23:10:44.492Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "15",
+        "object_repr": "Starlight",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2026-02-23T23:19:24.506Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "25",
+        "object_repr": "iPhone SE3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u043e\\u0434\\u0435\\u043b\\u044c\\u043d\\u0438\\u0439 \\u0440\\u044f\\u0434\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2026-02-23T23:23:59.362Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "17",
+        "object_repr": "iPhone SE2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u043f\\u0447\\u0430\\u0441\\u0442\\u0438\\u043d\\u0438 \\u044f\\u043a\\u0456 \\u043f\\u0456\\u0434\\u0442\\u0440\\u0438\\u043c\\u0443\\u044e\\u0442\\u044c\\u0441\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2026-02-23T23:24:09.241Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "25",
+        "object_repr": "iPhone SE3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u043f\\u0447\\u0430\\u0441\\u0442\\u0438\\u043d\\u0438 \\u044f\\u043a\\u0456 \\u043f\\u0456\\u0434\\u0442\\u0440\\u0438\\u043c\\u0443\\u044e\\u0442\\u044c\\u0441\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2026-02-24T21:42:18.281Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Part object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2026-02-24T22:02:10.976Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Part object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2026-02-24T22:06:44.957Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "Part object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2026-02-24T22:35:55.081Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Part object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2026-02-24T22:42:17.608Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "Part object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2026-02-25T21:50:03.658Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "5",
+        "object_repr": "АКБ - iPhone 6+",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2026-02-25T21:50:11.919Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "Рамка - iPhone 12, iPhone 12Pro",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2026-02-25T22:05:15.160Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Скло - iPhone 12, iPhone 12Pro",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0421\\u043a\\u043b\\u043e \\u0434\\u043b\\u044f \\u043f\\u0435\\u0440\\u0435\\u043a\\u043b\\u0435\\u0439\\u043a\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2026-02-25T22:05:34.208Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "АКБ - iPhone 6",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0410\\u041a\\u0411 \\u043e\\u0440\\u0438\\u0433\\u0456\\u043d\\u0430\\u043b\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2026-02-25T22:05:46.011Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "5",
+        "object_repr": "АКБ - iPhone 6+",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0410\\u041a\\u0411 \\u043e\\u0440\\u0438\\u0433\\u0456\\u043d\\u0430\\u043b\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2026-02-25T22:06:01.974Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "Рамка - iPhone 12, iPhone 12Pro",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0420\\u0430\\u043c\\u043a\\u0430 \\u0434\\u043b\\u044f \\u043f\\u0435\\u0440\\u0435\\u043a\\u043b\\u0435\\u0439\\u043a\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2026-02-25T22:06:21.423Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Сенсор - iPhone 12, iPhone 12Pro - With Chip",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0421\\u0435\\u043d\\u0441\\u043e\\u0440 \\u0431\\u0435\\u0437 \\u0447\\u0456\\u043f\\u0430\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2026-02-25T22:40:33.245Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Сенсор - iPhone 12, iPhone 12Pro - With Chip",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2026-02-25T22:42:44.926Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Скло - iPhone 12, iPhone 12Pro",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0421\\u043a\\u043b\\u043e+\\u041e\\u0421\\u0410 Feaglet\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2026-02-25T22:43:16.091Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "АКБ - iPhone 6",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0410\\u041a\\u0411 \\u043e\\u0440\\u0438\\u0433\\u0456\\u043d\\u0430\\u043b\"}}, {\"changed\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0410\\u041a\\u0411\", \"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430 \\u0443 \\u043f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2026-02-25T22:43:30.903Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "5",
+        "object_repr": "АКБ - iPhone 6+",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0410\\u041a\\u0411\"}}, {\"changed\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0410\\u041a\\u0411\", \"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430 \\u0443 \\u043f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2026-02-25T22:43:37.360Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "АКБ - iPhone 6",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0410\\u041a\\u0411\", \"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430 \\u0443 \\u043f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2026-02-25T22:43:50.958Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "АКБ - iPhone 6",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0410\\u041a\\u0411\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2026-02-25T22:44:00.526Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "5",
+        "object_repr": "АКБ - iPhone 6+",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0410\\u041a\\u0411\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2026-02-25T22:44:53.792Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Скло - iPhone 12, iPhone 12Pro",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2026-02-25T22:46:14.804Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "Рамка - iPhone 12, iPhone 12Pro",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0420\\u0430\\u043c\\u043a\\u0430 \\u0434\\u0438\\u0441\\u043f\\u043b\\u0435\\u044f G+OCA pro\"}}, {\"changed\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0420\\u0430\\u043c\\u043a\\u0430 \\u0434\\u0438\\u0441\\u043f\\u043b\\u0435\\u044f OCA Pro\", \"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430 \\u0443 \\u043f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2026-02-25T22:48:00.201Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Сенсор - iPhone 12, iPhone 12Pro - With Chip",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0421\\u043a\\u043b\\u043e+\\u0442\\u0430\\u0447+\\u041e\\u0421\\u0410+\\u0441\\u0456\\u0442\\u043e\\u0447\\u043a\\u0430 \\u043f\\u0456\\u0434 \\u043e\\u0440\\u0438\\u0433\\u0456\\u043d\\u0430\\u043b\", \"fields\": [\"\\u041a\\u043e\\u043c\\u043f\\u0430\\u043d\\u0456\\u044f\", \"\\u041d\\u0430\\u0437\\u0432\\u0430 \\u0443 \\u043f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2026-02-25T23:34:59.591Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "Рамка - iPhone 12, iPhone 12Pro",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0420\\u0430\\u043c\\u043a\\u0430\"}}]"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$sJgs1ovJgLgf33obqgSU3X$MsHh6y6pXqQzrAqsj59mllorP60JyFNTm8/gq9FAnNo=",
+        "last_login": "2026-02-22T21:42:27.271Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-02-22T21:42:20.505Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "warehouse.phonemodelrange",
+    "pk": 1,
+    "fields": {
+        "name": "6"
+    }
+},
+{
+    "model": "warehouse.phonemodelrange",
+    "pk": 2,
+    "fields": {
+        "name": "7"
+    }
+},
+{
+    "model": "warehouse.phonemodelrange",
+    "pk": 3,
+    "fields": {
+        "name": "8"
+    }
+},
+{
+    "model": "warehouse.phonemodelrange",
+    "pk": 4,
+    "fields": {
+        "name": "X"
+    }
+},
+{
+    "model": "warehouse.phonemodelrange",
+    "pk": 5,
+    "fields": {
+        "name": "11"
+    }
+},
+{
+    "model": "warehouse.phonemodelrange",
+    "pk": 6,
+    "fields": {
+        "name": "12"
+    }
+},
+{
+    "model": "warehouse.phonemodelrange",
+    "pk": 7,
+    "fields": {
+        "name": "13"
+    }
+},
+{
+    "model": "warehouse.phonemodelrange",
+    "pk": 8,
+    "fields": {
+        "name": "14"
+    }
+},
+{
+    "model": "warehouse.phonemodelrange",
+    "pk": 9,
+    "fields": {
+        "name": "15"
+    }
+},
+{
+    "model": "warehouse.phonemodelrange",
+    "pk": 10,
+    "fields": {
+        "name": "16"
+    }
+},
+{
+    "model": "warehouse.phonemodelrange",
+    "pk": 11,
+    "fields": {
+        "name": "SE"
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 1,
+    "fields": {
+        "name": "iPhone 6",
+        "phone_model_range": 1,
+        "release_year": 2014,
+        "supported_part_types": [
+            1,
+            2,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 2,
+    "fields": {
+        "name": "iPhone 6+",
+        "phone_model_range": 1,
+        "release_year": 2014,
+        "supported_part_types": [
+            1,
+            2,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 3,
+    "fields": {
+        "name": "iPhone 6s",
+        "phone_model_range": 1,
+        "release_year": 2015,
+        "supported_part_types": [
+            1,
+            2,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 4,
+    "fields": {
+        "name": "iPhone 6s+",
+        "phone_model_range": 1,
+        "release_year": 2015,
+        "supported_part_types": [
+            1,
+            2,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 5,
+    "fields": {
+        "name": "iPhone SE",
+        "phone_model_range": 11,
+        "release_year": 2016,
+        "supported_part_types": [
+            1
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 6,
+    "fields": {
+        "name": "iPhone 7",
+        "phone_model_range": 2,
+        "release_year": 2016,
+        "supported_part_types": [
+            1,
+            2,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 7,
+    "fields": {
+        "name": "iPhone 7+",
+        "phone_model_range": 2,
+        "release_year": 2016,
+        "supported_part_types": [
+            1,
+            2,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 8,
+    "fields": {
+        "name": "iPhone 8",
+        "phone_model_range": 3,
+        "release_year": 2017,
+        "supported_part_types": [
+            1,
+            2,
+            5,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 9,
+    "fields": {
+        "name": "iPhone 8+",
+        "phone_model_range": 3,
+        "release_year": 2017,
+        "supported_part_types": [
+            1,
+            2,
+            5,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 10,
+    "fields": {
+        "name": "iPhone X",
+        "phone_model_range": 4,
+        "release_year": 2017,
+        "supported_part_types": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 11,
+    "fields": {
+        "name": "iPhone Xs",
+        "phone_model_range": 4,
+        "release_year": 2018,
+        "supported_part_types": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 12,
+    "fields": {
+        "name": "iPhone XsMax",
+        "phone_model_range": 4,
+        "release_year": 2018,
+        "supported_part_types": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 13,
+    "fields": {
+        "name": "iPhone XR",
+        "phone_model_range": 4,
+        "release_year": 2018,
+        "supported_part_types": [
+            1,
+            2,
+            3,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 14,
+    "fields": {
+        "name": "iPhone 11",
+        "phone_model_range": 5,
+        "release_year": 2019,
+        "supported_part_types": [
+            1,
+            2,
+            3,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 15,
+    "fields": {
+        "name": "iPhone 11Pro",
+        "phone_model_range": 5,
+        "release_year": 2019,
+        "supported_part_types": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 16,
+    "fields": {
+        "name": "iPhone 11ProMax",
+        "phone_model_range": 5,
+        "release_year": 2019,
+        "supported_part_types": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 17,
+    "fields": {
+        "name": "iPhone SE2",
+        "phone_model_range": 11,
+        "release_year": 2020,
+        "supported_part_types": [
+            1,
+            5,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 18,
+    "fields": {
+        "name": "iPhone 12",
+        "phone_model_range": 6,
+        "release_year": 2020,
+        "supported_part_types": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 19,
+    "fields": {
+        "name": "iPhone 12Pro",
+        "phone_model_range": 6,
+        "release_year": 2020,
+        "supported_part_types": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 20,
+    "fields": {
+        "name": "iPhone 12ProMax",
+        "phone_model_range": 6,
+        "release_year": 2020,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 21,
+    "fields": {
+        "name": "iPhone 13",
+        "phone_model_range": 7,
+        "release_year": 2021,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 22,
+    "fields": {
+        "name": "iPhone 13mini",
+        "phone_model_range": 7,
+        "release_year": 2021,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 23,
+    "fields": {
+        "name": "iPhone 13Pro",
+        "phone_model_range": 7,
+        "release_year": 2021,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 24,
+    "fields": {
+        "name": "iPhone 13ProMax",
+        "phone_model_range": 7,
+        "release_year": 2021,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 25,
+    "fields": {
+        "name": "iPhone SE3",
+        "phone_model_range": 11,
+        "release_year": 2022,
+        "supported_part_types": [
+            1,
+            5,
+            7
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 26,
+    "fields": {
+        "name": "iPhone 14",
+        "phone_model_range": 8,
+        "release_year": 2022,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 27,
+    "fields": {
+        "name": "iPhone 14+",
+        "phone_model_range": 8,
+        "release_year": 2022,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 28,
+    "fields": {
+        "name": "iPhone 14Pro",
+        "phone_model_range": 8,
+        "release_year": 2022,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 29,
+    "fields": {
+        "name": "iPhone 14ProMax",
+        "phone_model_range": 8,
+        "release_year": 2022,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 30,
+    "fields": {
+        "name": "iPhone 15",
+        "phone_model_range": 9,
+        "release_year": 2023,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 31,
+    "fields": {
+        "name": "iPhone 15+",
+        "phone_model_range": 9,
+        "release_year": 2023,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 32,
+    "fields": {
+        "name": "iPhone 15Pro",
+        "phone_model_range": 9,
+        "release_year": 2023,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 33,
+    "fields": {
+        "name": "iPhone 15ProMax",
+        "phone_model_range": 9,
+        "release_year": 2023,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 34,
+    "fields": {
+        "name": "iPhone 16",
+        "phone_model_range": 10,
+        "release_year": 2024,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 35,
+    "fields": {
+        "name": "iPhone 16+",
+        "phone_model_range": 10,
+        "release_year": 2023,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 36,
+    "fields": {
+        "name": "iPhone 16Pro",
+        "phone_model_range": 10,
+        "release_year": 2023,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 37,
+    "fields": {
+        "name": "iPhone 16ProMax",
+        "phone_model_range": 10,
+        "release_year": 2024,
+        "supported_part_types": [
+            1,
+            2,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "warehouse.parttype",
+    "pk": 1,
+    "fields": {
+        "name": "АКБ",
+        "has_color": false,
+        "has_chip": false
+    }
+},
+{
+    "model": "warehouse.parttype",
+    "pk": 2,
+    "fields": {
+        "name": "Скло",
+        "has_color": true,
+        "has_chip": false
+    }
+},
+{
+    "model": "warehouse.parttype",
+    "pk": 3,
+    "fields": {
+        "name": "Сенсор",
+        "has_color": false,
+        "has_chip": true
+    }
+},
+{
+    "model": "warehouse.parttype",
+    "pk": 4,
+    "fields": {
+        "name": "Рамка",
+        "has_color": false,
+        "has_chip": false
+    }
+},
+{
+    "model": "warehouse.parttype",
+    "pk": 5,
+    "fields": {
+        "name": "Кришка",
+        "has_color": true,
+        "has_chip": false
+    }
+},
+{
+    "model": "warehouse.parttype",
+    "pk": 6,
+    "fields": {
+        "name": "Екран",
+        "has_color": true,
+        "has_chip": false
+    }
+},
+{
+    "model": "warehouse.parttype",
+    "pk": 7,
+    "fields": {
+        "name": "Екран копія",
+        "has_color": true,
+        "has_chip": false
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 1,
+    "fields": {
+        "name": "Black",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 2,
+    "fields": {
+        "name": "White",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 3,
+    "fields": {
+        "name": "Space Gray",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 4,
+    "fields": {
+        "name": "Silver",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 5,
+    "fields": {
+        "name": "Gold",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 6,
+    "fields": {
+        "name": "Red",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 7,
+    "fields": {
+        "name": "Purple",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 8,
+    "fields": {
+        "name": "Green",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 9,
+    "fields": {
+        "name": "Yellow",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 10,
+    "fields": {
+        "name": "Midnight Green",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 11,
+    "fields": {
+        "name": "Blue",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 12,
+    "fields": {
+        "name": "Pasific Blue",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 13,
+    "fields": {
+        "name": "Graphite",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 14,
+    "fields": {
+        "name": "Midnight",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.color",
+    "pk": 15,
+    "fields": {
+        "name": "Starlight",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.chiptype",
+    "pk": 1,
+    "fields": {
+        "name": "With Chip",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.chiptype",
+    "pk": 2,
+    "fields": {
+        "name": "No Chip",
+        "is_active": true
+    }
+},
+{
+    "model": "warehouse.part",
+    "pk": 1,
+    "fields": {
+        "part_type": 2,
+        "current_quantity": 1,
+        "min_quantity": 1,
+        "max_quantity": 10,
+        "color": null,
+        "chip_type": null,
+        "phone_models": [
+            18,
+            19
+        ]
+    }
+},
+{
+    "model": "warehouse.part",
+    "pk": 2,
+    "fields": {
+        "part_type": 3,
+        "current_quantity": 4,
+        "min_quantity": 1,
+        "max_quantity": 10,
+        "color": null,
+        "chip_type": 1,
+        "phone_models": [
+            18,
+            19
+        ]
+    }
+},
+{
+    "model": "warehouse.part",
+    "pk": 3,
+    "fields": {
+        "part_type": 1,
+        "current_quantity": 2,
+        "min_quantity": 1,
+        "max_quantity": 5,
+        "color": null,
+        "chip_type": null,
+        "phone_models": [
+            1
+        ]
+    }
+},
+{
+    "model": "warehouse.part",
+    "pk": 4,
+    "fields": {
+        "part_type": 4,
+        "current_quantity": 3,
+        "min_quantity": 1,
+        "max_quantity": 5,
+        "color": null,
+        "chip_type": null,
+        "phone_models": [
+            18,
+            19
+        ]
+    }
+},
+{
+    "model": "warehouse.part",
+    "pk": 5,
+    "fields": {
+        "part_type": 1,
+        "current_quantity": 3,
+        "min_quantity": 1,
+        "max_quantity": 5,
+        "color": null,
+        "chip_type": null,
+        "phone_models": [
+            2
+        ]
+    }
+},
+{
+    "model": "warehouse.supplier",
+    "pk": 1,
+    "fields": {
+        "name": "Apple Zone"
+    }
+},
+{
+    "model": "warehouse.supplier",
+    "pk": 2,
+    "fields": {
+        "name": "GSM Forsage"
+    }
+},
+{
+    "model": "warehouse.supplier",
+    "pk": 3,
+    "fields": {
+        "name": "Ref Parts"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 1,
+    "fields": {
+        "part": 1,
+        "supplier": 2,
+        "supplier_name": "Скло для переклейки"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 2,
+    "fields": {
+        "part": 3,
+        "supplier": 2,
+        "supplier_name": "АКБ"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 3,
+    "fields": {
+        "part": 5,
+        "supplier": 2,
+        "supplier_name": "АКБ"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 4,
+    "fields": {
+        "part": 4,
+        "supplier": 2,
+        "supplier_name": "Рамка дисплея OCA Pro"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 5,
+    "fields": {
+        "part": 2,
+        "supplier": 3,
+        "supplier_name": "Скло+тач+ОСА+сіточка під оригінал"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 6,
+    "fields": {
+        "part": 1,
+        "supplier": 3,
+        "supplier_name": "Скло+ОСА Feaglet"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 7,
+    "fields": {
+        "part": 3,
+        "supplier": 3,
+        "supplier_name": "АКБ"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 8,
+    "fields": {
+        "part": 5,
+        "supplier": 3,
+        "supplier_name": "АКБ"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 9,
+    "fields": {
+        "part": 3,
+        "supplier": 1,
+        "supplier_name": "АКБ"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 10,
+    "fields": {
+        "part": 5,
+        "supplier": 1,
+        "supplier_name": "АКБ"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 11,
+    "fields": {
+        "part": 4,
+        "supplier": 3,
+        "supplier_name": "Рамка дисплея G+OCA pro"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 12,
+    "fields": {
+        "part": 4,
+        "supplier": 1,
+        "supplier_name": "Рамка"
+    }
+}
+]

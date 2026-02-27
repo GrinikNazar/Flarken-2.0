@@ -53,3 +53,15 @@ BOT_TOKEN=your_telegram_bot_token
 | `GET`  | `/warehouse/list-of-part-types/` | Отримати список наявної кількості по типу запчастини    |
 
 
+---
+## Перенесення бази даних
+
+### Зробити бекап
+❗ **Примітка:** робити з командного рядка не з IDE ❗
+```
+python -X utf8 manage.py dumpdata --indent 4 --exclude contenttypes --exclude auth.permission --exclude sessions > data.json
+```
+### Завантажити з файлу data.json
+```
+python manage.py loaddata data.json
+```

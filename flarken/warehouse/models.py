@@ -88,6 +88,7 @@ class Part(models.Model):
         related_name="parts",
         verbose_name='Модель телефону'
     )
+
     part_type = models.ForeignKey(
         PartType,
         on_delete=models.CASCADE,
@@ -122,6 +123,7 @@ class Part(models.Model):
             "color",
             "chip_type",
         )
+
         verbose_name = 'Запчастина'
         verbose_name_plural = 'Запчастини'
 

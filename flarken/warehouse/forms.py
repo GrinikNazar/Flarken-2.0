@@ -24,6 +24,7 @@ class PartAdminForm(forms.ModelForm):
         color = cleaned_data.get("color")
         chip_type = cleaned_data.get("chip_type")
         phone_models = cleaned_data.get("phone_models")
+        new_phones_set = set(cleaned_data.get('phone_models', []))
 
         if not part_type:
             return cleaned_data
@@ -39,6 +40,22 @@ class PartAdminForm(forms.ModelForm):
                 if not model.supported_part_types.filter(id=part_type.id).exists():
                     raise ValidationError(
                         f"{model.name} не підтримує цей тип запчастини."
+                    )
+
+        if part_type and new_phones_set:
+            duplicate_candidates = Part.objects.filter(
+                part_type=part_type,
+                color=color,
+                chip_type=chip_type
+            )
+
+            if self.instance.pk:
+                duplicate_candidates = duplicate_candidates.exclude(pk=self.instance.pk)
+
+            for candidate in duplicate_candidates:
+                if set(candidate.phone_models.all()) == new_phones_set:
+                    raise ValidationError(
+                        "Запчастина з таким набором моделей та характеристик вже існує!"
                     )
 
         return cleaned_data

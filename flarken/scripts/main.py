@@ -2,6 +2,8 @@ import os
 import sys
 import django
 import pandas as pd
+from django.db import transaction
+from django.core.exceptions import ValidationError
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,14 +26,16 @@ def import_excel():
     for index, row in df.iterrows():
         phone_model = row['Модель'].strip()
         part_type = 'Кришка'
-        color = row['Колір'].strip()
+        color = row['Колір'].strip().title()
         quantity = row['Наявність']
         min_quantity = row['Мінімум']
         max_quantity = row['Максимум']
 
         phone_model = phone_models[phone_model]
         part_type = part_types[part_type]
-        color = colors.get(color)
+        color = colors[color]
+
+
         part = Part(
             part_type = part_type,
             color = color,
@@ -43,7 +47,6 @@ def import_excel():
         part.save()
 
         part.phone_models.add(phone_model)
-
 
 if __name__ == '__main__':
     import_excel()

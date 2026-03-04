@@ -15,9 +15,10 @@ django.setup()
 
 from warehouse.models import Part, PhoneModel, Color, PartType
 
+sheet_name = 'АКБ'
 
 def import_excel():
-    df = pd.read_excel('data.xlsx')
+    df = pd.read_excel('data.xlsx', sheet_name=sheet_name)
 
     phone_models = {p.name: p for p in PhoneModel.objects.all()}
     part_types = {p.name: p for p in PartType.objects.all()}
@@ -25,15 +26,21 @@ def import_excel():
 
     for index, row in df.iterrows():
         phone_model = row['Модель'].strip()
-        part_type = 'Кришка'
-        color = row['Колір'].strip().title()
+        part_type = sheet_name
+        try:
+            color = row['Колір'].strip().title()
+            color = colors[color]
+        except KeyError:
+            color = None
         quantity = row['Наявність']
         min_quantity = row['Мінімум']
         max_quantity = row['Максимум']
 
-        phone_model = phone_models[phone_model]
+        models_list = [model.strip() for model in phone_model.split('|')]
+        phone_model = [phone_models[model] for model in models_list]
+
+
         part_type = part_types[part_type]
-        color = colors[color]
 
 
         part = Part(
@@ -46,7 +53,7 @@ def import_excel():
 
         part.save()
 
-        part.phone_models.add(phone_model)
+        part.phone_models.add(*phone_model)
 
 if __name__ == '__main__':
     import_excel()

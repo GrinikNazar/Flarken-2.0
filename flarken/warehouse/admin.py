@@ -169,6 +169,9 @@ class PartAdmin(admin.ModelAdmin):
 
     stock_status.short_description = "Статус"
 
+    class Media:
+        js = ("styles/auto-submit-filter.js",)
+
 
 @admin.register(PartDependency)
 class PartDependencyAdmin(admin.ModelAdmin):

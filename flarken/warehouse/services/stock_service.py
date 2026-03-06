@@ -82,9 +82,14 @@ def generate_purchase_list(supplier_id: int, part_type_id: int = None):
     for item in queryset:
         part = item.part
 
+        if not part.color:
+            part_color = ''
+        else:
+            part_color = ' ' + part.color.name
+
         if part.current_quantity < part.max_quantity:
             to_order = part.max_quantity - part.current_quantity
-            result.append(f"{item.supplier_name} {part.phone_models.all()[0]} - {to_order}")
+            result.append(f"{item.supplier_name} {part.phone_models.all()[0]}{part_color} - {to_order}")
 
     return '\n'.join(result)
 

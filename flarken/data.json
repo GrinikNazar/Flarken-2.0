@@ -14079,6 +14079,695 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 1084,
+    "fields": {
+        "action_time": "2026-03-07T23:22:05.410Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "403",
+        "object_repr": "Кришка - iPhone 8+ - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0456\\u043d\\u0456\\u043c\\u0430\\u043b\\u044c\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1085,
+    "fields": {
+        "action_time": "2026-03-07T23:22:50.918Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "403",
+        "object_repr": "Кришка - iPhone 8+ - Black",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1086,
+    "fields": {
+        "action_time": "2026-03-07T23:24:44.625Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "365",
+        "object_repr": "Кришка - iPhone 12mini - Purple",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 (\\u0432\\u0435\\u043b\\u0438\\u043a\\u0438\\u0439 \\u0432\\u0438\\u0440\\u0456\\u0437 \\u043f\\u0456\\u0434 \\u043a\\u0430\\u043c\\u0435\\u0440\\u0443)\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 (\\u0432\\u0435\\u043b\\u0438\\u043a\\u0438\\u0439 \\u0432\\u0438\\u0440\\u0456\\u0437 \\u043f\\u0456\\u0434 \\u043a\\u0430\\u043c\\u0435\\u0440\\u0443)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1087,
+    "fields": {
+        "action_time": "2026-03-07T23:28:58.598Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "365",
+        "object_repr": "Кришка - iPhone 12mini - Purple",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1088,
+    "fields": {
+        "action_time": "2026-03-07T23:29:28.269Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "339",
+        "object_repr": "Кришка - iPhone 13ProMax - Sierra Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 (\\u0432\\u0435\\u043b\\u0438\\u043a\\u0438\\u0439 \\u0432\\u0438\\u0440\\u0456\\u0437 \\u043f\\u0456\\u0434 \\u043a\\u0430\\u043c\\u0435\\u0440\\u0443)\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 (\\u0432\\u0435\\u043b\\u0438\\u043a\\u0438\\u0439 \\u0432\\u0438\\u0440\\u0456\\u0437 \\u043f\\u0456\\u0434 \\u043a\\u0430\\u043c\\u0435\\u0440\\u0443)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1089,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.295Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "336",
+        "object_repr": "Кришка - iPhone 13 - Pink",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1090,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.297Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "306",
+        "object_repr": "Кришка - iPhone 15 - Yellow",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1091,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.298Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "305",
+        "object_repr": "Кришка - iPhone 15 - Pink",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1092,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.299Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "304",
+        "object_repr": "Кришка - iPhone 15 - Green",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1093,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.300Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "303",
+        "object_repr": "Кришка - iPhone 15 - Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1094,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.301Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "301",
+        "object_repr": "Кришка - iPhone 15+ - Yellow",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1095,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.303Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "299",
+        "object_repr": "Кришка - iPhone 15+ - Green",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1096,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.304Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "298",
+        "object_repr": "Кришка - iPhone 15+ - Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1097,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.305Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "297",
+        "object_repr": "Кришка - iPhone 15+ - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1098,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.306Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "296",
+        "object_repr": "Кришка - iPhone 15Pro - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1099,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.307Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "295",
+        "object_repr": "Кришка - iPhone 15Pro - Natural",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1100,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.310Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "294",
+        "object_repr": "Кришка - iPhone 15Pro - Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1101,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.311Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "293",
+        "object_repr": "Кришка - iPhone 15Pro - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1102,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.313Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "291",
+        "object_repr": "Кришка - iPhone 15ProMax - Natural",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1103,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.314Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "290",
+        "object_repr": "Кришка - iPhone 15ProMax - Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1104,
+    "fields": {
+        "action_time": "2026-03-07T23:30:07.315Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "289",
+        "object_repr": "Кришка - iPhone 15ProMax - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1105,
+    "fields": {
+        "action_time": "2026-03-07T23:30:28.323Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "300",
+        "object_repr": "Кришка - iPhone 15+ - Pink",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1106,
+    "fields": {
+        "action_time": "2026-03-07T23:32:05.845Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "345",
+        "object_repr": "Кришка - iPhone 13Pro - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 (\\u0432\\u0435\\u043b\\u0438\\u043a\\u0438\\u0439 \\u0432\\u0438\\u0440\\u0456\\u0437 \\u043f\\u0456\\u0434 \\u043a\\u0430\\u043c\\u0435\\u0440\\u0443)\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 (\\u0432\\u0435\\u043b\\u0438\\u043a\\u0438\\u0439 \\u0432\\u0438\\u0440\\u0456\\u0437 \\u043f\\u0456\\u0434 \\u043a\\u0430\\u043c\\u0435\\u0440\\u0443)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1107,
+    "fields": {
+        "action_time": "2026-03-07T23:32:26.489Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "345",
+        "object_repr": "Кришка - iPhone 13Pro - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1108,
+    "fields": {
+        "action_time": "2026-03-07T23:32:51.110Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "336",
+        "object_repr": "Кришка - iPhone 13 - Pink",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 (\\u0432\\u0435\\u043b\\u0438\\u043a\\u0438\\u0439 \\u0432\\u0438\\u0440\\u0456\\u0437 \\u043f\\u0456\\u0434 \\u043a\\u0430\\u043c\\u0435\\u0440\\u0443)\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 (\\u0432\\u0435\\u043b\\u0438\\u043a\\u0438\\u0439 \\u0432\\u0438\\u0440\\u0456\\u0437 \\u043f\\u0456\\u0434 \\u043a\\u0430\\u043c\\u0435\\u0440\\u0443)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1109,
+    "fields": {
+        "action_time": "2026-03-07T23:34:27.841Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "396",
+        "object_repr": "Кришка - iPhone 8 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1110,
+    "fields": {
+        "action_time": "2026-03-07T23:35:00.373Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "398",
+        "object_repr": "Кришка - iPhone 8 - Red",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1111,
+    "fields": {
+        "action_time": "2026-03-07T23:35:20.540Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "397",
+        "object_repr": "Кришка - iPhone 8 - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1112,
+    "fields": {
+        "action_time": "2026-03-07T23:36:36.116Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "399",
+        "object_repr": "Кришка - iPhone 8 - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1113,
+    "fields": {
+        "action_time": "2026-03-07T23:37:40.387Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "403",
+        "object_repr": "Кришка - iPhone 8+ - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0456\\u043d\\u0456\\u043c\\u0430\\u043b\\u044c\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1114,
+    "fields": {
+        "action_time": "2026-03-07T23:37:54.367Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "404",
+        "object_repr": "Кришка - iPhone 8+ - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1115,
+    "fields": {
+        "action_time": "2026-03-07T23:38:08.913Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "406",
+        "object_repr": "Кришка - iPhone 8+ - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1116,
+    "fields": {
+        "action_time": "2026-03-07T23:38:27.300Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "405",
+        "object_repr": "Кришка - iPhone 8+ - Red",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1117,
+    "fields": {
+        "action_time": "2026-03-07T23:39:54.656Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "400",
+        "object_repr": "Кришка - iPhone SE2 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1118,
+    "fields": {
+        "action_time": "2026-03-07T23:40:05.105Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "400",
+        "object_repr": "Кришка - iPhone SE2 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1119,
+    "fields": {
+        "action_time": "2026-03-07T23:40:28.336Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "401",
+        "object_repr": "Кришка - iPhone SE2 - Red",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1120,
+    "fields": {
+        "action_time": "2026-03-07T23:40:42.201Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "402",
+        "object_repr": "Кришка - iPhone SE2 - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1121,
+    "fields": {
+        "action_time": "2026-03-07T23:43:05.391Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "394",
+        "object_repr": "Кришка - iPhone X - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1122,
+    "fields": {
+        "action_time": "2026-03-07T23:49:19.244Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "394",
+        "object_repr": "Кришка - iPhone X - Silver",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1123,
+    "fields": {
+        "action_time": "2026-03-07T23:49:36.688Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "395",
+        "object_repr": "Кришка - iPhone X - Space Gray",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1124,
+    "fields": {
+        "action_time": "2026-03-07T23:49:43.792Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "395",
+        "object_repr": "Кришка - iPhone X - Space Gray",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1125,
+    "fields": {
+        "action_time": "2026-03-07T23:50:16.135Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "385",
+        "object_repr": "Кришка - iPhone Xs - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0456\\u043d\\u0456\\u043c\\u0430\\u043b\\u044c\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1126,
+    "fields": {
+        "action_time": "2026-03-07T23:50:30.822Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "387",
+        "object_repr": "Кришка - iPhone Xs - Space Gray",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0456\\u043d\\u0456\\u043c\\u0430\\u043b\\u044c\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1127,
+    "fields": {
+        "action_time": "2026-03-07T23:50:54.605Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "386",
+        "object_repr": "Кришка - iPhone Xs - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0456\\u043d\\u0456\\u043c\\u0430\\u043b\\u044c\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1128,
+    "fields": {
+        "action_time": "2026-03-07T23:52:50.664Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "384",
+        "object_repr": "Кришка - iPhone XsMax - Space Gray",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0456\\u043d\\u0456\\u043c\\u0430\\u043b\\u044c\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1129,
+    "fields": {
+        "action_time": "2026-03-07T23:53:09.255Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "382",
+        "object_repr": "Кришка - iPhone XsMax - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0456\\u043d\\u0456\\u043c\\u0430\\u043b\\u044c\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1130,
+    "fields": {
+        "action_time": "2026-03-07T23:53:25.472Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "383",
+        "object_repr": "Кришка - iPhone XsMax - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0456\\u043d\\u0456\\u043c\\u0430\\u043b\\u044c\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1131,
+    "fields": {
+        "action_time": "2026-03-07T23:55:19.664Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "391",
+        "object_repr": "Кришка - iPhone XR - Red",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1132,
+    "fields": {
+        "action_time": "2026-03-07T23:55:33.060Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "393",
+        "object_repr": "Кришка - iPhone XR - Yellow",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0456\\u043d\\u0456\\u043c\\u0430\\u043b\\u044c\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1133,
+    "fields": {
+        "action_time": "2026-03-07T23:56:14.924Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "392",
+        "object_repr": "Кришка - iPhone XR - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0456\\u043d\\u0456\\u043c\\u0430\\u043b\\u044c\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1134,
+    "fields": {
+        "action_time": "2026-03-07T23:56:29.842Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "390",
+        "object_repr": "Кришка - iPhone XR - Coral",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0456\\u043d\\u0456\\u043c\\u0430\\u043b\\u044c\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1135,
+    "fields": {
+        "action_time": "2026-03-07T23:56:44.786Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "389",
+        "object_repr": "Кришка - iPhone XR - Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0456\\u043d\\u0456\\u043c\\u0430\\u043b\\u044c\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1136,
+    "fields": {
+        "action_time": "2026-03-07T23:57:00.162Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "388",
+        "object_repr": "Кришка - iPhone XR - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0456\\u043d\\u0456\\u043c\\u0430\\u043b\\u044c\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0417\\u0430\\u0434\\u043d\\u044f \\u043a\\u0440\\u0438\\u0448\\u043a\\u0430 + \\u0441\\u043a\\u043b\\u043e \\u043a\\u0430\\u043c\\u0435\\u0440\\u0438\"}}]"
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
@@ -15003,7 +15692,7 @@
     "pk": 289,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 1,
@@ -15018,7 +15707,7 @@
     "pk": 290,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 11,
@@ -15033,7 +15722,7 @@
     "pk": 291,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 21,
@@ -15063,7 +15752,7 @@
     "pk": 293,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 1,
@@ -15078,7 +15767,7 @@
     "pk": 294,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 11,
@@ -15093,7 +15782,7 @@
     "pk": 295,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 21,
@@ -15108,7 +15797,7 @@
     "pk": 296,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 2,
@@ -15123,7 +15812,7 @@
     "pk": 297,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 1,
@@ -15138,7 +15827,7 @@
     "pk": 298,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 11,
@@ -15153,7 +15842,7 @@
     "pk": 299,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 8,
@@ -15168,7 +15857,7 @@
     "pk": 300,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 18,
@@ -15183,7 +15872,7 @@
     "pk": 301,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 9,
@@ -15213,7 +15902,7 @@
     "pk": 303,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 11,
@@ -15228,7 +15917,7 @@
     "pk": 304,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 8,
@@ -15243,7 +15932,7 @@
     "pk": 305,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 18,
@@ -15258,7 +15947,7 @@
     "pk": 306,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 1,
         "color": 9,
@@ -15710,7 +16399,7 @@
         "part_type": 5,
         "current_quantity": 0,
         "min_quantity": 1,
-        "max_quantity": 2,
+        "max_quantity": 3,
         "color": 18,
         "chip_type": null,
         "phone_models": [
@@ -15755,7 +16444,7 @@
         "part_type": 5,
         "current_quantity": 0,
         "min_quantity": 1,
-        "max_quantity": 2,
+        "max_quantity": 3,
         "color": 17,
         "chip_type": null,
         "phone_models": [
@@ -15843,9 +16532,9 @@
     "pk": 345,
     "fields": {
         "part_type": 5,
-        "current_quantity": 1,
+        "current_quantity": 0,
         "min_quantity": 1,
-        "max_quantity": 2,
+        "max_quantity": 3,
         "color": 4,
         "chip_type": null,
         "phone_models": [
@@ -16398,9 +17087,9 @@
     "pk": 382,
     "fields": {
         "part_type": 5,
-        "current_quantity": 4,
-        "min_quantity": 2,
-        "max_quantity": 5,
+        "current_quantity": 0,
+        "min_quantity": 1,
+        "max_quantity": 3,
         "color": 5,
         "chip_type": null,
         "phone_models": [
@@ -16413,9 +17102,9 @@
     "pk": 383,
     "fields": {
         "part_type": 5,
-        "current_quantity": 6,
-        "min_quantity": 2,
-        "max_quantity": 5,
+        "current_quantity": 0,
+        "min_quantity": 1,
+        "max_quantity": 3,
         "color": 4,
         "chip_type": null,
         "phone_models": [
@@ -16428,9 +17117,9 @@
     "pk": 384,
     "fields": {
         "part_type": 5,
-        "current_quantity": 4,
-        "min_quantity": 2,
-        "max_quantity": 5,
+        "current_quantity": 0,
+        "min_quantity": 1,
+        "max_quantity": 3,
         "color": 3,
         "chip_type": null,
         "phone_models": [
@@ -16443,8 +17132,8 @@
     "pk": 385,
     "fields": {
         "part_type": 5,
-        "current_quantity": 3,
-        "min_quantity": 2,
+        "current_quantity": 0,
+        "min_quantity": 1,
         "max_quantity": 3,
         "color": 5,
         "chip_type": null,
@@ -16458,8 +17147,8 @@
     "pk": 386,
     "fields": {
         "part_type": 5,
-        "current_quantity": 4,
-        "min_quantity": 2,
+        "current_quantity": 0,
+        "min_quantity": 1,
         "max_quantity": 3,
         "color": 4,
         "chip_type": null,
@@ -16473,8 +17162,8 @@
     "pk": 387,
     "fields": {
         "part_type": 5,
-        "current_quantity": 4,
-        "min_quantity": 2,
+        "current_quantity": 0,
+        "min_quantity": 1,
         "max_quantity": 3,
         "color": 3,
         "chip_type": null,
@@ -16488,8 +17177,8 @@
     "pk": 388,
     "fields": {
         "part_type": 5,
-        "current_quantity": 5,
-        "min_quantity": 2,
+        "current_quantity": 0,
+        "min_quantity": 1,
         "max_quantity": 5,
         "color": 1,
         "chip_type": null,
@@ -16503,8 +17192,8 @@
     "pk": 389,
     "fields": {
         "part_type": 5,
-        "current_quantity": 5,
-        "min_quantity": 2,
+        "current_quantity": 0,
+        "min_quantity": 1,
         "max_quantity": 5,
         "color": 11,
         "chip_type": null,
@@ -16518,8 +17207,8 @@
     "pk": 390,
     "fields": {
         "part_type": 5,
-        "current_quantity": 5,
-        "min_quantity": 2,
+        "current_quantity": 0,
+        "min_quantity": 1,
         "max_quantity": 5,
         "color": 16,
         "chip_type": null,
@@ -16533,9 +17222,9 @@
     "pk": 391,
     "fields": {
         "part_type": 5,
-        "current_quantity": 3,
+        "current_quantity": 0,
         "min_quantity": 2,
-        "max_quantity": 4,
+        "max_quantity": 5,
         "color": 6,
         "chip_type": null,
         "phone_models": [
@@ -16548,8 +17237,8 @@
     "pk": 392,
     "fields": {
         "part_type": 5,
-        "current_quantity": 5,
-        "min_quantity": 2,
+        "current_quantity": 0,
+        "min_quantity": 1,
         "max_quantity": 5,
         "color": 2,
         "chip_type": null,
@@ -16563,8 +17252,8 @@
     "pk": 393,
     "fields": {
         "part_type": 5,
-        "current_quantity": 5,
-        "min_quantity": 2,
+        "current_quantity": 0,
+        "min_quantity": 1,
         "max_quantity": 5,
         "color": 9,
         "chip_type": null,
@@ -16578,9 +17267,9 @@
     "pk": 394,
     "fields": {
         "part_type": 5,
-        "current_quantity": 2,
+        "current_quantity": 0,
         "min_quantity": 2,
-        "max_quantity": 3,
+        "max_quantity": 4,
         "color": 4,
         "chip_type": null,
         "phone_models": [
@@ -16593,9 +17282,9 @@
     "pk": 395,
     "fields": {
         "part_type": 5,
-        "current_quantity": 3,
+        "current_quantity": 0,
         "min_quantity": 2,
-        "max_quantity": 3,
+        "max_quantity": 4,
         "color": 3,
         "chip_type": null,
         "phone_models": [
@@ -16608,7 +17297,7 @@
     "pk": 396,
     "fields": {
         "part_type": 5,
-        "current_quantity": 8,
+        "current_quantity": 0,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 1,
@@ -16623,7 +17312,7 @@
     "pk": 397,
     "fields": {
         "part_type": 5,
-        "current_quantity": 10,
+        "current_quantity": 0,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 5,
@@ -16638,7 +17327,7 @@
     "pk": 398,
     "fields": {
         "part_type": 5,
-        "current_quantity": 10,
+        "current_quantity": 0,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 6,
@@ -16653,7 +17342,7 @@
     "pk": 399,
     "fields": {
         "part_type": 5,
-        "current_quantity": 24,
+        "current_quantity": 0,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 2,
@@ -16668,7 +17357,7 @@
     "pk": 400,
     "fields": {
         "part_type": 5,
-        "current_quantity": 7,
+        "current_quantity": 0,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 1,
@@ -16683,7 +17372,7 @@
     "pk": 401,
     "fields": {
         "part_type": 5,
-        "current_quantity": 8,
+        "current_quantity": 0,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 6,
@@ -16698,7 +17387,7 @@
     "pk": 402,
     "fields": {
         "part_type": 5,
-        "current_quantity": 9,
+        "current_quantity": 0,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 2,
@@ -16728,7 +17417,7 @@
     "pk": 404,
     "fields": {
         "part_type": 5,
-        "current_quantity": 5,
+        "current_quantity": 0,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 5,
@@ -16743,7 +17432,7 @@
     "pk": 405,
     "fields": {
         "part_type": 5,
-        "current_quantity": 10,
+        "current_quantity": 0,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 6,
@@ -16758,7 +17447,7 @@
     "pk": 406,
     "fields": {
         "part_type": 5,
-        "current_quantity": 6,
+        "current_quantity": 0,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 2,
@@ -19255,6 +19944,402 @@
         "part": 542,
         "supplier": 3,
         "supplier_name": "Скло + рамка + ОСА під оригінал"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 96,
+    "fields": {
+        "part": 403,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 97,
+    "fields": {
+        "part": 365,
+        "supplier": 3,
+        "supplier_name": "Задня кришка (великий виріз під камеру)"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 98,
+    "fields": {
+        "part": 365,
+        "supplier": 2,
+        "supplier_name": "Задня кришка (великий виріз під камеру)"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 99,
+    "fields": {
+        "part": 339,
+        "supplier": 3,
+        "supplier_name": "Задня кришка (великий виріз під камеру)"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 100,
+    "fields": {
+        "part": 339,
+        "supplier": 2,
+        "supplier_name": "Задня кришка (великий виріз під камеру)"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 101,
+    "fields": {
+        "part": 345,
+        "supplier": 3,
+        "supplier_name": "Задня кришка (великий виріз під камеру)"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 102,
+    "fields": {
+        "part": 345,
+        "supplier": 2,
+        "supplier_name": "Задня кришка (великий виріз під камеру)"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 103,
+    "fields": {
+        "part": 336,
+        "supplier": 3,
+        "supplier_name": "Задня кришка (великий виріз під камеру)"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 104,
+    "fields": {
+        "part": 336,
+        "supplier": 2,
+        "supplier_name": "Задня кришка (великий виріз під камеру)"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 105,
+    "fields": {
+        "part": 396,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 106,
+    "fields": {
+        "part": 396,
+        "supplier": 2,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 107,
+    "fields": {
+        "part": 398,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 108,
+    "fields": {
+        "part": 398,
+        "supplier": 2,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 109,
+    "fields": {
+        "part": 397,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 110,
+    "fields": {
+        "part": 397,
+        "supplier": 2,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 111,
+    "fields": {
+        "part": 399,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 112,
+    "fields": {
+        "part": 399,
+        "supplier": 2,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 113,
+    "fields": {
+        "part": 403,
+        "supplier": 2,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 114,
+    "fields": {
+        "part": 404,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 115,
+    "fields": {
+        "part": 404,
+        "supplier": 2,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 116,
+    "fields": {
+        "part": 406,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 117,
+    "fields": {
+        "part": 406,
+        "supplier": 2,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 118,
+    "fields": {
+        "part": 405,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 119,
+    "fields": {
+        "part": 405,
+        "supplier": 2,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 120,
+    "fields": {
+        "part": 400,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 121,
+    "fields": {
+        "part": 400,
+        "supplier": 2,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 122,
+    "fields": {
+        "part": 401,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 123,
+    "fields": {
+        "part": 401,
+        "supplier": 2,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 124,
+    "fields": {
+        "part": 402,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 125,
+    "fields": {
+        "part": 402,
+        "supplier": 2,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 126,
+    "fields": {
+        "part": 394,
+        "supplier": 3,
+        "supplier_name": "Задня кришка"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 127,
+    "fields": {
+        "part": 395,
+        "supplier": 3,
+        "supplier_name": "Задня кришка"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 128,
+    "fields": {
+        "part": 385,
+        "supplier": 3,
+        "supplier_name": "Задня кришка"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 129,
+    "fields": {
+        "part": 387,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 130,
+    "fields": {
+        "part": 386,
+        "supplier": 3,
+        "supplier_name": "Задня кришка"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 131,
+    "fields": {
+        "part": 384,
+        "supplier": 3,
+        "supplier_name": "Задня кришка"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 132,
+    "fields": {
+        "part": 382,
+        "supplier": 3,
+        "supplier_name": "Задня кришка"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 133,
+    "fields": {
+        "part": 383,
+        "supplier": 3,
+        "supplier_name": "Задня кришка"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 134,
+    "fields": {
+        "part": 391,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 135,
+    "fields": {
+        "part": 393,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 136,
+    "fields": {
+        "part": 392,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 137,
+    "fields": {
+        "part": 390,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 138,
+    "fields": {
+        "part": 389,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 139,
+    "fields": {
+        "part": 388,
+        "supplier": 3,
+        "supplier_name": "Задня кришка + скло камери"
     }
 }
 ]

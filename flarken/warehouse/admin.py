@@ -102,6 +102,7 @@ class PartAdmin(admin.ModelAdmin):
         "chip_type",
         "current_quantity",
         "max_quantity",
+        'display_suppliers',
         "stock_status"
     )
 
@@ -113,10 +114,17 @@ class PartAdmin(admin.ModelAdmin):
             "part_type",
             "color",
             "chip_type",
-        ).prefetch_related("phone_models")
+        ).prefetch_related("phone_models", "supplier_names__supplier")
 
     def get_phone_models(self, obj):
         return " | ".join([m.name for m in obj.phone_models.all()])
+
+
+    @admin.display(description="Постачальники")
+    def display_suppliers(self, obj):
+        return " | ".join(
+            s.supplier.name for s in obj.supplier_names.all()[:3]
+        )
 
     get_phone_models.short_description = "Моделі телефонів"
 

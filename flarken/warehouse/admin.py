@@ -117,7 +117,7 @@ class PartAdmin(admin.ModelAdmin):
         ).prefetch_related("phone_models", "supplier_names__supplier")
 
     def get_phone_models(self, obj):
-        return " | ".join([m.name for m in obj.phone_models.all()])
+        return " | ".join(m.name for m in obj.phone_models.all())
 
 
     @admin.display(description="Постачальники")
@@ -158,6 +158,7 @@ class PartAdmin(admin.ModelAdmin):
 
     list_editable = (
         "current_quantity",
+        "max_quantity",
     )
 
     ordering = ("current_quantity",)

@@ -27,6 +27,8 @@ class PhoneModelAdmin(admin.ModelAdmin):
     search_fields = ("name", "release_year")
     list_filter = ("phone_model_range",)
 
+    ordering = ("-release_year",)
+
     def get_queryset(self, request):
         qs = super().get_queryset(request)
         return qs.select_related('phone_model_range').prefetch_related('supported_part_types')
@@ -64,7 +66,6 @@ class SupplierAdmin(admin.ModelAdmin):
     list_display_links =("name",)
 
 
-
 class SupplierPartNameInline(admin.TabularInline):
     model = SupplierPartName
     extra = 1
@@ -98,8 +99,6 @@ class PartAdmin(admin.ModelAdmin):
     list_display = (
         "get_phone_models",
         "part_type",
-        "color",
-        "chip_type",
         "current_quantity",
         "max_quantity",
         'display_suppliers',
@@ -107,6 +106,26 @@ class PartAdmin(admin.ModelAdmin):
     )
 
     filter_horizontal = ("phone_models",)
+
+    def get_list_display(self, request):
+        list_display = list(self.list_display)
+
+        part_type_id = request.GET.get("part_type__id__exact")
+
+        if part_type_id:
+            try:
+                part_type = PartType.objects.get(id=part_type_id)
+                if part_type.has_chip:
+                    list_display.insert(2, "chip_type")
+                elif part_type.has_color:
+                    list_display.insert(2, "color")
+            except PartType.DoesNotExist:
+                pass
+        else:
+            list_display.insert(2, "chip_type")
+            list_display.insert(2, "color")
+
+        return list_display
 
     def get_queryset(self, request):
         qs = super().get_queryset(request)
@@ -161,7 +180,7 @@ class PartAdmin(admin.ModelAdmin):
         "max_quantity",
     )
 
-    ordering = ("current_quantity",)
+    ordering = ("current_quantity", '-phone_models__release_year')
 
     def stock_status(self, obj):
         if obj.current_quantity < obj.min_quantity:
@@ -175,11 +194,6 @@ class PartAdmin(admin.ModelAdmin):
             '<span style="color: {}; font-size: 25px;">●</span>',
             color
         )
-
-    stock_status.short_description = "Статус"
-
-    class Media:
-        js = ("styles/auto-submit-filter.js",)
 
 
 @admin.register(PartDependency)

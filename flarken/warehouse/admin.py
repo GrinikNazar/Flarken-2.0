@@ -105,7 +105,7 @@ class PartAdmin(admin.ModelAdmin):
         "stock_status"
     )
 
-    filter_horizontal = ("phone_models",)
+    # filter_horizontal = ("phone_models",)
 
     def get_list_display(self, request):
         list_display = list(self.list_display)

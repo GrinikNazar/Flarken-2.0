@@ -53,7 +53,10 @@ class PartAdminForm(forms.ModelForm):
                 duplicate_candidates = duplicate_candidates.exclude(pk=self.instance.pk)
 
             for candidate in duplicate_candidates:
-                if set(candidate.phone_models.all()) == new_phones_set:
+                candidate_ids = set(candidate.phone_models.values_list("id", flat=True))
+                new_ids = set(p.id for p in new_phones_set)
+
+                if candidate_ids == new_ids:
                     raise ValidationError(
                         "Запчастина з таким набором моделей та характеристик вже існує!"
                     )

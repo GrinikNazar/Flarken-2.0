@@ -97,12 +97,6 @@ class Part(models.Model):
 
 
     class Meta:
-        # unique_together = (
-        #     "part_type",
-        #     "color",
-        #     "chip_type",
-        # )
-
         verbose_name = 'Запчастина'
         verbose_name_plural = 'Запчастини'
 

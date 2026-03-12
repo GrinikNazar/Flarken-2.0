@@ -42,7 +42,7 @@ class PhoneModelAdmin(admin.ModelAdmin):
 class PartTypeAdmin(admin.ModelAdmin):
     list_display = ("id", "name")
     search_fields = ("name",)
-    ordering = ("name",)
+    ordering = ("id",)
     list_display_links =("name",)
 
 
@@ -105,7 +105,7 @@ class PartAdmin(admin.ModelAdmin):
         "stock_status"
     )
 
-    # filter_horizontal = ("phone_models",)
+    filter_horizontal = ("phone_models",)
 
     def get_list_display(self, request):
         list_display = list(self.list_display)
@@ -180,7 +180,7 @@ class PartAdmin(admin.ModelAdmin):
         "max_quantity",
     )
 
-    ordering = ("current_quantity", '-phone_models__release_year')
+    ordering = ("current_quantity",)
 
     def stock_status(self, obj):
         if obj.current_quantity < obj.min_quantity:

@@ -79,15 +79,27 @@ class StockLevelFilter(admin.SimpleListFilter):
     def lookups(self, request, model_admin):
         return (
             ("below_min", "Менше мінімуму"),
-            ("below_max", "Менше максимуму"),
+            ("between", "Між мінімум і максимум"),
+            ("above_max", "Більше максимуму"),
         )
 
     def queryset(self, request, queryset):
-        if self.value() == "below_min":
-            return queryset.filter(current_quantity__lt=F("min_quantity"))
 
-        if self.value() == "below_max":
-            return queryset.filter(current_quantity__lt=F("max_quantity"))
+        if self.value() == "below_min":
+            return queryset.filter(
+                current_quantity__lt=F("min_quantity")
+            )
+
+        if self.value() == "between":
+            return queryset.filter(
+                current_quantity__gte=F("min_quantity"),
+                current_quantity__lte=F("max_quantity")
+            )
+
+        if self.value() == "above_max":
+            return queryset.filter(
+                current_quantity__gt=F("max_quantity")
+            )
 
         return queryset
 
@@ -102,7 +114,7 @@ class PartAdmin(admin.ModelAdmin):
         "current_quantity",
         "max_quantity",
         'display_suppliers',
-        "stock_status"
+        "stock_status",
     )
 
     filter_horizontal = ("phone_models",)

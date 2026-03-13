@@ -18356,11 +18356,505 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 1413,
+    "fields": {
+        "action_time": "2026-03-13T22:09:31.987Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "4",
+        "object_repr": "FusionParts",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1414,
+    "fields": {
+        "action_time": "2026-03-13T22:09:40.134Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "4",
+        "object_repr": "Fusion Parts",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1415,
+    "fields": {
+        "action_time": "2026-03-13T22:13:35.334Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "649",
+        "object_repr": "Екран копія - iPhone 6 - White",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1416,
+    "fields": {
+        "action_time": "2026-03-13T22:13:50.576Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "648",
+        "object_repr": "Екран копія - iPhone 6 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1417,
+    "fields": {
+        "action_time": "2026-03-13T22:14:03.993Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "647",
+        "object_repr": "Екран копія - iPhone 6+ - White",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1418,
+    "fields": {
+        "action_time": "2026-03-13T22:14:14.114Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "646",
+        "object_repr": "Екран копія - iPhone 6+ - Black",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1419,
+    "fields": {
+        "action_time": "2026-03-13T22:14:57.466Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "645",
+        "object_repr": "Екран копія - iPhone 6s - White",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1420,
+    "fields": {
+        "action_time": "2026-03-13T22:15:09.252Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "644",
+        "object_repr": "Екран копія - iPhone 6s - Black",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1421,
+    "fields": {
+        "action_time": "2026-03-13T22:15:21.886Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "643",
+        "object_repr": "Екран копія - iPhone 6s+ - White",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1422,
+    "fields": {
+        "action_time": "2026-03-13T22:15:32.453Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "642",
+        "object_repr": "Екран копія - iPhone 6s+ - Black",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1423,
+    "fields": {
+        "action_time": "2026-03-13T22:15:45.100Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "641",
+        "object_repr": "Екран копія - iPhone 7 - White",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1424,
+    "fields": {
+        "action_time": "2026-03-13T22:17:03.265Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "640",
+        "object_repr": "Екран копія - iPhone 7 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1425,
+    "fields": {
+        "action_time": "2026-03-13T22:17:15.012Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "639",
+        "object_repr": "Екран копія - iPhone 7+ - White",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1426,
+    "fields": {
+        "action_time": "2026-03-13T22:17:27.499Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "638",
+        "object_repr": "Екран копія - iPhone 7+ - Black",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1427,
+    "fields": {
+        "action_time": "2026-03-13T22:17:58.569Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "637",
+        "object_repr": "Екран копія - iPhone 8 - White",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1428,
+    "fields": {
+        "action_time": "2026-03-13T22:18:38.595Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "636",
+        "object_repr": "Екран копія - iPhone 8, iPhone SE2 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1429,
+    "fields": {
+        "action_time": "2026-03-13T22:19:02.240Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "635",
+        "object_repr": "Екран копія - iPhone 8+ - White",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1430,
+    "fields": {
+        "action_time": "2026-03-13T22:19:13.315Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "634",
+        "object_repr": "Екран копія - iPhone 8+ - Black",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Fusion Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 High Copy\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1431,
+    "fields": {
+        "action_time": "2026-03-13T22:20:27.992Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "632",
+        "object_repr": "Екран копія - iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439\\u043d\\u0438\\u0439 \\u043c\\u043e\\u0434\\u0443\\u043b\\u044c hard OLED GX\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 \\u043a\\u043e\\u043f\\u0456\\u044f GX\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1432,
+    "fields": {
+        "action_time": "2026-03-13T22:21:02.025Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "632",
+        "object_repr": "Екран копія - iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439 \\u043a\\u043e\\u043f\\u0456\\u044f GX\", \"fields\": [\"\\u041a\\u043e\\u043c\\u043f\\u0430\\u043d\\u0456\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1433,
+    "fields": {
+        "action_time": "2026-03-13T22:21:29.624Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "632",
+        "object_repr": "Екран копія - iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0415\\u043a\\u0440\\u0430\\u043d \\u043a\\u043e\\u043f\\u0456\\u044f GX\", \"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430 \\u0443 \\u043f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1434,
+    "fields": {
+        "action_time": "2026-03-13T22:22:20.137Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "631",
+        "object_repr": "Екран копія - iPhone XsMax",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439\\u043d\\u0438\\u0439 \\u043c\\u043e\\u0434\\u0443\\u043b\\u044c hard OLED GX\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0415\\u043a\\u0440\\u0430\\u043d \\u043a\\u043e\\u043f\\u0456\\u044f GX\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1435,
+    "fields": {
+        "action_time": "2026-03-13T22:30:06.871Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "676",
+        "object_repr": "Екран копія - iPhone 11Pro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439\\u043d\\u0438\\u0439 \\u043c\\u043e\\u0434\\u0443\\u043b\\u044c hard OLED GX\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0415\\u043a\\u0440\\u0430\\u043d \\u043a\\u043e\\u043f\\u0456\\u044f GX\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1436,
+    "fields": {
+        "action_time": "2026-03-13T22:30:50.198Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "677",
+        "object_repr": "Екран копія - iPhone 11ProMax",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0414\\u0438\\u0441\\u043f\\u043b\\u0435\\u0439\\u043d\\u0438\\u0439 \\u043c\\u043e\\u0434\\u0443\\u043b\\u044c hard OLED GX\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0415\\u043a\\u0440\\u0430\\u043d \\u043a\\u043e\\u043f\\u0456\\u044f GX\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1437,
+    "fields": {
+        "action_time": "2026-03-13T22:31:37.027Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Скло - iPhone 12, iPhone 12Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1438,
+    "fields": {
+        "action_time": "2026-03-13T22:32:11.805Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Сенсор - iPhone 12, iPhone 12Pro - With Chip",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1439,
+    "fields": {
+        "action_time": "2026-03-13T22:33:38.997Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "620",
+        "object_repr": "Сенсор - iPhone 12, iPhone 12Pro - No Chip",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1440,
+    "fields": {
+        "action_time": "2026-03-13T22:33:38.998Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "619",
+        "object_repr": "Сенсор - iPhone 12, iPhone 12Pro - With Chip",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1441,
+    "fields": {
+        "action_time": "2026-03-13T22:33:38.998Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Сенсор - iPhone 12, iPhone 12Pro - With Chip",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1442,
+    "fields": {
+        "action_time": "2026-03-13T22:35:14.747Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "АКБ - iPhone 6",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1443,
+    "fields": {
+        "action_time": "2026-03-13T22:35:14.747Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "АКБ - iPhone 6+",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1444,
+    "fields": {
+        "action_time": "2026-03-13T22:37:13.607Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "Рамка - iPhone 12, iPhone 12Pro",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1445,
+    "fields": {
+        "action_time": "2026-03-13T22:48:59.061Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "677",
+        "object_repr": "Екран копія - iPhone 11ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1446,
+    "fields": {
+        "action_time": "2026-03-13T22:49:47.612Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "677",
+        "object_repr": "Екран копія - iPhone 11ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1447,
+    "fields": {
+        "action_time": "2026-03-13T22:50:13.623Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "677",
+        "object_repr": "Екран копія - iPhone 11ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1448,
+    "fields": {
+        "action_time": "2026-03-13T22:50:30.875Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "561",
+        "object_repr": "Скло - iPhone 6 - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1449,
+    "fields": {
+        "action_time": "2026-03-13T23:00:56.788Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "561",
+        "object_repr": "Скло - iPhone 6 - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1450,
+    "fields": {
+        "action_time": "2026-03-13T23:01:07.246Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "561",
+        "object_repr": "Скло - iPhone 6 - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
-        "password": "pbkdf2_sha256$1000000$sJgs1ovJgLgf33obqgSU3X$MsHh6y6pXqQzrAqsj59mllorP60JyFNTm8/gq9FAnNo=",
-        "last_login": "2026-03-09T20:33:27.830Z",
+        "password": "pbkdf2_sha256$1200000$3u1iU9Qx2at1sgOHPgbbJb$1ji6mirtLjy3iUBvnI03S3HRAS2HEtE4+rf1qTYEEp8=",
+        "last_login": "2026-03-13T21:57:33.774Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "",
@@ -19275,6 +19769,22 @@
     "fields": {
         "name": "No Chip",
         "is_active": true
+    }
+},
+{
+    "model": "warehouse.part",
+    "pk": 1,
+    "fields": {
+        "part_type": 2,
+        "current_quantity": 0,
+        "min_quantity": 1,
+        "max_quantity": 10,
+        "color": null,
+        "chip_type": null,
+        "phone_models": [
+            18,
+            19
+        ]
     }
 },
 {
@@ -22994,6 +23504,36 @@
     }
 },
 {
+    "model": "warehouse.part",
+    "pk": 676,
+    "fields": {
+        "part_type": 7,
+        "current_quantity": 0,
+        "min_quantity": 1,
+        "max_quantity": 2,
+        "color": null,
+        "chip_type": null,
+        "phone_models": [
+            15
+        ]
+    }
+},
+{
+    "model": "warehouse.part",
+    "pk": 677,
+    "fields": {
+        "part_type": 7,
+        "current_quantity": 0,
+        "min_quantity": 1,
+        "max_quantity": 2,
+        "color": null,
+        "chip_type": null,
+        "phone_models": [
+            16
+        ]
+    }
+},
+{
     "model": "warehouse.supplier",
     "pk": 1,
     "fields": {
@@ -23012,6 +23552,31 @@
     "pk": 3,
     "fields": {
         "name": "Ref Parts"
+    }
+},
+{
+    "model": "warehouse.supplier",
+    "pk": 4,
+    "fields": {
+        "name": "Fusion Parts"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 1,
+    "fields": {
+        "part": 1,
+        "supplier": 2,
+        "supplier_name": "Скло для переклейки"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 6,
+    "fields": {
+        "part": 1,
+        "supplier": 3,
+        "supplier_name": "Скло+ОСА Feaglet"
     }
 },
 {
@@ -27132,6 +27697,222 @@
     "pk": 470,
     "fields": {
         "part": 633,
+        "supplier": 1,
+        "supplier_name": "Екран копія GX"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 471,
+    "fields": {
+        "part": 649,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 472,
+    "fields": {
+        "part": 648,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 473,
+    "fields": {
+        "part": 647,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 474,
+    "fields": {
+        "part": 646,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 475,
+    "fields": {
+        "part": 645,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 476,
+    "fields": {
+        "part": 644,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 477,
+    "fields": {
+        "part": 643,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 478,
+    "fields": {
+        "part": 642,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 479,
+    "fields": {
+        "part": 641,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 480,
+    "fields": {
+        "part": 640,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 481,
+    "fields": {
+        "part": 639,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 482,
+    "fields": {
+        "part": 638,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 483,
+    "fields": {
+        "part": 637,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 484,
+    "fields": {
+        "part": 636,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 485,
+    "fields": {
+        "part": 635,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 486,
+    "fields": {
+        "part": 634,
+        "supplier": 4,
+        "supplier_name": "Дисплей High Copy"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 487,
+    "fields": {
+        "part": 632,
+        "supplier": 3,
+        "supplier_name": "Дисплейний модуль hard OLED GX"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 488,
+    "fields": {
+        "part": 632,
+        "supplier": 1,
+        "supplier_name": "Екран копія GX"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 489,
+    "fields": {
+        "part": 631,
+        "supplier": 3,
+        "supplier_name": "Дисплейний модуль hard OLED GX"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 490,
+    "fields": {
+        "part": 631,
+        "supplier": 1,
+        "supplier_name": "Екран копія GX"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 491,
+    "fields": {
+        "part": 676,
+        "supplier": 3,
+        "supplier_name": "Дисплейний модуль hard OLED GX"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 492,
+    "fields": {
+        "part": 676,
+        "supplier": 1,
+        "supplier_name": "Екран копія GX"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 493,
+    "fields": {
+        "part": 677,
+        "supplier": 3,
+        "supplier_name": "Дисплейний модуль hard OLED GX"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 494,
+    "fields": {
+        "part": 677,
         "supplier": 1,
         "supplier_name": "Екран копія GX"
     }

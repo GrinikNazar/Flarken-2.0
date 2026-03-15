@@ -13,7 +13,7 @@ django.setup()
 
 from warehouse.models import Part, PhoneModel, Color, PartType, ChipType, Supplier
 
-
+# TODO: придумати як показати клавіатуру
 def main_board():
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     button_2 = types.KeyboardButton('\U0001F6BDКришки')

@@ -2,36 +2,35 @@ from telebot import types
 import os
 import sys
 import django
+from pathlib import Path
 
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(BASE_DIR)
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+sys.path.append(str(BASE_DIR))
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "flarken.settings")
 
 django.setup()
 
+
 from warehouse.models import Part, PhoneModel, Color, PartType, ChipType, Supplier
 
-# TODO: придумати як показати клавіатуру
+
 def main_board():
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    button_2 = types.KeyboardButton('\U0001F6BDКришки')
-    button_3 = types.KeyboardButton('\U0001F50BАКБ')
-    button_4 = types.KeyboardButton('\U0001F60EСкло')
-    button_5 = types.KeyboardButton('\U0001F526Пiдсвiтки')
-    button_6 = types.KeyboardButton('\U0001F4F2Сенсори')
-    button_7 = types.KeyboardButton('\U0001F4A9Рамки')  
-    button_8 = types.KeyboardButton('\U0001F4F2Touch iPad')
-    button_9 = types.KeyboardButton('\U0001F250Копії')
-    button_10 = types.KeyboardButton('\U0001FA79Клей АКБ + проклейки')
-    button_11 = types.KeyboardButton('\U0001F50CІнше')
-    row1 = [button_3, button_4, button_5, button_6]
-    row2 = [button_7, button_2, button_8, button_9]
-    row3 = [button_10, button_11]
-    board = [row1, row2, row3]
-    for row in board:
+    part_types_list = PartType.objects.all()
+
+    row = []
+    for part_type in part_types_list:
+        button = types.KeyboardButton(f'{part_type.name}')
+        if len(row) == 4:
+            markup.row(*row)
+            row = []
+        else:
+            row.append(button)
+    else:
         markup.row(*row)
+
     return markup
 
 
@@ -116,4 +115,3 @@ def confirm():
     markup = types.InlineKeyboardMarkup()
     markup.add(types.InlineKeyboardButton('Відправити в чат \U0001F680', callback_data='confirm_button'))
     return markup
-

@@ -1,28 +1,13 @@
 import os
-import keyboard
+from keyboards import keyboard
 import telebot
 from dotenv import load_dotenv
-import requests
+from api.client import APIClient
+from utils.utils import send_long_message
 
 load_dotenv()
 bot = telebot.TeleBot(os.getenv("BOT_TOKEN"))
-
-def send_long_message(text, max_len=3800):
-    lines = text.split("\n")
-    message = ""
-
-    for line in lines:
-        if len(message) + len(line) + 1 > max_len:
-            yield message
-            message = line
-        else:
-            if message:
-                message += "\n" + line
-            else:
-                message = line
-
-    if message:
-        yield message
+api = APIClient()
 
 
 # TODO: продумати систему авторизації
@@ -51,8 +36,7 @@ def other_function(message):
 def handler(call):
     if call.data.startswith('supplier:'):
         supplier_id = call.data.split(':')[1]
-        endpoint_list = 'http://127.0.0.1:8000/warehouse/purchase-list/'
-        response = requests.get(endpoint_list, params={'supplier_id': supplier_id}).json()
+        response = api.get_purchase_list(supplier_id)
         supplier = response['supplier_name']
         text = response['list']
 

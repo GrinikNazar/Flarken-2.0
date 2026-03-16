@@ -18850,11 +18850,24 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 1451,
+    "fields": {
+        "action_time": "2026-03-16T21:58:38.596Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "AKS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
-        "password": "pbkdf2_sha256$1200000$3u1iU9Qx2at1sgOHPgbbJb$1ji6mirtLjy3iUBvnI03S3HRAS2HEtE4+rf1qTYEEp8=",
-        "last_login": "2026-03-13T21:57:33.774Z",
+        "password": "pbkdf2_sha256$1000000$YWbMzfpOkxRK91mgLmrG34$xVyrRpxqKvG07XVTwmqNJCPO/mWbURGg6W+y1TMM6lI=",
+        "last_login": "2026-03-15T18:56:23.311Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "",
@@ -23559,6 +23572,13 @@
     "pk": 4,
     "fields": {
         "name": "Fusion Parts"
+    }
+},
+{
+    "model": "warehouse.supplier",
+    "pk": 5,
+    "fields": {
+        "name": "AKS"
     }
 },
 {

@@ -89,7 +89,7 @@ def action_menu_categories(message):
         print('Проблема з "order"')
     
 
-def list_ref_parts():
+def purchase_list():
     markup = types.InlineKeyboardMarkup()
     suppliers = Supplier.objects.all()
     buttons_list = [types.InlineKeyboardButton(supplier.name, callback_data=f'supplier:{supplier.pk}') for supplier in suppliers]

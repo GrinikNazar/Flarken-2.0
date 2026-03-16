@@ -7,6 +7,24 @@ import requests
 load_dotenv()
 bot = telebot.TeleBot(os.getenv("BOT_TOKEN"))
 
+def send_long_message(text, max_len=3800):
+    lines = text.split("\n")
+    message = ""
+
+    for line in lines:
+        if len(message) + len(line) + 1 > max_len:
+            yield message
+            message = line
+        else:
+            if message:
+                message += "\n" + line
+            else:
+                message = line
+
+    if message:
+        yield message
+
+
 # TODO: продумати систему авторизації
 @bot.message_handler(commands=['start'])
 def send_message_welcome(message):
@@ -19,10 +37,9 @@ def get_my_id(message):
     user_id = message.from_user.id
     bot.send_message(message.chat.id, f'{user_firs_name}: {user_id}')
 
-# TODO: нормально переіменувати змінні зроити по людськи
-@bot.message_handler(commands=['list_ref'])
-def get_list_ref(message):
-    bot.send_message(message.chat.id, 'Виберіть варіант формування списку:', reply_markup=keyboard.list_ref_parts())
+@bot.message_handler(commands=['purchase_list'])
+def get_purchase_list(message):
+    bot.send_message(message.chat.id, 'Виберіть постачальника:', reply_markup=keyboard.purchase_list())
 
 
 @bot.message_handler(commands=['other'])
@@ -36,11 +53,12 @@ def handler(call):
         supplier_id = call.data.split(':')[1]
         endpoint_list = 'http://127.0.0.1:8000/warehouse/purchase-list/'
         response = requests.get(endpoint_list, params={'supplier_id': supplier_id}).json()
-        text = f"{response['supplier_name']}\n{response['list']}"
+        supplier = response['supplier_name']
+        text = response['list']
 
-        # TODO: зробити щоб не вилітало коли завелике повідомлення
-
-        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=text)
+        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=supplier)
+        for message in send_long_message(text):
+            bot.send_message(call.message.chat.id, message)
 
 
 if __name__ == '__main__':

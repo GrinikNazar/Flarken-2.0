@@ -73,7 +73,7 @@ def write_off_part(
 def generate_purchase_list(supplier_id: int, part_type_id: int = None):
     queryset = SupplierPartName.objects.select_related("part", "part__part_type").filter(
         supplier_id=supplier_id,
-    )
+    ).order_by("-part__phone_models")
     if part_type_id:
         queryset = queryset.filter(part__part_type_id=part_type_id)
 

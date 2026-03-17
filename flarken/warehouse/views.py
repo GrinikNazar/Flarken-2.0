@@ -34,8 +34,12 @@ class WriteOffAPIView(APIView):
 
 class PurchaseListAPIView(APIView):
 
-    def get(self, request, part_type_id=None):
+    def get(self, request):
         supplier_id = request.GET.get("supplier_id")
+        try:
+            part_type_id = request.GET.get("part_type_id")
+        except Exception as e:
+            part_type_id=None
 
         purchase_list = generate_purchase_list(supplier_id, part_type_id) # передаєм id постачальника в stock_service
 
@@ -48,7 +52,8 @@ class PurchaseListAPIView(APIView):
 
 
 class ListOfPartAPIView(APIView):
-    def get(self, request, part_type_id):
+    def get(self, request):
+        part_type_id = request.GET.get("part_type_id")
 
         result = generate_list_of_type(part_type_id)
 

@@ -11,7 +11,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "flarken.settings")
 
 django.setup()
 
-from warehouse.models import Part, PhoneModel, Color, PartType, ChipType, Supplier
+from warehouse.models import Part, PhoneModel, Color, PartType, ChipType, Supplier, PhoneModelRange
 
 
 def main_board():
@@ -36,7 +36,7 @@ def actions_for_part(message_text):
     part = PartType.objects.get(name=message_text)
     markup = types.InlineKeyboardMarkup()
     markup.add(
-        types.InlineKeyboardButton('Взяти', callback_data=f'take:{part.pk}'),
+        types.InlineKeyboardButton('Взяти', callback_data=f'write_off:{part.pk}'),
         types.InlineKeyboardButton('Кількість', callback_data=f'list_of_part_types:{part.pk}'),
         types.InlineKeyboardButton('Закупка', callback_data=f'purchase_list_part_type_and_supplier:{part.pk}'),
     )
@@ -54,7 +54,26 @@ def purchase_list(part_type_id=None):
     return markup
 
 
-# TODO: реалізувати тут списання запчастини
+def get_phone_model_range(part_type_id):
+    model_range = PhoneModelRange.objects.filter(phonemodel__supported_part_types=part_type_id).distinct().order_by('pk')
+
+    markup = types.InlineKeyboardMarkup()
+    model_range = [types.InlineKeyboardButton(phone_model_range.name, callback_data=f'write_off:{part_type_id}:{phone_model_range.pk}') for phone_model_range in model_range]
+    markup.add(*model_range, row_width=4)
+    markup.row(types.InlineKeyboardButton('Назад', callback_data=f'back')) # TODO: написати калбек для кнопки назад
+    return markup
+
+
+def get_phone_model(part_type_id, phone_model_range):
+    phone_models = PhoneModel.objects.filter(phone_model_range=phone_model_range)
+
+    markup = types.InlineKeyboardMarkup()
+    phone_models = [types.InlineKeyboardButton(phone_model.name, callback_data=f'write_off:{part_type_id}:{phone_model_range}:{phone_model.pk}') for phone_model in phone_models]
+    markup.add(*phone_models)
+    markup.row(types.InlineKeyboardButton('Назад', callback_data=f'back'))
+    return markup
+
+
 def button_inine(call):
     title_message = ''
 

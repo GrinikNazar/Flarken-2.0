@@ -52,9 +52,40 @@ def handler(call):
         for message in send_long_message(text):
             bot.send_message(call.message.chat.id, message)
 
-    # TODO: це саме в клавіатурах
-    if call.data.startswith('take'):
-        pass
+    # TODO: Доробити списання
+    if call.data.startswith('write_off'):
+        parsed_text = call.data.split(':')
+        part_type_id = call.data.split(':')[1]
+
+        # Якщо два елемента в рядку - передається part_type_id
+        if len(parsed_text) == 2:
+            bot.edit_message_text(
+                chat_id=call.message.chat.id,
+                message_id=call.message.message_id,
+                text='З якого модельного ряду списати?',
+                reply_markup=keyboard.get_phone_model_range(part_type_id)
+            )
+
+        # Якщо три елемента то передається модельний ряд для того щоб показати моделі з цього ряду
+        elif len(parsed_text) == 3:
+            phone_model_range = call.data.split(':')[2]
+            bot.edit_message_text(
+                chat_id=call.message.chat.id,
+                message_id=call.message.message_id,
+                text='Вибери модель',
+                reply_markup=keyboard.get_phone_model(part_type_id, phone_model_range)
+            )
+
+        # Якщо чотири тоді колір або тип чіпа
+        elif len(parsed_text) == 4:
+            color_or_chip_type = call.data.split(':')[3]
+
+        # Кількість
+        elif len(parsed_text) == 5:
+            quantity = call.data.split(':')[4]
+            # тут можна викликати з API POST запит і отримати повідомлення про списання
+
+
 
     elif call.data.startswith('list_of_part_types'):
         part_type_id = call.data.split(':')[1]

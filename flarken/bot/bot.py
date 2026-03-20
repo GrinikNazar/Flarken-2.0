@@ -63,32 +63,33 @@ def handler(call):
                 chat_id=call.message.chat.id,
                 message_id=call.message.message_id,
                 text='З якого модельного ряду списати?',
-                reply_markup=keyboard.show_phone_model_range(part_type_id)
+                reply_markup=keyboard.show_phone_model_range(part_type_id) # Показати модельні ряди
             )
 
-        # Якщо три елемента то передається модельний ряд для того щоб показати моделі з цього ряду
         elif len(parsed_text) == 3:
             phone_model_range = call.data.split(':')[2]
             bot.edit_message_text(
                 chat_id=call.message.chat.id,
                 message_id=call.message.message_id,
                 text='Вибери модель',
-                reply_markup=keyboard.show_phone_model(part_type_id, phone_model_range)
+                reply_markup=keyboard.show_phone_model(part_type_id, phone_model_range) # Показати моделі з модельного ряду
             )
 
-        # Якщо чотири тоді колір або тип чіпа
+        # Від вибору моделі до вибору кольору або типу чіпа
         elif len(parsed_text) == 4:
             phone_model = call.data.split(':')[2]
             color_or_chip_type = call.data.split(':')[3]
-            if not color_or_chip_type:
+
+            text = keyboard.check_exists_color_or_chip_type(part_type_id, phone_model, color_or_chip_type)
+
+            if not color_or_chip_type or text == 'Кількість':
                 bot.edit_message_text(
                     chat_id=call.message.chat.id,
                     message_id=call.message.message_id,
-                    text='Кількість',
+                    text=text,
                     reply_markup=keyboard.show_quantity(part_type_id, phone_model, color_or_chip_type)
                 )
             else:
-                text = 'Колір' if color_or_chip_type == 'color' else 'З чіпом чи без'
                 bot.edit_message_text(
                     chat_id=call.message.chat.id,
                     message_id=call.message.message_id,
@@ -103,7 +104,7 @@ def handler(call):
             bot.edit_message_text(
                 chat_id=call.message.chat.id,
                 message_id=call.message.message_id,
-                text='Скільки списати',
+                text='Кількість',
                 reply_markup=keyboard.show_quantity(part_type_id, phone_model, color_or_chip_type)
             )
 

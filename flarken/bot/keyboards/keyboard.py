@@ -81,26 +81,39 @@ def show_phone_model(part_type_id, phone_model_range):
     return markup
 
 
+def check_exists_color_or_chip_type(part_type_id, phone_model, color_or_chip_type):
+    if color_or_chip_type == 'color':
+        cct = Color.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()
+        return 'Кількість' if len(cct) == 0 else 'Колір'
+
+    elif color_or_chip_type == 'chip':
+        cct = ChipType.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()
+        return 'Кількість' if len(cct) == 0 else 'З чіпом чи без'
+
+
 def show_color_or_chip_type(part_type_id, phone_model, color_or_chip_type):
     cct = None
     if color_or_chip_type == 'color':
         cct = Color.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()
-        # TODO: вирішити проблему з тими елементами де є колір але де він тільки один і не вказаний
-        # cct немає елементів так як наприклад на Х має тільки чорні скла
+
     elif color_or_chip_type == 'chip':
         cct = ChipType.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()
+
     markup = types.InlineKeyboardMarkup()
     list_colors_or_chip_types = [types.InlineKeyboardButton(
         color_or_chip.name, callback_data=f'write_off:{part_type_id}:{phone_model}:{color_or_chip_type}:{color_or_chip.name}'
     ) for color_or_chip in cct]
     markup.add(*list_colors_or_chip_types)
+    markup.row(types.InlineKeyboardButton('Назад', callback_data=f'back'))
     return markup
 
 
 def show_quantity(part_type_id, phone_model, color_or_chip_type):
     markup = types.InlineKeyboardMarkup()
-    list_of_numbers = [types.InlineKeyboardButton(f'{i}', callback_data=f'final_request:{part_type_id}:{phone_model}:{color_or_chip_type}:{i}') for i in range(1, 10)]
+    markup.row(types.InlineKeyboardButton('1', callback_data=f'final_request:{part_type_id}:{phone_model}:{color_or_chip_type}:{1}'))
+    list_of_numbers = [types.InlineKeyboardButton(f'{i}', callback_data=f'final_request:{part_type_id}:{phone_model}:{color_or_chip_type}:{i}') for i in range(1, 7)]
     markup.add(*list_of_numbers)
+    markup.row(types.InlineKeyboardButton('Назад', callback_data=f'back'))
     return markup
 
 

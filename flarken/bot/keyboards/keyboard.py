@@ -13,7 +13,7 @@ django.setup()
 
 from warehouse.models import Part, PhoneModel, Color, PartType, ChipType, Supplier, PhoneModelRange
 
-
+# TODO: проблема з відображенням всіх типів запчастин
 def main_board():
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     part_types_list = PartType.objects.all()
@@ -21,7 +21,7 @@ def main_board():
     row = []
     for part_type in part_types_list:
         button = types.KeyboardButton(f'{part_type.name}')
-        if len(row) == 4:
+        if len(row) == 3:
             markup.row(*row)
             row = []
         else:
@@ -54,7 +54,7 @@ def purchase_list(part_type_id=None):
     return markup
 
 
-def get_phone_model_range(part_type_id):
+def show_phone_model_range(part_type_id):
     model_range = PhoneModelRange.objects.filter(phonemodel__supported_part_types=part_type_id).distinct().order_by('pk')
 
     markup = types.InlineKeyboardMarkup()
@@ -64,13 +64,43 @@ def get_phone_model_range(part_type_id):
     return markup
 
 
-def get_phone_model(part_type_id, phone_model_range):
+def show_phone_model(part_type_id, phone_model_range):
     phone_models = PhoneModel.objects.filter(phone_model_range=phone_model_range)
-
+    color_or_chip_type = ''
+    if PartType.objects.get(pk=part_type_id).has_color:
+        color_or_chip_type = 'color'
+    elif PartType.objects.get(pk=part_type_id).has_chip:
+        color_or_chip_type = 'chip'
     markup = types.InlineKeyboardMarkup()
-    phone_models = [types.InlineKeyboardButton(phone_model.name, callback_data=f'write_off:{part_type_id}:{phone_model_range}:{phone_model.pk}') for phone_model in phone_models]
+    phone_models = [types.InlineKeyboardButton(
+        phone_model.name, callback_data=f'write_off:{part_type_id}:{phone_model.pk}:{color_or_chip_type}'
+    ) for phone_model in phone_models]
+
     markup.add(*phone_models)
     markup.row(types.InlineKeyboardButton('Назад', callback_data=f'back'))
+    return markup
+
+
+def show_color_or_chip_type(part_type_id, phone_model, color_or_chip_type):
+    cct = None
+    if color_or_chip_type == 'color':
+        cct = Color.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()
+        # TODO: вирішити проблему з тими елементами де є колір але де він тільки один і не вказаний
+        # cct немає елементів так як наприклад на Х має тільки чорні скла
+    elif color_or_chip_type == 'chip':
+        cct = ChipType.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()
+    markup = types.InlineKeyboardMarkup()
+    list_colors_or_chip_types = [types.InlineKeyboardButton(
+        color_or_chip.name, callback_data=f'write_off:{part_type_id}:{phone_model}:{color_or_chip_type}:{color_or_chip.name}'
+    ) for color_or_chip in cct]
+    markup.add(*list_colors_or_chip_types)
+    return markup
+
+
+def show_quantity(part_type_id, phone_model, color_or_chip_type):
+    markup = types.InlineKeyboardMarkup()
+    list_of_numbers = [types.InlineKeyboardButton(f'{i}', callback_data=f'final_request:{part_type_id}:{phone_model}:{color_or_chip_type}:{i}') for i in range(1, 10)]
+    markup.add(*list_of_numbers)
     return markup
 
 

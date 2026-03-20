@@ -63,7 +63,7 @@ def handler(call):
                 chat_id=call.message.chat.id,
                 message_id=call.message.message_id,
                 text='З якого модельного ряду списати?',
-                reply_markup=keyboard.get_phone_model_range(part_type_id)
+                reply_markup=keyboard.show_phone_model_range(part_type_id)
             )
 
         # Якщо три елемента то передається модельний ряд для того щоб показати моделі з цього ряду
@@ -73,18 +73,42 @@ def handler(call):
                 chat_id=call.message.chat.id,
                 message_id=call.message.message_id,
                 text='Вибери модель',
-                reply_markup=keyboard.get_phone_model(part_type_id, phone_model_range)
+                reply_markup=keyboard.show_phone_model(part_type_id, phone_model_range)
             )
 
         # Якщо чотири тоді колір або тип чіпа
         elif len(parsed_text) == 4:
+            phone_model = call.data.split(':')[2]
             color_or_chip_type = call.data.split(':')[3]
+            if not color_or_chip_type:
+                bot.edit_message_text(
+                    chat_id=call.message.chat.id,
+                    message_id=call.message.message_id,
+                    text='Кількість',
+                    reply_markup=keyboard.show_quantity(part_type_id, phone_model, color_or_chip_type)
+                )
+            else:
+                text = 'Колір' if color_or_chip_type == 'color' else 'З чіпом чи без'
+                bot.edit_message_text(
+                    chat_id=call.message.chat.id,
+                    message_id=call.message.message_id,
+                    text=text,
+                    reply_markup=keyboard.show_color_or_chip_type(part_type_id, phone_model, color_or_chip_type)
+                )
 
         # Кількість
         elif len(parsed_text) == 5:
-            quantity = call.data.split(':')[4]
-            # тут можна викликати з API POST запит і отримати повідомлення про списання
+            phone_model = call.data.split(':')[2]
+            color_or_chip_type = call.data.split(':')[4]
+            bot.edit_message_text(
+                chat_id=call.message.chat.id,
+                message_id=call.message.message_id,
+                text='Скільки списати',
+                reply_markup=keyboard.show_quantity(part_type_id, phone_model, color_or_chip_type)
+            )
 
+    if call.data.startswith('final_request'):
+        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=call.data)
 
 
     elif call.data.startswith('list_of_part_types'):

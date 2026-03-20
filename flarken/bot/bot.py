@@ -54,6 +54,7 @@ def handler(call):
 
     # TODO: Доробити списання
     if call.data.startswith('write_off'):
+        quantity_name = 'Кількість'
         parsed_text = call.data.split(':')
         part_type_id = call.data.split(':')[1]
 
@@ -76,41 +77,52 @@ def handler(call):
             )
 
         # Від вибору моделі до вибору кольору або типу чіпа
-        elif len(parsed_text) == 4:
+        elif len(parsed_text) == 5:
             phone_model = call.data.split(':')[2]
-            color_or_chip_type = call.data.split(':')[3]
+            color = call.data.split(':')[3]
+            chip_type = call.data.split(':')[4]
+            params = (part_type_id, phone_model, color, chip_type)
 
-            text = keyboard.check_exists_color_or_chip_type(part_type_id, phone_model, color_or_chip_type)
+            text = keyboard.check_exists_color_or_chip_type(*params)
 
-            if not color_or_chip_type or text == 'Кількість':
+            if text == quantity_name:
                 bot.edit_message_text(
                     chat_id=call.message.chat.id,
                     message_id=call.message.message_id,
-                    text=text,
-                    reply_markup=keyboard.show_quantity(part_type_id, phone_model, color_or_chip_type)
+                    text=quantity_name,
+                    reply_markup=keyboard.show_quantity(*params)
                 )
             else:
                 bot.edit_message_text(
                     chat_id=call.message.chat.id,
                     message_id=call.message.message_id,
                     text=text,
-                    reply_markup=keyboard.show_color_or_chip_type(part_type_id, phone_model, color_or_chip_type)
+                    reply_markup=keyboard.show_color_or_chip_type(*params)
                 )
 
         # Кількість
-        elif len(parsed_text) == 5:
+        elif len(parsed_text) == 6:
             phone_model = call.data.split(':')[2]
-            color_or_chip_type = call.data.split(':')[4]
+            color = call.data.split(':')[3]
+            chip_type = call.data.split(':')[4]
             bot.edit_message_text(
                 chat_id=call.message.chat.id,
                 message_id=call.message.message_id,
-                text='Кількість',
-                reply_markup=keyboard.show_quantity(part_type_id, phone_model, color_or_chip_type)
+                text=quantity_name,
+                reply_markup=keyboard.show_quantity(part_type_id, phone_model, color, chip_type)
             )
 
+    # TODO: вирішити проблему з неправильним запитом, помилка 400
     if call.data.startswith('final_request'):
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=call.data)
+        part_type = call.data.split(':')[1],
+        phone_model = call.data.split(':')[2],
+        color = call.data.split(':')[3],
+        chip_type = call.data.split(':')[4],
+        quantity = call.data.split(':')[5]
 
+        response = api.write_off(part_type, phone_model, quantity, color, chip_type)
+        bot.send_message(call.message.chat.id, response)
 
     elif call.data.startswith('list_of_part_types'):
         part_type_id = call.data.split(':')[1]

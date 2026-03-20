@@ -28,3 +28,15 @@ class APIClient:
             'part_type_id': part_type_id
         }).json()
         return response
+
+    def write_off(self, part_type, phone_model, quantity, color=None, chip_type=None):
+        url = f'{self.base_url}/warehouse/write-off/'
+        data = {
+            'part_type': part_type,
+            'phone_model': phone_model,
+            'color': color,
+            'chip_type': chip_type,
+            'quantity': quantity
+        }
+        response = requests.post(url, json=data).json()
+        return response

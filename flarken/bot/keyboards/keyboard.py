@@ -66,14 +66,11 @@ def show_phone_model_range(part_type_id):
 
 def show_phone_model(part_type_id, phone_model_range):
     phone_models = PhoneModel.objects.filter(phone_model_range=phone_model_range)
-    color_or_chip_type = ''
-    if PartType.objects.get(pk=part_type_id).has_color:
-        color_or_chip_type = 'color'
-    elif PartType.objects.get(pk=part_type_id).has_chip:
-        color_or_chip_type = 'chip'
+    color = 'color' if PartType.objects.get(pk=part_type_id).has_color else ''
+    chip_type = 'chip_type' if PartType.objects.get(pk=part_type_id).has_chip else ''
     markup = types.InlineKeyboardMarkup()
     phone_models = [types.InlineKeyboardButton(
-        phone_model.name, callback_data=f'write_off:{part_type_id}:{phone_model.pk}:{color_or_chip_type}'
+        phone_model.name, callback_data=f'write_off:{part_type_id}:{phone_model.pk}:{color}:{chip_type}'
     ) for phone_model in phone_models]
 
     markup.add(*phone_models)
@@ -81,91 +78,50 @@ def show_phone_model(part_type_id, phone_model_range):
     return markup
 
 
-def check_exists_color_or_chip_type(part_type_id, phone_model, color_or_chip_type):
-    if color_or_chip_type == 'color':
+# Функція для провірки того чи є в запчастині колір чи тип чіпа сенсора
+def check_exists_color_or_chip_type(part_type_id, phone_model, color, chip_type):
+    quantity_name = 'Кількість'
+    if color:
         cct = Color.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()
-        return 'Кількість' if len(cct) == 0 else 'Колір'
-
-    elif color_or_chip_type == 'chip':
+        return quantity_name if len(cct) == 0 else 'Колір'
+    elif chip_type:
         cct = ChipType.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()
-        return 'Кількість' if len(cct) == 0 else 'З чіпом чи без'
+        return quantity_name if len(cct) == 0 else 'З чіпом чи без'
+    else:
+        return quantity_name
 
 
-def show_color_or_chip_type(part_type_id, phone_model, color_or_chip_type):
-    cct = None
-    if color_or_chip_type == 'color':
-        cct = Color.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()
-
-    elif color_or_chip_type == 'chip':
-        cct = ChipType.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()
-
+def show_color_or_chip_type(part_type_id, phone_model, color, chip_type):
     markup = types.InlineKeyboardMarkup()
-    list_colors_or_chip_types = [types.InlineKeyboardButton(
-        color_or_chip.name, callback_data=f'write_off:{part_type_id}:{phone_model}:{color_or_chip_type}:{color_or_chip.name}'
-    ) for color_or_chip in cct]
-    markup.add(*list_colors_or_chip_types)
+    if color:
+        markup.add(
+            *[types.InlineKeyboardButton(color.name, callback_data=f'write_off:{part_type_id}:{phone_model}:{color.name}:{chip_type}'
+            ) for color in Color.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()]
+        )
+
+    elif chip_type:
+        markup.add(
+            *[types.InlineKeyboardButton(color.name,callback_data=f'write_off:{part_type_id}:{phone_model}:{color}:{chip_type.name}'
+            ) for chip_type in ChipType.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()]
+        )
+
     markup.row(types.InlineKeyboardButton('Назад', callback_data=f'back'))
     return markup
 
 
-def show_quantity(part_type_id, phone_model, color_or_chip_type):
+def show_quantity(part_type_id, phone_model, color, chip_type):
+    part_type = PartType.objects.get(pk=part_type_id).name
+    phone_model = PhoneModel.objects.get(pk=phone_model).name
+
     markup = types.InlineKeyboardMarkup()
-    markup.row(types.InlineKeyboardButton('1', callback_data=f'final_request:{part_type_id}:{phone_model}:{color_or_chip_type}:{1}'))
-    list_of_numbers = [types.InlineKeyboardButton(f'{i}', callback_data=f'final_request:{part_type_id}:{phone_model}:{color_or_chip_type}:{i}') for i in range(1, 7)]
+    markup.row(types.InlineKeyboardButton('1', callback_data=f'final_request:{part_type}:{phone_model}:{color}:{chip_type}:{1}'))
+    list_of_numbers = [types.InlineKeyboardButton(f'{i}', callback_data=f'final_request:{part_type}:{phone_model}:{color}:{chip_type}:{i}') for i in range(1, 7)]
     markup.add(*list_of_numbers)
     markup.row(types.InlineKeyboardButton('Назад', callback_data=f'back'))
     return markup
 
 
-def button_inine(call):
-    title_message = ''
 
-    markup = types.InlineKeyboardMarkup()
-    if len(call.split('_')) == 2:
-        title_message += 'Вибір моделі'
-        markup.add(*[types.InlineKeyboardButton(f'{key}', callback_data=f'{call}_{key}') for key in
-                     iphone_db.choise_models(call.split('_')[0])], row_width=7)
-
-        markup.row(types.InlineKeyboardButton('Назад', callback_data=f'{call}_back'))
-
-    elif len(call.split('_')) == 3:
-        title_message += 'Вибір моделі'
-        fr_db_data = iphone_db.choise_submodels(call.split('_')[0], call.split('_')[-1])
-        if not fr_db_data:
-            markup.add(
-                *[types.InlineKeyboardButton(f'{key}', callback_data=f'{call}_{key}_nocolor') for key in fr_db_data],
-                row_width=7)
-        else:
-            markup.add(*[types.InlineKeyboardButton(f'{key}', callback_data=f'{call}_{key}') for key in fr_db_data],
-                       row_width=7)
-
-        markup.row(types.InlineKeyboardButton('Назад', callback_data=f'{call}_back'))
-
-    elif len(call.split('_')) == 4:
-        string_color = iphone_db.choise_colors(call.split('_')[0], call.split('_')[-1])
-        if string_color:
-            title_message += 'Вибір кольору чи підпункту'
-            string_color = string_color.split('\r\n')
-            markup.add(
-                *[types.InlineKeyboardButton(f'{color_mod.title()}', callback_data=f'{call}_{color_mod}') for color_mod
-                  in string_color])
-
-            markup.row(types.InlineKeyboardButton('Назад', callback_data=f'{call}_back'))
-        else:
-            title_message += 'Кількість'
-            markup.row(types.InlineKeyboardButton(f'1', callback_data=f'{call}_nocolor_1'))
-            markup.add(*[types.InlineKeyboardButton(f'{i}', callback_data=f'{call}_nocolor_{i}') for i in range(2, 11)])
-
-            markup.row(types.InlineKeyboardButton('Назад', callback_data=f'{call}_back'))
-
-    elif len(call.split('_')) == 5:
-        title_message += 'Кількість'
-        markup.row(types.InlineKeyboardButton(f'1', callback_data=f'{call}_1'))
-        markup.add(*[types.InlineKeyboardButton(f'{i}', callback_data=f'{call}_{i}') for i in range(2, 11)])
-
-        markup.row(types.InlineKeyboardButton('Назад', callback_data=f'{call}_back'))
-
-    return (markup, title_message)
 
 
 def other_key(user):

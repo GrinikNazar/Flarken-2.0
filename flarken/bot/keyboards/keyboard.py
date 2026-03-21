@@ -115,7 +115,7 @@ def show_quantity(part_type_id, phone_model, color, chip_type):
 
     markup = types.InlineKeyboardMarkup()
     markup.row(types.InlineKeyboardButton('1', callback_data=f'final_request:{part_type}:{phone_model}:{color}:{chip_type}:{1}'))
-    list_of_numbers = [types.InlineKeyboardButton(f'{i}', callback_data=f'final_request:{part_type}:{phone_model}:{color}:{chip_type}:{i}') for i in range(1, 7)]
+    list_of_numbers = [types.InlineKeyboardButton(f'{i}', callback_data=f'final_request:{part_type}:{phone_model}:{color}:{chip_type}:{i}') for i in range(2, 7)]
     markup.add(*list_of_numbers)
     markup.row(types.InlineKeyboardButton('Назад', callback_data=f'back'))
     return markup

@@ -20,14 +20,13 @@ class WriteOffAPIView(APIView):
                 chip_type=request.data.get("chip_type"),
             )
 
-            return Response({
-                "success": True,
-                "remaining": part.current_quantity
-            })
+            return Response(
+                {"message": part.current_quantity},
+                status=status.HTTP_200_OK)
 
         except Exception as e:
             return Response(
-                {"error": str(e)},
+                {"message": e},
                 status=status.HTTP_400_BAD_REQUEST
             )
 

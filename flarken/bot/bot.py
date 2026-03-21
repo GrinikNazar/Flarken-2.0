@@ -86,6 +86,7 @@ def handler(call):
             text = keyboard.check_exists_color_or_chip_type(*params)
 
             if text == quantity_name:
+                # TODO: є проблема з тим що зберігається слово 'color' або 'chip_type'
                 bot.edit_message_text(
                     chat_id=call.message.chat.id,
                     message_id=call.message.message_id,
@@ -112,17 +113,28 @@ def handler(call):
                 reply_markup=keyboard.show_quantity(part_type_id, phone_model, color, chip_type)
             )
 
-    # TODO: вирішити проблему з неправильним запитом, помилка 400
     if call.data.startswith('final_request'):
-        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=call.data)
-        part_type = call.data.split(':')[1],
-        phone_model = call.data.split(':')[2],
-        color = call.data.split(':')[3],
-        chip_type = call.data.split(':')[4],
-        quantity = call.data.split(':')[5]
+        data = {
+            'part_type': call.data.split(':')[1],
+            'phone_model': call.data.split(':')[2],
+            'quantity': int(call.data.split(':')[5]),
+            'color': call.data.split(':')[3],
+            'chip_type': call.data.split(':')[4]
+        }
+        if data['color'] == '':
+            data.pop('color')
+        if data['chip_type'] == '':
+            data.pop('chip_type')
+        print(data)
+        response = api.write_off(**data)
+        response_json = response.json()
+        if response.status_code == 200:
+            response_text = f'{response_json["stock_status"]}{data["part_type"]} на {data["phone_model"]} залишилось {response_json["message"]} шт.'
+        else:
+            response_text = response_json['message']
 
-        response = api.write_off(part_type, phone_model, quantity, color, chip_type)
-        bot.send_message(call.message.chat.id, response)
+        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=response_text)
+
 
     elif call.data.startswith('list_of_part_types'):
         part_type_id = call.data.split(':')[1]

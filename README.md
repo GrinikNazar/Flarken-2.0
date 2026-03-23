@@ -42,6 +42,7 @@ pip install -r requirements.txt
 У корені проєкту створіть .env файл
 ```
 BOT_TOKEN=your_telegram_bot_token
+API_BASE_URL=your_ip_address
 ```
 
 ## API Ендпоінти

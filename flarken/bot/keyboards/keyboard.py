@@ -21,12 +21,13 @@ def main_board():
     row = []
     for part_type in part_types_list:
         button = types.KeyboardButton(f'{part_type.name}')
-        if len(row) == 3:
+        row.append(button)
+
+        if len(row) == 4:
             markup.row(*row)
             row = []
-        else:
-            row.append(button)
-    else:
+
+    if row:
         markup.row(*row)
 
     return markup

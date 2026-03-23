@@ -13,7 +13,7 @@ django.setup()
 
 from warehouse.models import Part, PhoneModel, Color, PartType, ChipType, Supplier, PhoneModelRange
 
-# TODO: проблема з відображенням всіх типів запчастин
+
 def main_board():
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     part_types_list = PartType.objects.all()
@@ -102,7 +102,7 @@ def show_color_or_chip_type(part_type_id, phone_model, color, chip_type):
 
     elif chip_type:
         markup.add(
-            *[types.InlineKeyboardButton(color.name,callback_data=f'write_off:{part_type_id}:{phone_model}:{color}:{chip_type.name}'
+            *[types.InlineKeyboardButton(chip_type.name,callback_data=f'write_off:{part_type_id}:{phone_model}:{color}:{chip_type.name}'
             ) for chip_type in ChipType.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()]
         )
 

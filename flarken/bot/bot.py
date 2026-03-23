@@ -125,7 +125,7 @@ def handler(call):
             data.pop('color')
         if data['chip_type'] == '':
             data.pop('chip_type')
-        print(data)
+        print(data) # --------------------------------------------------
         response = api.write_off(**data)
         response_json = response.json()
         if response.status_code == 200:

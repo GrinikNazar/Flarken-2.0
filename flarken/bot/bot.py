@@ -81,24 +81,28 @@ def handler(call):
             phone_model = call.data.split(':')[2]
             color = call.data.split(':')[3]
             chip_type = call.data.split(':')[4]
-            params = (part_type_id, phone_model, color, chip_type)
+            params = {
+                'part_type_id': part_type_id,
+                'phone_model': phone_model,
+                'color': color,
+                'chip_type': chip_type
+            }
+            empty_or_text = keyboard.check_exists_color_or_chip_type(params)
+            params = empty_or_text[0]
 
-            text = keyboard.check_exists_color_or_chip_type(*params)
-
-            if text == quantity_name:
-                # TODO: є проблема з тим що зберігається слово 'color' або 'chip_type'
+            if empty_or_text[1] == '':
                 bot.edit_message_text(
                     chat_id=call.message.chat.id,
                     message_id=call.message.message_id,
                     text=quantity_name,
-                    reply_markup=keyboard.show_quantity(*params)
+                    reply_markup=keyboard.show_quantity(*params.values())
                 )
             else:
                 bot.edit_message_text(
                     chat_id=call.message.chat.id,
                     message_id=call.message.message_id,
-                    text=text,
-                    reply_markup=keyboard.show_color_or_chip_type(*params)
+                    text=empty_or_text[1],
+                    reply_markup=keyboard.show_color_or_chip_type(*params.values())
                 )
 
         # Кількість

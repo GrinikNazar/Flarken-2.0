@@ -80,29 +80,34 @@ def show_phone_model(part_type_id, phone_model_range):
 
 
 # Функція для провірки того чи є в запчастині колір чи тип чіпа сенсора
-def check_exists_color_or_chip_type(part_type_id, phone_model, color, chip_type):
-    quantity_name = 'Кількість'
-    if color:
-        cct = Color.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()
-        return quantity_name if len(cct) == 0 else 'Колір'
-    elif chip_type:
-        cct = ChipType.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()
-        return quantity_name if len(cct) == 0 else 'З чіпом чи без'
+def check_exists_color_or_chip_type(params):
+    if params['color']:
+        cct = Color.objects.filter(part__phone_models=params['phone_model'], part__part_type=params['part_type_id']).distinct()
+        if len(cct) == 0:
+            params['color'] = ''
+        return params, 'Колір'
+
+    elif params['chip_type']:
+        cct = ChipType.objects.filter(part__phone_models=params['phone_model'], part__part_type=params['part_type_id']).distinct()
+        if len(cct) == 0:
+            params['chip_type'] = ''
+        return params, 'З чіпом чи без'
+
     else:
-        return quantity_name
+        return params, ''
 
 
 def show_color_or_chip_type(part_type_id, phone_model, color, chip_type):
     markup = types.InlineKeyboardMarkup()
     if color:
         markup.add(
-            *[types.InlineKeyboardButton(color.name, callback_data=f'write_off:{part_type_id}:{phone_model}:{color.name}:{chip_type}'
+            *[types.InlineKeyboardButton(color.name, callback_data=f'write_off:{part_type_id}:{phone_model}:{color.name}:{chip_type}:to_quantity'
             ) for color in Color.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()]
         )
 
     elif chip_type:
         markup.add(
-            *[types.InlineKeyboardButton(chip_type.name,callback_data=f'write_off:{part_type_id}:{phone_model}:{color}:{chip_type.name}'
+            *[types.InlineKeyboardButton(chip_type.name,callback_data=f'write_off:{part_type_id}:{phone_model}:{color}:{chip_type.name}:to_quantity'
             ) for chip_type in ChipType.objects.filter(part__phone_models=phone_model, part__part_type=part_type_id).distinct()]
         )
 

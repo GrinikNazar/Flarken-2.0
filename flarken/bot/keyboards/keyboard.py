@@ -82,19 +82,22 @@ def show_phone_model(part_type_id, phone_model_range):
 # Функція для провірки того чи є в запчастині колір чи тип чіпа сенсора
 def check_exists_color_or_chip_type(params):
     if params['color']:
-        cct = Color.objects.filter(part__phone_models=params['phone_model'], part__part_type=params['part_type_id']).distinct()
+        cct = Color.objects.filter(part__phone_models=params['phone_model'],part__part_type=params['part_type_id']).distinct()
+
         if len(cct) == 0:
             params['color'] = ''
+            return params, ''
         return params, 'Колір'
 
     elif params['chip_type']:
         cct = ChipType.objects.filter(part__phone_models=params['phone_model'], part__part_type=params['part_type_id']).distinct()
+
         if len(cct) == 0:
             params['chip_type'] = ''
+            return params, ''
         return params, 'З чіпом чи без'
 
-    else:
-        return params, ''
+    return params, ''
 
 
 def show_color_or_chip_type(part_type_id, phone_model, color, chip_type):

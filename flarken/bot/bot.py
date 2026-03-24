@@ -78,14 +78,11 @@ def handler(call):
 
         # Від вибору моделі до вибору кольору або типу чіпа
         elif len(parsed_text) == 5:
-            phone_model = call.data.split(':')[2]
-            color = call.data.split(':')[3]
-            chip_type = call.data.split(':')[4]
             params = {
                 'part_type_id': part_type_id,
-                'phone_model': phone_model,
-                'color': color,
-                'chip_type': chip_type
+                'phone_model': call.data.split(':')[2],
+                'color': call.data.split(':')[3],
+                'chip_type': call.data.split(':')[4]
             }
             empty_or_text = keyboard.check_exists_color_or_chip_type(params)
             params = empty_or_text[0]
@@ -95,14 +92,24 @@ def handler(call):
                     chat_id=call.message.chat.id,
                     message_id=call.message.message_id,
                     text=quantity_name,
-                    reply_markup=keyboard.show_quantity(*params.values())
+                    reply_markup=keyboard.show_quantity(
+                        params['part_type_id'],
+                        params['phone_model'],
+                        params['color'],
+                        params['chip_type']
+                    )
                 )
             else:
                 bot.edit_message_text(
                     chat_id=call.message.chat.id,
                     message_id=call.message.message_id,
                     text=empty_or_text[1],
-                    reply_markup=keyboard.show_color_or_chip_type(*params.values())
+                    reply_markup=keyboard.show_color_or_chip_type(
+                        params['part_type_id'],
+                        params['phone_model'],
+                        params['color'],
+                        params['chip_type']
+                    )
                 )
 
         # Кількість
@@ -129,7 +136,6 @@ def handler(call):
             data.pop('color')
         if data['chip_type'] == '':
             data.pop('chip_type')
-        print(data) # --------------------------------------------------
         response = api.write_off(**data)
         response_json = response.json()
         if response.status_code == 200:

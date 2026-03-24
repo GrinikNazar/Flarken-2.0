@@ -17,8 +17,8 @@ def write_off_part(
     try:
 
         filters = {
-            "part_type__name": part_type,
-            "phone_models__name": phone_model,
+            "part_type": part_type,
+            "phone_models": phone_model,
             "color__name": color,
             "chip_type__name": chip_type,
         }

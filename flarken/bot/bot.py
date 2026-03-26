@@ -11,6 +11,24 @@ bot = telebot.TeleBot(os.getenv("BOT_TOKEN"))
 api = APIClient()
 
 
+# def is_authorized(user_id):
+#     return User.objects.filter(telegram_id=user_id).exists()
+#
+#
+# def auth_required(func):
+#     def wrapper(message_or_call, *args, **kwargs):
+#         user_id = message_or_call.from_user.id
+#
+#         if not is_authorized(user_id):
+#             if hasattr(message_or_call, 'message'):  # callback
+#                 bot.answer_callback_query(message_or_call.id, '❌ Немає доступу')
+#             else:  # message
+#                 bot.send_message(message_or_call.chat.id, '❌ Немає доступу')
+#             return
+#
+#         return func(message_or_call, *args, **kwargs)
+#     return wrapper
+
 # TODO: продумати систему авторизації
 @bot.message_handler(commands=['start'])
 def send_message_welcome(message):
@@ -107,60 +125,43 @@ def handle_write_off(call):
         edit(call, text, None)
         state.clear()
 
-# TODO: тут попробувати переробити на кожен окремий приймач калбеків
-# @bot.callback_query_handler(func=lambda call: call.data.startswith('supplier'))
-# def handler_supplier_list_for_purchase(call):
-#     supplier_id = call.data.split(':')[1]
-#     part_type_id = call.data.split(':')[2]
-#     if part_type_id:
-#         response = api.get_purchase_list_part_supplier(supplier_id, part_type_id)
-#     else:
-#         response = api.get_purchase_list(supplier_id)
-#
-#     supplier = response['supplier_name']
-#     text = response['list']
-#
-#     bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=supplier)
-#     for message in send_long_message(text):
-#         bot.send_message(call.message.chat.id, message)
+
+# Список наявних запчастин
+@bot.callback_query_handler(func=lambda call: call.data.startswith('list_of_part_types'))
+def get_list_of_part_types(call):
+    part_type_id = call.data.split(':')[1]
+    response = api.get_list_of_part_types(part_type_id)
+    part_type_name = response['part_type_name']
+    text = response['list_of_parts']
+
+    edit(call, part_type_name, None)
+    for message in send_long_message(text):
+        bot.send_message(call.message.chat.id, message)
 
 
-@bot.callback_query_handler(func=lambda call: True)
-def handler(call):
-    if call.data.startswith('supplier:'):
-        supplier_id = call.data.split(':')[1]
-        part_type_id = call.data.split(':')[2]
-        if part_type_id:
-            response = api.get_purchase_list_part_supplier(supplier_id, part_type_id)
-        else:
-            response = api.get_purchase_list(supplier_id)
+# Обробник кнопки "Закупка"
+@bot.callback_query_handler(func=lambda call: call.data.startswith('purchase_list_part_type_and_supplier'))
+def list_part_type_and_supplier(call):
+    part_type_id = call.data.split(':')[1]
+    edit(call, 'Виберіть постачальника', keyboard.purchase_list(part_type_id))
 
-        supplier = response['supplier_name']
-        text = response['list']
 
-        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=supplier)
-        for message in send_long_message(text):
-            bot.send_message(call.message.chat.id, message)
+# Створити список закупки у потрібного постачальника і якщо треба потрібної запчастини
+@bot.callback_query_handler(func=lambda call: call.data.startswith('supplier'))
+def supplier_handler(call):
+    supplier_id = call.data.split(':')[1]
+    part_type_id = call.data.split(':')[2]
+    if part_type_id:
+        response = api.get_purchase_list_part_supplier(supplier_id, part_type_id)
+    else:
+        response = api.get_purchase_list(supplier_id)
 
-    elif call.data.startswith('list_of_part_types'):
-        part_type_id = call.data.split(':')[1]
-        response = api.get_list_of_part_types(part_type_id)
-        part_type_name = response['part_type_name']
-        text = response['list_of_parts']
+    supplier = response['supplier_name']
+    text = response['list']
 
-        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=part_type_name)
-        for message in send_long_message(text):
-            bot.send_message(call.message.chat.id, message)
-
-    elif call.data.startswith('purchase_list_part_type_and_supplier'):
-        part_type_id = call.data.split(':')[1]
-        bot.edit_message_text(
-            chat_id=call.message.chat.id,
-            message_id=call.message.message_id,
-            text='Виберіть постачальника',
-            reply_markup=keyboard.purchase_list(part_type_id)
-        )
-
+    edit(call, supplier, None)
+    for message in send_long_message(text):
+        bot.send_message(call.message.chat.id, message)
 
 
 if __name__ == '__main__':

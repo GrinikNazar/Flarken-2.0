@@ -8,11 +8,11 @@ from warehouse.models import PartDependency
 
 @transaction.atomic
 def write_off_part(
-    phone_model: str,
-    part_type: str,
-    quantity: int,
-    color: str | None = None,
-    chip_type: str | None = None,
+        phone_model: str,
+        part_type: str,
+        quantity: int,
+        color: str | None = None,
+        chip_type: str | None = None,
 ):
     try:
 
@@ -101,13 +101,13 @@ def generate_list_of_type(part_type_id: int):
 
     for part in list_of_parts:
         result.append(
-            f"{part.phone_models.all()[0].name} - {part.current_quantity}"
+            f"{part.phone_models.all()[0].name} "
+            f"{part.color or part.chip_type if part.color or part.chip_type else ''} - {part.current_quantity}"
         )
 
     part_type_name = PartType.objects.get(pk=part_type_id).name  # Назва типу запчастини
 
     return {
-            "part_type_name": part_type_name,
-            "list_of_parts": '\n'.join(result)
+        "part_type_name": part_type_name,
+        "list_of_parts": '\n'.join(result)
     }
-

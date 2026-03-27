@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.db.models import F
 from django.utils.html import format_html
+from django.contrib.auth.models import User
+from django.contrib.auth.admin import UserAdmin
 
 from .forms import PartAdminForm
 from .models import (
@@ -13,7 +15,26 @@ from .models import (
     ChipType,
     PartDependency,
     PhoneModelRange,
+    UserProfile,
 )
+
+class UserProfileInline(admin.StackedInline):
+    model = UserProfile
+    can_delete = False
+    verbose_name_plural = 'Profile'
+
+
+class CustomUserAdmin(UserAdmin):
+    inlines = (UserProfileInline,)
+    list_display = ('id', 'username', 'first_name', 'last_name', 'email', 'get_telegram_id')
+
+    def get_telegram_id(self, obj):
+        return obj.userprofile.telegram_id if hasattr(obj, 'userprofile') else None
+
+    get_telegram_id.short_description = 'Telegram id'
+
+admin.site.unregister(User)
+admin.site.register(User, CustomUserAdmin)
 
 @admin.register(PhoneModelRange)
 class PhoneModelRangeAdmin(admin.ModelAdmin):

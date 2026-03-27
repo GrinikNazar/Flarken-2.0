@@ -5,32 +5,46 @@ from dotenv import load_dotenv
 from api.client import APIClient
 from utils.utils import send_long_message
 from keyboards.keyboard import actions_for_part, purchase_list
+import sys
+import django
+from pathlib import Path
 
 load_dotenv()
 bot = telebot.TeleBot(os.getenv("BOT_TOKEN"))
 api = APIClient()
 
 
-# def is_authorized(user_id):
-#     return User.objects.filter(telegram_id=user_id).exists()
-#
-#
-# def auth_required(func):
-#     def wrapper(message_or_call, *args, **kwargs):
-#         user_id = message_or_call.from_user.id
-#
-#         if not is_authorized(user_id):
-#             if hasattr(message_or_call, 'message'):  # callback
-#                 bot.answer_callback_query(message_or_call.id, '❌ Немає доступу')
-#             else:  # message
-#                 bot.send_message(message_or_call.chat.id, '❌ Немає доступу')
-#             return
-#
-#         return func(message_or_call, *args, **kwargs)
-#     return wrapper
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+sys.path.append(str(BASE_DIR))
 
-# TODO: продумати систему авторизації
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "flarken.settings")
+
+django.setup()
+
+from warehouse.models import UserProfile
+
+
+def is_authorized(user_id):
+    return UserProfile.objects.filter(telegram_id=user_id).exists()
+
+
+def auth_required(func):
+    def wrapper(message_or_call, *args, **kwargs):
+        user_id = message_or_call.from_user.id
+
+        if not is_authorized(user_id):
+            if hasattr(message_or_call, 'message'):
+                bot.answer_callback_query(message_or_call.id, '❌ Немає доступу ❌')
+            else:
+                bot.send_message(message_or_call.chat.id, '❌ Немає доступу ❌')
+            return
+
+        return func(message_or_call, *args, **kwargs)
+    return wrapper
+
+
 @bot.message_handler(commands=['start'])
+@auth_required
 def send_message_welcome(message):
     bot.send_message(message.chat.id, 'Привіт, вибирай дію \U0001F916', reply_markup=keyboard.main_board())
 
@@ -43,11 +57,13 @@ def get_my_id(message):
 
 
 @bot.message_handler(commands=['purchase_list'])
+@auth_required
 def get_purchase_list(message):
     bot.send_message(message.chat.id, 'Виберіть постачальника:', reply_markup=purchase_list())
 
 
 @bot.message_handler(content_types=['text'])
+@auth_required
 def part_types(message):
     actions = actions_for_part(message.text)
     bot.send_message(message.chat.id, 'Що робимо далі?', reply_markup=actions)
@@ -68,6 +84,7 @@ def edit(call, text, markup):
     )
 
 @bot.callback_query_handler(func=lambda call: call.data.startswith('write_off'))
+@auth_required
 def handle_write_off(call):
     user_id = call.from_user.id
     state = get_state(user_id)
@@ -128,6 +145,7 @@ def handle_write_off(call):
 
 # Список наявних запчастин
 @bot.callback_query_handler(func=lambda call: call.data.startswith('list_of_part_types'))
+@auth_required
 def get_list_of_part_types(call):
     part_type_id = call.data.split(':')[1]
     response = api.get_list_of_part_types(part_type_id)
@@ -141,6 +159,7 @@ def get_list_of_part_types(call):
 
 # Обробник кнопки "Закупка"
 @bot.callback_query_handler(func=lambda call: call.data.startswith('purchase_list_part_type_and_supplier'))
+@auth_required
 def list_part_type_and_supplier(call):
     part_type_id = call.data.split(':')[1]
     edit(call, 'Виберіть постачальника', keyboard.purchase_list(part_type_id))
@@ -148,6 +167,7 @@ def list_part_type_and_supplier(call):
 
 # Створити список закупки у потрібного постачальника і якщо треба потрібної запчастини
 @bot.callback_query_handler(func=lambda call: call.data.startswith('supplier'))
+@auth_required
 def supplier_handler(call):
     supplier_id = call.data.split(':')[1]
     part_type_id = call.data.split(':')[2]

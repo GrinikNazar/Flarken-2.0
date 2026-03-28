@@ -26,7 +26,9 @@ class UserProfileInline(admin.StackedInline):
 
 class CustomUserAdmin(UserAdmin):
     inlines = (UserProfileInline,)
-    list_display = ('id', 'username', 'first_name', 'last_name', 'email', 'get_telegram_id')
+    list_display = ('username', 'first_name', 'last_name', 'email', 'get_telegram_id')
+    list_display_links = ('username',)
+
 
     def get_telegram_id(self, obj):
         return obj.userprofile.telegram_id if hasattr(obj, 'userprofile') else None
@@ -35,6 +37,7 @@ class CustomUserAdmin(UserAdmin):
 
 admin.site.unregister(User)
 admin.site.register(User, CustomUserAdmin)
+
 
 @admin.register(PhoneModelRange)
 class PhoneModelRangeAdmin(admin.ModelAdmin):
@@ -64,7 +67,7 @@ class PartTypeAdmin(admin.ModelAdmin):
     list_display = ("id", "name")
     search_fields = ("name",)
     ordering = ("id",)
-    list_display_links =("name",)
+    list_display_links = ("name",)
 
 
 @admin.register(Color)

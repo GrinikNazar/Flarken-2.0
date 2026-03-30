@@ -50,22 +50,23 @@ def write_off_part(
         .filter(parent_part=part)
     )
 
-    for dep in dependencies:
-        required_qty = dep.quantity * quantity
-
-        if dep.dependent_part.current_quantity < required_qty:
-            raise ValidationError(
-                f"Недостатньо залежної деталі: {dep.dependent_part}"
-            )
+    # TODO: Переписати логіку з залежними деталями
+    # for dep in dependencies:
+    #     required_qty = dep.quantity * quantity
+    #
+    #     if dep.dependent_part.current_quantity < required_qty:
+    #         raise ValidationError(
+    #             f"Недостатньо залежної деталі: {dep.dependent_part}"
+    #         )
 
     part.current_quantity -= quantity
     part.save()
-
-    for dep in dependencies:
-        required_qty = dep.quantity * quantity
-        child = dep.dependent_part
-        child.current_quantity -= required_qty
-        child.save()
+    #
+    # for dep in dependencies:
+    #     required_qty = dep.quantity * quantity
+    #     child = dep.dependent_part
+    #     child.current_quantity -= required_qty
+    #     child.save()
 
     return part
 

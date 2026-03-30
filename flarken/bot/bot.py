@@ -21,7 +21,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "flarken.settings")
 
 django.setup()
 
-from warehouse.models import UserProfile
+from warehouse.models import UserProfile, Part, PartDependency, PhoneModel
 
 
 def is_authorized(user_id):
@@ -133,16 +133,23 @@ def handle_write_off(call):
         state.pop('model_range', None)
         response = api.write_off(**state)
         data = response.json()
+        text = data['message']
 
         if response.status_code == 200:
-            text = f"Залишилось {data['message']} шт."
-            dep_part = keyboard.write_off_dep_part(state)
-            bot.send_message(call.message.chat.id, 'Списати залежну деталь?', reply_markup=dep_part)
-            # TODO: зробити окрему API для списання залежної деталі яка буде викликатись по кнопці
-        else:
-            text = data['message']
+            part = Part.objects.get(part_type_id=state['part_type'], phone_models=state['phone_model'])
+            phone_model = PhoneModel.objects.get(pk=state['phone_model'])
+            dep_part_queryset = PartDependency.objects.filter(parent_part=part)
+            text = f"Списано {part.part_type} для {phone_model.name} - {state['quantity']}шт\nЗалишилось {data['message']} шт."
 
-        edit(call, text, None)
+            if dep_part_queryset.exists():
+                # TODO: зробити окрему API для списання залежної деталі яка буде викликатись по кнопці
+                dep_part = keyboard.write_off_dep_part(dep_part_queryset.first())
+                edit(call, text, dep_part)
+            else:
+                edit(call, text, None)
+        else:
+            edit(call, text, None)
+
         state.clear()
 
 

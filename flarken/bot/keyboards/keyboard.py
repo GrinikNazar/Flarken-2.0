@@ -132,16 +132,10 @@ def show_quantity():
     markup.add(*row)
     return markup
 
-# параметром передати запчастину яка списалась
-def write_off_dep_part(dep_part):
-    # state = {
-    #     'part_type': data['part_type'],
-    #     'phone_model': data['phone_model'],
-    #     'quantity': data['quantity'],
-    # }
-    part_type = PartType.objects.get(pk=dep_part['part_type'])
+
+def write_off_dep_part(dep_part_queryset):
     markup = types.InlineKeyboardMarkup()
-    markup.add(types.InlineKeyboardButton(f'Списати деталь {part_type.name}', callback_data=f'write_off_dep_part'))
+    markup.add(types.InlineKeyboardButton(f'Списати деталь {dep_part_queryset.dependent_part}', callback_data=f'write_off_dep_part'))
     return markup
 
 

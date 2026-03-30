@@ -136,6 +136,9 @@ def handle_write_off(call):
 
         if response.status_code == 200:
             text = f"Залишилось {data['message']} шт."
+            dep_part = keyboard.write_off_dep_part(state)
+            bot.send_message(call.message.chat.id, 'Списати залежну деталь?', reply_markup=dep_part)
+            # TODO: зробити окрему API для списання залежної деталі яка буде викликатись по кнопці
         else:
             text = data['message']
 

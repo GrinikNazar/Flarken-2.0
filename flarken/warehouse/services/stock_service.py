@@ -74,7 +74,7 @@ def write_off_part(
 def generate_purchase_list(supplier_id: int, part_type_id: int = None):
     queryset = SupplierPartName.objects.select_related("part", "part__part_type").filter(
         supplier_id=supplier_id,
-    ).order_by("-part__phone_models")
+    ).order_by("-part__part_type", 'part__phone_models__release_year')
     if part_type_id:
         queryset = queryset.filter(part__part_type_id=part_type_id)
 
@@ -96,11 +96,11 @@ def generate_purchase_list(supplier_id: int, part_type_id: int = None):
 
 
 def generate_list_of_type(part_type_id: int):
-    list_of_parts = Part.objects.filter(part_type=part_type_id)  # Список запчастин певного типу
+    list_of_part = Part.objects.filter(part_type=part_type_id).order_by('phone_models__release_year')  # Список запчастин певного типу
 
     result = []
 
-    for part in list_of_parts:
+    for part in list_of_part:
         result.append(
             f"{part.phone_models.all()[0].name} "
             f"{part.color or part.chip_type if part.color or part.chip_type else ''} - {part.current_quantity}"

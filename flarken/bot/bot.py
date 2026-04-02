@@ -137,8 +137,8 @@ def handle_write_off(call):
 
         # TODO: зробити окрему API для списання залежної деталі яка буде викликатись по кнопці
         if response.status_code == 200:
-            if data['dep_part']:
-                dep_part = keyboard.write_off_dep_part(data['dep_part']['dep_part_name'])
+            if data['dep_part_type']:
+                dep_part = keyboard.write_off_dep_part(data['dep_part_type'])
                 edit(call, text, dep_part)
             else:
                 edit(call, text, None)

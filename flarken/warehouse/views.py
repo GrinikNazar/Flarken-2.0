@@ -1,3 +1,4 @@
+from django.http import JsonResponse
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -5,7 +6,7 @@ from rest_framework import status
 from warehouse.services.stock_service import write_off_part, generate_list_of_type
 from warehouse.services.stock_service import generate_purchase_list
 
-from warehouse.models import Supplier
+from warehouse.models import Supplier, PhoneModel
 
 
 class WriteOffAPIView(APIView):
@@ -24,8 +25,12 @@ class WriteOffAPIView(APIView):
 
             return Response(
                 {
-                    "message": f"Списано {part.part_type} для {part.phone_models} - {quantity}шт\nЗалишилось {part.current_quantity} шт.",
-                    "dep_part": {"dep_part_name": dep_part.name} if dep_part else ''},
+                    "message": f"Списано {part.part_type.name} для {PhoneModel.objects.get(pk=phone_model).name} - {quantity}шт\nЗалишилось {part.current_quantity} шт.",
+
+                    "dep_part_type": dep_part.dependent_part.part_type.name if dep_part else None,
+                    "dep_part_model": [m.name for m in dep_part.dependent_part.phone_models.all()] if dep_part else None,
+                    "dep_part_quantity": quantity,
+                },
                 status=status.HTTP_200_OK)
 
         except Exception as e:

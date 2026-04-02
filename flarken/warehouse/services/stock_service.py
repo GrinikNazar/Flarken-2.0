@@ -43,7 +43,6 @@ def write_off_part(
     if part.current_quantity < quantity:
         raise ValidationError("Немає потрібної кількості")
 
-
     part.current_quantity -= quantity
     part.save()
 

@@ -43,6 +43,10 @@ def write_off_part(
     if part.current_quantity < quantity:
         raise ValidationError("Немає потрібної кількості")
 
+
+    part.current_quantity -= quantity
+    part.save()
+
     dependencies = (
         PartDependency.objects
         .select_related("dependent_part")
@@ -50,25 +54,19 @@ def write_off_part(
         .filter(parent_part=part)
     )
 
-    # TODO: Переписати логіку з залежними деталями
-    # for dep in dependencies:
-    #     required_qty = dep.quantity * quantity
-    #
-    #     if dep.dependent_part.current_quantity < required_qty:
-    #         raise ValidationError(
-    #             f"Недостатньо залежної деталі: {dep.dependent_part}"
-    #         )
+    if dependencies.exists():
+        dep_part = dependencies.first()
+        return part, dep_part
+    else:
+        return part, None
 
-    part.current_quantity -= quantity
-    part.save()
+    # TODO: Переписати логіку з залежними деталями
     #
     # for dep in dependencies:
     #     required_qty = dep.quantity * quantity
     #     child = dep.dependent_part
     #     child.current_quantity -= required_qty
     #     child.save()
-
-    return part
 
 
 def generate_purchase_list(supplier_id: int, part_type_id: int = None):
@@ -90,7 +88,7 @@ def generate_purchase_list(supplier_id: int, part_type_id: int = None):
 
         if part.current_quantity < part.max_quantity:
             to_order = part.max_quantity - part.current_quantity
-            result.append(f"{item.supplier_name} {part.phone_models.all()[0]}{part_color} - {to_order}")
+            result.append(f"{item.supplier_name} - {part.phone_models.all()[0]}{part_color} - {to_order}")
 
     return '\n'.join(result)
 

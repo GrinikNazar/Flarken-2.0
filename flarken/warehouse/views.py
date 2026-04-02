@@ -11,17 +11,21 @@ from warehouse.models import Supplier
 class WriteOffAPIView(APIView):
 
     def post(self, request):
+        quantity = request.data.get("quantity")
+        phone_model = request.data.get("phone_model")
         try:
-            part = write_off_part(
-                phone_model=request.data.get("phone_model"),
+            part, dep_part = write_off_part(
+                phone_model=phone_model,
                 part_type=request.data.get("part_type"),
-                quantity=request.data.get("quantity"),
+                quantity=quantity,
                 color=request.data.get("color"),
                 chip_type=request.data.get("chip_type"),
             )
 
             return Response(
-                {"message": part.current_quantity},
+                {
+                    "message": f"Списано {part.part_type} для {part.phone_models} - {quantity}шт\nЗалишилось {part.current_quantity} шт.",
+                    "dep_part": {"dep_part_name": dep_part.name} if dep_part else ''},
                 status=status.HTTP_200_OK)
 
         except Exception as e:

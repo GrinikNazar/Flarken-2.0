@@ -88,7 +88,7 @@ class ChipType(models.Model):
 
 
 class Part(models.Model):
-    phone_models = models.ManyToManyField(PhoneModel,related_name="parts", verbose_name='Модель телефону')
+    phone_models = models.ManyToManyField(PhoneModel, related_name="parts", verbose_name='Модель телефону')
 
     part_type = models.ForeignKey(PartType, on_delete=models.CASCADE, related_name="parts", verbose_name='Запчастина')
 

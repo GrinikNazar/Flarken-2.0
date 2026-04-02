@@ -135,15 +135,10 @@ def handle_write_off(call):
         data = response.json()
         text = data['message']
 
+        # TODO: зробити окрему API для списання залежної деталі яка буде викликатись по кнопці
         if response.status_code == 200:
-            part = Part.objects.get(part_type_id=state['part_type'], phone_models=state['phone_model'])
-            phone_model = PhoneModel.objects.get(pk=state['phone_model'])
-            dep_part_queryset = PartDependency.objects.filter(parent_part=part)
-            text = f"Списано {part.part_type} для {phone_model.name} - {state['quantity']}шт\nЗалишилось {data['message']} шт."
-
-            if dep_part_queryset.exists():
-                # TODO: зробити окрему API для списання залежної деталі яка буде викликатись по кнопці
-                dep_part = keyboard.write_off_dep_part(dep_part_queryset.first())
+            if data['dep_part']:
+                dep_part = keyboard.write_off_dep_part(data['dep_part']['dep_part_name'])
                 edit(call, text, dep_part)
             else:
                 edit(call, text, None)
@@ -192,6 +187,12 @@ def supplier_handler(call):
     edit(call, supplier, None)
     for message in send_long_message(text):
         bot.send_message(call.message.chat.id, message)
+
+
+@bot.callback_query_handler(func=lambda call: call.data == 'dep_part')
+@auth_required
+def write_off_dep_part_handler(call):
+    pass
 
 
 if __name__ == '__main__':

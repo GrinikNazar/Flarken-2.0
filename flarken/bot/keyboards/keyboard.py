@@ -133,9 +133,9 @@ def show_quantity():
     return markup
 
 
-def write_off_dep_part(dep_part_queryset):
+def write_off_dep_part(dep_part):
     markup = types.InlineKeyboardMarkup()
-    markup.add(types.InlineKeyboardButton(f'Списати деталь {dep_part_queryset.dependent_part}', callback_data=f'write_off_dep_part'))
+    markup.add(types.InlineKeyboardButton(f'Списати деталь {dep_part}', callback_data=f'dep_part'))
     return markup
 
 

@@ -138,7 +138,7 @@ def handle_write_off(call):
         # TODO: зробити окрему API для списання залежної деталі яка буде викликатись по кнопці
         if response.status_code == 200:
             if data['dep_part_type']:
-                dep_part = keyboard.write_off_dep_part(data['dep_part_type'])
+                dep_part = keyboard.write_off_dep_part(data['dep_part_type'], data["dep_part_model"], data['dep_part_quantity'])
                 edit(call, text, dep_part)
             else:
                 edit(call, text, None)
@@ -192,6 +192,13 @@ def supplier_handler(call):
 @bot.callback_query_handler(func=lambda call: call.data == 'dep_part')
 @auth_required
 def write_off_dep_part_handler(call):
+    dep_part_list = call.data.split(':')
+    dep_part_type = dep_part_list[0]
+    dep_part_model = dep_part_list[1]
+    dep_part_quantity = int(dep_part_list[2])
+
+    # Тут викликати запит через API
+
     pass
 
 

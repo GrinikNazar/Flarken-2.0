@@ -26,10 +26,8 @@ class WriteOffAPIView(APIView):
             return Response(
                 {
                     "message": f"Списано {part.part_type.name} для {PhoneModel.objects.get(pk=phone_model).name} - {quantity}шт\nЗалишилось {part.current_quantity} шт.",
-
-                    "dep_part_type": dep_part.dependent_part.part_type.name if dep_part else None,
-                    "dep_phone_model": [m.name for m in dep_part.dependent_part.phone_models.all()] if dep_part else None,
-                    "dep_part_quantity": quantity,
+                    "dep_part_type": dep_part.dependent_part.part_type.pk if dep_part else None,
+                    "dep_part_type_name": dep_part.dependent_part.part_type.name if dep_part else None,
                 },
                 status=status.HTTP_200_OK)
 

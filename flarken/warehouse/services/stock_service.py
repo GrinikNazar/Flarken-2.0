@@ -15,7 +15,6 @@ def write_off_part(
         chip_type: str | None = None,
 ):
     try:
-
         filters = {
             "part_type": part_type,
             "phone_models": phone_model,
@@ -35,7 +34,6 @@ def write_off_part(
             .select_for_update()
             .get(id=part_id)
         )
-
 
     except Part.DoesNotExist:
         raise ValidationError("Такої запчастини не існує")
@@ -58,14 +56,6 @@ def write_off_part(
         return part, dep_part
     else:
         return part, None
-
-    # TODO: Переписати логіку з залежними деталями
-    #
-    # for dep in dependencies:
-    #     required_qty = dep.quantity * quantity
-    #     child = dep.dependent_part
-    #     child.current_quantity -= required_qty
-    #     child.save()
 
 
 def generate_purchase_list(supplier_id: int, part_type_id: int = None):

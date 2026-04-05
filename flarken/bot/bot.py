@@ -137,16 +137,15 @@ def handle_write_off(call):
 
         if response.status_code == 200:
             if data['dep_part_type']:
-                dep_part = keyboard.write_off_dep_part(data['dep_part_type'], data['dep_part_quantity'])
+                dep_part = keyboard.write_off_dep_part(data['dep_part_type_name'], state['quantity'])
                 state['part_type'] = data['dep_part_type']
-                state['phone_model'] = data['dep_phone_model']
                 edit(call, text, dep_part)
             else:
                 edit(call, text, None)
+                state.clear()
         else:
             edit(call, text, None)
-
-        state.clear()
+            state.clear()
 
 
 # Список наявних запчастин
@@ -188,22 +187,6 @@ def supplier_handler(call):
     edit(call, supplier, None)
     for message in send_long_message(text):
         bot.send_message(call.message.chat.id, message)
-
-
-@bot.callback_query_handler(func=lambda call: call.data.startswith == 'dep_part')
-@auth_required
-def write_off_dep_part_handler(call):
-    dep_part_list = call.data.split(':')
-    params = {
-        'part_type': dep_part_list[1],
-        'phone_model': dep_part_list[2],
-        'quantity': int(dep_part_list[3])
-    }
-
-    response = api.write_off(**params)
-    data = response.json()
-    text = data['message']
-    edit(call, text, None)
 
 
 if __name__ == '__main__':

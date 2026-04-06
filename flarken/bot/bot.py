@@ -71,8 +71,8 @@ def part_types(message):
 
 user_state = {}
 
-def get_state(user_id):
-    return user_state.setdefault(user_id, {})
+def get_state(message_id):
+    return user_state.setdefault(message_id, {})
 
 
 def edit(call, text, markup):
@@ -86,8 +86,8 @@ def edit(call, text, markup):
 @bot.callback_query_handler(func=lambda call: call.data.startswith('write_off'))
 @auth_required
 def handle_write_off(call):
-    user_id = call.from_user.id
-    state = get_state(user_id)
+    message_id = call.message.message_id
+    state = get_state(message_id)
 
     parsed = call.data.split(':')
     _, step, value = parsed

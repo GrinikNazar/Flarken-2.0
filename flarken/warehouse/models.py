@@ -157,20 +157,22 @@ class PartDependency(models.Model):
     parent_part = models.ForeignKey(
         Part,
         on_delete=models.CASCADE,
-        related_name="dependencies"
+        related_name="dependencies",
+        verbose_name='Основна деталь'
     )
 
     dependent_part = models.ForeignKey(
         Part,
         on_delete=models.CASCADE,
-        related_name="used_in"
+        related_name="used_in",
+        verbose_name='Залежна деталь'
     )
 
     class Meta:
         verbose_name = 'Залежність'
         verbose_name_plural = 'Залежності'
 
-    quantity = models.PositiveIntegerField(default=1)
+    quantity = models.PositiveIntegerField(default=1, verbose_name='Кількість')
 
     def __str__(self):
         return f"{self.parent_part} → {self.dependent_part}"

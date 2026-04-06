@@ -234,4 +234,12 @@ class PartAdmin(admin.ModelAdmin):
 
 @admin.register(PartDependency)
 class PartDependencyAdmin(admin.ModelAdmin):
-    pass
+    list_display = (
+        "id",
+        "parent_part",
+        "dependent_part"
+    )
+
+    list_display_links = (
+        "parent_part",
+    )

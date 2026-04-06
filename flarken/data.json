@@ -18863,21 +18863,783 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 1452,
+    "fields": {
+        "action_time": "2026-03-20T23:02:34.076Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "480",
+        "object_repr": "АКБ - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1453,
+    "fields": {
+        "action_time": "2026-03-20T23:31:09.618Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "480",
+        "object_repr": "АКБ - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1454,
+    "fields": {
+        "action_time": "2026-03-21T22:24:20.517Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "480",
+        "object_repr": "АКБ - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1455,
+    "fields": {
+        "action_time": "2026-03-21T22:45:06.024Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "480",
+        "object_repr": "АКБ - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1456,
+    "fields": {
+        "action_time": "2026-03-21T23:02:44.679Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "480",
+        "object_repr": "АКБ - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1457,
+    "fields": {
+        "action_time": "2026-03-21T23:16:52.869Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "480",
+        "object_repr": "АКБ - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1458,
+    "fields": {
+        "action_time": "2026-03-21T23:22:10.482Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "480",
+        "object_repr": "АКБ - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1459,
+    "fields": {
+        "action_time": "2026-03-24T23:01:31.569Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "480",
+        "object_repr": "АКБ - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1460,
+    "fields": {
+        "action_time": "2026-03-27T22:48:11.999Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1461,
+    "fields": {
+        "action_time": "2026-03-27T23:17:27.834Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"user profile\", \"object\": \"admin\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1462,
+    "fields": {
+        "action_time": "2026-03-27T23:20:28.111Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"name\": \"user profile\", \"object\": \"admin\", \"fields\": [\"Telegram id\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1463,
+    "fields": {
+        "action_time": "2026-03-27T23:20:33.796Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1464,
+    "fields": {
+        "action_time": "2026-03-27T23:22:32.914Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"name\": \"user profile\", \"object\": \"admin\", \"fields\": [\"Telegram id\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1465,
+    "fields": {
+        "action_time": "2026-03-27T23:23:21.294Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"name\": \"user profile\", \"object\": \"admin\", \"fields\": [\"Telegram id\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1466,
+    "fields": {
+        "action_time": "2026-03-27T23:24:57.411Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"name\": \"user profile\", \"object\": \"admin\", \"fields\": [\"Telegram id\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1467,
+    "fields": {
+        "action_time": "2026-03-28T22:16:39.192Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "5",
+        "object_repr": "anton",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1468,
+    "fields": {
+        "action_time": "2026-03-28T22:23:33.939Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "5",
+        "object_repr": "anton",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"name\": \"user profile\", \"object\": \"anton\", \"fields\": [\"Telegram id\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1469,
+    "fields": {
+        "action_time": "2026-03-28T22:24:04.944Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "6",
+        "object_repr": "vasya",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"user profile\", \"object\": \"vasya\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1470,
+    "fields": {
+        "action_time": "2026-03-28T22:25:10.946Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "5",
+        "object_repr": "anton",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1471,
+    "fields": {
+        "action_time": "2026-03-28T22:25:10.946Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "6",
+        "object_repr": "vasya",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1472,
+    "fields": {
+        "action_time": "2026-03-28T22:25:27.616Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "7",
+        "object_repr": "vasa2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1473,
+    "fields": {
+        "action_time": "2026-03-28T22:31:40.312Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "7",
+        "object_repr": "vasa2",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1474,
+    "fields": {
+        "action_time": "2026-03-28T22:31:48.502Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "7",
+        "object_repr": "test",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1475,
+    "fields": {
+        "action_time": "2026-03-28T22:33:09.844Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "7",
+        "object_repr": "Coco",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}, {\"added\": {\"name\": \"user profile\", \"object\": \"Coco\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1476,
+    "fields": {
+        "action_time": "2026-03-28T22:34:24.549Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "7",
+        "object_repr": "Coco",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1477,
+    "fields": {
+        "action_time": "2026-03-29T21:29:48.303Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "Скло - iPhone X, iPhone Xs → Рамка - iPhone X",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1478,
+    "fields": {
+        "action_time": "2026-03-29T21:30:36.697Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "545",
+        "object_repr": "Скло - iPhone X, iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1479,
+    "fields": {
+        "action_time": "2026-03-29T21:31:20.035Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "581",
+        "object_repr": "Рамка - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1480,
+    "fields": {
+        "action_time": "2026-03-30T20:41:20.856Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "630",
+        "object_repr": "Сенсор - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1481,
+    "fields": {
+        "action_time": "2026-03-30T20:42:51.959Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "630",
+        "object_repr": "Сенсор - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1482,
+    "fields": {
+        "action_time": "2026-03-30T20:45:45.885Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "630",
+        "object_repr": "Сенсор - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1483,
+    "fields": {
+        "action_time": "2026-03-30T20:48:39.890Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "630",
+        "object_repr": "Сенсор - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1484,
+    "fields": {
+        "action_time": "2026-03-30T21:00:57.037Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "630",
+        "object_repr": "Сенсор - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1485,
+    "fields": {
+        "action_time": "2026-03-30T21:14:41.189Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "545",
+        "object_repr": "Скло - iPhone X, iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1486,
+    "fields": {
+        "action_time": "2026-03-30T21:24:51.305Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "545",
+        "object_repr": "Скло - iPhone X, iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1487,
+    "fields": {
+        "action_time": "2026-03-30T22:03:11.598Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "545",
+        "object_repr": "Скло - iPhone X, iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1488,
+    "fields": {
+        "action_time": "2026-03-30T22:05:03.093Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "630",
+        "object_repr": "Сенсор - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1489,
+    "fields": {
+        "action_time": "2026-04-02T17:51:33.749Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "480",
+        "object_repr": "АКБ - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1490,
+    "fields": {
+        "action_time": "2026-04-02T21:10:37.513Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "545",
+        "object_repr": "Скло - iPhone X, iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1491,
+    "fields": {
+        "action_time": "2026-04-02T21:45:19.873Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "545",
+        "object_repr": "Скло - iPhone X, iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1492,
+    "fields": {
+        "action_time": "2026-04-02T21:49:41.428Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "480",
+        "object_repr": "АКБ - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1493,
+    "fields": {
+        "action_time": "2026-04-05T20:17:48.570Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "545",
+        "object_repr": "Скло - iPhone X, iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1494,
+    "fields": {
+        "action_time": "2026-04-05T20:17:56.773Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "581",
+        "object_repr": "Рамка - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1495,
+    "fields": {
+        "action_time": "2026-04-05T21:02:24.585Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "545",
+        "object_repr": "Скло - iPhone X, iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1496,
+    "fields": {
+        "action_time": "2026-04-05T21:18:11.704Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "581",
+        "object_repr": "Рамка - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1497,
+    "fields": {
+        "action_time": "2026-04-05T21:20:03.800Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "Сенсор - iPhone X → Рамка - iPhone X",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1498,
+    "fields": {
+        "action_time": "2026-04-05T21:20:20.219Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "630",
+        "object_repr": "Сенсор - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1499,
+    "fields": {
+        "action_time": "2026-04-05T21:20:26.889Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "581",
+        "object_repr": "Рамка - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1500,
+    "fields": {
+        "action_time": "2026-04-06T20:31:18.272Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "Скло - iPhone X, iPhone Xs → Рамка - iPhone Xs",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1501,
+    "fields": {
+        "action_time": "2026-04-06T20:31:59.020Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "580",
+        "object_repr": "Рамка - iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1502,
+    "fields": {
+        "action_time": "2026-04-06T20:32:15.170Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "581",
+        "object_repr": "Рамка - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1503,
+    "fields": {
+        "action_time": "2026-04-06T20:34:25.834Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "4",
+        "object_repr": "Скло - iPhone 11Pro → Рамка - iPhone 11Pro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1504,
+    "fields": {
+        "action_time": "2026-04-06T20:34:59.414Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "541",
+        "object_repr": "Скло - iPhone 11Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1505,
+    "fields": {
+        "action_time": "2026-04-06T20:35:06.475Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "578",
+        "object_repr": "Рамка - iPhone 11Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1506,
+    "fields": {
+        "action_time": "2026-04-06T20:53:34.137Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "545",
+        "object_repr": "Скло - iPhone X, iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1507,
+    "fields": {
+        "action_time": "2026-04-06T20:53:42.626Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "581",
+        "object_repr": "Рамка - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$1000000$YWbMzfpOkxRK91mgLmrG34$xVyrRpxqKvG07XVTwmqNJCPO/mWbURGg6W+y1TMM6lI=",
-        "last_login": "2026-03-15T18:56:23.311Z",
+        "last_login": "2026-03-29T21:25:30.129Z",
         "is_superuser": true,
         "username": "admin",
-        "first_name": "",
-        "last_name": "",
+        "first_name": "Назар",
+        "last_name": "Гриник",
         "email": "",
         "is_staff": true,
         "is_active": true,
-        "date_joined": "2026-02-22T21:42:20.505Z",
+        "date_joined": "2026-02-22T21:42:20Z",
         "groups": [],
         "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$iqdZXWY2xRzpJLLwQsjpt7$5i1uGRBYbtqmJd3toeor+Qzb4kokuC81uj/lxJkhu3g=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Coco",
+        "first_name": "Мій",
+        "last_name": "Тестовий",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-03-28T22:25:26Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "warehouse.userprofile",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "telegram_id": 375385945
+    }
+},
+{
+    "model": "warehouse.userprofile",
+    "pk": 10,
+    "fields": {
+        "user": 7,
+        "telegram_id": 6979340619
     }
 },
 {
@@ -22209,7 +22971,7 @@
     "pk": 541,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -22269,7 +23031,7 @@
     "pk": 545,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 14,
         "min_quantity": 5,
         "max_quantity": 15,
         "color": null,
@@ -22768,7 +23530,7 @@
     "pk": 578,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -22798,7 +23560,7 @@
     "pk": 580,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 8,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": null,
@@ -22813,7 +23575,7 @@
     "pk": 581,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 19,
         "min_quantity": 5,
         "max_quantity": 20,
         "color": null,
@@ -27935,6 +28697,42 @@
         "part": 677,
         "supplier": 1,
         "supplier_name": "Екран копія GX"
+    }
+},
+{
+    "model": "warehouse.partdependency",
+    "pk": 1,
+    "fields": {
+        "parent_part": 545,
+        "dependent_part": 581,
+        "quantity": 1
+    }
+},
+{
+    "model": "warehouse.partdependency",
+    "pk": 2,
+    "fields": {
+        "parent_part": 630,
+        "dependent_part": 581,
+        "quantity": 1
+    }
+},
+{
+    "model": "warehouse.partdependency",
+    "pk": 3,
+    "fields": {
+        "parent_part": 545,
+        "dependent_part": 580,
+        "quantity": 1
+    }
+},
+{
+    "model": "warehouse.partdependency",
+    "pk": 4,
+    "fields": {
+        "parent_part": 541,
+        "dependent_part": 578,
+        "quantity": 1
     }
 }
 ]

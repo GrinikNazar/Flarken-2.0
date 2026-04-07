@@ -94,7 +94,7 @@ def show_phone_model_range(part_type):
 
     return markup
 
-
+# TODO: зробити кнопку "Назад"
 def show_phone_model(part_type, model_range):
     markup = types.InlineKeyboardMarkup()
 

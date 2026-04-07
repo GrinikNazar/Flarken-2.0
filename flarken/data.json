@@ -19591,6 +19591,175 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 1508,
+    "fields": {
+        "action_time": "2026-04-07T21:25:22.853Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "5",
+        "object_repr": "Сенсор - iPhone Xs → Рамка - iPhone Xs",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1509,
+    "fields": {
+        "action_time": "2026-04-07T21:26:01.746Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "629",
+        "object_repr": "Сенсор - iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1510,
+    "fields": {
+        "action_time": "2026-04-07T21:31:50.078Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "6",
+        "object_repr": "Скло - iPhone XsMax → Рамка - iPhone XsMax",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1511,
+    "fields": {
+        "action_time": "2026-04-07T21:32:18.468Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "7",
+        "object_repr": "Сенсор - iPhone XsMax → Рамка - iPhone XsMax",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1512,
+    "fields": {
+        "action_time": "2026-04-07T21:33:54.561Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "8",
+        "object_repr": "Сенсор - iPhone 11Pro - No Chip → Рамка - iPhone 11Pro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1513,
+    "fields": {
+        "action_time": "2026-04-07T21:34:25.010Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "9",
+        "object_repr": "Сенсор - iPhone 11Pro - With Chip → Рамка - iPhone 11Pro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1514,
+    "fields": {
+        "action_time": "2026-04-07T21:36:26.761Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "10",
+        "object_repr": "Скло - iPhone 11ProMax → Рамка - iPhone 11ProMax",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1515,
+    "fields": {
+        "action_time": "2026-04-07T21:36:49.037Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "11",
+        "object_repr": "Сенсор - iPhone 11ProMax - No Chip → Рамка - iPhone 11ProMax",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1516,
+    "fields": {
+        "action_time": "2026-04-07T21:37:05.534Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "12",
+        "object_repr": "Сенсор - iPhone 11ProMax - With Chip → Рамка - iPhone 11ProMax",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1517,
+    "fields": {
+        "action_time": "2026-04-07T21:39:09.385Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "540",
+        "object_repr": "Скло - iPhone 11ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1518,
+    "fields": {
+        "action_time": "2026-04-07T21:39:18.085Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "622",
+        "object_repr": "Сенсор - iPhone 11ProMax - With Chip",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1519,
+    "fields": {
+        "action_time": "2026-04-07T21:39:18.095Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "621",
+        "object_repr": "Сенсор - iPhone 11ProMax - No Chip",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1520,
+    "fields": {
+        "action_time": "2026-04-07T21:39:44.237Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "577",
+        "object_repr": "Рамка - iPhone 11ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
@@ -22956,7 +23125,7 @@
     "pk": 540,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 8,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -23515,7 +23684,7 @@
     "pk": 577,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 14,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -23560,7 +23729,7 @@
     "pk": 580,
     "fields": {
         "part_type": 4,
-        "current_quantity": 8,
+        "current_quantity": 7,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": null,
@@ -23590,7 +23759,7 @@
     "pk": 621,
     "fields": {
         "part_type": 3,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -23605,7 +23774,7 @@
     "pk": 622,
     "fields": {
         "part_type": 3,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -23710,7 +23879,7 @@
     "pk": 629,
     "fields": {
         "part_type": 3,
-        "current_quantity": 0,
+        "current_quantity": 9,
         "min_quantity": 4,
         "max_quantity": 10,
         "color": null,
@@ -28732,6 +28901,78 @@
     "fields": {
         "parent_part": 541,
         "dependent_part": 578,
+        "quantity": 1
+    }
+},
+{
+    "model": "warehouse.partdependency",
+    "pk": 5,
+    "fields": {
+        "parent_part": 629,
+        "dependent_part": 580,
+        "quantity": 1
+    }
+},
+{
+    "model": "warehouse.partdependency",
+    "pk": 6,
+    "fields": {
+        "parent_part": 544,
+        "dependent_part": 579,
+        "quantity": 1
+    }
+},
+{
+    "model": "warehouse.partdependency",
+    "pk": 7,
+    "fields": {
+        "parent_part": 628,
+        "dependent_part": 579,
+        "quantity": 1
+    }
+},
+{
+    "model": "warehouse.partdependency",
+    "pk": 8,
+    "fields": {
+        "parent_part": 623,
+        "dependent_part": 578,
+        "quantity": 1
+    }
+},
+{
+    "model": "warehouse.partdependency",
+    "pk": 9,
+    "fields": {
+        "parent_part": 624,
+        "dependent_part": 578,
+        "quantity": 1
+    }
+},
+{
+    "model": "warehouse.partdependency",
+    "pk": 10,
+    "fields": {
+        "parent_part": 540,
+        "dependent_part": 577,
+        "quantity": 1
+    }
+},
+{
+    "model": "warehouse.partdependency",
+    "pk": 11,
+    "fields": {
+        "parent_part": 621,
+        "dependent_part": 577,
+        "quantity": 1
+    }
+},
+{
+    "model": "warehouse.partdependency",
+    "pk": 12,
+    "fields": {
+        "parent_part": 622,
+        "dependent_part": 577,
         "quantity": 1
     }
 }

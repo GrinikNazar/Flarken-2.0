@@ -129,8 +129,6 @@ def handle_write_off(call):
         edit(call,'Кількість', keyboard.show_quantity())
 
     elif step == 'quantity':
-        # TODO: баг з сенсорами коли з чіпом чи без не знаходить залежну деталь
-        # проблема у chip_type, так як АРІ намагається взяти рамку з чіпом
         state['quantity'] = int(value)
         state.pop('model_range', None)
         response = api.write_off(**state)
@@ -141,7 +139,8 @@ def handle_write_off(call):
             if data['dep_part_type']:
                 dep_part = keyboard.write_off_dep_part(data['dep_part_type_name'], state['quantity'])
                 state['part_type'] = data['dep_part_type']
-                # можна сюди передавати з view ще тип чіпа якщо є і колір також якщо є і змінювати в стані потрібне поле
+                state['color'] = data['dep_part_color']
+                state['chip_type'] = data['dep_part_chip_type']
                 edit(call, text, dep_part)
             else:
                 edit(call, text, None)

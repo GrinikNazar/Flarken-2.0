@@ -139,6 +139,11 @@ def write_off_dep_part(dep_part_type, dep_part_quantity):
     return markup
 
 
+def add_back_button(markup):
+    markup.row(types.InlineKeyboardButton('⬅️ Назад', callback_data='back'))
+    return markup
+
+
 
 # def other_key(user):
 #     users = iphone_db.select_hose()

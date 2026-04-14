@@ -95,16 +95,19 @@ def handle_write_off(call):
     if step == 'start':
         state.clear()
         state['part_type'] = value
+        state['back_step'] = step
 
         edit(call,'З якого модельного ряду списати?', keyboard.show_phone_model_range(state['part_type']))
 
     elif step == 'model_range':
         state['model_range'] = value
+        state['back_step'] = step
 
         edit(call,'Вибери модель', keyboard.show_phone_model(state['part_type'], value))
 
     elif step == 'model':
         state['phone_model'] = value
+        state['back_step'] = step
 
         params, next_step = keyboard.check_exists_color_or_chip_type({
             'part_type': state['part_type'],
@@ -120,16 +123,20 @@ def handle_write_off(call):
 
     elif step == 'color':
         state['color'] = value
+        state['back_step'] = step
 
         edit(call,'Кількість',keyboard.show_quantity())
 
     elif step == 'chip':
         state['chip_type'] = value
+        state['back_step'] = step
 
         edit(call,'Кількість', keyboard.show_quantity())
 
     elif step == 'quantity':
         state['quantity'] = int(value)
+        state['back_step'] = step
+
         state.pop('model_range', None)
         response = api.write_off(**state)
         data = response.json()
@@ -189,6 +196,12 @@ def supplier_handler(call):
     edit(call, supplier, None)
     for message in send_long_message(text):
         bot.send_message(call.message.chat.id, message)
+
+
+@bot.callback_query_handler(func=lambda call: call.data == 'back')
+@auth_required
+def back_handler(call):
+    handle_write_off(call)
 
 
 if __name__ == '__main__':

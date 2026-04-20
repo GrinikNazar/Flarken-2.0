@@ -4,7 +4,7 @@ import telebot
 from dotenv import load_dotenv
 from api.client import APIClient
 from utils.utils import send_long_message
-from keyboards.keyboard import actions_for_part, purchase_list
+from keyboards.keyboard import actions_for_part, purchase_list, add_back_button
 import sys
 import django
 from pathlib import Path
@@ -94,20 +94,20 @@ def handle_write_off(call):
 
     if step == 'start':
         state.clear()
+        state['history'] = []
         state['part_type'] = value
-        state['back_step'] = step
 
-        edit(call,'З якого модельного ряду списати?', keyboard.show_phone_model_range(state['part_type']))
+        edit(call,'З якого модельного ряду списати?', add_back_button(keyboard.show_phone_model_range(state['part_type'])))
 
     elif step == 'model_range':
+        state['history'].append(state.copy())
         state['model_range'] = value
-        state['back_step'] = step
 
-        edit(call,'Вибери модель', keyboard.show_phone_model(state['part_type'], value))
+        edit(call,'Вибери модель', add_back_button(keyboard.show_phone_model(state['part_type'], value)))
 
     elif step == 'model':
+        state['history'].append(state.copy())
         state['phone_model'] = value
-        state['back_step'] = step
 
         params, next_step = keyboard.check_exists_color_or_chip_type({
             'part_type': state['part_type'],
@@ -119,23 +119,23 @@ def handle_write_off(call):
         if next_step == '':
             edit(call,'Кількість', keyboard.show_quantity())
         else:
-            edit(call, next_step, keyboard.show_color_or_chip_type(**state))
+            edit(call, next_step, add_back_button(keyboard.show_color_or_chip_type(**state)))
 
     elif step == 'color':
+        state['history'].append(state.copy())
         state['color'] = value
-        state['back_step'] = step
 
-        edit(call,'Кількість',keyboard.show_quantity())
+        edit(call,'Кількість', add_back_button(keyboard.show_quantity()))
 
     elif step == 'chip':
+        state['history'].append(state.copy())
         state['chip_type'] = value
-        state['back_step'] = step
 
-        edit(call,'Кількість', keyboard.show_quantity())
+        edit(call,'Кількість', add_back_button(keyboard.show_quantity()))
 
     elif step == 'quantity':
+        state['history'].append(state.copy())
         state['quantity'] = int(value)
-        state['back_step'] = step
 
         state.pop('model_range', None)
         response = api.write_off(**state)
@@ -150,11 +150,33 @@ def handle_write_off(call):
                 state['chip_type'] = data['dep_part_chip_type']
                 edit(call, text, dep_part)
             else:
-                edit(call, text, None)
+                edit(call, text, add_back_button(None))
                 state.clear()
         else:
-            edit(call, text, None)
+            edit(call, text, add_back_button(None))
             state.clear()
+
+    elif step == 'back':
+        if state.get('history'):
+            prev_state = state['history'].pop()
+            state.clear()
+            state.update(prev_state)
+
+            # визначаємо крок по стану
+            if 'phone_model' not in state:
+                edit(call, 'З якого модельного ряду списати?',
+                     add_back_button(keyboard.show_phone_model_range(state['part_type'])))
+
+            elif 'color' not in state and 'chip_type' not in state:
+                edit(call, 'Вибери модель',
+                     add_back_button(keyboard.show_phone_model(state['part_type'], state['model_range'])))
+
+            elif 'quantity' not in state:
+                edit(call, 'Обери варіант',
+                     add_back_button(keyboard.show_color_or_chip_type(**state)))
+
+        else:
+            edit(call, 'Початок', None)
 
 
 # Список наявних запчастин
@@ -196,12 +218,6 @@ def supplier_handler(call):
     edit(call, supplier, None)
     for message in send_long_message(text):
         bot.send_message(call.message.chat.id, message)
-
-
-@bot.callback_query_handler(func=lambda call: call.data == 'back')
-@auth_required
-def back_handler(call):
-    handle_write_off(call)
 
 
 if __name__ == '__main__':

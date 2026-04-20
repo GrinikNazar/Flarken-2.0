@@ -61,6 +61,12 @@ def purchase_list(part_type_id=None):
     return markup
 
 
+def add_back_button(markup):
+    if markup is None:
+        markup = types.InlineKeyboardMarkup()
+    markup.add(types.InlineKeyboardButton('⬅️ Назад', callback_data='write_off:back:'))
+    return markup
+
 # Функція для провірки того чи є в запчастині колір чи тип чіпа сенсора
 def check_exists_color_or_chip_type(params):
     if PartType.objects.get(pk=params['part_type']).has_color:
@@ -84,18 +90,12 @@ def check_exists_color_or_chip_type(params):
     return params, ''
 
 
-def add_back_button(markup):
-    markup.row(types.InlineKeyboardButton('⬅️ Назад', callback_data='back'))
-    return markup
-
-
 def show_phone_model_range(part_type):
     markup = types.InlineKeyboardMarkup()
 
     row = [types.InlineKeyboardButton(item.name, callback_data=f'write_off:model_range:{item.pk}') for item in
            PhoneModelRange.objects.filter(phonemodel__supported_part_types=part_type).distinct().order_by('pk')]
     markup.add(*row, row_width=4)
-    add_back_button(markup)
 
     return markup
 
@@ -106,7 +106,6 @@ def show_phone_model(part_type, model_range):
     row = [types.InlineKeyboardButton(model.name, callback_data=f'write_off:model:{model.pk}') for model in
            PhoneModel.objects.filter(phone_model_range=model_range, supported_part_types=part_type).distinct()]
     markup.add(*row)
-    add_back_button(markup)
 
     return markup
 
@@ -119,7 +118,6 @@ def show_color_or_chip_type(part_type, phone_model, **kwargs):
     if colors.exists():
         row = [types.InlineKeyboardButton(c.name, callback_data=f'write_off:color:{c.name}') for c in colors]
         markup.add(*row)
-        add_back_button(markup)
         return markup
 
     chips = ChipType.objects.filter(part__phone_models=phone_model, part__part_type=part_type).distinct()
@@ -127,7 +125,6 @@ def show_color_or_chip_type(part_type, phone_model, **kwargs):
     if chips.exists():
         row = [types.InlineKeyboardButton(c.name, callback_data=f'write_off:chip:{c.name}') for c in chips]
         markup.add(*row)
-        add_back_button(markup)
         return markup
 
     return None
@@ -138,7 +135,6 @@ def show_quantity():
     markup.add(types.InlineKeyboardButton('1', callback_data=f'write_off:quantity:{1}'))
     row = [types.InlineKeyboardButton(f'{i}', callback_data=f'write_off:quantity:{i}') for i in range(2, 10)]
     markup.add(*row)
-    add_back_button(markup)
     return markup
 
 

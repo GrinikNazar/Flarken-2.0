@@ -67,6 +67,7 @@ def add_back_button(markup):
     markup.add(types.InlineKeyboardButton('⬅️ Назад', callback_data='write_off:back:'))
     return markup
 
+
 # Функція для провірки того чи є в запчастині колір чи тип чіпа сенсора
 def check_exists_color_or_chip_type(params):
     if PartType.objects.get(pk=params['part_type']).has_color:

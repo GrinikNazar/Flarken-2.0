@@ -144,7 +144,7 @@ def handle_write_off(call):
 
         if response.status_code == 200:
             if data['dep_part_type']:
-                dep_part = keyboard.write_off_dep_part(data['dep_part_type_name'], state['quantity'])
+                dep_part = add_back_button(keyboard.write_off_dep_part(data['dep_part_type_name'], state['quantity']))
                 state['part_type'] = data['dep_part_type']
                 state['color'] = data['dep_part_color']
                 state['chip_type'] = data['dep_part_chip_type']
@@ -162,7 +162,6 @@ def handle_write_off(call):
             state.clear()
             state.update(prev_state)
 
-            # визначаємо крок по стану
             if 'phone_model' not in state:
                 edit(call, 'З якого модельного ряду списати?',
                      add_back_button(keyboard.show_phone_model_range(state['part_type'])))

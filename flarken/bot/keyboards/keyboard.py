@@ -34,7 +34,10 @@ def main_board():
 
 
 def actions_for_part(message_text):
-    part = PartType.objects.get(name=message_text)
+    if message_text.isdigit():
+        part = PartType.objects.get(pk=int(message_text))
+    else:
+        part = PartType.objects.get(name=message_text)
     markup = types.InlineKeyboardMarkup()
     markup.add(
         types.InlineKeyboardButton('Кількість', callback_data=f'list_of_part_types:{part.pk}'),

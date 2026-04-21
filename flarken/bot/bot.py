@@ -62,17 +62,17 @@ def get_purchase_list(message):
     bot.send_message(message.chat.id, 'Виберіть постачальника:', reply_markup=purchase_list())
 
 
+user_state = {}
+
+def get_state(message_id):
+    return user_state.setdefault(message_id, {})
+
+
 @bot.message_handler(content_types=['text'])
 @auth_required
 def part_types(message):
     actions = actions_for_part(message.text)
     bot.send_message(message.chat.id, 'Що робимо далі?', reply_markup=actions)
-
-
-user_state = {}
-
-def get_state(message_id):
-    return user_state.setdefault(message_id, {})
 
 
 def edit(call, text, markup):
@@ -117,7 +117,7 @@ def handle_write_off(call):
         })
 
         if next_step == '':
-            edit(call,'Кількість', keyboard.show_quantity())
+            edit(call,'Кількість', add_back_button(keyboard.show_quantity()))
         else:
             edit(call, next_step, add_back_button(keyboard.show_color_or_chip_type(**state)))
 
@@ -144,16 +144,16 @@ def handle_write_off(call):
 
         if response.status_code == 200:
             if data['dep_part_type']:
-                dep_part = add_back_button(keyboard.write_off_dep_part(data['dep_part_type_name'], state['quantity']))
+                dep_part = keyboard.write_off_dep_part(data['dep_part_type_name'], state['quantity'])
                 state['part_type'] = data['dep_part_type']
                 state['color'] = data['dep_part_color']
                 state['chip_type'] = data['dep_part_chip_type']
                 edit(call, text, dep_part)
             else:
-                edit(call, text, add_back_button(None))
+                edit(call, text, None)
                 state.clear()
         else:
-            edit(call, text, add_back_button(None))
+            edit(call, text, None)
             state.clear()
 
     elif step == 'back':
@@ -175,7 +175,7 @@ def handle_write_off(call):
                      add_back_button(keyboard.show_color_or_chip_type(**state)))
 
         else:
-            edit(call, 'Початок', None)
+            edit(call, 'Початок', keyboard.actions_for_part(state['part_type']))
 
 
 # Список наявних запчастин

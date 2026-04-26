@@ -96,18 +96,21 @@ def handle_write_off(call):
         state.clear()
         state['history'] = []
         state['part_type'] = value
+        state['step'] = 'model_range'
 
         edit(call,'З якого модельного ряду списати?', add_back_button(keyboard.show_phone_model_range(state['part_type'])))
 
     elif step == 'model_range':
         state['history'].append(state.copy())
         state['model_range'] = value
+        state['step'] = 'phone_model'
 
         edit(call,'Вибери модель', add_back_button(keyboard.show_phone_model(state['part_type'], value)))
 
     elif step == 'model':
         state['history'].append(state.copy())
         state['phone_model'] = value
+        state['step'] = 'color_or_chip'
 
         params, next_step = keyboard.check_exists_color_or_chip_type({
             'part_type': state['part_type'],
@@ -124,12 +127,14 @@ def handle_write_off(call):
     elif step == 'color':
         state['history'].append(state.copy())
         state['color'] = value
+        state['step'] = 'quantity'
 
         edit(call,'Кількість', add_back_button(keyboard.show_quantity()))
 
     elif step == 'chip':
         state['history'].append(state.copy())
         state['chip_type'] = value
+        state['step'] = 'quantity'
 
         edit(call,'Кількість', add_back_button(keyboard.show_quantity()))
 
@@ -161,21 +166,22 @@ def handle_write_off(call):
             prev_state = state['history'].pop()
             state.clear()
             state.update(prev_state)
+            step = state.get('step')
 
-            if 'phone_model' not in state:
+            if step == 'model_range':
                 edit(call, 'З якого модельного ряду списати?',
                      add_back_button(keyboard.show_phone_model_range(state['part_type'])))
 
-            elif 'color' not in state and 'chip_type' not in state:
+            elif step == 'phone_model':
                 edit(call, 'Вибери модель',
                      add_back_button(keyboard.show_phone_model(state['part_type'], state['model_range'])))
 
-            elif 'quantity' not in state:
+            elif step == 'color_or_chip':
                 edit(call, 'Обери варіант',
                      add_back_button(keyboard.show_color_or_chip_type(**state)))
 
         else:
-            edit(call, 'Початок', keyboard.actions_for_part(state['part_type']))
+            edit(call, 'Що робимо далі?', keyboard.actions_for_part(state['part_type']))
 
 
 # Список наявних запчастин

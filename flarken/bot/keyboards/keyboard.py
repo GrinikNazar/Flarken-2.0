@@ -32,6 +32,19 @@ def main_board():
 
     return markup
 
+# TODO: тут дописати кнопки з моделі де будуть типи роботи
+def work_board():
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    button_3 = types.KeyboardButton('Робота 1')
+    button_4 = types.KeyboardButton('Робота 2')
+    button_5 = types.KeyboardButton('Робота 3')
+    button_6 = types.KeyboardButton('Робота 4')
+    row1 = [button_3, button_4, button_5, button_6]
+    board = [row1]
+    for row in board:
+        markup.row(*row)
+    return markup
+
 
 def actions_for_part(message_text):
     if message_text.isdigit():

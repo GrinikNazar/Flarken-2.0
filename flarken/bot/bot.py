@@ -49,6 +49,12 @@ def send_message_welcome(message):
     bot.send_message(message.chat.id, 'Привіт, вибирай дію \U0001F916', reply_markup=keyboard.main_board())
 
 
+@bot.message_handler(commands=['wp'])
+@auth_required
+def wp_keyboard(message):
+    bot.send_message(message.chat.id, 'Яку роботи вибрати ', reply_markup=keyboard.work_board())
+
+
 @bot.message_handler(commands=['my_id'])
 def get_my_id(message):
     user_firs_name = message.from_user.first_name

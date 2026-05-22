@@ -19760,11 +19760,180 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 1521,
+    "fields": {
+        "action_time": "2026-04-08T21:29:49.434Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "622",
+        "object_repr": "Сенсор - iPhone 11ProMax - With Chip",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1522,
+    "fields": {
+        "action_time": "2026-04-29T14:32:45.859Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "12",
+        "object_repr": "ipad",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1523,
+    "fields": {
+        "action_time": "2026-04-29T14:32:52.641Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "12",
+        "object_repr": "iPad",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1524,
+    "fields": {
+        "action_time": "2026-04-29T14:34:18.690Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "13",
+        "object_repr": "Macbook",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1525,
+    "fields": {
+        "action_time": "2026-05-22T20:49:50.334Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "1",
+        "object_repr": "Заміна АКБ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1526,
+    "fields": {
+        "action_time": "2026-05-22T20:50:25.837Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "1",
+        "object_repr": "Заміна АКБ - 7 (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1527,
+    "fields": {
+        "action_time": "2026-05-22T21:18:47.813Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "39",
+        "object_repr": "iPad Pro 9.7",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1528,
+    "fields": {
+        "action_time": "2026-05-22T21:19:30.950Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "39",
+        "object_repr": "iPad Pro 9.7",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u043f\\u0447\\u0430\\u0441\\u0442\\u0438\\u043d\\u0438 \\u044f\\u043a\\u0456 \\u043f\\u0456\\u0434\\u0442\\u0440\\u0438\\u043c\\u0443\\u044e\\u0442\\u044c\\u0441\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1529,
+    "fields": {
+        "action_time": "2026-05-22T21:20:23.294Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "39",
+        "object_repr": "iPad Pro 9.7",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1530,
+    "fields": {
+        "action_time": "2026-05-22T21:21:15.568Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "1",
+        "object_repr": "Заміна АКБ - 7 (1)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1531,
+    "fields": {
+        "action_time": "2026-05-22T21:21:22.044Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "1",
+        "object_repr": "Заміна АКБ",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1532,
+    "fields": {
+        "action_time": "2026-05-22T21:23:30.064Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "2",
+        "object_repr": "Заміна АКБ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1533,
+    "fields": {
+        "action_time": "2026-05-22T21:25:01.077Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "2",
+        "object_repr": "Заміна АКБ - iPhone 6 (0.2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$1000000$YWbMzfpOkxRK91mgLmrG34$xVyrRpxqKvG07XVTwmqNJCPO/mWbURGg6W+y1TMM6lI=",
-        "last_login": "2026-03-29T21:25:30.129Z",
+        "last_login": "2026-05-22T20:43:07.425Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "Назар",
@@ -19886,6 +20055,20 @@
     "pk": 11,
     "fields": {
         "name": "SE"
+    }
+},
+{
+    "model": "warehouse.phonemodelrange",
+    "pk": 12,
+    "fields": {
+        "name": "iPad"
+    }
+},
+{
+    "model": "warehouse.phonemodelrange",
+    "pk": 13,
+    "fields": {
+        "name": "Macbook"
     }
 },
 {
@@ -23684,7 +23867,7 @@
     "pk": 577,
     "fields": {
         "part_type": 4,
-        "current_quantity": 14,
+        "current_quantity": 12,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -23759,7 +23942,7 @@
     "pk": 621,
     "fields": {
         "part_type": 3,
-        "current_quantity": 5,
+        "current_quantity": 4,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -23774,7 +23957,7 @@
     "pk": 622,
     "fields": {
         "part_type": 3,
-        "current_quantity": 3,
+        "current_quantity": 2,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -28974,6 +29157,22 @@
         "parent_part": 622,
         "dependent_part": 577,
         "quantity": 1
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 2,
+    "fields": {
+        "name": "Заміна АКБ"
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 2,
+    "fields": {
+        "work_type": 2,
+        "phone_model": 1,
+        "points": 0.2
     }
 }
 ]

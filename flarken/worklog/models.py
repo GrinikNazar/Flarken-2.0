@@ -1,8 +1,9 @@
 from django.db import models
 
-from warehouse.models import PhoneModelRange
+from warehouse.models import PhoneModel
 
 
+# TODO: виписати всі типи робіт і записати у базу
 class WorkType(models.Model):
     name = models.CharField(max_length=150, unique=True, verbose_name="Тип роботи")
 
@@ -13,7 +14,7 @@ class WorkType(models.Model):
         verbose_name = "Тип роботи"
         verbose_name_plural = "Типи робіт"
 
-
+# TODO: автоматизувати перехід балів з EXCEL до бази даних щоб не заповнювати все вручну
 class WorkPrice(models.Model):
     work_type = models.ForeignKey(
         WorkType,
@@ -23,13 +24,13 @@ class WorkPrice(models.Model):
     )
 
     phone_model = models.ForeignKey(
-        PhoneModelRange,
+        PhoneModel,
         on_delete=models.CASCADE,
         related_name="work_prices",
-        verbose_name="Модель телефону"
+        verbose_name="Модель пристрою"
     )
 
-    points = models.PositiveIntegerField(verbose_name="Кількість балів")
+    points = models.FloatField(verbose_name="Кількість балів")
 
     class Meta:
         unique_together = ("work_type", "phone_model")

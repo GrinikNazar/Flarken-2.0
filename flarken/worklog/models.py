@@ -4,7 +4,7 @@ from warehouse.models import PhoneModelRange
 
 
 class WorkType(models.Model):
-    name = models.CharField(max_length=150, unique=True)
+    name = models.CharField(max_length=150, unique=True, verbose_name="Тип роботи")
 
     def __str__(self):
         return self.name
@@ -18,16 +18,18 @@ class WorkPrice(models.Model):
     work_type = models.ForeignKey(
         WorkType,
         on_delete=models.CASCADE,
-        related_name="prices"
+        related_name="prices",
+        verbose_name='Тип роботи'
     )
 
     phone_model = models.ForeignKey(
         PhoneModelRange,
         on_delete=models.CASCADE,
-        related_name="work_prices"
+        related_name="work_prices",
+        verbose_name="Модель телефону"
     )
 
-    points = models.PositiveIntegerField()
+    points = models.PositiveIntegerField(verbose_name="Кількість балів")
 
     class Meta:
         unique_together = ("work_type", "phone_model")

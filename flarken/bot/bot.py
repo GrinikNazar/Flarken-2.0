@@ -8,6 +8,7 @@ from keyboards.keyboard import actions_for_part, purchase_list, add_back_button
 import sys
 import django
 from pathlib import Path
+import copy
 
 load_dotenv()
 bot = telebot.TeleBot(os.getenv("BOT_TOKEN"))
@@ -149,7 +150,11 @@ def handle_write_off(call):
         state['quantity'] = int(value)
 
         state.pop('model_range', None)
-        response = api.write_off(**state)
+
+        data_for_api = copy.deepcopy(state)
+        data_for_api.pop('history', None)
+        response = api.write_off(**data_for_api)
+
         data = response.json()
         text = data['message']
 

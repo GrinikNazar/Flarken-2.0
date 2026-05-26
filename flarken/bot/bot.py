@@ -78,8 +78,13 @@ def get_state(message_id):
 @bot.message_handler(content_types=['text'])
 @auth_required
 def part_types(message):
-    actions = actions_for_part(message.text)
-    bot.send_message(message.chat.id, 'Що робимо далі?', reply_markup=actions)
+    try:
+        actions = actions_for_part(message.text)
+        bot.send_message(message.chat.id, 'Що робимо далі?', reply_markup=actions)
+
+    except Exception as e:
+        # TODO: дописати функцію яка буде робити дію коли вибирається клавіша для роботи з балами
+        bot.send_message(message.chat.id, 'Хуєта',)
 
 
 def edit(call, text, markup):

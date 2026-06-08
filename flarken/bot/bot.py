@@ -1,5 +1,5 @@
 import os
-from keyboards import keyboard
+from keyboards import keyboard, keyboard_wp
 import telebot
 from dotenv import load_dotenv
 from api.client import APIClient
@@ -53,7 +53,7 @@ def send_message_welcome(message):
 @bot.message_handler(commands=['wp'])
 @auth_required
 def wp_keyboard(message):
-    bot.send_message(message.chat.id, 'Яку роботи вибрати ', reply_markup=keyboard.work_board())
+    bot.send_message(message.chat.id, 'Яку роботи вибрати ', reply_markup=keyboard_wp.work_board())
 
 
 @bot.message_handler(commands=['my_id'])

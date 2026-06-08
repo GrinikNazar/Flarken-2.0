@@ -32,18 +32,6 @@ def main_board():
 
     return markup
 
-# Клавіатура керування WP, тут хочу зробити, щоб можна було дивитись інфу про бали
-def work_board():
-    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    button_3 = types.KeyboardButton('Добавити')
-    button_4 = types.KeyboardButton('Переглянути сьогодні')
-    button_5 = types.KeyboardButton('Загальний список')
-    row1 = [button_3, button_4, button_5]
-    board = [row1]
-    for row in board:
-        markup.row(*row)
-    return markup
-
 
 def actions_for_part(message_text):
     if message_text.isdigit():

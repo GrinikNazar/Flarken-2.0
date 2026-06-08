@@ -1,16 +1,5 @@
 from telebot import types
-import os
-import sys
-import django
-from pathlib import Path
-
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
-sys.path.append(str(BASE_DIR))
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "flarken.settings")
-
-django.setup()
-
+from utils import django_setup
 from warehouse.models import Part, PhoneModel, Color, PartType, ChipType, Supplier, PhoneModelRange
 
 

@@ -4,25 +4,16 @@ import telebot
 from dotenv import load_dotenv
 from api.client import APIClient
 from utils.utils import send_long_message
+from utils import django_setup
 from keyboards.keyboard import actions_for_part, purchase_list, add_back_button
-import sys
-import django
-from pathlib import Path
 import copy
+
+from warehouse.models import UserProfile, Part, PartDependency, PhoneModel
+
 
 load_dotenv()
 bot = telebot.TeleBot(os.getenv("BOT_TOKEN"))
 api = APIClient()
-
-
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
-sys.path.append(str(BASE_DIR))
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "flarken.settings")
-
-django.setup()
-
-from warehouse.models import UserProfile, Part, PartDependency, PhoneModel
 
 
 def is_authorized(user_id):
@@ -84,7 +75,9 @@ def part_types(message):
 
     except Exception as e:
         # TODO: дописати функцію яка буде робити дію коли вибирається клавіша для роботи з балами
-        bot.send_message(message.chat.id, 'Хуєта',)
+        result = keyboard_wp.actions_from_work_board(message.text)
+
+        bot.send_message(message.chat.id, 'Виберіть модельний ряд', reply_markup=result)
 
 
 def edit(call, text, markup):

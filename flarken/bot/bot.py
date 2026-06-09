@@ -9,7 +9,7 @@ from keyboards.keyboard import actions_for_part, purchase_list, add_back_button
 import copy
 
 from warehouse.models import UserProfile, Part, PartDependency, PhoneModel
-
+from worklog.models import WorkPrice, WorkType, WorkLogEntry
 
 load_dotenv()
 bot = telebot.TeleBot(os.getenv("BOT_TOKEN"))
@@ -75,8 +75,7 @@ def part_types(message):
 
     except Exception as e:
         # TODO: дописати функцію яка буде робити дію коли вибирається клавіша для роботи з балами
-        result = keyboard_wp.actions_from_work_board(message.text)
-
+        result = keyboard_wp.show_model_range()
         bot.send_message(message.chat.id, 'Виберіть модельний ряд', reply_markup=result)
 
 
@@ -233,6 +232,97 @@ def supplier_handler(call):
     for message in send_long_message(text):
         bot.send_message(call.message.chat.id, message)
 
+
+# @bot.message_handler(func=lambda m: m.text == 'Добавити')
+# @auth_required
+# def wp_add_start(message):
+#     bot.send_message(message.chat.id, 'Виберіть модельний ряд:',
+#                      reply_markup=keyboard_wp.show_model_range())
+
+
+@bot.callback_query_handler(func=lambda call: call.data.startswith('wp:'))
+@auth_required
+def handle_wp(call):
+    message_id = call.message.message_id
+    state = get_state(message_id)
+
+    _, step, value = call.data.split(':')
+
+    if step == 'model_range':
+        state.clear()
+        state['history'] = []
+        state['model_range'] = value
+        state['step'] = 'phone_model'
+        state['selected'] = []
+
+        edit(call, 'Виберіть модель:', keyboard_wp.show_phone_model(value))
+
+    elif step == 'phone_model':
+        state['history'].append(state.copy())
+        state['phone_model'] = value
+        state['step'] = 'work_list'
+
+        edit(call, 'Виберіть роботи:', keyboard_wp.show_work_list(value, []))
+
+    elif step == 'toggle':
+        work_id = int(value)
+        selected = state.get('selected', [])
+
+        # Перевіряємо exclusive_group
+        toggled_work = WorkPrice.objects.select_related('work_type').get(pk=work_id)
+        group = toggled_work.work_type.exclusive_group
+
+        if work_id in selected:
+            # Знімаємо вибір
+            selected.remove(work_id)
+        else:
+            # Якщо є група — знімаємо інші з тієї ж групи
+            if group:
+                group_ids = list(
+                    WorkPrice.objects.filter(
+                        phone_model=state['phone_model'],
+                        work_type__exclusive_group=group
+                    ).values_list('pk', flat=True)
+                )
+                selected = [s for s in selected if s not in group_ids]
+            selected.append(work_id)
+
+        state['selected'] = selected
+        edit(call, 'Виберіть роботи:', keyboard_wp.show_work_list(state['phone_model'], selected))
+
+    elif step == 'confirm':
+        selected = state.get('selected', [])
+        if not selected:
+            bot.answer_callback_query(call.id, '⚠️ Виберіть хоча б одну роботу!')
+            return
+
+        user_profile = UserProfile.objects.get(telegram_id=call.from_user.id)
+        works = WorkPrice.objects.filter(pk__in=selected)
+        total = sum(w.points for w in works)
+
+        entry = WorkLogEntry.objects.create(
+            user=user_profile,
+            phone_model_id=state['phone_model'],
+            total_points=total
+        )
+        entry.works.set(works)
+
+        works_text = '\n'.join(f'  • {w.work_type.name} — {w.points} б' for w in works)
+        edit(call, f'✅ Збережено!\n\n{works_text}\n\nРазом: {total} балів', None)
+        state.clear()
+
+    elif step == 'back':
+        if state.get('history'):
+            prev = state['history'].pop()
+            state.clear()
+            state.update(prev)
+
+            if state.get('step') == 'phone_model':
+                edit(call, 'Виберіть модель:', keyboard_wp.show_phone_model(state['model_range']))
+            elif state.get('step') == 'model_range':
+                edit(call, 'Виберіть модельний ряд:', keyboard_wp.show_model_range())
+        else:
+            edit(call, 'Виберіть модельний ряд:', keyboard_wp.show_model_range())
 
 if __name__ == '__main__':
     bot.infinity_polling(timeout=10)

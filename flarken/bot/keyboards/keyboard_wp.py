@@ -60,4 +60,38 @@ def show_work_list(phone_model_id, selected_ids: list[int]):
     markup.add(types.InlineKeyboardButton('⬅️ Назад', callback_data='wp:back:'))
     return markup
 
-# TODO: зробити далі послідовний вибір, також треба розібратись як і чи можна вибирати пункти в меню по декілька штук
+
+def apply_exclusive_logic(work_id: int, selected: list, phone_model_id) -> list:
+    toggled = WorkPrice.objects.prefetch_related(
+        "work_type__exclusive_groups"
+    ).get(pk=work_id)
+    groups = toggled.work_type.exclusive_groups.all()
+
+    if work_id in selected:
+        selected.remove(work_id)
+        return selected
+
+    new_selected = list(selected)
+
+    if any(g.cancels_all for g in groups):
+        new_selected = []
+    else:
+        cancels_all_ids = list(
+            WorkPrice.objects.filter(
+                phone_model=phone_model_id,
+                work_type__exclusive_groups__cancels_all=True
+            ).values_list("pk", flat=True)
+        )
+        new_selected = [s for s in new_selected if s not in cancels_all_ids]
+
+        for group in groups:
+            conflict_ids = list(
+                WorkPrice.objects.filter(
+                    phone_model=phone_model_id,
+                    work_type__exclusive_groups=group
+                ).exclude(pk=work_id).values_list("pk", flat=True)
+            )
+            new_selected = [s for s in new_selected if s not in conflict_ids]
+
+    new_selected.append(work_id)
+    return new_selected

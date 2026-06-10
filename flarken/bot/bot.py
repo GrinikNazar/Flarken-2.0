@@ -6,10 +6,12 @@ from api.client import APIClient
 from utils.utils import send_long_message
 from utils import django_setup
 from keyboards.keyboard import actions_for_part, purchase_list, add_back_button
+from keyboards.keyboard_wp import apply_exclusive_logic
 import copy
 
 from warehouse.models import UserProfile, Part, PartDependency, PhoneModel
 from worklog.models import WorkPrice, WorkType, WorkLogEntry
+
 
 load_dotenv()
 bot = telebot.TeleBot(os.getenv("BOT_TOKEN"))
@@ -233,13 +235,6 @@ def supplier_handler(call):
         bot.send_message(call.message.chat.id, message)
 
 
-# @bot.message_handler(func=lambda m: m.text == 'Добавити')
-# @auth_required
-# def wp_add_start(message):
-#     bot.send_message(message.chat.id, 'Виберіть модельний ряд:',
-#                      reply_markup=keyboard_wp.show_model_range())
-
-
 @bot.callback_query_handler(func=lambda call: call.data.startswith('wp:'))
 @auth_required
 def handle_wp(call):
@@ -254,41 +249,19 @@ def handle_wp(call):
         state['model_range'] = value
         state['step'] = 'phone_model'
         state['selected'] = []
-
         edit(call, 'Виберіть модель:', keyboard_wp.show_phone_model(value))
 
     elif step == 'phone_model':
         state['history'].append(state.copy())
         state['phone_model'] = value
         state['step'] = 'work_list'
-
         edit(call, 'Виберіть роботи:', keyboard_wp.show_work_list(value, []))
 
     elif step == 'toggle':
         work_id = int(value)
         selected = state.get('selected', [])
-
-        # Перевіряємо exclusive_group
-        toggled_work = WorkPrice.objects.select_related('work_type').get(pk=work_id)
-        group = toggled_work.work_type.exclusive_group
-
-        if work_id in selected:
-            # Знімаємо вибір
-            selected.remove(work_id)
-        else:
-            # Якщо є група — знімаємо інші з тієї ж групи
-            if group:
-                group_ids = list(
-                    WorkPrice.objects.filter(
-                        phone_model=state['phone_model'],
-                        work_type__exclusive_group=group
-                    ).values_list('pk', flat=True)
-                )
-                selected = [s for s in selected if s not in group_ids]
-            selected.append(work_id)
-
-        state['selected'] = selected
-        edit(call, 'Виберіть роботи:', keyboard_wp.show_work_list(state['phone_model'], selected))
+        state['selected'] = apply_exclusive_logic(work_id, selected, state['phone_model'])
+        edit(call, 'Виберіть роботи:', keyboard_wp.show_work_list(state['phone_model'], state['selected']))
 
     elif step == 'confirm':
         selected = state.get('selected', [])
@@ -316,10 +289,9 @@ def handle_wp(call):
             prev = state['history'].pop()
             state.clear()
             state.update(prev)
-
             if state.get('step') == 'phone_model':
                 edit(call, 'Виберіть модель:', keyboard_wp.show_phone_model(state['model_range']))
-            elif state.get('step') == 'model_range':
+            else:
                 edit(call, 'Виберіть модельний ряд:', keyboard_wp.show_model_range())
         else:
             edit(call, 'Виберіть модельний ряд:', keyboard_wp.show_model_range())

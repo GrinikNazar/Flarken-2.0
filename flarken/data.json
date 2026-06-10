@@ -19929,11 +19929,700 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 1534,
+    "fields": {
+        "action_time": "2026-06-09T11:34:53.558Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "3",
+        "object_repr": "Перепаковка АКБ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1535,
+    "fields": {
+        "action_time": "2026-06-09T11:34:59.260Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "2",
+        "object_repr": "Заміна АКБ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0430 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1536,
+    "fields": {
+        "action_time": "2026-06-09T11:35:48.356Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "3",
+        "object_repr": "Перепаковка АКБ - iPhone 6 (0.8)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1537,
+    "fields": {
+        "action_time": "2026-06-09T11:54:49.249Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "4",
+        "object_repr": "Переклейка",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0426\\u0456\\u043d\\u0430 \\u0440\\u043e\\u0431\\u043e\\u0442\\u0438\", \"object\": \"\\u041f\\u0435\\u0440\\u0435\\u043a\\u043b\\u0435\\u0439\\u043a\\u0430 - iPhone 6 (0.9)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1538,
+    "fields": {
+        "action_time": "2026-06-09T11:55:38.311Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "3",
+        "object_repr": "Перепаковка АКБ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0430 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1539,
+    "fields": {
+        "action_time": "2026-06-09T11:55:49.604Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "4",
+        "object_repr": "Переклейка",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0430 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1540,
+    "fields": {
+        "action_time": "2026-06-09T11:56:17.568Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "2",
+        "object_repr": "Заміна АКБ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0430 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1541,
+    "fields": {
+        "action_time": "2026-06-09T11:56:24.415Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "4",
+        "object_repr": "Переклейка",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0430 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1542,
+    "fields": {
+        "action_time": "2026-06-09T11:56:29.052Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "3",
+        "object_repr": "Перепаковка АКБ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0430 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1543,
+    "fields": {
+        "action_time": "2026-06-10T08:56:21.036Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "2",
+        "object_repr": "Заміна АКБ",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1544,
+    "fields": {
+        "action_time": "2026-06-10T08:56:21.036Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "4",
+        "object_repr": "Переклейка",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1545,
+    "fields": {
+        "action_time": "2026-06-10T08:56:21.036Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "3",
+        "object_repr": "Перепаковка АКБ",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1546,
+    "fields": {
+        "action_time": "2026-06-10T08:56:31.336Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "1",
+        "object_repr": "admin | iPhone 6 | 2026-06-09 | 0.8 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1547,
+    "fields": {
+        "action_time": "2026-06-10T09:05:31.564Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "5",
+        "object_repr": "Заміна АКБ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1548,
+    "fields": {
+        "action_time": "2026-06-10T09:07:05.948Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "5",
+        "object_repr": "Заміна АКБ - iPhone 6 (0.2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1549,
+    "fields": {
+        "action_time": "2026-06-10T09:07:23.489Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "6",
+        "object_repr": "Перепаковка АКБ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1550,
+    "fields": {
+        "action_time": "2026-06-10T09:07:42.550Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "6",
+        "object_repr": "Перепаковка АКБ - iPhone 6 (0.8)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1551,
+    "fields": {
+        "action_time": "2026-06-10T09:07:57.640Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "1",
+        "object_repr": "АКБ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1552,
+    "fields": {
+        "action_time": "2026-06-10T09:08:11.686Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "5",
+        "object_repr": "Заміна АКБ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1553,
+    "fields": {
+        "action_time": "2026-06-10T09:08:17.184Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "6",
+        "object_repr": "Перепаковка АКБ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1554,
+    "fields": {
+        "action_time": "2026-06-10T09:53:07.409Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "2",
+        "object_repr": "Повна чистка ⚡",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1555,
+    "fields": {
+        "action_time": "2026-06-10T09:53:41.220Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "7",
+        "object_repr": "Повна чистка",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1556,
+    "fields": {
+        "action_time": "2026-06-10T09:54:07.462Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "7",
+        "object_repr": "Повна чистка - iPhone 6 (0.3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1557,
+    "fields": {
+        "action_time": "2026-06-10T09:54:25.557Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "8",
+        "object_repr": "Повна чистка - iPhone 7 (0.3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1558,
+    "fields": {
+        "action_time": "2026-06-10T13:33:12.398Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "8",
+        "object_repr": "Переклейка",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1559,
+    "fields": {
+        "action_time": "2026-06-10T13:33:26.979Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "9",
+        "object_repr": "Переклейка телефону",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1560,
+    "fields": {
+        "action_time": "2026-06-10T13:33:44.101Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "3",
+        "object_repr": "Переклейка",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1561,
+    "fields": {
+        "action_time": "2026-06-10T13:33:58.365Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "8",
+        "object_repr": "Переклейка",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1562,
+    "fields": {
+        "action_time": "2026-06-10T13:34:03.685Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "9",
+        "object_repr": "Переклейка телефону",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1563,
+    "fields": {
+        "action_time": "2026-06-10T13:34:31.221Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "9",
+        "object_repr": "Переклейка - iPhone 6 (0.7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1564,
+    "fields": {
+        "action_time": "2026-06-10T13:34:47.539Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "10",
+        "object_repr": "Переклейка телефону - iPhone 6 (1.0)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1565,
+    "fields": {
+        "action_time": "2026-06-10T13:41:21.377Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "10",
+        "object_repr": "Скло камери",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1566,
+    "fields": {
+        "action_time": "2026-06-10T13:42:09.051Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "11",
+        "object_repr": "Чистка",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1567,
+    "fields": {
+        "action_time": "2026-06-10T13:42:33.583Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "12",
+        "object_repr": "Обмін",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1568,
+    "fields": {
+        "action_time": "2026-06-10T13:43:07.603Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "13",
+        "object_repr": "Прошивка АКБ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1569,
+    "fields": {
+        "action_time": "2026-06-10T13:44:39.800Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "14",
+        "object_repr": "Плата",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1570,
+    "fields": {
+        "action_time": "2026-06-10T14:05:57.689Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "15",
+        "object_repr": "Шлейф датчиків",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1571,
+    "fields": {
+        "action_time": "2026-06-10T14:06:16.385Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "16",
+        "object_repr": "Основна камера",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1572,
+    "fields": {
+        "action_time": "2026-06-10T14:06:29.275Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "17",
+        "object_repr": "Фронталка",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1573,
+    "fields": {
+        "action_time": "2026-06-10T14:06:53.418Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "18",
+        "object_repr": "Кнопка Home",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1574,
+    "fields": {
+        "action_time": "2026-06-10T14:07:03.091Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "19",
+        "object_repr": "Вібрік",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1575,
+    "fields": {
+        "action_time": "2026-06-10T14:07:12.426Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "20",
+        "object_repr": "Основний динамік",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1576,
+    "fields": {
+        "action_time": "2026-06-10T14:07:25.927Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "21",
+        "object_repr": "Верхній динамік",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1577,
+    "fields": {
+        "action_time": "2026-06-10T14:07:42.613Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "22",
+        "object_repr": "Нижній шлейф",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1578,
+    "fields": {
+        "action_time": "2026-06-10T14:08:04.072Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "23",
+        "object_repr": "Шлейф Power",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1579,
+    "fields": {
+        "action_time": "2026-06-10T14:08:16.677Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "24",
+        "object_repr": "Шлейф кнопок гучності",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1580,
+    "fields": {
+        "action_time": "2026-06-10T14:08:30.334Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "25",
+        "object_repr": "Шлейф вспишки",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1581,
+    "fields": {
+        "action_time": "2026-06-10T14:09:32.065Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "26",
+        "object_repr": "Екран",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1582,
+    "fields": {
+        "action_time": "2026-06-10T14:09:48.541Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "27",
+        "object_repr": "Підсвітка",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1583,
+    "fields": {
+        "action_time": "2026-06-10T14:10:08.822Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "28",
+        "object_repr": "Рамка",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1584,
+    "fields": {
+        "action_time": "2026-06-10T14:10:55.410Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "29",
+        "object_repr": "Вирівнювання корпусу",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1585,
+    "fields": {
+        "action_time": "2026-06-10T14:22:56.784Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "3",
+        "object_repr": "admin | iPhone 6 | 2026-06-10 | 0.8999999999999999 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1586,
+    "fields": {
+        "action_time": "2026-06-10T14:22:56.784Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "2",
+        "object_repr": "admin | iPhone 6 | 2026-06-10 | 0.3 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$1000000$YWbMzfpOkxRK91mgLmrG34$xVyrRpxqKvG07XVTwmqNJCPO/mWbURGg6W+y1TMM6lI=",
-        "last_login": "2026-05-22T20:43:07.425Z",
+        "last_login": "2026-06-09T09:58:26.045Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "Назар",
@@ -20328,9 +21017,9 @@
         "release_year": 2020,
         "supported_part_types": [
             1,
+            2,
             5,
-            7,
-            2
+            7
         ]
     }
 },
@@ -20450,9 +21139,9 @@
         "release_year": 2022,
         "supported_part_types": [
             1,
+            2,
             5,
-            7,
-            2
+            7
         ]
     }
 },
@@ -29160,19 +29849,293 @@
     }
 },
 {
-    "model": "worklog.worktype",
+    "model": "worklog.exclusivegroup",
+    "pk": 1,
+    "fields": {
+        "name": "АКБ",
+        "cancels_all": false
+    }
+},
+{
+    "model": "worklog.exclusivegroup",
     "pk": 2,
     "fields": {
-        "name": "Заміна АКБ"
+        "name": "Повна чистка",
+        "cancels_all": true
+    }
+},
+{
+    "model": "worklog.exclusivegroup",
+    "pk": 3,
+    "fields": {
+        "name": "Переклейка",
+        "cancels_all": false
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 5,
+    "fields": {
+        "name": "Заміна АКБ",
+        "exclusive_groups": [
+            1
+        ]
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 6,
+    "fields": {
+        "name": "Перепаковка АКБ",
+        "exclusive_groups": [
+            1
+        ]
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 7,
+    "fields": {
+        "name": "Повна чистка",
+        "exclusive_groups": [
+            2
+        ]
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 8,
+    "fields": {
+        "name": "Переклейка",
+        "exclusive_groups": [
+            3
+        ]
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 9,
+    "fields": {
+        "name": "Переклейка телефону",
+        "exclusive_groups": [
+            3
+        ]
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 10,
+    "fields": {
+        "name": "Скло камери",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 11,
+    "fields": {
+        "name": "Чистка",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 12,
+    "fields": {
+        "name": "Обмін",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 13,
+    "fields": {
+        "name": "Прошивка АКБ",
+        "exclusive_groups": [
+            1
+        ]
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 14,
+    "fields": {
+        "name": "Плата",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 15,
+    "fields": {
+        "name": "Шлейф датчиків",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 16,
+    "fields": {
+        "name": "Основна камера",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 17,
+    "fields": {
+        "name": "Фронталка",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 18,
+    "fields": {
+        "name": "Кнопка Home",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 19,
+    "fields": {
+        "name": "Вібрік",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 20,
+    "fields": {
+        "name": "Основний динамік",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 21,
+    "fields": {
+        "name": "Верхній динамік",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 22,
+    "fields": {
+        "name": "Нижній шлейф",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 23,
+    "fields": {
+        "name": "Шлейф Power",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 24,
+    "fields": {
+        "name": "Шлейф кнопок гучності",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 25,
+    "fields": {
+        "name": "Шлейф вспишки",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 26,
+    "fields": {
+        "name": "Екран",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 27,
+    "fields": {
+        "name": "Підсвітка",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 28,
+    "fields": {
+        "name": "Рамка",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 29,
+    "fields": {
+        "name": "Вирівнювання корпусу",
+        "exclusive_groups": []
     }
 },
 {
     "model": "worklog.workprice",
-    "pk": 2,
+    "pk": 5,
     "fields": {
-        "work_type": 2,
+        "work_type": 5,
         "phone_model": 1,
         "points": 0.2
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 6,
+    "fields": {
+        "work_type": 6,
+        "phone_model": 1,
+        "points": 0.8
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 7,
+    "fields": {
+        "work_type": 7,
+        "phone_model": 1,
+        "points": 0.3
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 8,
+    "fields": {
+        "work_type": 7,
+        "phone_model": 6,
+        "points": 0.3
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 9,
+    "fields": {
+        "work_type": 8,
+        "phone_model": 1,
+        "points": 0.7
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 10,
+    "fields": {
+        "work_type": 9,
+        "phone_model": 1,
+        "points": 1.0
     }
 }
 ]

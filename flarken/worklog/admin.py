@@ -168,7 +168,7 @@ class WorkLogEntryAdmin(admin.ModelAdmin):
                 medal = medals[i] if i < 3 else f"{i + 1}."
                 rows += (
                     f"<tr>"
-                    f"<td style='padding:4px 12px 4px 0'>{medal} {master.name}</td>"
+                    f"<td style='padding:4px 12px 4px 0'>{medal} {master.user}</td>"
                     f"<td style='text-align:right;font-weight:bold'>{master.total:.1f} б</td>"
                     f"</tr>"
                 )

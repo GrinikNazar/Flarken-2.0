@@ -76,7 +76,6 @@ def part_types(message):
         bot.send_message(message.chat.id, 'Що робимо далі?', reply_markup=actions)
 
     except Exception as e:
-        # TODO: дописати функцію яка буде робити дію коли вибирається клавіша для роботи з балами
         result = keyboard_wp.show_model_range()
         bot.send_message(message.chat.id, 'Виберіть модельний ряд', reply_markup=result)
 

@@ -34,20 +34,20 @@ def show_phone_model(model_range_id):
 
 
 def show_work_list(phone_model_id, selected_ids: list[int]):
-    """
-    Відображає список робіт з чекбоксами.
-    selected_ids — список id WorkPrice які зараз вибрані.
-    """
     markup = types.InlineKeyboardMarkup()
     works = WorkPrice.objects.filter(phone_model=phone_model_id).select_related('work_type')
 
+    buttons = []
     for work in works:
         is_selected = work.pk in selected_ids
         icon = '✅' if is_selected else '⬜'
-        markup.add(types.InlineKeyboardButton(
+        buttons.append(types.InlineKeyboardButton(
             f'{icon} {work.work_type.name} ({work.points} б)',
             callback_data=f'wp:toggle:{work.pk}'
         ))
+
+    # Всі кнопки по 2 в рядок
+    markup.add(*buttons, row_width=2)
 
     total = sum(
         WorkPrice.objects.get(pk=wid).points for wid in selected_ids
@@ -58,6 +58,7 @@ def show_work_list(phone_model_id, selected_ids: list[int]):
         callback_data='wp:confirm:'
     ))
     markup.add(types.InlineKeyboardButton('⬅️ Назад', callback_data='wp:back:'))
+
     return markup
 
 

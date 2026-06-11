@@ -78,7 +78,7 @@ class WorkTypeAdmin(admin.ModelAdmin):
 @admin.register(WorkPrice)
 class WorkPriceAdmin(admin.ModelAdmin):
     list_display = ("work_type", "groups_display", "phone_model", "points")
-    list_filter = ("work_type__exclusive_groups", "phone_model__phone_model_range", "work_type")
+    list_filter = ("work_type__exclusive_groups", "phone_model__phone_model_range", "phone_model", "work_type")
     search_fields = ("work_type__name", "phone_model__name")
     ordering = ("work_type__name", "phone_model__name")
     autocomplete_fields = ("work_type", "phone_model")

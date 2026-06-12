@@ -40,7 +40,7 @@ def show_work_list(phone_model_id, selected_ids: list[int]):
     buttons = []
     for work in works:
         is_selected = work.pk in selected_ids
-        icon = '✅' if is_selected else '⬜'
+        icon = '❇️' if is_selected else ''
         buttons.append(types.InlineKeyboardButton(
             f'{icon} {work.work_type.name} ({work.points} б)',
             callback_data=f'wp:toggle:{work.pk}'

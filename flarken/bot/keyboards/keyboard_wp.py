@@ -33,7 +33,7 @@ def show_phone_model(model_range_id):
     return markup
 
 
-def show_work_list(phone_model_id, selected_ids: list[int]):
+def show_work_list(phone_model_id, selected_ids: list[int], client_bonus: bool = False):
     markup = types.InlineKeyboardMarkup()
     works = WorkPrice.objects.filter(phone_model=phone_model_id).select_related('work_type')
 
@@ -46,16 +46,25 @@ def show_work_list(phone_model_id, selected_ids: list[int]):
             callback_data=f'wp:toggle:{work.pk}'
         ))
 
-    # Всі кнопки по 2 в рядок
     markup.add(*buttons, row_width=2)
 
+    # Кнопка "Клієнтський"
+    client_icon = '❇️' if client_bonus else ''
+    markup.add(types.InlineKeyboardButton(
+        f'{client_icon} Клієнтський (+20%)',
+        callback_data='wp:client_bonus:'
+    ))
+
+    # Підрахунок з бонусом
     total = sum(
-        WorkPrice.objects.get(pk=wid).points for wid in selected_ids
+        WorkPrice.objects.filter(pk__in=selected_ids).values_list('points', flat=True)
     ) if selected_ids else 0
+    discount = 0.85 if len(selected_ids) > 1 else 1
+    total = round(total * (1.20 if client_bonus else 1) * discount, 3)
 
     markup.add(types.InlineKeyboardButton(
         f'✅ Підтвердити ({total} балів)',
-        callback_data='wp:confirm:'
+        callback_data='wp:ask_repair_number:'
     ))
     markup.add(types.InlineKeyboardButton('⬅️ Назад', callback_data='wp:back:'))
 

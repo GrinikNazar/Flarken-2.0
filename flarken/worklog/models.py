@@ -70,6 +70,12 @@ class WorkLogEntry(models.Model):
         PhoneModel, on_delete=models.CASCADE,
         verbose_name="Модель пристрою"
     )
+
+    repair_number = models.CharField(
+        max_length=50, blank=True, null=True,
+        verbose_name="Номер ремонту"
+    )
+
     date = models.DateField(auto_now_add=True, verbose_name="Дата")
     works = models.ManyToManyField(WorkPrice, verbose_name="Роботи")
     total_points = models.FloatField(verbose_name="Сума балів")

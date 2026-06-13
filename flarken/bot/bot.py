@@ -254,34 +254,53 @@ def handle_wp(call):
         state['history'].append(state.copy())
         state['phone_model'] = value
         state['step'] = 'work_list'
-        edit(call, 'Виберіть роботи:', keyboard_wp.show_work_list(value, []))
+        edit(call, f'Виберіть роботи:', keyboard_wp.show_work_list(value, []))
 
     elif step == 'toggle':
         work_id = int(value)
         selected = state.get('selected', [])
         state['selected'] = apply_exclusive_logic(work_id, selected, state['phone_model'])
-        edit(call, 'Виберіть роботи:', keyboard_wp.show_work_list(state['phone_model'], state['selected']))
+        edit(call, 'Виберіть роботи:', keyboard_wp.show_work_list(
+            state['phone_model'], state['selected'], state.get('client_bonus', False)
+        ))
 
-    elif step == 'confirm':
-        selected = state.get('selected', [])
-        if not selected:
+    elif step == 'client_bonus':
+        state['client_bonus'] = not state.get('client_bonus', False)
+        edit(call, 'Виберіть роботи:', keyboard_wp.show_work_list(
+            state['phone_model'], state['selected'], state['client_bonus']
+        ))
+
+    elif step == 'ask_repair_number':
+        if not state.get('selected'):
             bot.answer_callback_query(call.id, '⚠️ Виберіть хоча б одну роботу!')
             return
 
-        user_profile = UserProfile.objects.get(telegram_id=call.from_user.id)
-        works = WorkPrice.objects.filter(pk__in=selected)
-        total = sum(w.points for w in works)
 
-        entry = WorkLogEntry.objects.create(
-            user=user_profile,
-            phone_model_id=state['phone_model'],
-            total_points=total
-        )
-        entry.works.set(works)
+        def handle_repair_number_input(message, state):
+            repair_number = message.text.strip()
+            selected = state.get('selected', [])
+            user_profile = UserProfile.objects.get(telegram_id=message.from_user.id)
+            works = WorkPrice.objects.filter(pk__in=selected)
+            total = sum(w.points for w in works)
+            discount = 0.85 if len(selected) > 1 else 1
+            total = round(total * (1.20 if state.get('client_bonus') else 1) * discount, 3)
+            entry = WorkLogEntry.objects.create(
+                user=user_profile,
+                phone_model_id=state['phone_model'],
+                total_points=total,
+                repair_number=repair_number
+            )
+            entry.works.set(works)
+            works_text = '\n'.join(f'  • {w.work_type.name} — {w.points} б' for w in works)
+            bot.send_message(
+                message.chat.id,
+                f'✅ Збережено!\n\n{works_text}\n\nРемонт №{repair_number}\nРазом: {total} балів'
+            )
 
-        works_text = '\n'.join(f'  • {w.work_type.name} — {w.points} б' for w in works)
-        edit(call, f'✅ Збережено!\n\n{works_text}\n\nРазом: {total} балів', None)
-        state.clear()
+            state.clear()
+
+        msg = bot.send_message(call.message.chat.id, '🔢 Введіть номер ремонту:')
+        bot.register_next_step_handler(msg, handle_repair_number_input, state)
 
     elif step == 'back':
         if state.get('history'):

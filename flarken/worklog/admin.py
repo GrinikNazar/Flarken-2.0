@@ -105,7 +105,7 @@ class WorkLogWorksInline(admin.TabularInline):
 
 @admin.register(WorkLogEntry)
 class WorkLogEntryAdmin(admin.ModelAdmin):
-    list_display = ("date", "user", "phone_model", "works_summary", "total_points")
+    list_display = ("date", "repair_number", "is_client_device", "user", "phone_model", "works_summary", "total_points")
     list_filter = ("date", "user", "phone_model__phone_model_range")
     search_fields = ("user__name", "phone_model__name")
     ordering = ("-date", "user")

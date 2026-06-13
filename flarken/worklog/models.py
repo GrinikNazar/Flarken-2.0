@@ -70,7 +70,7 @@ class WorkLogEntry(models.Model):
         PhoneModel, on_delete=models.CASCADE,
         verbose_name="Модель пристрою"
     )
-
+    is_client_device = models.BooleanField(default=False, verbose_name="Клієнтський")
     repair_number = models.CharField(
         max_length=50, blank=True, null=True,
         verbose_name="Номер ремонту"

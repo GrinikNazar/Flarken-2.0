@@ -284,12 +284,15 @@ def handle_wp(call):
             total = sum(w.points for w in works)
             discount = 0.85 if len(selected) > 1 else 1
             total = round(total * (1.20 if state.get('client_bonus') else 1) * discount, 3)
+
             entry = WorkLogEntry.objects.create(
                 user=user_profile,
                 phone_model_id=state['phone_model'],
                 total_points=total,
-                repair_number=repair_number
+                repair_number=repair_number,
+                is_client_device = state.get('client_bonus', False)
             )
+
             entry.works.set(works)
             works_text = '\n'.join(f'  • {w.work_type.name} — {w.points} б' for w in works)
             bot.send_message(
@@ -313,6 +316,7 @@ def handle_wp(call):
                 edit(call, 'Виберіть модельний ряд:', keyboard_wp.show_model_range())
         else:
             edit(call, 'Виберіть модельний ряд:', keyboard_wp.show_model_range())
+
 
 if __name__ == '__main__':
     bot.infinity_polling(timeout=10)

@@ -3,7 +3,6 @@ from django.utils.html import format_html
 from django.db.models import Sum, Count
 from django.utils.timezone import now
 from .models import WorkType, WorkPrice, WorkLogEntry, ExclusiveGroup
-from .models import get_daily_ranking, get_monthly_ranking
 
 
 @admin.register(ExclusiveGroup)
@@ -151,46 +150,3 @@ class WorkLogEntryAdmin(admin.ModelAdmin):
 
     def get_queryset(self, request):
         return super().get_queryset(request).prefetch_related("works__work_type")
-
-    # ── Кастомна сторінка з рейтингом ─────────────────────────────────────────
-
-    def changelist_view(self, request, extra_context=None):
-        extra_context = extra_context or {}
-
-        today = now().date()
-        daily = get_daily_ranking(today)
-        monthly = get_monthly_ranking(today.year, today.month)
-
-        def render_ranking(qs, title):
-            medals = ["🥇", "🥈", "🥉"]
-            rows = ""
-            for i, master in enumerate(qs):
-                medal = medals[i] if i < 3 else f"{i + 1}."
-                rows += (
-                    f"<tr>"
-                    f"<td style='padding:4px 12px 4px 0'>{medal} {master.user}</td>"
-                    f"<td style='text-align:right;font-weight:bold'>{master.total:.1f} б</td>"
-                    f"</tr>"
-                )
-            if not rows:
-                rows = "<tr><td colspan='2' style='color:#999'>Немає даних</td></tr>"
-            return format_html(
-                "<div style='margin-bottom:24px'>"
-                "<h3 style='margin:0 0 8px'>{}</h3>"
-                "<table style='border-collapse:collapse;min-width:260px'>{}</table>"
-                "</div>",
-                title,
-                format_html(rows),
-            )
-
-        extra_context["daily_ranking"] = render_ranking(
-            daily, f"🏆 Рейтинг сьогодні ({today.strftime('%d.%m.%Y')})"
-        )
-        extra_context["monthly_ranking"] = render_ranking(
-            monthly, f"📅 Рейтинг за місяць ({today.strftime('%m.%Y')})"
-        )
-
-        return super().changelist_view(request, extra_context=extra_context)
-
-    class Media:
-        css = {}

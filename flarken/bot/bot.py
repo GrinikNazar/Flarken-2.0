@@ -321,7 +321,7 @@ def handle_wp(call):
             editing_id = state.get('editing_entry_id')
 
             if editing_id:
-                # ── Оновлюємо існуючий запис ──
+                # Оновити існуючий запис
                 entry = WorkLogEntry.objects.get(pk=editing_id)
                 entry.repair_number = repair_number
                 entry.total_points = total
@@ -334,7 +334,7 @@ def handle_wp(call):
                     f'✅ Запис оновлено!\n\n{works_text}{client_mark}\n\nРемонт №{repair_number}\nРазом: {total} б'
                 )
             else:
-                # ── Створюємо новий запис ──
+                # Створити новий запис
                 entry = WorkLogEntry.objects.create(
                     user=user_profile,
                     phone_model_id=state['phone_model'],
@@ -378,7 +378,7 @@ def handle_wp_edit(call):
     user_profile = UserProfile.objects.get(telegram_id=call.from_user.id)
     today = now().date()
 
-    # ── Список записів для редагування ───────────────────────
+    # Список записів для редагування
     if step == 'list':
         entries = WorkLogEntry.objects.filter(
             user=user_profile, date=today
@@ -394,11 +394,12 @@ def handle_wp_edit(call):
                 f'✏️ #{entry.repair_number} {entry.phone_model.name}',
                 callback_data=f'wpe:entry:{entry.pk}'
             ))
+        # TODO: замість "закрити" зробити кнопку "назад"
         markup.add(types.InlineKeyboardButton('❌ Закрити', callback_data='wpe:close:'))
 
         edit(call, 'Виберіть запис для редагування:', markup)
 
-    # ── Деталі одного запису ──────────────────────────────────
+    # Деталі одного запису
     elif step == 'entry':
         entry = WorkLogEntry.objects.prefetch_related(
             'works__work_type'
@@ -421,26 +422,25 @@ def handle_wp_edit(call):
 
         edit(call, text, markup)
 
-    # ── Редагування робіт — завантажуємо існуючий show_work_list ──
+    # Редагування робіт
     elif step == 'edit_works':
         entry = WorkLogEntry.objects.prefetch_related('works').get(pk=value, user=user_profile)
         selected_ids = list(entry.works.values_list('pk', flat=True))
         client_bonus = entry.is_client_device
 
-        # Зберігаємо в state що редагуємо існуючий запис
         state = get_state(call.message.message_id)
         state.clear()
         state['phone_model'] = str(entry.phone_model_id)
         state['selected'] = selected_ids
         state['client_bonus'] = client_bonus
-        state['editing_entry_id'] = int(value)  # ← маркер що це редагування
+        state['editing_entry_id'] = int(value)
         state['repair_number'] = entry.repair_number
 
         edit(call, 'Змініть роботи:', keyboard_wp.show_work_list(
             entry.phone_model_id, selected_ids, client_bonus
         ))
 
-    # ── Підтвердження видалення ───────────────────────────────
+    # Підтвердження видалення
     elif step == 'delete':
         markup = types.InlineKeyboardMarkup()
         markup.row(

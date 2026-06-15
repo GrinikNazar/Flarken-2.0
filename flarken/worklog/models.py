@@ -88,38 +88,3 @@ class WorkLogEntry(models.Model):
     def __str__(self):
         return f"{self.user} | {self.phone_model} | {self.date} | {self.total_points} б"
 
-
-# ─── Хелпери для рейтингу ─────────────────────────────────────────────────────
-
-def get_daily_ranking(date=None):
-    """
-    Повертає список майстрів з сумою балів за вказаний день (default: сьогодні).
-    Формат: [{'user': UserProfile, 'total': float}, ...]
-    """
-    if date is None:
-        date = now().date()
-
-    return (
-        UserProfile.objects
-        .filter(work_logs__date=date)
-        .annotate(total=Sum("work_logs__total_points"))
-        .order_by("-total")
-    )
-
-
-def get_monthly_ranking(year=None, month=None):
-    """
-    Повертає список майстрів з сумою балів за вказаний місяць (default: поточний).
-    """
-    today = now().date()
-    if year is None:
-        year = today.year
-    if month is None:
-        month = today.month
-
-    return (
-        UserProfile.objects
-        .filter(work_logs__date__year=year, work_logs__date__month=month)
-        .annotate(total=Sum("work_logs__total_points"))
-        .order_by("-total")
-    )

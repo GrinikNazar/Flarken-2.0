@@ -8,6 +8,8 @@ from utils import django_setup
 from keyboards.keyboard import actions_for_part, purchase_list, add_back_button
 from keyboards.keyboard_wp import apply_exclusive_logic
 import copy
+from django.utils.timezone import now
+from telebot import types
 
 from warehouse.models import UserProfile, Part, PartDependency, PhoneModel
 from worklog.models import WorkPrice, WorkType, WorkLogEntry
@@ -76,8 +78,41 @@ def part_types(message):
         bot.send_message(message.chat.id, 'Що робимо далі?', reply_markup=actions)
 
     except Exception as e:
-        result = keyboard_wp.show_model_range()
-        bot.send_message(message.chat.id, 'Виберіть модельний ряд', reply_markup=result)
+        if message.text == "Добавити":
+            result = keyboard_wp.show_model_range()
+            bot.send_message(message.chat.id, 'Виберіть модельний ряд', reply_markup=result)
+
+        elif message.text == 'Переглянути сьогодні':
+            user_profile = UserProfile.objects.get(telegram_id=message.from_user.id)
+            today = now().date()
+            entries = WorkLogEntry.objects.filter(
+                user=user_profile, date=today
+            ).prefetch_related('works__work_type')
+
+            if not entries:
+                bot.send_message(message.chat.id, '📭 Сьогодні записів ще немає.')
+                return
+
+            lines = []
+            total_day = 0
+            for entry in entries:
+                works_str = ', '.join(w.work_type.name for w in entry.works.all())
+                client_mark = ' 👤' if entry.is_client_device else ''
+                lines.append(
+                    f'#{entry.repair_number} {entry.phone_model.name}{client_mark} — {works_str} | *{entry.total_points} б*')
+                total_day += entry.total_points
+
+            lines.append(f'\n*Разом сьогодні: {round(total_day, 3)} б*')
+
+            markup = types.InlineKeyboardMarkup()
+            markup.add(types.InlineKeyboardButton('✏️ Редагувати записи', callback_data='wpe:list:'))
+
+            bot.send_message(
+                message.chat.id,
+                '\n'.join(lines),
+                parse_mode='Markdown',
+                reply_markup=markup
+            )
 
 
 def edit(call, text, markup):
@@ -271,11 +306,6 @@ def handle_wp(call):
         ))
 
     elif step == 'ask_repair_number':
-        if not state.get('selected'):
-            bot.answer_callback_query(call.id, '⚠️ Виберіть хоча б одну роботу!')
-            return
-
-
         def handle_repair_number_input(message, state):
             repair_number = message.text.strip()
             selected = state.get('selected', [])
@@ -285,22 +315,45 @@ def handle_wp(call):
             discount = 0.85 if len(selected) > 1 else 1
             total = round(total * (1.20 if state.get('client_bonus') else 1) * discount, 3)
 
-            entry = WorkLogEntry.objects.create(
-                user=user_profile,
-                phone_model_id=state['phone_model'],
-                total_points=total,
-                repair_number=repair_number,
-                is_client_device = state.get('client_bonus', False)
-            )
-
-            entry.works.set(works)
             works_text = '\n'.join(f'  • {w.work_type.name} — {w.points} б' for w in works)
-            bot.send_message(
-                message.chat.id,
-                f'✅ Збережено!\n\n{works_text}\n\nРемонт №{repair_number}\nРазом: {total} балів'
-            )
+            client_mark = ' 👤 Клієнтський' if state.get('client_bonus') else ''
+
+            editing_id = state.get('editing_entry_id')
+
+            if editing_id:
+                # ── Оновлюємо існуючий запис ──
+                entry = WorkLogEntry.objects.get(pk=editing_id)
+                entry.repair_number = repair_number
+                entry.total_points = total
+                entry.is_client_device = state.get('client_bonus', False)
+                entry.save()
+                entry.works.set(works)
+
+                bot.send_message(
+                    message.chat.id,
+                    f'✅ Запис оновлено!\n\n{works_text}{client_mark}\n\nРемонт №{repair_number}\nРазом: {total} б'
+                )
+            else:
+                # ── Створюємо новий запис ──
+                entry = WorkLogEntry.objects.create(
+                    user=user_profile,
+                    phone_model_id=state['phone_model'],
+                    total_points=total,
+                    repair_number=repair_number,
+                    is_client_device=state.get('client_bonus', False)
+                )
+                entry.works.set(works)
+
+                bot.send_message(
+                    message.chat.id,
+                    f'✅ Збережено!\n\n{works_text}{client_mark}\n\nРемонт №{repair_number}\nРазом: {total} б'
+                )
 
             state.clear()
+
+        if not state.get('selected'):
+            bot.answer_callback_query(call.id, '⚠️ Виберіть хоча б одну роботу!')
+            return
 
         msg = bot.send_message(call.message.chat.id, '🔢 Введіть номер ремонту:')
         bot.register_next_step_handler(msg, handle_repair_number_input, state)
@@ -317,6 +370,91 @@ def handle_wp(call):
         else:
             edit(call, 'Виберіть модельний ряд:', keyboard_wp.show_model_range())
 
+
+@bot.callback_query_handler(func=lambda call: call.data.startswith('wpe:'))
+@auth_required
+def handle_wp_edit(call):
+    _, step, value = call.data.split(':')
+    user_profile = UserProfile.objects.get(telegram_id=call.from_user.id)
+    today = now().date()
+
+    # ── Список записів для редагування ───────────────────────
+    if step == 'list':
+        entries = WorkLogEntry.objects.filter(
+            user=user_profile, date=today
+        ).select_related('phone_model')
+
+        if not entries:
+            bot.answer_callback_query(call.id, 'Записів немає.')
+            return
+
+        markup = types.InlineKeyboardMarkup()
+        for entry in entries:
+            markup.add(types.InlineKeyboardButton(
+                f'✏️ #{entry.repair_number} {entry.phone_model.name}',
+                callback_data=f'wpe:entry:{entry.pk}'
+            ))
+        markup.add(types.InlineKeyboardButton('❌ Закрити', callback_data='wpe:close:'))
+
+        edit(call, 'Виберіть запис для редагування:', markup)
+
+    # ── Деталі одного запису ──────────────────────────────────
+    elif step == 'entry':
+        entry = WorkLogEntry.objects.prefetch_related(
+            'works__work_type'
+        ).get(pk=value, user=user_profile)
+
+        works_str = '\n'.join(f'  • {w.work_type.name} — {w.points} б' for w in entry.works.all())
+        client_mark = ' 👤 Клієнтський' if entry.is_client_device else ''
+        text = (
+            f'*#{entry.repair_number} {entry.phone_model.name}*{client_mark}\n\n'
+            f'{works_str}\n\n'
+            f'*Разом: {entry.total_points} б*'
+        )
+
+        markup = types.InlineKeyboardMarkup()
+        markup.row(
+            types.InlineKeyboardButton('🔄 Змінити роботи', callback_data=f'wpe:edit_works:{entry.pk}'),
+            types.InlineKeyboardButton('🗑️ Видалити', callback_data=f'wpe:delete:{entry.pk}')
+        )
+        markup.add(types.InlineKeyboardButton('⬅️ Назад', callback_data='wpe:list:'))
+
+        edit(call, text, markup)
+
+    # ── Редагування робіт — завантажуємо існуючий show_work_list ──
+    elif step == 'edit_works':
+        entry = WorkLogEntry.objects.prefetch_related('works').get(pk=value, user=user_profile)
+        selected_ids = list(entry.works.values_list('pk', flat=True))
+        client_bonus = entry.is_client_device
+
+        # Зберігаємо в state що редагуємо існуючий запис
+        state = get_state(call.message.message_id)
+        state.clear()
+        state['phone_model'] = str(entry.phone_model_id)
+        state['selected'] = selected_ids
+        state['client_bonus'] = client_bonus
+        state['editing_entry_id'] = int(value)  # ← маркер що це редагування
+        state['repair_number'] = entry.repair_number
+
+        edit(call, 'Змініть роботи:', keyboard_wp.show_work_list(
+            entry.phone_model_id, selected_ids, client_bonus
+        ))
+
+    # ── Підтвердження видалення ───────────────────────────────
+    elif step == 'delete':
+        markup = types.InlineKeyboardMarkup()
+        markup.row(
+            types.InlineKeyboardButton('✅ Так, видалити', callback_data=f'wpe:confirm_delete:{value}'),
+            types.InlineKeyboardButton('❌ Ні', callback_data=f'wpe:entry:{value}')
+        )
+        edit(call, '⚠️ Видалити цей запис?', markup)
+
+    elif step == 'confirm_delete':
+        WorkLogEntry.objects.filter(pk=value, user=user_profile).delete()
+        edit(call, '🗑️ Запис видалено.', None)
+
+    elif step == 'close':
+        bot.delete_message(call.message.chat.id, call.message.message_id)
 
 if __name__ == '__main__':
     bot.infinity_polling(timeout=10)

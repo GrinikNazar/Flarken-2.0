@@ -39,6 +39,34 @@ def auth_required(func):
     return wrapper
 
 
+def show_today(message, from_user):
+    user_profile = UserProfile.objects.get(telegram_id=from_user.id)
+    today = now().date()
+    entries = WorkLogEntry.objects.filter(
+        user=user_profile, date=today
+    ).prefetch_related('works__work_type')
+
+    if not entries:
+        bot.send_message(message.chat.id, '📭 Сьогодні записів ще немає.')
+        return
+
+    lines = []
+    total_day = 0
+    for entry in entries:
+        works_str = ', '.join(w.work_type.name for w in entry.works.all())
+        client_mark = ' 👤' if entry.is_client_device else ''
+        lines.append(
+            f'#{entry.repair_number} {entry.phone_model.name}{client_mark} — {works_str} | *{entry.total_points} б*')
+        total_day += entry.total_points
+
+    lines.append(f'\n*Разом сьогодні: {round(total_day, 3)} б*')
+
+    markup = types.InlineKeyboardMarkup()
+    markup.add(types.InlineKeyboardButton('✏️ Редагувати записи', callback_data='wpe:list:'))
+
+    return '\n'.join(lines), markup
+
+
 @bot.message_handler(commands=['start'])
 @auth_required
 def send_message_welcome(message):
@@ -83,37 +111,14 @@ def part_types(message):
             bot.send_message(message.chat.id, 'Виберіть модельний ряд', reply_markup=result)
 
         elif message.text == 'Переглянути сьогодні':
-            user_profile = UserProfile.objects.get(telegram_id=message.from_user.id)
-            today = now().date()
-            entries = WorkLogEntry.objects.filter(
-                user=user_profile, date=today
-            ).prefetch_related('works__work_type')
-
-            if not entries:
-                bot.send_message(message.chat.id, '📭 Сьогодні записів ще немає.')
-                return
-
-            lines = []
-            total_day = 0
-            for entry in entries:
-                works_str = ', '.join(w.work_type.name for w in entry.works.all())
-                client_mark = ' 👤' if entry.is_client_device else ''
-                lines.append(
-                    f'#{entry.repair_number} {entry.phone_model.name}{client_mark} — {works_str} | *{entry.total_points} б*')
-                total_day += entry.total_points
-
-            lines.append(f'\n*Разом сьогодні: {round(total_day, 3)} б*')
-
-            markup = types.InlineKeyboardMarkup()
-            markup.add(types.InlineKeyboardButton('✏️ Редагувати записи', callback_data='wpe:list:'))
+            lines, markup = show_today(message, message.from_user)
 
             bot.send_message(
                 message.chat.id,
-                '\n'.join(lines),
+                lines,
                 parse_mode='Markdown',
                 reply_markup=markup
             )
-
 
 def edit(call, text, markup):
     bot.edit_message_text(
@@ -122,6 +127,7 @@ def edit(call, text, markup):
         text=text,
         reply_markup=markup
     )
+
 
 @bot.callback_query_handler(func=lambda call: call.data.startswith('write_off'))
 @auth_required
@@ -394,8 +400,7 @@ def handle_wp_edit(call):
                 f'✏️ #{entry.repair_number} {entry.phone_model.name}',
                 callback_data=f'wpe:entry:{entry.pk}'
             ))
-        # TODO: замість "закрити" зробити кнопку "назад"
-        markup.add(types.InlineKeyboardButton('❌ Закрити', callback_data='wpe:close:'))
+        markup.add(types.InlineKeyboardButton('⬅️ Назад', callback_data='wpe:back_to_today:'))
 
         edit(call, 'Виберіть запис для редагування:', markup)
 
@@ -453,8 +458,10 @@ def handle_wp_edit(call):
         WorkLogEntry.objects.filter(pk=value, user=user_profile).delete()
         edit(call, '🗑️ Запис видалено.', None)
 
-    elif step == 'close':
-        bot.delete_message(call.message.chat.id, call.message.message_id)
+    elif step == 'back_to_today':
+        lines, markup = show_today(call, call.from_user)
+        edit(call, lines, markup)
+
 
 if __name__ == '__main__':
     bot.infinity_polling(timeout=10)

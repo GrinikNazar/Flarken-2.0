@@ -10,6 +10,8 @@ from keyboards.keyboard_wp import apply_exclusive_logic
 import copy
 from django.utils.timezone import now
 from telebot import types
+from django.db.models import Sum
+from collections import defaultdict
 
 from warehouse.models import UserProfile, Part, PartDependency, PhoneModel
 from worklog.models import WorkPrice, WorkType, WorkLogEntry
@@ -39,7 +41,7 @@ def auth_required(func):
     return wrapper
 
 
-def show_today(message, from_user):
+def show_today(from_user):
     user_profile = UserProfile.objects.get(telegram_id=from_user.id)
     today = now().date()
     entries = WorkLogEntry.objects.filter(
@@ -47,8 +49,7 @@ def show_today(message, from_user):
     ).prefetch_related('works__work_type')
 
     if not entries:
-        bot.send_message(message.chat.id, '📭 Сьогодні записів ще немає.')
-        return
+        return '📭 Сьогодні записів ще немає.', None
 
     lines = []
     total_day = 0
@@ -111,7 +112,7 @@ def part_types(message):
             bot.send_message(message.chat.id, 'Виберіть модельний ряд', reply_markup=result)
 
         elif message.text == 'Переглянути сьогодні':
-            lines, markup = show_today(message, message.from_user)
+            lines, markup = show_today(message.from_user)
 
             bot.send_message(
                 message.chat.id,
@@ -119,6 +120,56 @@ def part_types(message):
                 parse_mode='Markdown',
                 reply_markup=markup
             )
+
+        elif message.text == 'Загальний список':
+            today = now().date()
+
+            # Всі записи за поточний місяць
+            entries = WorkLogEntry.objects.filter(
+                date__year=today.year,
+                date__month=today.month
+            ).values('user', 'user__user__first_name', 'date').annotate(
+                day_total=Sum('total_points')
+            )
+
+            if not entries:
+                bot.send_message(message.chat.id, '📭 Записів за цей місяць ще немає.')
+                return
+
+            user_totals = defaultdict(float)  # user_id → загальна сума
+            user_names = {}  # user_id → ім'я
+            day_scores = defaultdict(dict)  # date → {user_id: day_total}
+
+            for e in entries:
+                uid = e['user']
+                user_totals[uid] += e['day_total']
+                user_names[uid] = e['user__user__first_name']
+                day_scores[e['date']][uid] = e['day_total']
+
+            # Кількість бестів кожного користувача
+            best_days = defaultdict(int)
+            for date, scores in day_scores.items():
+                if not scores:
+                    continue
+                max_score = max(scores.values())
+                best_uid = [uid for uid, score in scores.items() if score == max_score]
+                # Якщо кілька з однаковою сумою — всі отримують +1 день
+                for uid in best_uid:
+                    best_days[uid] += 1
+
+            # Сортування
+            sorted_users = sorted(user_totals.items(), key=lambda x: x[1], reverse=True)
+
+            lines = [f'📊 *Підсумки за {today.strftime("%m.%Y")}*\n']
+            for uid, total in sorted_users:
+                lines.append(
+                    f'👤 *{user_names[uid]}*\n'
+                    f'Загально балів: {round(total, 2)}\n'
+                    f'Найкращих днів: {best_days[uid]}\n'
+                )
+
+            bot.send_message(message.chat.id, '\n'.join(lines), parse_mode='Markdown')
+
 
 def edit(call, text, markup):
     bot.edit_message_text(
@@ -459,7 +510,7 @@ def handle_wp_edit(call):
         edit(call, '🗑️ Запис видалено.', None)
 
     elif step == 'back_to_today':
-        lines, markup = show_today(call, call.from_user)
+        lines, markup = show_today(call.from_user)
         edit(call, lines, markup)
 
 

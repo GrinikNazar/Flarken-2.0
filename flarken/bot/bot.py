@@ -65,6 +65,7 @@ def show_today(from_user):
 
     markup = types.InlineKeyboardMarkup()
     markup.add(types.InlineKeyboardButton('✏️ Редагувати записи', callback_data='wpe:list:'))
+    markup.add(types.InlineKeyboardButton('📤 Відправити в чат', callback_data='wpe:send_to_chat:'))
 
     return '\n'.join(lines), markup
 
@@ -539,6 +540,34 @@ def handle_wp_edit(call):
     elif step == 'back_to_today':
         lines, markup = show_today(call.from_user)
         edit(call, lines, markup)
+
+    elif step == 'send_to_chat':
+
+        group_chat_id = os.getenv('GROUP_CHAT_ID')
+        today = now().date()
+
+        entries = WorkLogEntry.objects.filter(
+            user=user_profile, date=today
+        ).prefetch_related('works__work_type').select_related('phone_model')
+
+        if not entries:
+            bot.answer_callback_query(call.id, '📭 Немає записів за сьогодні.')
+            return
+
+        lines = [f'*{user_profile.user.first_name}*\n']
+        total_day = 0
+        for entry in entries:
+            works_str = ', '.join(w.work_type.name for w in entry.works.all())
+            client_mark = ' 👤' if entry.is_client_device else ''
+            lines.append(
+                f'#{entry.repair_number}{client_mark} {entry.phone_model.name} - {works_str} *{entry.total_points} б*'
+            )
+            total_day += entry.total_points
+
+        lines.append(f'\n*Разом: {round(total_day, 3)}*')
+
+        bot.send_message(group_chat_id, '\n'.join(lines), parse_mode='Markdown')
+        bot.answer_callback_query(call.id, '✅ Відправлено в чат!')
 
 
 if __name__ == '__main__':

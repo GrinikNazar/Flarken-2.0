@@ -7,7 +7,8 @@ from warehouse.models import Part, PhoneModel, PhoneModelRange
 
 def work_board():
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    markup.row('Добавити', 'Переглянути сьогодні', 'Загальний список')
+    markup.row('Добавити', 'Переглянути сьогодні')
+    markup.row('Загальний список', 'Попередній місяць')
     return markup
 
 

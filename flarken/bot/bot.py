@@ -1,4 +1,5 @@
 import os
+from utils.earnings import calculate_earnings
 from keyboards import keyboard, keyboard_wp
 import telebot
 from dotenv import load_dotenv
@@ -68,6 +69,56 @@ def show_today(from_user):
     return '\n'.join(lines), markup
 
 
+def get_monthly_stats(year, month):
+    entries = WorkLogEntry.objects.filter(
+        date__year=year,
+        date__month=month
+    ).values('user', 'user__user__username', 'date').annotate(
+        day_total=Sum('total_points')
+    )
+
+    if not entries:
+        return None
+
+    user_totals = defaultdict(float)
+    user_names = {}
+    day_scores = defaultdict(dict)
+
+    for e in entries:
+        uid = e['user']
+        user_totals[uid] += e['day_total']
+        user_names[uid] = e['user__user__username']
+        day_scores[e['date']][uid] = e['day_total']
+
+    best_days = defaultdict(int)
+    for date, scores in day_scores.items():
+        max_score = max(scores.values())
+        for uid, score in scores.items():
+            if score == max_score:
+                best_days[uid] += 1
+
+    sorted_users = sorted(user_totals.items(), key=lambda x: x[1], reverse=True)
+    medals = {1: '🥇', 2: '🥈', 3: '🥉'}
+
+    lines = [f'📊 *Підсумки за {month:02d}.{year}*\n']
+    for place, (uid, total) in enumerate(sorted_users, start=1):
+        earnings = calculate_earnings(
+            total_points=total,
+            best_days=best_days[uid],
+            place=place,
+            threshold_met=total >= 110
+        )
+        medal = medals.get(place, f'{place}.')
+        lines.append(
+            f'{medal} *{user_names[uid]}*\n'
+            f'Загально балів: {round(total, 2)}\n'
+            f'Найкращих днів: {best_days[uid]}\n'
+            f'💰 Виплата: {earnings} грн\n'
+        )
+
+    return '\n'.join(lines)
+
+
 @bot.message_handler(commands=['start'])
 @auth_required
 def send_message_welcome(message):
@@ -123,52 +174,28 @@ def part_types(message):
 
         elif message.text == 'Загальний список':
             today = now().date()
+            text = get_monthly_stats(today.year, today.month)
 
-            # Всі записи за поточний місяць
-            entries = WorkLogEntry.objects.filter(
-                date__year=today.year,
-                date__month=today.month
-            ).values('user', 'user__user__first_name', 'date').annotate(
-                day_total=Sum('total_points')
-            )
-
-            if not entries:
+            if not text:
                 bot.send_message(message.chat.id, '📭 Записів за цей місяць ще немає.')
                 return
 
-            user_totals = defaultdict(float)  # user_id → загальна сума
-            user_names = {}  # user_id → ім'я
-            day_scores = defaultdict(dict)  # date → {user_id: day_total}
+            bot.send_message(message.chat.id, text, parse_mode='Markdown')
 
-            for e in entries:
-                uid = e['user']
-                user_totals[uid] += e['day_total']
-                user_names[uid] = e['user__user__first_name']
-                day_scores[e['date']][uid] = e['day_total']
+        elif message.text == 'Попередній місяць':
+            today = now().date()
 
-            # Кількість бестів кожного користувача
-            best_days = defaultdict(int)
-            for date, scores in day_scores.items():
-                if not scores:
-                    continue
-                max_score = max(scores.values())
-                best_uid = [uid for uid, score in scores.items() if score == max_score]
-                # Якщо кілька з однаковою сумою — всі отримують +1 день
-                for uid in best_uid:
-                    best_days[uid] += 1
+            if today.month == 1:
+                year, month = today.year - 1, 12
+            else:
+                year, month = today.year, today.month - 1
+            text = get_monthly_stats(year, month)
 
-            # Сортування
-            sorted_users = sorted(user_totals.items(), key=lambda x: x[1], reverse=True)
+            if not text:
+                bot.send_message(message.chat.id, '📭 Записів за попередній місяць немає.')
+                return
 
-            lines = [f'📊 *Підсумки за {today.strftime("%m.%Y")}*\n']
-            for uid, total in sorted_users:
-                lines.append(
-                    f'👤 *{user_names[uid]}*\n'
-                    f'Загально балів: {round(total, 2)}\n'
-                    f'Найкращих днів: {best_days[uid]}\n'
-                )
-
-            bot.send_message(message.chat.id, '\n'.join(lines), parse_mode='Markdown')
+            bot.send_message(message.chat.id, text, parse_mode='Markdown')
 
 
 def edit(call, text, markup):

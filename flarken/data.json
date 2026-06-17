@@ -41184,6 +41184,318 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 3169,
+    "fields": {
+        "action_time": "2026-06-13T12:36:42.363Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "4",
+        "object_repr": "admin | iPhone 6 | 2026-06-13 | 0.68 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3170,
+    "fields": {
+        "action_time": "2026-06-13T12:41:45.212Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "6",
+        "object_repr": "admin | iPhone Xs | 2026-06-13 | 0.816 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3171,
+    "fields": {
+        "action_time": "2026-06-13T12:41:45.212Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "5",
+        "object_repr": "admin | iPhone 6 | 2026-06-13 | 0.816 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3172,
+    "fields": {
+        "action_time": "2026-06-13T13:06:31.836Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "10",
+        "object_repr": "admin | iPhone 7 | 2026-06-13 | 0.595 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3173,
+    "fields": {
+        "action_time": "2026-06-13T13:06:31.836Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "9",
+        "object_repr": "admin | iPhone 6 | 2026-06-13 | 0.3 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3174,
+    "fields": {
+        "action_time": "2026-06-13T13:06:31.836Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "8",
+        "object_repr": "admin | iPhone 6 | 2026-06-13 | 0.425 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3175,
+    "fields": {
+        "action_time": "2026-06-13T13:06:31.836Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "7",
+        "object_repr": "admin | iPhone 6 | 2026-06-13 | 0.425 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3176,
+    "fields": {
+        "action_time": "2026-06-13T13:10:15.398Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "11",
+        "object_repr": "admin | iPhone X | 2026-06-13 | 0.714 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3177,
+    "fields": {
+        "action_time": "2026-06-16T12:29:48.434Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "17",
+        "object_repr": "admin | iPhone 13 | 2026-06-16 | 0.765 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3178,
+    "fields": {
+        "action_time": "2026-06-16T12:29:48.435Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "16",
+        "object_repr": "admin | iPhone 8+ | 2026-06-16 | 2.04 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3179,
+    "fields": {
+        "action_time": "2026-06-16T12:29:48.435Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "15",
+        "object_repr": "admin | iPhone 12Pro | 2026-06-15 | 1.8 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3180,
+    "fields": {
+        "action_time": "2026-06-16T12:29:48.435Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "13",
+        "object_repr": "admin | iPhone X | 2026-06-15 | 1.7 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3181,
+    "fields": {
+        "action_time": "2026-06-16T12:29:48.435Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "12",
+        "object_repr": "admin | iPhone X | 2026-06-13 | 0.714 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3182,
+    "fields": {
+        "action_time": "2026-06-16T12:42:23.730Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "8",
+        "object_repr": "Валєра",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"user profile\", \"object\": \"\\u0412\\u0430\\u043b\\u0454\\u0440\\u0430\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3183,
+    "fields": {
+        "action_time": "2026-06-16T12:48:22.361Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "8",
+        "object_repr": "Валєра",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3184,
+    "fields": {
+        "action_time": "2026-06-16T12:50:11.801Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "9",
+        "object_repr": "Антон",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"user profile\", \"object\": \"\\u0410\\u043d\\u0442\\u043e\\u043d\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3185,
+    "fields": {
+        "action_time": "2026-06-16T12:50:31.018Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "9",
+        "object_repr": "Антон",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3186,
+    "fields": {
+        "action_time": "2026-06-16T12:54:06.002Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "10",
+        "object_repr": "Андрій",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"user profile\", \"object\": \"\\u0410\\u043d\\u0434\\u0440\\u0456\\u0439\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3187,
+    "fields": {
+        "action_time": "2026-06-16T12:54:14.710Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "10",
+        "object_repr": "Андрій",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3188,
+    "fields": {
+        "action_time": "2026-06-17T13:38:50.661Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "11",
+        "object_repr": "Артур",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"user profile\", \"object\": \"\\u0410\\u0440\\u0442\\u0443\\u0440\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3189,
+    "fields": {
+        "action_time": "2026-06-17T13:40:58.353Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "11",
+        "object_repr": "Артур",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3190,
+    "fields": {
+        "action_time": "2026-06-17T13:52:02.610Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "12",
+        "object_repr": "Сергій",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"user profile\", \"object\": \"\\u0421\\u0435\\u0440\\u0433\\u0456\\u0439\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3191,
+    "fields": {
+        "action_time": "2026-06-17T13:52:43.460Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "7",
+        "object_repr": "Coco",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3192,
+    "fields": {
+        "action_time": "2026-06-17T13:57:26.380Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "12",
+        "object_repr": "Сергій",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
@@ -41203,18 +41515,90 @@
 },
 {
     "model": "auth.user",
-    "pk": 7,
+    "pk": 8,
     "fields": {
-        "password": "pbkdf2_sha256$1000000$iqdZXWY2xRzpJLLwQsjpt7$5i1uGRBYbtqmJd3toeor+Qzb4kokuC81uj/lxJkhu3g=",
+        "password": "pbkdf2_sha256$1000000$HtC0IJUUrlCxxMIvO5DOJw$ScyY23lsnWD6UUDpvbfNc3RDF19eQcJGnZCgIBd7EQE=",
         "last_login": null,
         "is_superuser": false,
-        "username": "Coco",
-        "first_name": "Мій",
-        "last_name": "Тестовий",
+        "username": "Валєра",
+        "first_name": "Валєра",
+        "last_name": "Богдан",
         "email": "",
         "is_staff": false,
         "is_active": true,
-        "date_joined": "2026-03-28T22:25:26Z",
+        "date_joined": "2026-06-16T12:42:22Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$yK3c7IbaYFf2AobMR12gMo$P80ptbf1pE4v+B9epSFiaOLR2f7U0dDsZremLP7YkAk=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Антон",
+        "first_name": "Антон",
+        "last_name": "Боднарюк",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-16T12:50:10Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$0XKTkSbYktvYyHdBXNhGnK$MNqDBodehWGbI101uHfciczjVdR+kBz2v/m/Cvbnh8Y=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Андрій",
+        "first_name": "Андрій",
+        "last_name": "Тимчук",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-16T12:54:04Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$lfnlUoUDlTgTtpx7YW4fV1$y1yGguXnpUrNCZyaBh3UNp6vaiY1LZtBu4IJoQwluCE=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Артур",
+        "first_name": "Артур",
+        "last_name": "Кузнєцов",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-17T13:38:49Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$GkKNxOIiORACQr8ojIjTqq$JuaN3R3rkUUPk7r9Co/aAAqPfMqhponpS3Qm8Rk/2Lk=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Сергій",
+        "first_name": "Сергій",
+        "last_name": "Селюков",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-17T13:52:01Z",
         "groups": [],
         "user_permissions": []
     }
@@ -41229,10 +41613,42 @@
 },
 {
     "model": "warehouse.userprofile",
-    "pk": 10,
+    "pk": 11,
     "fields": {
-        "user": 7,
-        "telegram_id": 6979340619
+        "user": 8,
+        "telegram_id": 454504955
+    }
+},
+{
+    "model": "warehouse.userprofile",
+    "pk": 12,
+    "fields": {
+        "user": 9,
+        "telegram_id": 603519506
+    }
+},
+{
+    "model": "warehouse.userprofile",
+    "pk": 13,
+    "fields": {
+        "user": 10,
+        "telegram_id": 1023439127
+    }
+},
+{
+    "model": "warehouse.userprofile",
+    "pk": 14,
+    "fields": {
+        "user": 11,
+        "telegram_id": 372369919
+    }
+},
+{
+    "model": "warehouse.userprofile",
+    "pk": 15,
+    "fields": {
+        "user": 12,
+        "telegram_id": 1710876168
     }
 },
 {
@@ -55909,6 +56325,153 @@
         "work_type": 32,
         "phone_model": 20,
         "points": 0.15
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 18,
+    "fields": {
+        "user": 1,
+        "phone_model": 15,
+        "is_client_device": false,
+        "repair_number": "34637",
+        "date": "2026-06-16",
+        "total_points": 0.68,
+        "works": [
+            2015,
+            1991
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 19,
+    "fields": {
+        "user": 11,
+        "phone_model": 12,
+        "is_client_device": false,
+        "repair_number": "37657",
+        "date": "2026-06-16",
+        "total_points": 1.02,
+        "works": [
+            1709,
+            1811,
+            1916
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 20,
+    "fields": {
+        "user": 1,
+        "phone_model": 10,
+        "is_client_device": false,
+        "repair_number": "35673",
+        "date": "2026-06-17",
+        "total_points": 0.765,
+        "works": [
+            1809,
+            1842,
+            2172
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 21,
+    "fields": {
+        "user": 14,
+        "phone_model": 9,
+        "is_client_device": true,
+        "repair_number": "1242",
+        "date": "2026-06-17",
+        "total_points": 1.8,
+        "works": [
+            2147
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 22,
+    "fields": {
+        "user": 1,
+        "phone_model": 21,
+        "is_client_device": true,
+        "repair_number": "8777",
+        "date": "2026-06-17",
+        "total_points": 2.448,
+        "works": [
+            1773,
+            1821,
+            1854,
+            2022,
+            2094,
+            2118
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 23,
+    "fields": {
+        "user": 11,
+        "phone_model": 21,
+        "is_client_device": false,
+        "repair_number": "38765",
+        "date": "2026-06-17",
+        "total_points": 0.68,
+        "works": [
+            1773,
+            1719
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 24,
+    "fields": {
+        "user": 13,
+        "phone_model": 8,
+        "is_client_device": false,
+        "repair_number": "Загальний список",
+        "date": "2026-06-17",
+        "total_points": 0.765,
+        "works": [
+            2079,
+            2007
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 25,
+    "fields": {
+        "user": 13,
+        "phone_model": 7,
+        "is_client_device": false,
+        "repair_number": "345",
+        "date": "2026-06-17",
+        "total_points": 0.3,
+        "works": [
+            2168
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 26,
+    "fields": {
+        "user": 13,
+        "phone_model": 7,
+        "is_client_device": false,
+        "repair_number": "345",
+        "date": "2026-06-17",
+        "total_points": 0.3,
+        "works": [
+            2168
+        ]
     }
 }
 ]

@@ -41496,6 +41496,617 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 3193,
+    "fields": {
+        "action_time": "2026-06-18T14:30:06.431Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "5",
+        "object_repr": "Камера",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3194,
+    "fields": {
+        "action_time": "2026-06-18T14:30:24.344Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "16",
+        "object_repr": "Основна камера",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3195,
+    "fields": {
+        "action_time": "2026-06-18T14:30:31.566Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "10",
+        "object_repr": "Скло камери",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3196,
+    "fields": {
+        "action_time": "2026-06-18T14:31:24.952Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "26",
+        "object_repr": "Екран",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3197,
+    "fields": {
+        "action_time": "2026-06-18T14:32:38.165Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "6",
+        "object_repr": "Шлейфи під платою",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3198,
+    "fields": {
+        "action_time": "2026-06-18T14:33:46.275Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "14",
+        "object_repr": "Плата",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3199,
+    "fields": {
+        "action_time": "2026-06-18T14:33:52.248Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "23",
+        "object_repr": "Шлейф Power",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3200,
+    "fields": {
+        "action_time": "2026-06-18T14:34:00.204Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "25",
+        "object_repr": "Шлейф вспишки",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3201,
+    "fields": {
+        "action_time": "2026-06-18T14:34:08.865Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "24",
+        "object_repr": "Шлейф кнопок гучності",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3202,
+    "fields": {
+        "action_time": "2026-06-18T14:34:56.643Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "6",
+        "object_repr": "Шлейфи Power",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430 \\u0433\\u0440\\u0443\\u043f\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3203,
+    "fields": {
+        "action_time": "2026-06-18T14:35:05.135Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "25",
+        "object_repr": "Шлейф вспишки",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3204,
+    "fields": {
+        "action_time": "2026-06-18T14:35:11.140Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "24",
+        "object_repr": "Шлейф кнопок гучності",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3205,
+    "fields": {
+        "action_time": "2026-06-18T14:35:54.484Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "7",
+        "object_repr": "Шлейф кнопок гучності",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3206,
+    "fields": {
+        "action_time": "2026-06-18T14:36:01.826Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "24",
+        "object_repr": "Шлейф кнопок гучності",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3207,
+    "fields": {
+        "action_time": "2026-06-18T14:36:08.917Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "14",
+        "object_repr": "Плата",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3208,
+    "fields": {
+        "action_time": "2026-06-18T14:36:45.159Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "8",
+        "object_repr": "Шлейф вспишки",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3209,
+    "fields": {
+        "action_time": "2026-06-18T14:36:57.714Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "25",
+        "object_repr": "Шлейф вспишки",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3210,
+    "fields": {
+        "action_time": "2026-06-18T14:37:02.636Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "14",
+        "object_repr": "Плата",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3211,
+    "fields": {
+        "action_time": "2026-06-18T14:38:22.898Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "27",
+        "object_repr": "Підсвітка",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3212,
+    "fields": {
+        "action_time": "2026-06-18T14:38:39.797Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "27",
+        "object_repr": "Підсвітка",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3213,
+    "fields": {
+        "action_time": "2026-06-18T14:39:30.574Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "9",
+        "object_repr": "Екран Підсвітка",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3214,
+    "fields": {
+        "action_time": "2026-06-18T14:39:42.894Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "26",
+        "object_repr": "Екран",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3215,
+    "fields": {
+        "action_time": "2026-06-18T14:40:25.319Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "27",
+        "object_repr": "Підсвітка",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3216,
+    "fields": {
+        "action_time": "2026-06-18T14:41:19.936Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "10",
+        "object_repr": "Нижній шлейф",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3217,
+    "fields": {
+        "action_time": "2026-06-18T14:41:33.421Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "22",
+        "object_repr": "Нижній шлейф",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3218,
+    "fields": {
+        "action_time": "2026-06-18T14:41:41.879Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "19",
+        "object_repr": "Вібрік",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3219,
+    "fields": {
+        "action_time": "2026-06-18T14:41:58.415Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "20",
+        "object_repr": "Основний динамік",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3220,
+    "fields": {
+        "action_time": "2026-06-18T14:42:20.917Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "11",
+        "object_repr": "Шлейф датч",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3221,
+    "fields": {
+        "action_time": "2026-06-18T14:42:26.367Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "11",
+        "object_repr": "Шлейф датчиків",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430 \\u0433\\u0440\\u0443\\u043f\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3222,
+    "fields": {
+        "action_time": "2026-06-18T14:42:35.600Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "15",
+        "object_repr": "Шлейф датчиків",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3223,
+    "fields": {
+        "action_time": "2026-06-18T14:42:44.458Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "21",
+        "object_repr": "Верхній динамік",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3224,
+    "fields": {
+        "action_time": "2026-06-18T14:42:53.250Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "31",
+        "object_repr": "Без ремонту",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3225,
+    "fields": {
+        "action_time": "2026-06-18T14:43:12.886Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "12",
+        "object_repr": "Обмін",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3226,
+    "fields": {
+        "action_time": "2026-06-18T14:45:05.033Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "12",
+        "object_repr": "Новий корпус",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3227,
+    "fields": {
+        "action_time": "2026-06-18T14:45:30.157Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "29",
+        "object_repr": "Вирівнювання корпусу",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3228,
+    "fields": {
+        "action_time": "2026-06-18T14:45:40.216Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "19",
+        "object_repr": "Вібрік",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3229,
+    "fields": {
+        "action_time": "2026-06-18T14:45:58.137Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "5",
+        "object_repr": "Заміна АКБ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3230,
+    "fields": {
+        "action_time": "2026-06-18T14:46:05.943Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "33",
+        "object_repr": "Кришка",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3231,
+    "fields": {
+        "action_time": "2026-06-18T14:46:16.222Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "22",
+        "object_repr": "Нижній шлейф",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3232,
+    "fields": {
+        "action_time": "2026-06-18T14:46:24.450Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "16",
+        "object_repr": "Основна камера",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3233,
+    "fields": {
+        "action_time": "2026-06-18T14:46:31.217Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "30",
+        "object_repr": "Новий Корпус",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3234,
+    "fields": {
+        "action_time": "2026-06-18T14:46:44.982Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "20",
+        "object_repr": "Основний динамік",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3235,
+    "fields": {
+        "action_time": "2026-06-18T14:47:02.682Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "14",
+        "object_repr": "Плата",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3236,
+    "fields": {
+        "action_time": "2026-06-18T14:47:17.465Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "13",
+        "object_repr": "Прошивка АКБ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3237,
+    "fields": {
+        "action_time": "2026-06-18T14:47:47.326Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "23",
+        "object_repr": "Шлейф Power",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3238,
+    "fields": {
+        "action_time": "2026-06-18T14:47:53.633Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "25",
+        "object_repr": "Шлейф вспишки",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3239,
+    "fields": {
+        "action_time": "2026-06-18T14:48:01.891Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "24",
+        "object_repr": "Шлейф кнопок гучності",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
@@ -41509,6 +42120,24 @@
         "is_staff": true,
         "is_active": true,
         "date_joined": "2026-02-22T21:42:20Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$iqdZXWY2xRzpJLLwQsjpt7$5i1uGRBYbtqmJd3toeor+Qzb4kokuC81uj/lxJkhu3g=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Coco",
+        "first_name": "Мій",
+        "last_name": "Тестовий",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-03-28T22:25:26Z",
         "groups": [],
         "user_permissions": []
     }
@@ -41609,6 +42238,14 @@
     "fields": {
         "user": 1,
         "telegram_id": 375385945
+    }
+},
+{
+    "model": "warehouse.userprofile",
+    "pk": 10,
+    "fields": {
+        "user": 7,
+        "telegram_id": 6979340619
     }
 },
 {
@@ -41999,9 +42636,9 @@
         "release_year": 2020,
         "supported_part_types": [
             1,
-            2,
             5,
-            7
+            7,
+            2
         ]
     }
 },
@@ -42121,9 +42758,9 @@
         "release_year": 2022,
         "supported_part_types": [
             1,
-            2,
             5,
-            7
+            7,
+            2
         ]
     }
 },
@@ -50855,12 +51492,85 @@
     }
 },
 {
+    "model": "worklog.exclusivegroup",
+    "pk": 4,
+    "fields": {
+        "name": "Без ремонту",
+        "cancels_all": true
+    }
+},
+{
+    "model": "worklog.exclusivegroup",
+    "pk": 5,
+    "fields": {
+        "name": "Камера",
+        "cancels_all": false
+    }
+},
+{
+    "model": "worklog.exclusivegroup",
+    "pk": 6,
+    "fields": {
+        "name": "Шлейфи Power",
+        "cancels_all": false
+    }
+},
+{
+    "model": "worklog.exclusivegroup",
+    "pk": 7,
+    "fields": {
+        "name": "Шлейф кнопок гучності",
+        "cancels_all": false
+    }
+},
+{
+    "model": "worklog.exclusivegroup",
+    "pk": 8,
+    "fields": {
+        "name": "Шлейф вспишки",
+        "cancels_all": false
+    }
+},
+{
+    "model": "worklog.exclusivegroup",
+    "pk": 9,
+    "fields": {
+        "name": "Екран Підсвітка",
+        "cancels_all": false
+    }
+},
+{
+    "model": "worklog.exclusivegroup",
+    "pk": 10,
+    "fields": {
+        "name": "Нижній шлейф",
+        "cancels_all": false
+    }
+},
+{
+    "model": "worklog.exclusivegroup",
+    "pk": 11,
+    "fields": {
+        "name": "Шлейф датчиків",
+        "cancels_all": false
+    }
+},
+{
+    "model": "worklog.exclusivegroup",
+    "pk": 12,
+    "fields": {
+        "name": "Новий корпус",
+        "cancels_all": false
+    }
+},
+{
     "model": "worklog.worktype",
     "pk": 5,
     "fields": {
         "name": "Заміна АКБ",
         "exclusive_groups": [
-            1
+            1,
+            12
         ]
     }
 },
@@ -50909,7 +51619,9 @@
     "pk": 10,
     "fields": {
         "name": "Скло камери",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            5
+        ]
     }
 },
 {
@@ -50925,7 +51637,9 @@
     "pk": 12,
     "fields": {
         "name": "Обмін",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            4
+        ]
     }
 },
 {
@@ -50934,7 +51648,8 @@
     "fields": {
         "name": "Прошивка АКБ",
         "exclusive_groups": [
-            1
+            1,
+            12
         ]
     }
 },
@@ -50943,7 +51658,12 @@
     "pk": 14,
     "fields": {
         "name": "Плата",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            12,
+            8,
+            7,
+            6
+        ]
     }
 },
 {
@@ -50951,7 +51671,9 @@
     "pk": 15,
     "fields": {
         "name": "Шлейф датчиків",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            11
+        ]
     }
 },
 {
@@ -50959,7 +51681,10 @@
     "pk": 16,
     "fields": {
         "name": "Основна камера",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            5,
+            12
+        ]
     }
 },
 {
@@ -50983,7 +51708,10 @@
     "pk": 19,
     "fields": {
         "name": "Вібрік",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            10,
+            12
+        ]
     }
 },
 {
@@ -50991,7 +51719,10 @@
     "pk": 20,
     "fields": {
         "name": "Основний динамік",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            10,
+            12
+        ]
     }
 },
 {
@@ -50999,7 +51730,9 @@
     "pk": 21,
     "fields": {
         "name": "Верхній динамік",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            11
+        ]
     }
 },
 {
@@ -51007,7 +51740,10 @@
     "pk": 22,
     "fields": {
         "name": "Нижній шлейф",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            10,
+            12
+        ]
     }
 },
 {
@@ -51015,7 +51751,10 @@
     "pk": 23,
     "fields": {
         "name": "Шлейф Power",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            12,
+            6
+        ]
     }
 },
 {
@@ -51023,7 +51762,10 @@
     "pk": 24,
     "fields": {
         "name": "Шлейф кнопок гучності",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            12,
+            7
+        ]
     }
 },
 {
@@ -51031,7 +51773,10 @@
     "pk": 25,
     "fields": {
         "name": "Шлейф вспишки",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            12,
+            8
+        ]
     }
 },
 {
@@ -51039,7 +51784,10 @@
     "pk": 26,
     "fields": {
         "name": "Екран",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            9,
+            3
+        ]
     }
 },
 {
@@ -51047,7 +51795,9 @@
     "pk": 27,
     "fields": {
         "name": "Підсвітка",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            9
+        ]
     }
 },
 {
@@ -51063,7 +51813,9 @@
     "pk": 29,
     "fields": {
         "name": "Вирівнювання корпусу",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            12
+        ]
     }
 },
 {
@@ -51071,7 +51823,9 @@
     "pk": 30,
     "fields": {
         "name": "Новий Корпус",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            12
+        ]
     }
 },
 {
@@ -51079,7 +51833,9 @@
     "pk": 31,
     "fields": {
         "name": "Без ремонту",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            4
+        ]
     }
 },
 {
@@ -51095,7 +51851,9 @@
     "pk": 33,
     "fields": {
         "name": "Кришка",
-        "exclusive_groups": []
+        "exclusive_groups": [
+            12
+        ]
     }
 },
 {
@@ -56338,8 +57096,8 @@
         "date": "2026-06-16",
         "total_points": 0.68,
         "works": [
-            2015,
-            1991
+            1991,
+            2015
         ]
     }
 },
@@ -56354,9 +57112,9 @@
         "date": "2026-06-16",
         "total_points": 1.02,
         "works": [
-            1709,
             1811,
-            1916
+            1916,
+            1709
         ]
     }
 },
@@ -56403,12 +57161,12 @@
         "date": "2026-06-17",
         "total_points": 2.448,
         "works": [
-            1773,
-            1821,
-            1854,
             2022,
+            2118,
+            1773,
             2094,
-            2118
+            1821,
+            1854
         ]
     }
 },
@@ -56439,8 +57197,8 @@
         "date": "2026-06-17",
         "total_points": 0.765,
         "works": [
-            2079,
-            2007
+            2007,
+            2079
         ]
     }
 },

@@ -13,6 +13,7 @@ from django.utils.timezone import now
 from telebot import types
 from django.db.models import Sum
 from collections import defaultdict
+import logging
 
 from warehouse.models import UserProfile, Part, PartDependency, PhoneModel
 from worklog.models import WorkPrice, WorkType, WorkLogEntry
@@ -569,6 +570,8 @@ def handle_wp_edit(call):
         bot.send_message(group_chat_id, '\n'.join(lines), parse_mode='Markdown')
         bot.answer_callback_query(call.id, '✅ Відправлено в чат!')
 
+
+logging.getLogger('urllib3.connectionpool').setLevel(logging.CRITICAL)
 
 if __name__ == '__main__':
     bot.infinity_polling(timeout=10)

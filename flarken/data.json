@@ -42679,11 +42679,37 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 3284,
+    "fields": {
+        "action_time": "2026-06-23T20:48:08.706Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "51",
+        "object_repr": "MacBook Air",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3285,
+    "fields": {
+        "action_time": "2026-06-23T20:48:28.737Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "52",
+        "object_repr": "MacBook Pro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$1000000$YWbMzfpOkxRK91mgLmrG34$xVyrRpxqKvG07XVTwmqNJCPO/mWbURGg6W+y1TMM6lI=",
-        "last_login": "2026-06-09T09:58:26.045Z",
+        "last_login": "2026-06-23T20:45:37.710Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "Назар",
@@ -43208,9 +43234,9 @@
         "release_year": 2020,
         "supported_part_types": [
             1,
-            2,
             5,
-            7
+            7,
+            2
         ]
     }
 },
@@ -43330,9 +43356,9 @@
         "release_year": 2022,
         "supported_part_types": [
             1,
-            2,
             5,
-            7
+            7,
+            2
         ]
     }
 },
@@ -43648,6 +43674,26 @@
         "name": "Pro 12.9 1-6 Gen",
         "phone_model_range": 12,
         "release_year": 2022,
+        "supported_part_types": []
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 51,
+    "fields": {
+        "name": "MacBook Air",
+        "phone_model_range": 13,
+        "release_year": 2015,
+        "supported_part_types": []
+    }
+},
+{
+    "model": "warehouse.phonemodel",
+    "pk": 52,
+    "fields": {
+        "name": "MacBook Pro",
+        "phone_model_range": 13,
+        "release_year": 2018,
         "supported_part_types": []
     }
 },
@@ -52256,6 +52302,14 @@
     }
 },
 {
+    "model": "worklog.exclusivegroup",
+    "pk": 13,
+    "fields": {
+        "name": "НК - АКБ",
+        "cancels_all": false
+    }
+},
+{
     "model": "worklog.worktype",
     "pk": 5,
     "fields": {
@@ -55730,6 +55784,78 @@
         "work_type": 24,
         "phone_model": 16,
         "points": 0.5
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 1969,
+    "fields": {
+        "work_type": 24,
+        "phone_model": 38,
+        "points": 0.5
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 1970,
+    "fields": {
+        "work_type": 24,
+        "phone_model": 18,
+        "points": 0.5
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 1971,
+    "fields": {
+        "work_type": 24,
+        "phone_model": 19,
+        "points": 0.5
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 1972,
+    "fields": {
+        "work_type": 24,
+        "phone_model": 20,
+        "points": 0.5
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 1973,
+    "fields": {
+        "work_type": 24,
+        "phone_model": 22,
+        "points": 0.6
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 1974,
+    "fields": {
+        "work_type": 24,
+        "phone_model": 21,
+        "points": 0.6
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 1975,
+    "fields": {
+        "work_type": 24,
+        "phone_model": 23,
+        "points": 0.6
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 1976,
+    "fields": {
+        "work_type": 24,
+        "phone_model": 24,
+        "points": 0.6
     }
 },
 {
@@ -60504,8 +60630,8 @@
         "date": "2026-06-16",
         "total_points": 0.68,
         "works": [
-            2015,
-            1991
+            1991,
+            2015
         ]
     }
 },
@@ -60569,12 +60695,12 @@
         "date": "2026-06-17",
         "total_points": 2.448,
         "works": [
-            1773,
-            1821,
-            1854,
             2022,
+            2118,
+            1773,
             2094,
-            2118
+            1821,
+            1854
         ]
     }
 },
@@ -60605,8 +60731,8 @@
         "date": "2026-06-17",
         "total_points": 0.765,
         "works": [
-            2079,
-            2007
+            2007,
+            2079
         ]
     }
 },

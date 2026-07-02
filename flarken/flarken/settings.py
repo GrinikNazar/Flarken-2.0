@@ -64,26 +64,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'flarken.wsgi.application'
 
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'flarken',
-#         'USER': 'postgres',
-#         'PASSWORD': 'root',
-#         'HOST': '127.0.0.1',
-#         'PORT': '5433',
-#     }
-# }
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', 'flarken'),
-        'USER': os.getenv('DB_USER', 'postgres'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'root'),
-        'HOST': os.getenv('DB_HOST', 'db'),
-        'PORT': os.getenv('DB_PORT', '5433'),
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT'),
     }
 }
 
@@ -115,7 +103,7 @@ USE_L10N = True
 
 
 STATIC_URL = 'static/'
-STATIC_ROOT = '/app/staticfiles'  # куди collectstatic збирає файли
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",

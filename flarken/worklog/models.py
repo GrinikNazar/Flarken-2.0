@@ -1,6 +1,6 @@
+import datetime
+
 from django.db import models
-from django.db.models import Sum
-from django.utils.timezone import now
 
 from warehouse.models import PhoneModel, UserProfile
 
@@ -76,9 +76,12 @@ class WorkLogEntry(models.Model):
         verbose_name="Номер ремонту"
     )
 
-    date = models.DateField(auto_now_add=True, verbose_name="Дата")
+    date = models.DateField(default=datetime.date.today, verbose_name="Дата")
     works = models.ManyToManyField(WorkPrice, verbose_name="Роботи")
-    total_points = models.FloatField(verbose_name="Сума балів")
+    total_points = models.FloatField(
+        verbose_name="Сума балів",
+        null=True, blank=True, default=0
+    )
 
     class Meta:
         verbose_name = "Запис роботи"

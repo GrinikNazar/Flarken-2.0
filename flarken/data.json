@@ -42705,6 +42705,3308 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 3286,
+    "fields": {
+        "action_time": "2026-07-03T15:42:48.262Z",
+        "user": 13,
+        "content_type": 20,
+        "object_id": "14",
+        "object_repr": "Плата",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3287,
+    "fields": {
+        "action_time": "2026-07-03T15:42:55.853Z",
+        "user": 13,
+        "content_type": 20,
+        "object_id": "14",
+        "object_repr": "Плата",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3288,
+    "fields": {
+        "action_time": "2026-07-03T15:43:47.920Z",
+        "user": 13,
+        "content_type": 19,
+        "object_id": "22",
+        "object_repr": "admin | iPhone 13 | 2026-06-17 | 2.448 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3289,
+    "fields": {
+        "action_time": "2026-07-03T15:43:47.920Z",
+        "user": 13,
+        "content_type": 19,
+        "object_id": "20",
+        "object_repr": "admin | iPhone X | 2026-06-17 | 0.765 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3290,
+    "fields": {
+        "action_time": "2026-07-03T15:43:47.920Z",
+        "user": 13,
+        "content_type": 19,
+        "object_id": "23",
+        "object_repr": "Валєра | iPhone 13 | 2026-06-17 | 0.68 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3291,
+    "fields": {
+        "action_time": "2026-07-03T15:43:47.920Z",
+        "user": 13,
+        "content_type": 19,
+        "object_id": "26",
+        "object_repr": "Андрій | iPhone 7+ | 2026-06-17 | 0.3 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3292,
+    "fields": {
+        "action_time": "2026-07-03T15:43:47.920Z",
+        "user": 13,
+        "content_type": 19,
+        "object_id": "25",
+        "object_repr": "Андрій | iPhone 7+ | 2026-06-17 | 0.3 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3293,
+    "fields": {
+        "action_time": "2026-07-03T15:43:47.920Z",
+        "user": 13,
+        "content_type": 19,
+        "object_id": "24",
+        "object_repr": "Андрій | iPhone 8 | 2026-06-17 | 0.765 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3294,
+    "fields": {
+        "action_time": "2026-07-03T15:43:47.920Z",
+        "user": 13,
+        "content_type": 19,
+        "object_id": "21",
+        "object_repr": "Артур | iPhone 8+ | 2026-06-17 | 1.8 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3295,
+    "fields": {
+        "action_time": "2026-07-03T15:43:47.920Z",
+        "user": 13,
+        "content_type": 19,
+        "object_id": "18",
+        "object_repr": "admin | iPhone 11Pro | 2026-06-16 | 0.68 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3296,
+    "fields": {
+        "action_time": "2026-07-03T15:43:47.920Z",
+        "user": 13,
+        "content_type": 19,
+        "object_id": "19",
+        "object_repr": "Валєра | iPhone XsMax | 2026-06-16 | 1.02 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3297,
+    "fields": {
+        "action_time": "2026-07-03T15:45:45.848Z",
+        "user": 13,
+        "content_type": 20,
+        "object_id": "5",
+        "object_repr": "Заміна АКБ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3298,
+    "fields": {
+        "action_time": "2026-07-03T15:47:50.815Z",
+        "user": 13,
+        "content_type": 19,
+        "object_id": "27",
+        "object_repr": "Андрій | iPhone 13ProMax | 2026-07-03 | 1.7 б",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3299,
+    "fields": {
+        "action_time": "2026-07-03T15:53:14.798Z",
+        "user": 13,
+        "content_type": 20,
+        "object_id": "16",
+        "object_repr": "Основна камера",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3300,
+    "fields": {
+        "action_time": "2026-07-03T15:54:09.962Z",
+        "user": 13,
+        "content_type": 20,
+        "object_id": "20",
+        "object_repr": "Основний динамік",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3301,
+    "fields": {
+        "action_time": "2026-07-03T15:54:19.906Z",
+        "user": 13,
+        "content_type": 20,
+        "object_id": "19",
+        "object_repr": "Вібрік",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3302,
+    "fields": {
+        "action_time": "2026-07-04T08:33:00.245Z",
+        "user": 13,
+        "content_type": 20,
+        "object_id": "22",
+        "object_repr": "Нижній шлейф",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3303,
+    "fields": {
+        "action_time": "2026-07-04T08:33:20.144Z",
+        "user": 13,
+        "content_type": 20,
+        "object_id": "13",
+        "object_repr": "Прошивка АКБ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3304,
+    "fields": {
+        "action_time": "2026-07-04T08:33:27.628Z",
+        "user": 13,
+        "content_type": 20,
+        "object_id": "23",
+        "object_repr": "Шлейф Power",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3305,
+    "fields": {
+        "action_time": "2026-07-04T08:33:35.795Z",
+        "user": 13,
+        "content_type": 20,
+        "object_id": "25",
+        "object_repr": "Шлейф вспишки",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3306,
+    "fields": {
+        "action_time": "2026-07-04T08:33:46.531Z",
+        "user": 13,
+        "content_type": 17,
+        "object_id": "12",
+        "object_repr": "Новий корпус",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3307,
+    "fields": {
+        "action_time": "2026-07-04T08:34:06.318Z",
+        "user": 13,
+        "content_type": 20,
+        "object_id": "14",
+        "object_repr": "Плата",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u0438 \\u0432\\u0437\\u0430\\u0454\\u043c\\u043e\\u0432\\u0438\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u043d\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3308,
+    "fields": {
+        "action_time": "2026-07-04T14:11:49.899Z",
+        "user": 13,
+        "content_type": 18,
+        "object_id": "2506",
+        "object_repr": "Перепаковка АКБ - iPhone XR (0.7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3309,
+    "fields": {
+        "action_time": "2026-07-06T11:28:04.682Z",
+        "user": 13,
+        "content_type": 18,
+        "object_id": "2507",
+        "object_repr": "Плата - MacBook Pro (1.3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3310,
+    "fields": {
+        "action_time": "2026-07-06T11:28:41.442Z",
+        "user": 13,
+        "content_type": 18,
+        "object_id": "2508",
+        "object_repr": "Чистка - MacBook Pro (0.4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3311,
+    "fields": {
+        "action_time": "2026-07-07T08:32:20.835Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "489",
+        "object_repr": "АКБ - iPhone 6",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3312,
+    "fields": {
+        "action_time": "2026-07-07T08:32:20.840Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "488",
+        "object_repr": "АКБ - iPhone SE",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3313,
+    "fields": {
+        "action_time": "2026-07-07T08:32:20.842Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "487",
+        "object_repr": "АКБ - iPhone 6+, iPhone 6s+",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3314,
+    "fields": {
+        "action_time": "2026-07-07T08:32:20.844Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "486",
+        "object_repr": "АКБ - iPhone 6s",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3315,
+    "fields": {
+        "action_time": "2026-07-07T08:32:20.847Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "485",
+        "object_repr": "АКБ - iPhone 7+",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3316,
+    "fields": {
+        "action_time": "2026-07-07T08:32:20.850Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "484",
+        "object_repr": "АКБ - iPhone 7",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3317,
+    "fields": {
+        "action_time": "2026-07-07T08:32:20.853Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "483",
+        "object_repr": "АКБ - iPhone 8+",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3318,
+    "fields": {
+        "action_time": "2026-07-07T08:32:20.855Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "482",
+        "object_repr": "АКБ - iPhone SE2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3319,
+    "fields": {
+        "action_time": "2026-07-07T08:32:20.857Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "481",
+        "object_repr": "АКБ - iPhone 8",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3320,
+    "fields": {
+        "action_time": "2026-07-07T08:32:20.861Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "480",
+        "object_repr": "АКБ - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3321,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.748Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "479",
+        "object_repr": "АКБ - iPhone XR",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3322,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.750Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "478",
+        "object_repr": "АКБ - iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3323,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.752Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "477",
+        "object_repr": "АКБ - iPhone XsMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3324,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.754Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "476",
+        "object_repr": "АКБ - iPhone 11",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3325,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.755Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "475",
+        "object_repr": "АКБ - iPhone 11Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3326,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.762Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "474",
+        "object_repr": "АКБ - iPhone 11ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3327,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.765Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "473",
+        "object_repr": "АКБ - iPhone 12mini",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3328,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.766Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "472",
+        "object_repr": "АКБ - iPhone 12, iPhone 12Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3329,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.768Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "471",
+        "object_repr": "АКБ - iPhone 12ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3330,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.769Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "470",
+        "object_repr": "АКБ - iPhone 13mini",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3331,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.771Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "469",
+        "object_repr": "АКБ - iPhone 13",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3332,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.773Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "468",
+        "object_repr": "АКБ - iPhone 13Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3333,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.775Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "467",
+        "object_repr": "АКБ - iPhone 13ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3334,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.776Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "466",
+        "object_repr": "АКБ - iPhone 14+",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3335,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.778Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "465",
+        "object_repr": "АКБ - iPhone 14",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3336,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.779Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "464",
+        "object_repr": "АКБ - iPhone 14Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3337,
+    "fields": {
+        "action_time": "2026-07-07T08:38:10.782Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "463",
+        "object_repr": "АКБ - iPhone 14ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3338,
+    "fields": {
+        "action_time": "2026-07-07T08:43:09.877Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "678",
+        "object_repr": "АКБ - iPhone 15",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0410\\u041a\\u0411 + \\u043f\\u0456\\u0434\\u0432'\\u044f\\u0437\\u043a\\u0430 USED\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0410\\u041a\\u0411 \\u0434\\u043b\\u044f \\u043f\\u0456\\u0434\\u0432'\\u044f\\u0437\\u043a\\u0438\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0410\\u041a\\u0411 JCID \\u0434\\u0456\\u0430\\u0433\\u043d\\u043e\\u0441\\u0442\\u043e\\u0432\\u0430\\u043d\\u0430\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3339,
+    "fields": {
+        "action_time": "2026-07-07T08:45:26.817Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "679",
+        "object_repr": "АКБ - iPhone 15+",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0410\\u041a\\u0411 + \\u043f\\u0456\\u0434\\u0432'\\u044f\\u0437\\u043a\\u0430 USED\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0410\\u041a\\u0411 \\u0434\\u043b\\u044f \\u043f\\u0456\\u0434\\u0432'\\u044f\\u0437\\u043a\\u0438\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0410\\u041a\\u0411 JCID \\u0434\\u0456\\u0430\\u0433\\u043d\\u043e\\u0441\\u0442\\u043e\\u0432\\u0430\\u043d\\u0430\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3340,
+    "fields": {
+        "action_time": "2026-07-07T08:45:46.503Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "678",
+        "object_repr": "АКБ - iPhone 15",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3341,
+    "fields": {
+        "action_time": "2026-07-07T08:47:02.748Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "680",
+        "object_repr": "АКБ - iPhone 15Pro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0410\\u041a\\u0411 + \\u043f\\u0456\\u0434\\u0432'\\u044f\\u0437\\u043a\\u0430 USED\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0410\\u041a\\u0411 \\u0434\\u043b\\u044f \\u043f\\u0456\\u0434\\u0432'\\u044f\\u0437\\u043a\\u0438\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0410\\u041a\\u0411 JCID \\u0434\\u0456\\u0430\\u0433\\u043d\\u043e\\u0441\\u0442\\u043e\\u0432\\u0430\\u043d\\u0430\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3342,
+    "fields": {
+        "action_time": "2026-07-07T08:47:49.787Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "681",
+        "object_repr": "АКБ - iPhone 15ProMax",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Apple Zone \\u2192 \\u0410\\u041a\\u0411 + \\u043f\\u0456\\u0434\\u0432'\\u044f\\u0437\\u043a\\u0430 USED\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"GSM Forsage \\u2192 \\u0410\\u041a\\u0411 \\u0434\\u043b\\u044f \\u043f\\u0456\\u0434\\u0432'\\u044f\\u0437\\u043a\\u0438\"}}, {\"added\": {\"name\": \"\\u041f\\u043e\\u0441\\u0442\\u0430\\u0447\\u0430\\u043b\\u044c\\u043d\\u0438\\u043a\", \"object\": \"Ref Parts \\u2192 \\u0410\\u041a\\u0411 JCID \\u0434\\u0456\\u0430\\u0433\\u043d\\u043e\\u0441\\u0442\\u043e\\u0432\\u0430\\u043d\\u0430\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3343,
+    "fields": {
+        "action_time": "2026-07-07T08:49:56.502Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "681",
+        "object_repr": "АКБ - iPhone 15ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3344,
+    "fields": {
+        "action_time": "2026-07-07T08:49:56.505Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "680",
+        "object_repr": "АКБ - iPhone 15Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3345,
+    "fields": {
+        "action_time": "2026-07-07T08:49:56.507Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "679",
+        "object_repr": "АКБ - iPhone 15+",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3346,
+    "fields": {
+        "action_time": "2026-07-07T08:49:56.508Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "678",
+        "object_repr": "АКБ - iPhone 15",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3347,
+    "fields": {
+        "action_time": "2026-07-07T08:51:01.591Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "468",
+        "object_repr": "АКБ - iPhone 13Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3348,
+    "fields": {
+        "action_time": "2026-07-07T08:52:16.338Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "469",
+        "object_repr": "АКБ - iPhone 13",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3349,
+    "fields": {
+        "action_time": "2026-07-07T08:52:25.721Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "472",
+        "object_repr": "АКБ - iPhone 12, iPhone 12Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3350,
+    "fields": {
+        "action_time": "2026-07-07T09:02:19.552Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "669",
+        "object_repr": "Екран - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3351,
+    "fields": {
+        "action_time": "2026-07-07T09:03:55.258Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "675",
+        "object_repr": "Екран - iPhone 11ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3352,
+    "fields": {
+        "action_time": "2026-07-07T09:03:55.262Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "674",
+        "object_repr": "Екран - iPhone 11Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3353,
+    "fields": {
+        "action_time": "2026-07-07T09:03:55.264Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "671",
+        "object_repr": "Екран - iPhone XsMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3354,
+    "fields": {
+        "action_time": "2026-07-07T09:03:55.266Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "670",
+        "object_repr": "Екран - iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3355,
+    "fields": {
+        "action_time": "2026-07-07T09:20:26.417Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "677",
+        "object_repr": "Екран копія - iPhone 11ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3356,
+    "fields": {
+        "action_time": "2026-07-07T09:20:26.420Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "676",
+        "object_repr": "Екран копія - iPhone 11Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3357,
+    "fields": {
+        "action_time": "2026-07-07T09:20:26.422Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "633",
+        "object_repr": "Екран копія - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3358,
+    "fields": {
+        "action_time": "2026-07-07T09:20:26.424Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "632",
+        "object_repr": "Екран копія - iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3359,
+    "fields": {
+        "action_time": "2026-07-07T09:20:26.426Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "631",
+        "object_repr": "Екран копія - iPhone XsMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3360,
+    "fields": {
+        "action_time": "2026-07-07T09:40:30.946Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "649",
+        "object_repr": "Екран копія - iPhone 6 - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3361,
+    "fields": {
+        "action_time": "2026-07-07T09:40:30.949Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "648",
+        "object_repr": "Екран копія - iPhone 6 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3362,
+    "fields": {
+        "action_time": "2026-07-07T09:40:30.950Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "645",
+        "object_repr": "Екран копія - iPhone 6s - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3363,
+    "fields": {
+        "action_time": "2026-07-07T09:40:30.952Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "644",
+        "object_repr": "Екран копія - iPhone 6s - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3364,
+    "fields": {
+        "action_time": "2026-07-07T09:40:30.953Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "643",
+        "object_repr": "Екран копія - iPhone 6s+ - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3365,
+    "fields": {
+        "action_time": "2026-07-07T09:40:30.955Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "642",
+        "object_repr": "Екран копія - iPhone 6s+ - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3366,
+    "fields": {
+        "action_time": "2026-07-07T09:40:30.956Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "640",
+        "object_repr": "Екран копія - iPhone 7 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3367,
+    "fields": {
+        "action_time": "2026-07-07T09:40:30.958Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "639",
+        "object_repr": "Екран копія - iPhone 7+ - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3368,
+    "fields": {
+        "action_time": "2026-07-07T09:40:30.959Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "638",
+        "object_repr": "Екран копія - iPhone 7+ - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3369,
+    "fields": {
+        "action_time": "2026-07-07T09:40:30.960Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "637",
+        "object_repr": "Екран копія - iPhone 8 - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3370,
+    "fields": {
+        "action_time": "2026-07-07T09:40:30.962Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "636",
+        "object_repr": "Екран копія - iPhone 8, iPhone SE2 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3371,
+    "fields": {
+        "action_time": "2026-07-07T09:40:30.963Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "635",
+        "object_repr": "Екран копія - iPhone 8+ - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3372,
+    "fields": {
+        "action_time": "2026-07-07T09:40:30.965Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "634",
+        "object_repr": "Екран копія - iPhone 8+ - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3373,
+    "fields": {
+        "action_time": "2026-07-07T09:55:41.174Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "655",
+        "object_repr": "Рамка - iPhone 16",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3374,
+    "fields": {
+        "action_time": "2026-07-07T09:55:41.177Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "651",
+        "object_repr": "Скло - iPhone 16",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3375,
+    "fields": {
+        "action_time": "2026-07-07T09:56:36.539Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "656",
+        "object_repr": "Рамка - iPhone 16Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3376,
+    "fields": {
+        "action_time": "2026-07-07T09:56:36.541Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "652",
+        "object_repr": "Скло - iPhone 16Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3377,
+    "fields": {
+        "action_time": "2026-07-07T09:57:29.994Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "657",
+        "object_repr": "Рамка - iPhone 16ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3378,
+    "fields": {
+        "action_time": "2026-07-07T09:57:29.998Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "653",
+        "object_repr": "Скло - iPhone 16ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3379,
+    "fields": {
+        "action_time": "2026-07-07T10:01:01.514Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "654",
+        "object_repr": "Рамка - iPhone 16+",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3380,
+    "fields": {
+        "action_time": "2026-07-07T10:01:01.517Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "650",
+        "object_repr": "Скло - iPhone 16+",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3381,
+    "fields": {
+        "action_time": "2026-07-07T10:04:15.759Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "565",
+        "object_repr": "Рамка - iPhone 15+",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3382,
+    "fields": {
+        "action_time": "2026-07-07T10:04:15.762Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "528",
+        "object_repr": "Скло - iPhone 15+",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3383,
+    "fields": {
+        "action_time": "2026-07-07T10:05:16.978Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "564",
+        "object_repr": "Рамка - iPhone 15",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3384,
+    "fields": {
+        "action_time": "2026-07-07T10:05:16.980Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "529",
+        "object_repr": "Скло - iPhone 15",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3385,
+    "fields": {
+        "action_time": "2026-07-07T10:06:18.507Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "563",
+        "object_repr": "Рамка - iPhone 15Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3386,
+    "fields": {
+        "action_time": "2026-07-07T10:06:18.510Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "527",
+        "object_repr": "Скло - iPhone 15Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3387,
+    "fields": {
+        "action_time": "2026-07-07T10:06:55.715Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "562",
+        "object_repr": "Рамка - iPhone 15ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3388,
+    "fields": {
+        "action_time": "2026-07-07T10:06:55.718Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "526",
+        "object_repr": "Скло - iPhone 15ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3389,
+    "fields": {
+        "action_time": "2026-07-07T10:08:26.249Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "668",
+        "object_repr": "Сенсор - iPhone 12, iPhone 12Pro - No Chip",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3390,
+    "fields": {
+        "action_time": "2026-07-07T10:08:26.252Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "667",
+        "object_repr": "Сенсор - iPhone 12, iPhone 12Pro - With Chip",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3391,
+    "fields": {
+        "action_time": "2026-07-07T10:08:26.253Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "575",
+        "object_repr": "Рамка - iPhone 12, iPhone 12Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3392,
+    "fields": {
+        "action_time": "2026-07-07T10:08:26.255Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "538",
+        "object_repr": "Скло - iPhone 12, iPhone 12Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3393,
+    "fields": {
+        "action_time": "2026-07-07T10:09:48.110Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "566",
+        "object_repr": "Рамка - iPhone 14ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3394,
+    "fields": {
+        "action_time": "2026-07-07T10:09:48.112Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "530",
+        "object_repr": "Скло - iPhone 14ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3395,
+    "fields": {
+        "action_time": "2026-07-07T10:11:28.947Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "568",
+        "object_repr": "Рамка - iPhone 14+",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3396,
+    "fields": {
+        "action_time": "2026-07-07T11:47:30.383Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "479",
+        "object_repr": "АКБ - iPhone XR",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3397,
+    "fields": {
+        "action_time": "2026-07-07T11:47:46.476Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "463",
+        "object_repr": "АКБ - iPhone 14ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3398,
+    "fields": {
+        "action_time": "2026-07-07T11:49:44.063Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "533",
+        "object_repr": "Скло - iPhone 14+",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3399,
+    "fields": {
+        "action_time": "2026-07-07T12:06:17.459Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "569",
+        "object_repr": "Рамка - iPhone 14",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3400,
+    "fields": {
+        "action_time": "2026-07-07T12:06:17.462Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "532",
+        "object_repr": "Скло - iPhone 14",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3401,
+    "fields": {
+        "action_time": "2026-07-07T12:07:22.468Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "567",
+        "object_repr": "Рамка - iPhone 14Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3402,
+    "fields": {
+        "action_time": "2026-07-07T12:10:23.014Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "570",
+        "object_repr": "Рамка - iPhone 13ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3403,
+    "fields": {
+        "action_time": "2026-07-07T12:10:23.016Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "534",
+        "object_repr": "Скло - iPhone 13ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3404,
+    "fields": {
+        "action_time": "2026-07-07T12:12:11.520Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "572",
+        "object_repr": "Рамка - iPhone 13",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3405,
+    "fields": {
+        "action_time": "2026-07-07T12:12:11.522Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "535",
+        "object_repr": "Скло - iPhone 13, iPhone 13Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3406,
+    "fields": {
+        "action_time": "2026-07-07T12:12:57.833Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "571",
+        "object_repr": "Рамка - iPhone 13Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3407,
+    "fields": {
+        "action_time": "2026-07-07T12:14:21.829Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "574",
+        "object_repr": "Рамка - iPhone 12ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3408,
+    "fields": {
+        "action_time": "2026-07-07T12:14:21.831Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "537",
+        "object_repr": "Скло - iPhone 12ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3409,
+    "fields": {
+        "action_time": "2026-07-07T12:15:46.398Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "576",
+        "object_repr": "Рамка - iPhone 12mini",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3410,
+    "fields": {
+        "action_time": "2026-07-07T12:15:46.400Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "539",
+        "object_repr": "Скло - iPhone 12mini",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3411,
+    "fields": {
+        "action_time": "2026-07-07T12:16:40.795Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "573",
+        "object_repr": "Рамка - iPhone 13mini",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3412,
+    "fields": {
+        "action_time": "2026-07-07T12:16:40.798Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "536",
+        "object_repr": "Скло - iPhone 13mini",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3413,
+    "fields": {
+        "action_time": "2026-07-07T12:18:17.087Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "628",
+        "object_repr": "Сенсор - iPhone XsMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3414,
+    "fields": {
+        "action_time": "2026-07-07T12:18:17.090Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "579",
+        "object_repr": "Рамка - iPhone XsMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3415,
+    "fields": {
+        "action_time": "2026-07-07T12:18:17.091Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "544",
+        "object_repr": "Скло - iPhone XsMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3416,
+    "fields": {
+        "action_time": "2026-07-07T12:20:01.911Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "624",
+        "object_repr": "Сенсор - iPhone 11Pro - With Chip",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3417,
+    "fields": {
+        "action_time": "2026-07-07T12:20:01.914Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "623",
+        "object_repr": "Сенсор - iPhone 11Pro - No Chip",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3418,
+    "fields": {
+        "action_time": "2026-07-07T12:20:01.916Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "541",
+        "object_repr": "Скло - iPhone 11Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3419,
+    "fields": {
+        "action_time": "2026-07-07T12:20:01.919Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "578",
+        "object_repr": "Рамка - iPhone 11Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3420,
+    "fields": {
+        "action_time": "2026-07-07T12:21:31.243Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "622",
+        "object_repr": "Сенсор - iPhone 11ProMax - With Chip",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3421,
+    "fields": {
+        "action_time": "2026-07-07T12:21:31.246Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "621",
+        "object_repr": "Сенсор - iPhone 11ProMax - No Chip",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3422,
+    "fields": {
+        "action_time": "2026-07-07T12:21:31.247Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "540",
+        "object_repr": "Скло - iPhone 11ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3423,
+    "fields": {
+        "action_time": "2026-07-07T12:21:46.391Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "577",
+        "object_repr": "Рамка - iPhone 11ProMax",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3424,
+    "fields": {
+        "action_time": "2026-07-07T12:23:16.797Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "625",
+        "object_repr": "Сенсор - iPhone 11 - No Chip",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3425,
+    "fields": {
+        "action_time": "2026-07-07T12:23:16.800Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "542",
+        "object_repr": "Скло - iPhone 11",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3426,
+    "fields": {
+        "action_time": "2026-07-07T12:25:03.839Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "630",
+        "object_repr": "Сенсор - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3427,
+    "fields": {
+        "action_time": "2026-07-07T12:25:03.841Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "545",
+        "object_repr": "Скло - iPhone X, iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3428,
+    "fields": {
+        "action_time": "2026-07-07T12:25:03.843Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "581",
+        "object_repr": "Рамка - iPhone X",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3429,
+    "fields": {
+        "action_time": "2026-07-07T12:25:52.491Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "580",
+        "object_repr": "Рамка - iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3430,
+    "fields": {
+        "action_time": "2026-07-07T12:25:52.494Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "629",
+        "object_repr": "Сенсор - iPhone Xs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3431,
+    "fields": {
+        "action_time": "2026-07-07T12:26:35.068Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "627",
+        "object_repr": "Сенсор - iPhone XR",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3432,
+    "fields": {
+        "action_time": "2026-07-07T12:26:35.070Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "543",
+        "object_repr": "Скло - iPhone XR",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3433,
+    "fields": {
+        "action_time": "2026-07-07T12:36:37.398Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "Скло - iPhone 12, iPhone 12Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3434,
+    "fields": {
+        "action_time": "2026-07-07T12:38:18.250Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "Скло - iPhone 12, iPhone 12Pro",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3435,
+    "fields": {
+        "action_time": "2026-07-07T12:39:47.076Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "538",
+        "object_repr": "Скло - iPhone 12, iPhone 12Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3436,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.670Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "561",
+        "object_repr": "Скло - iPhone 6 - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3437,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.677Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "560",
+        "object_repr": "Скло - iPhone 6 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3438,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.680Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "559",
+        "object_repr": "Скло - iPhone 6+ - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3439,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.681Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "558",
+        "object_repr": "Скло - iPhone 6+ - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3440,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.683Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "557",
+        "object_repr": "Скло - iPhone 6s - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3441,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.685Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "556",
+        "object_repr": "Скло - iPhone 6s - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3442,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.686Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "555",
+        "object_repr": "Скло - iPhone 6s+ - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3443,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.687Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "554",
+        "object_repr": "Скло - iPhone 6s+ - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3444,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.689Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "553",
+        "object_repr": "Скло - iPhone 7 - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3445,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.692Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "552",
+        "object_repr": "Скло - iPhone 7 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3446,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.693Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "551",
+        "object_repr": "Скло - iPhone 7+ - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3447,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.695Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "550",
+        "object_repr": "Скло - iPhone 7+ - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3448,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.697Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "549",
+        "object_repr": "Скло - iPhone 8 - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3449,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.698Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "548",
+        "object_repr": "Скло - iPhone 8, iPhone SE2, iPhone SE3 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3450,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.700Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "547",
+        "object_repr": "Скло - iPhone 8+ - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3451,
+    "fields": {
+        "action_time": "2026-07-07T12:47:23.702Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "546",
+        "object_repr": "Скло - iPhone 8+ - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\", \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\\u0443\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3452,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.820Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "406",
+        "object_repr": "Кришка - iPhone 8+ - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3453,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.823Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "405",
+        "object_repr": "Кришка - iPhone 8+ - Red",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3454,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.825Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "404",
+        "object_repr": "Кришка - iPhone 8+ - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3455,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.827Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "402",
+        "object_repr": "Кришка - iPhone SE2 - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3456,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.828Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "401",
+        "object_repr": "Кришка - iPhone SE2 - Red",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3457,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.830Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "400",
+        "object_repr": "Кришка - iPhone SE2 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3458,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.832Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "399",
+        "object_repr": "Кришка - iPhone 8 - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3459,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.834Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "398",
+        "object_repr": "Кришка - iPhone 8 - Red",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3460,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.836Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "397",
+        "object_repr": "Кришка - iPhone 8 - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3461,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.838Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "396",
+        "object_repr": "Кришка - iPhone 8 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3462,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.839Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "395",
+        "object_repr": "Кришка - iPhone X - Space Gray",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3463,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.841Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "394",
+        "object_repr": "Кришка - iPhone X - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3464,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.843Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "393",
+        "object_repr": "Кришка - iPhone XR - Yellow",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3465,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.845Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "392",
+        "object_repr": "Кришка - iPhone XR - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3466,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.846Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "391",
+        "object_repr": "Кришка - iPhone XR - Red",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3467,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.848Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "390",
+        "object_repr": "Кришка - iPhone XR - Coral",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3468,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.849Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "389",
+        "object_repr": "Кришка - iPhone XR - Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3469,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.851Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "388",
+        "object_repr": "Кришка - iPhone XR - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3470,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.852Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "387",
+        "object_repr": "Кришка - iPhone Xs - Space Gray",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3471,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.854Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "386",
+        "object_repr": "Кришка - iPhone Xs - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3472,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.856Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "385",
+        "object_repr": "Кришка - iPhone Xs - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3473,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.857Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "384",
+        "object_repr": "Кришка - iPhone XsMax - Space Gray",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3474,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.859Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "383",
+        "object_repr": "Кришка - iPhone XsMax - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3475,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.861Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "382",
+        "object_repr": "Кришка - iPhone XsMax - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3476,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.862Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "381",
+        "object_repr": "Кришка - iPhone 11 - Yellow",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3477,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.864Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "380",
+        "object_repr": "Кришка - iPhone 11 - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3478,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.865Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "379",
+        "object_repr": "Кришка - iPhone 11 - Red",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3479,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.868Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "378",
+        "object_repr": "Кришка - iPhone 11 - Purple",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3480,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.869Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "377",
+        "object_repr": "Кришка - iPhone 11 - Green",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3481,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.871Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "376",
+        "object_repr": "Кришка - iPhone 11 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3482,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.873Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "375",
+        "object_repr": "Кришка - iPhone 11Pro - Space Gray",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3483,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.875Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "374",
+        "object_repr": "Кришка - iPhone 11Pro - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3484,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.877Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "373",
+        "object_repr": "Кришка - iPhone 11Pro - Midnight Green",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3485,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.879Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "372",
+        "object_repr": "Кришка - iPhone 11Pro - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3486,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.881Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "371",
+        "object_repr": "Кришка - iPhone 11ProMax - Space Gray",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3487,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.882Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "370",
+        "object_repr": "Кришка - iPhone 11ProMax - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3488,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.884Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "369",
+        "object_repr": "Кришка - iPhone 11ProMax - Midnight Green",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3489,
+    "fields": {
+        "action_time": "2026-07-07T12:57:00.886Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "368",
+        "object_repr": "Кришка - iPhone 11ProMax - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3490,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.819Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "367",
+        "object_repr": "Кришка - iPhone 12mini - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3491,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.823Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "366",
+        "object_repr": "Кришка - iPhone 12mini - Red",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3492,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.825Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "364",
+        "object_repr": "Кришка - iPhone 12mini - Green",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3493,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.827Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "363",
+        "object_repr": "Кришка - iPhone 12mini - Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3494,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.829Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "362",
+        "object_repr": "Кришка - iPhone 12mini - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3495,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.831Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "361",
+        "object_repr": "Кришка - iPhone 12 - Green",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3496,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.833Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "360",
+        "object_repr": "Кришка - iPhone 12 - White",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3497,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.835Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "359",
+        "object_repr": "Кришка - iPhone 12 - Red",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3498,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.837Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "358",
+        "object_repr": "Кришка - iPhone 12 - Purple",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3499,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.838Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "357",
+        "object_repr": "Кришка - iPhone 12 - Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3500,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.840Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "356",
+        "object_repr": "Кришка - iPhone 12 - Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3501,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.842Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "355",
+        "object_repr": "Кришка - iPhone 12ProMax - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3502,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.844Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "354",
+        "object_repr": "Кришка - iPhone 12ProMax - Pasific Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3503,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.845Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "353",
+        "object_repr": "Кришка - iPhone 12ProMax - Graphite",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3504,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.847Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "352",
+        "object_repr": "Кришка - iPhone 12ProMax - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3505,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.849Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "351",
+        "object_repr": "Кришка - iPhone 12Pro - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3506,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.851Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "350",
+        "object_repr": "Кришка - iPhone 12Pro - Pasific Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3507,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.852Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "349",
+        "object_repr": "Кришка - iPhone 12Pro - Graphite",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3508,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.854Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "348",
+        "object_repr": "Кришка - iPhone 12Pro - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3509,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.856Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "347",
+        "object_repr": "Кришка - iPhone 13Pro - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3510,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.858Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "345",
+        "object_repr": "Кришка - iPhone 13Pro - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3511,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.860Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "344",
+        "object_repr": "Кришка - iPhone 13Pro - Green",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3512,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.861Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "343",
+        "object_repr": "Кришка - iPhone 13Pro - Sierra Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3513,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.863Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "342",
+        "object_repr": "Кришка - iPhone 13ProMax - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3514,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.866Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "341",
+        "object_repr": "Кришка - iPhone 13ProMax - Graphite",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3515,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.867Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "340",
+        "object_repr": "Кришка - iPhone 13ProMax - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3516,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.869Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "339",
+        "object_repr": "Кришка - iPhone 13ProMax - Sierra Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3517,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.871Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "338",
+        "object_repr": "Кришка - iPhone 13ProMax - Green",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3518,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.872Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "337",
+        "object_repr": "Кришка - iPhone 13 - Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3519,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.874Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "336",
+        "object_repr": "Кришка - iPhone 13 - Pink",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3520,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.876Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "335",
+        "object_repr": "Кришка - iPhone 13 - Green",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3521,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.877Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "334",
+        "object_repr": "Кришка - iPhone 13 - Midnight",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3522,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.879Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "333",
+        "object_repr": "Кришка - iPhone 13 - Red",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3523,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.881Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "332",
+        "object_repr": "Кришка - iPhone 13 - Starlight",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3524,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.882Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "331",
+        "object_repr": "Кришка - iPhone 13mini - Blue",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3525,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.884Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "330",
+        "object_repr": "Кришка - iPhone 13mini - Pink",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3526,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.886Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "329",
+        "object_repr": "Кришка - iPhone 13mini - Red",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3527,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.888Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "328",
+        "object_repr": "Кришка - iPhone 13mini - Midnight",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3528,
+    "fields": {
+        "action_time": "2026-07-07T13:07:03.889Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "327",
+        "object_repr": "Кришка - iPhone 13mini - Starlight",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3529,
+    "fields": {
+        "action_time": "2026-07-07T13:10:43.890Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "314",
+        "object_repr": "Кришка - iPhone 14Pro - Deep Purple",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3530,
+    "fields": {
+        "action_time": "2026-07-07T13:10:43.893Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "313",
+        "object_repr": "Кришка - iPhone 14Pro - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3531,
+    "fields": {
+        "action_time": "2026-07-07T13:10:43.894Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "312",
+        "object_repr": "Кришка - iPhone 14Pro - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3532,
+    "fields": {
+        "action_time": "2026-07-07T13:10:43.896Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "309",
+        "object_repr": "Кришка - iPhone 14ProMax - Gold",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3533,
+    "fields": {
+        "action_time": "2026-07-07T13:10:43.898Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "308",
+        "object_repr": "Кришка - iPhone 14ProMax - Silver",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3534,
+    "fields": {
+        "action_time": "2026-07-07T13:10:43.900Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "307",
+        "object_repr": "Кришка - iPhone 14ProMax - Space Black",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3535,
+    "fields": {
+        "action_time": "2026-07-07T14:34:24.094Z",
+        "user": 13,
+        "content_type": 20,
+        "object_id": "36",
+        "object_repr": "Заміна сенсора",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3536,
+    "fields": {
+        "action_time": "2026-07-07T14:34:48.529Z",
+        "user": 13,
+        "content_type": 18,
+        "object_id": "2509",
+        "object_repr": "Заміна сенсора - Air 1 | 5-6 Gen (0.8)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3537,
+    "fields": {
+        "action_time": "2026-07-07T14:35:39.934Z",
+        "user": 13,
+        "content_type": 18,
+        "object_id": "2510",
+        "object_repr": "Вирівнювання корпусу - Air 1 | 5-6 Gen (0.5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3538,
+    "fields": {
+        "action_time": "2026-07-08T12:19:45.720Z",
+        "user": 13,
+        "content_type": 12,
+        "object_id": "531",
+        "object_repr": "Скло - iPhone 14Pro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0442\\u043e\\u0447\\u043d\\u0430 \\u043a\\u0456\\u043b\\u044c\\u043a\\u0456\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3539,
+    "fields": {
+        "action_time": "2026-07-08T13:19:01.541Z",
+        "user": 13,
+        "content_type": 18,
+        "object_id": "2511",
+        "object_repr": "Обмін - MacBook Pro (0.8)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
@@ -42826,6 +46128,24 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2026-06-17T13:52:01Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 13,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$XkHeTCl9QAjXRydUdOoCAY$K4qj7LuJmItDD0JirVU4pLAQNOR6rnlt6TwydTB1zaQ=",
+        "last_login": "2026-07-07T11:45:07.710Z",
+        "is_superuser": true,
+        "username": "frostray",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-07-02T13:37:54.759Z",
         "groups": [],
         "user_permissions": []
     }
@@ -43234,9 +46554,9 @@
         "release_year": 2020,
         "supported_part_types": [
             1,
+            2,
             5,
-            7,
-            2
+            7
         ]
     }
 },
@@ -43356,9 +46676,9 @@
         "release_year": 2022,
         "supported_part_types": [
             1,
+            2,
             5,
-            7,
-            2
+            7
         ]
     }
 },
@@ -43946,22 +47266,6 @@
 },
 {
     "model": "warehouse.part",
-    "pk": 1,
-    "fields": {
-        "part_type": 2,
-        "current_quantity": 0,
-        "min_quantity": 1,
-        "max_quantity": 10,
-        "color": null,
-        "chip_type": null,
-        "phone_models": [
-            18,
-            19
-        ]
-    }
-},
-{
-    "model": "warehouse.part",
     "pk": 289,
     "fields": {
         "part_type": 5,
@@ -44235,7 +47539,7 @@
     "pk": 307,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 20,
@@ -44250,7 +47554,7 @@
     "pk": 308,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 4,
@@ -44265,7 +47569,7 @@
     "pk": 309,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 5,
@@ -44310,7 +47614,7 @@
     "pk": 312,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 4,
@@ -44325,7 +47629,7 @@
     "pk": 313,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 5,
@@ -44340,7 +47644,7 @@
     "pk": 314,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 19,
@@ -44535,7 +47839,7 @@
     "pk": 327,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 15,
@@ -44550,7 +47854,7 @@
     "pk": 328,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 14,
@@ -44565,7 +47869,7 @@
     "pk": 329,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 6,
@@ -44580,7 +47884,7 @@
     "pk": 330,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 18,
@@ -44595,7 +47899,7 @@
     "pk": 331,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 11,
@@ -44610,7 +47914,7 @@
     "pk": 332,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 15,
@@ -44625,7 +47929,7 @@
     "pk": 333,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 6,
@@ -44640,7 +47944,7 @@
     "pk": 334,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 14,
@@ -44655,7 +47959,7 @@
     "pk": 335,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 8,
@@ -44670,7 +47974,7 @@
     "pk": 336,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 18,
@@ -44685,7 +47989,7 @@
     "pk": 337,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 11,
@@ -44700,7 +48004,7 @@
     "pk": 338,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 8,
@@ -44715,7 +48019,7 @@
     "pk": 339,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 17,
@@ -44730,7 +48034,7 @@
     "pk": 340,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 4,
@@ -44745,7 +48049,7 @@
     "pk": 341,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 13,
@@ -44760,7 +48064,7 @@
     "pk": 342,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 5,
@@ -44775,7 +48079,7 @@
     "pk": 343,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 17,
@@ -44790,7 +48094,7 @@
     "pk": 344,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 8,
@@ -44805,7 +48109,7 @@
     "pk": 345,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 4,
@@ -44835,7 +48139,7 @@
     "pk": 347,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 5,
@@ -44850,7 +48154,7 @@
     "pk": 348,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 5,
@@ -44865,7 +48169,7 @@
     "pk": 349,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 13,
@@ -44880,7 +48184,7 @@
     "pk": 350,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 12,
@@ -44895,7 +48199,7 @@
     "pk": 351,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 4,
@@ -44910,7 +48214,7 @@
     "pk": 352,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 5,
@@ -44925,7 +48229,7 @@
     "pk": 353,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 13,
@@ -44940,7 +48244,7 @@
     "pk": 354,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 12,
@@ -44955,7 +48259,7 @@
     "pk": 355,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 4,
@@ -44970,7 +48274,7 @@
     "pk": 356,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 1,
@@ -44985,7 +48289,7 @@
     "pk": 357,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 11,
@@ -45000,7 +48304,7 @@
     "pk": 358,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 7,
@@ -45015,7 +48319,7 @@
     "pk": 359,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 6,
@@ -45030,7 +48334,7 @@
     "pk": 360,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 2,
@@ -45045,7 +48349,7 @@
     "pk": 361,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 8,
@@ -45060,7 +48364,7 @@
     "pk": 362,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 1,
@@ -45075,7 +48379,7 @@
     "pk": 363,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 11,
@@ -45090,7 +48394,7 @@
     "pk": 364,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 8,
@@ -45120,7 +48424,7 @@
     "pk": 366,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 6,
@@ -45135,7 +48439,7 @@
     "pk": 367,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 2,
@@ -45150,7 +48454,7 @@
     "pk": 368,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 5,
@@ -45165,7 +48469,7 @@
     "pk": 369,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 10,
@@ -45180,7 +48484,7 @@
     "pk": 370,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 4,
@@ -45195,7 +48499,7 @@
     "pk": 371,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 3,
@@ -45210,7 +48514,7 @@
     "pk": 372,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 5,
@@ -45225,7 +48529,7 @@
     "pk": 373,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 10,
@@ -45240,7 +48544,7 @@
     "pk": 374,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 4,
@@ -45255,7 +48559,7 @@
     "pk": 375,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 3,
@@ -45270,7 +48574,7 @@
     "pk": 376,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 1,
@@ -45285,7 +48589,7 @@
     "pk": 377,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 8,
@@ -45300,7 +48604,7 @@
     "pk": 378,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 7,
@@ -45315,7 +48619,7 @@
     "pk": 379,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 6,
@@ -45330,7 +48634,7 @@
     "pk": 380,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 2,
@@ -45345,7 +48649,7 @@
     "pk": 381,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 9,
@@ -45360,7 +48664,7 @@
     "pk": 382,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 5,
@@ -45375,7 +48679,7 @@
     "pk": 383,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 4,
@@ -45390,7 +48694,7 @@
     "pk": 384,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 3,
@@ -45405,7 +48709,7 @@
     "pk": 385,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 5,
@@ -45420,7 +48724,7 @@
     "pk": 386,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 4,
@@ -45435,7 +48739,7 @@
     "pk": 387,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": 3,
@@ -45450,7 +48754,7 @@
     "pk": 388,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 1,
         "max_quantity": 5,
         "color": 1,
@@ -45465,7 +48769,7 @@
     "pk": 389,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 1,
         "max_quantity": 5,
         "color": 11,
@@ -45480,7 +48784,7 @@
     "pk": 390,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 1,
         "max_quantity": 5,
         "color": 16,
@@ -45495,7 +48799,7 @@
     "pk": 391,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 6,
@@ -45510,7 +48814,7 @@
     "pk": 392,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 5,
         "color": 2,
@@ -45525,7 +48829,7 @@
     "pk": 393,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 1,
         "max_quantity": 5,
         "color": 9,
@@ -45540,7 +48844,7 @@
     "pk": 394,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 2,
         "max_quantity": 4,
         "color": 4,
@@ -45555,7 +48859,7 @@
     "pk": 395,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 2,
         "max_quantity": 4,
         "color": 3,
@@ -45570,7 +48874,7 @@
     "pk": 396,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 8,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 1,
@@ -45585,7 +48889,7 @@
     "pk": 397,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 10,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 5,
@@ -45600,7 +48904,7 @@
     "pk": 398,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 10,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 6,
@@ -45615,7 +48919,7 @@
     "pk": 399,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 24,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 2,
@@ -45630,7 +48934,7 @@
     "pk": 400,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 7,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 1,
@@ -45645,7 +48949,7 @@
     "pk": 401,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 8,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 6,
@@ -45660,7 +48964,7 @@
     "pk": 402,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 9,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 2,
@@ -45690,7 +48994,7 @@
     "pk": 404,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 5,
@@ -45705,7 +49009,7 @@
     "pk": 405,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 10,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 6,
@@ -45720,7 +49024,7 @@
     "pk": 406,
     "fields": {
         "part_type": 5,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": 2,
@@ -45735,7 +49039,7 @@
     "pk": 463,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 2,
         "max_quantity": 6,
         "color": null,
@@ -45750,7 +49054,7 @@
     "pk": 464,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -45765,7 +49069,7 @@
     "pk": 465,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": null,
@@ -45780,7 +49084,7 @@
     "pk": 466,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": null,
@@ -45795,7 +49099,7 @@
     "pk": 467,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -45810,9 +49114,9 @@
     "pk": 468,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 2,
-        "max_quantity": 10,
+        "max_quantity": 6,
         "color": null,
         "chip_type": null,
         "phone_models": [
@@ -45825,9 +49129,9 @@
     "pk": 469,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 2,
-        "max_quantity": 10,
+        "max_quantity": 8,
         "color": null,
         "chip_type": null,
         "phone_models": [
@@ -45840,7 +49144,7 @@
     "pk": 470,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": null,
@@ -45855,7 +49159,7 @@
     "pk": 471,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 1,
         "max_quantity": 5,
         "color": null,
@@ -45870,9 +49174,9 @@
     "pk": 472,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 1,
-        "max_quantity": 10,
+        "max_quantity": 8,
         "color": null,
         "chip_type": null,
         "phone_models": [
@@ -45886,7 +49190,7 @@
     "pk": 473,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": null,
@@ -45901,7 +49205,7 @@
     "pk": 474,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 8,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -45916,7 +49220,7 @@
     "pk": 475,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -45931,7 +49235,7 @@
     "pk": 476,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 3,
         "max_quantity": 8,
         "color": null,
@@ -45946,7 +49250,7 @@
     "pk": 477,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 5,
         "color": null,
@@ -45961,7 +49265,7 @@
     "pk": 478,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 7,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -45976,7 +49280,7 @@
     "pk": 479,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 2,
         "max_quantity": 6,
         "color": null,
@@ -45991,7 +49295,7 @@
     "pk": 480,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -46006,7 +49310,7 @@
     "pk": 481,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 10,
         "min_quantity": 1,
         "max_quantity": 5,
         "color": null,
@@ -46021,7 +49325,7 @@
     "pk": 482,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": null,
@@ -46036,7 +49340,7 @@
     "pk": 483,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -46051,7 +49355,7 @@
     "pk": 484,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 2,
         "max_quantity": 8,
         "color": null,
@@ -46066,7 +49370,7 @@
     "pk": 485,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 5,
         "color": null,
@@ -46081,7 +49385,7 @@
     "pk": 486,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 7,
         "min_quantity": 1,
         "max_quantity": 5,
         "color": null,
@@ -46096,7 +49400,7 @@
     "pk": 487,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 1,
         "max_quantity": 5,
         "color": null,
@@ -46112,7 +49416,7 @@
     "pk": 488,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": null,
@@ -46127,7 +49431,7 @@
     "pk": 489,
     "fields": {
         "part_type": 1,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 5,
         "color": null,
@@ -46142,7 +49446,7 @@
     "pk": 526,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -46157,7 +49461,7 @@
     "pk": 527,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 11,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -46172,7 +49476,7 @@
     "pk": 528,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 8,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": null,
@@ -46187,7 +49491,7 @@
     "pk": 529,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 7,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": null,
@@ -46202,7 +49506,7 @@
     "pk": 530,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -46217,7 +49521,7 @@
     "pk": 531,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -46232,7 +49536,7 @@
     "pk": 532,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 16,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -46247,7 +49551,7 @@
     "pk": 533,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 5,
         "color": null,
@@ -46262,7 +49566,7 @@
     "pk": 534,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 11,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -46277,7 +49581,7 @@
     "pk": 535,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 8,
         "min_quantity": 2,
         "max_quantity": 10,
         "color": null,
@@ -46293,7 +49597,7 @@
     "pk": 536,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -46308,7 +49612,7 @@
     "pk": 537,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 7,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -46323,7 +49627,7 @@
     "pk": 538,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 16,
         "min_quantity": 5,
         "max_quantity": 15,
         "color": null,
@@ -46339,7 +49643,7 @@
     "pk": 539,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -46354,7 +49658,7 @@
     "pk": 540,
     "fields": {
         "part_type": 2,
-        "current_quantity": 8,
+        "current_quantity": 10,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -46369,7 +49673,7 @@
     "pk": 541,
     "fields": {
         "part_type": 2,
-        "current_quantity": 4,
+        "current_quantity": 9,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -46384,7 +49688,7 @@
     "pk": 542,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 22,
         "min_quantity": 5,
         "max_quantity": 15,
         "color": null,
@@ -46399,7 +49703,7 @@
     "pk": 543,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 20,
         "min_quantity": 5,
         "max_quantity": 15,
         "color": null,
@@ -46414,7 +49718,7 @@
     "pk": 544,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 10,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": null,
@@ -46429,7 +49733,7 @@
     "pk": 545,
     "fields": {
         "part_type": 2,
-        "current_quantity": 14,
+        "current_quantity": 22,
         "min_quantity": 5,
         "max_quantity": 15,
         "color": null,
@@ -46445,9 +49749,9 @@
     "pk": 546,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 12,
         "min_quantity": 5,
-        "max_quantity": 15,
+        "max_quantity": 10,
         "color": 1,
         "chip_type": null,
         "phone_models": [
@@ -46460,9 +49764,9 @@
     "pk": 547,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 19,
         "min_quantity": 5,
-        "max_quantity": 15,
+        "max_quantity": 10,
         "color": 2,
         "chip_type": null,
         "phone_models": [
@@ -46475,9 +49779,9 @@
     "pk": 548,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 5,
-        "max_quantity": 15,
+        "max_quantity": 10,
         "color": 1,
         "chip_type": null,
         "phone_models": [
@@ -46492,9 +49796,9 @@
     "pk": 549,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 28,
         "min_quantity": 5,
-        "max_quantity": 15,
+        "max_quantity": 10,
         "color": 2,
         "chip_type": null,
         "phone_models": [
@@ -46507,9 +49811,9 @@
     "pk": 550,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 22,
         "min_quantity": 5,
-        "max_quantity": 15,
+        "max_quantity": 10,
         "color": 1,
         "chip_type": null,
         "phone_models": [
@@ -46522,9 +49826,9 @@
     "pk": 551,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 25,
         "min_quantity": 5,
-        "max_quantity": 15,
+        "max_quantity": 10,
         "color": 2,
         "chip_type": null,
         "phone_models": [
@@ -46537,9 +49841,9 @@
     "pk": 552,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 20,
         "min_quantity": 5,
-        "max_quantity": 15,
+        "max_quantity": 10,
         "color": 1,
         "chip_type": null,
         "phone_models": [
@@ -46552,9 +49856,9 @@
     "pk": 553,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 25,
         "min_quantity": 5,
-        "max_quantity": 15,
+        "max_quantity": 10,
         "color": 2,
         "chip_type": null,
         "phone_models": [
@@ -46567,7 +49871,7 @@
     "pk": 554,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 34,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": 1,
@@ -46582,7 +49886,7 @@
     "pk": 555,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 30,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": 2,
@@ -46597,7 +49901,7 @@
     "pk": 556,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 24,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": 1,
@@ -46612,7 +49916,7 @@
     "pk": 557,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 30,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": 2,
@@ -46627,7 +49931,7 @@
     "pk": 558,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 32,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": 1,
@@ -46642,7 +49946,7 @@
     "pk": 559,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 31,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": 2,
@@ -46657,7 +49961,7 @@
     "pk": 560,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 30,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": 1,
@@ -46672,7 +49976,7 @@
     "pk": 561,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 33,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": 2,
@@ -46687,7 +49991,7 @@
     "pk": 562,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 7,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -46702,7 +50006,7 @@
     "pk": 563,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 11,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -46717,7 +50021,7 @@
     "pk": 564,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 8,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -46732,7 +50036,7 @@
     "pk": 565,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 7,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -46747,7 +50051,7 @@
     "pk": 566,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -46762,7 +50066,7 @@
     "pk": 567,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 9,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -46777,7 +50081,7 @@
     "pk": 568,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -46792,7 +50096,7 @@
     "pk": 569,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 2,
         "max_quantity": 10,
         "color": null,
@@ -46807,7 +50111,7 @@
     "pk": 570,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 7,
         "min_quantity": 2,
         "max_quantity": 10,
         "color": null,
@@ -46822,7 +50126,7 @@
     "pk": 571,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 13,
         "min_quantity": 2,
         "max_quantity": 10,
         "color": null,
@@ -46837,7 +50141,7 @@
     "pk": 572,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 12,
         "min_quantity": 2,
         "max_quantity": 10,
         "color": null,
@@ -46852,7 +50156,7 @@
     "pk": 573,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -46867,7 +50171,7 @@
     "pk": 574,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 9,
         "min_quantity": 2,
         "max_quantity": 10,
         "color": null,
@@ -46882,7 +50186,7 @@
     "pk": 575,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 8,
         "min_quantity": 2,
         "max_quantity": 20,
         "color": null,
@@ -46898,7 +50202,7 @@
     "pk": 576,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 9,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -46913,7 +50217,7 @@
     "pk": 577,
     "fields": {
         "part_type": 4,
-        "current_quantity": 12,
+        "current_quantity": 5,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -46928,7 +50232,7 @@
     "pk": 578,
     "fields": {
         "part_type": 4,
-        "current_quantity": 5,
+        "current_quantity": 7,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -46943,7 +50247,7 @@
     "pk": 579,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 15,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": null,
@@ -46958,7 +50262,7 @@
     "pk": 580,
     "fields": {
         "part_type": 4,
-        "current_quantity": 7,
+        "current_quantity": 13,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": null,
@@ -46973,9 +50277,9 @@
     "pk": 581,
     "fields": {
         "part_type": 4,
-        "current_quantity": 19,
+        "current_quantity": 16,
         "min_quantity": 5,
-        "max_quantity": 20,
+        "max_quantity": 10,
         "color": null,
         "chip_type": null,
         "phone_models": [
@@ -46988,7 +50292,7 @@
     "pk": 621,
     "fields": {
         "part_type": 3,
-        "current_quantity": 4,
+        "current_quantity": 5,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -47003,7 +50307,7 @@
     "pk": 622,
     "fields": {
         "part_type": 3,
-        "current_quantity": 2,
+        "current_quantity": 5,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -47018,7 +50322,7 @@
     "pk": 623,
     "fields": {
         "part_type": 3,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -47033,7 +50337,7 @@
     "pk": 624,
     "fields": {
         "part_type": 3,
-        "current_quantity": 0,
+        "current_quantity": 5,
         "min_quantity": 2,
         "max_quantity": 5,
         "color": null,
@@ -47048,9 +50352,9 @@
     "pk": 625,
     "fields": {
         "part_type": 3,
-        "current_quantity": 0,
+        "current_quantity": 10,
         "min_quantity": 3,
-        "max_quantity": 10,
+        "max_quantity": 5,
         "color": null,
         "chip_type": 2,
         "phone_models": [
@@ -47078,7 +50382,7 @@
     "pk": 627,
     "fields": {
         "part_type": 3,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 4,
         "max_quantity": 10,
         "color": null,
@@ -47093,7 +50397,7 @@
     "pk": 628,
     "fields": {
         "part_type": 3,
-        "current_quantity": 0,
+        "current_quantity": 12,
         "min_quantity": 3,
         "max_quantity": 10,
         "color": null,
@@ -47108,9 +50412,9 @@
     "pk": 629,
     "fields": {
         "part_type": 3,
-        "current_quantity": 9,
+        "current_quantity": 6,
         "min_quantity": 4,
-        "max_quantity": 10,
+        "max_quantity": 5,
         "color": null,
         "chip_type": null,
         "phone_models": [
@@ -47123,7 +50427,7 @@
     "pk": 630,
     "fields": {
         "part_type": 3,
-        "current_quantity": 0,
+        "current_quantity": 12,
         "min_quantity": 4,
         "max_quantity": 10,
         "color": null,
@@ -47138,7 +50442,7 @@
     "pk": 631,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47153,7 +50457,7 @@
     "pk": 632,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47168,7 +50472,7 @@
     "pk": 633,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47183,7 +50487,7 @@
     "pk": 634,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 1,
@@ -47198,7 +50502,7 @@
     "pk": 635,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 2,
@@ -47213,7 +50517,7 @@
     "pk": 636,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 1,
@@ -47229,7 +50533,7 @@
     "pk": 637,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 7,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 2,
@@ -47244,7 +50548,7 @@
     "pk": 638,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 1,
@@ -47259,7 +50563,7 @@
     "pk": 639,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 2,
@@ -47274,7 +50578,7 @@
     "pk": 640,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 1,
@@ -47304,7 +50608,7 @@
     "pk": 642,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 1,
@@ -47319,7 +50623,7 @@
     "pk": 643,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 2,
@@ -47334,7 +50638,7 @@
     "pk": 644,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 1,
@@ -47349,7 +50653,7 @@
     "pk": 645,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 2,
@@ -47394,7 +50698,7 @@
     "pk": 648,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 1,
@@ -47409,7 +50713,7 @@
     "pk": 649,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": 2,
@@ -47424,7 +50728,7 @@
     "pk": 650,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47439,7 +50743,7 @@
     "pk": 651,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47454,7 +50758,7 @@
     "pk": 652,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 4,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47469,7 +50773,7 @@
     "pk": 653,
     "fields": {
         "part_type": 2,
-        "current_quantity": 0,
+        "current_quantity": 9,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47484,7 +50788,7 @@
     "pk": 654,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47499,7 +50803,7 @@
     "pk": 655,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 7,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47514,7 +50818,7 @@
     "pk": 656,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47529,7 +50833,7 @@
     "pk": 657,
     "fields": {
         "part_type": 4,
-        "current_quantity": 0,
+        "current_quantity": 9,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47544,7 +50848,7 @@
     "pk": 667,
     "fields": {
         "part_type": 3,
-        "current_quantity": 0,
+        "current_quantity": 12,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": null,
@@ -47560,7 +50864,7 @@
     "pk": 668,
     "fields": {
         "part_type": 3,
-        "current_quantity": 0,
+        "current_quantity": 6,
         "min_quantity": 5,
         "max_quantity": 10,
         "color": null,
@@ -47576,7 +50880,7 @@
     "pk": 669,
     "fields": {
         "part_type": 6,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 3,
         "color": null,
@@ -47591,7 +50895,7 @@
     "pk": 670,
     "fields": {
         "part_type": 6,
-        "current_quantity": 0,
+        "current_quantity": 1,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47606,7 +50910,7 @@
     "pk": 671,
     "fields": {
         "part_type": 6,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47651,7 +50955,7 @@
     "pk": 674,
     "fields": {
         "part_type": 6,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47666,7 +50970,7 @@
     "pk": 675,
     "fields": {
         "part_type": 6,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47681,7 +50985,7 @@
     "pk": 676,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 3,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
@@ -47696,13 +51000,73 @@
     "pk": 677,
     "fields": {
         "part_type": 7,
-        "current_quantity": 0,
+        "current_quantity": 2,
         "min_quantity": 1,
         "max_quantity": 2,
         "color": null,
         "chip_type": null,
         "phone_models": [
             16
+        ]
+    }
+},
+{
+    "model": "warehouse.part",
+    "pk": 678,
+    "fields": {
+        "part_type": 1,
+        "current_quantity": 2,
+        "min_quantity": 1,
+        "max_quantity": 3,
+        "color": null,
+        "chip_type": null,
+        "phone_models": [
+            30
+        ]
+    }
+},
+{
+    "model": "warehouse.part",
+    "pk": 679,
+    "fields": {
+        "part_type": 1,
+        "current_quantity": 2,
+        "min_quantity": 1,
+        "max_quantity": 3,
+        "color": null,
+        "chip_type": null,
+        "phone_models": [
+            31
+        ]
+    }
+},
+{
+    "model": "warehouse.part",
+    "pk": 680,
+    "fields": {
+        "part_type": 1,
+        "current_quantity": 4,
+        "min_quantity": 1,
+        "max_quantity": 4,
+        "color": null,
+        "chip_type": null,
+        "phone_models": [
+            32
+        ]
+    }
+},
+{
+    "model": "warehouse.part",
+    "pk": 681,
+    "fields": {
+        "part_type": 1,
+        "current_quantity": 3,
+        "min_quantity": 1,
+        "max_quantity": 4,
+        "color": null,
+        "chip_type": null,
+        "phone_models": [
+            33
         ]
     }
 },
@@ -47739,24 +51103,6 @@
     "pk": 5,
     "fields": {
         "name": "AKS"
-    }
-},
-{
-    "model": "warehouse.supplierpartname",
-    "pk": 1,
-    "fields": {
-        "part": 1,
-        "supplier": 2,
-        "supplier_name": "Скло для переклейки"
-    }
-},
-{
-    "model": "warehouse.supplierpartname",
-    "pk": 6,
-    "fields": {
-        "part": 1,
-        "supplier": 3,
-        "supplier_name": "Скло+ОСА Feaglet"
     }
 },
 {
@@ -52098,6 +55444,114 @@
     }
 },
 {
+    "model": "warehouse.supplierpartname",
+    "pk": 495,
+    "fields": {
+        "part": 678,
+        "supplier": 1,
+        "supplier_name": "АКБ + підв'язка USED"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 496,
+    "fields": {
+        "part": 678,
+        "supplier": 2,
+        "supplier_name": "АКБ для підв'язки"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 497,
+    "fields": {
+        "part": 678,
+        "supplier": 3,
+        "supplier_name": "АКБ JCID діагностована"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 498,
+    "fields": {
+        "part": 679,
+        "supplier": 1,
+        "supplier_name": "АКБ + підв'язка USED"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 499,
+    "fields": {
+        "part": 679,
+        "supplier": 2,
+        "supplier_name": "АКБ для підв'язки"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 500,
+    "fields": {
+        "part": 679,
+        "supplier": 3,
+        "supplier_name": "АКБ JCID діагностована"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 501,
+    "fields": {
+        "part": 680,
+        "supplier": 1,
+        "supplier_name": "АКБ + підв'язка USED"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 502,
+    "fields": {
+        "part": 680,
+        "supplier": 2,
+        "supplier_name": "АКБ для підв'язки"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 503,
+    "fields": {
+        "part": 680,
+        "supplier": 3,
+        "supplier_name": "АКБ JCID діагностована"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 504,
+    "fields": {
+        "part": 681,
+        "supplier": 1,
+        "supplier_name": "АКБ + підв'язка USED"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 505,
+    "fields": {
+        "part": 681,
+        "supplier": 2,
+        "supplier_name": "АКБ для підв'язки"
+    }
+},
+{
+    "model": "warehouse.supplierpartname",
+    "pk": 506,
+    "fields": {
+        "part": 681,
+        "supplier": 3,
+        "supplier_name": "АКБ JCID діагностована"
+    }
+},
+{
     "model": "warehouse.partdependency",
     "pk": 1,
     "fields": {
@@ -52295,14 +55749,6 @@
 },
 {
     "model": "worklog.exclusivegroup",
-    "pk": 12,
-    "fields": {
-        "name": "Новий корпус",
-        "cancels_all": false
-    }
-},
-{
-    "model": "worklog.exclusivegroup",
     "pk": 13,
     "fields": {
         "name": "НК - АКБ",
@@ -52315,8 +55761,7 @@
     "fields": {
         "name": "Заміна АКБ",
         "exclusive_groups": [
-            1,
-            12
+            1
         ]
     }
 },
@@ -52394,8 +55839,7 @@
     "fields": {
         "name": "Прошивка АКБ",
         "exclusive_groups": [
-            1,
-            12
+            1
         ]
     }
 },
@@ -52404,12 +55848,7 @@
     "pk": 14,
     "fields": {
         "name": "Плата",
-        "exclusive_groups": [
-            12,
-            8,
-            7,
-            6
-        ]
+        "exclusive_groups": []
     }
 },
 {
@@ -52428,8 +55867,7 @@
     "fields": {
         "name": "Основна камера",
         "exclusive_groups": [
-            5,
-            12
+            5
         ]
     }
 },
@@ -52455,8 +55893,7 @@
     "fields": {
         "name": "Вібрік",
         "exclusive_groups": [
-            10,
-            12
+            10
         ]
     }
 },
@@ -52466,8 +55903,7 @@
     "fields": {
         "name": "Основний динамік",
         "exclusive_groups": [
-            10,
-            12
+            10
         ]
     }
 },
@@ -52487,8 +55923,7 @@
     "fields": {
         "name": "Нижній шлейф",
         "exclusive_groups": [
-            10,
-            12
+            10
         ]
     }
 },
@@ -52498,7 +55933,6 @@
     "fields": {
         "name": "Шлейф Power",
         "exclusive_groups": [
-            12,
             6
         ]
     }
@@ -52509,7 +55943,6 @@
     "fields": {
         "name": "Шлейф кнопок гучності",
         "exclusive_groups": [
-            12,
             7
         ]
     }
@@ -52520,7 +55953,6 @@
     "fields": {
         "name": "Шлейф вспишки",
         "exclusive_groups": [
-            12,
             8
         ]
     }
@@ -52559,9 +55991,7 @@
     "pk": 29,
     "fields": {
         "name": "Вирівнювання корпусу",
-        "exclusive_groups": [
-            12
-        ]
+        "exclusive_groups": []
     }
 },
 {
@@ -52569,9 +55999,7 @@
     "pk": 30,
     "fields": {
         "name": "Новий Корпус",
-        "exclusive_groups": [
-            12
-        ]
+        "exclusive_groups": []
     }
 },
 {
@@ -52597,9 +56025,7 @@
     "pk": 33,
     "fields": {
         "name": "Кришка",
-        "exclusive_groups": [
-            12
-        ]
+        "exclusive_groups": []
     }
 },
 {
@@ -52615,6 +56041,14 @@
     "pk": 35,
     "fields": {
         "name": "Перепаковка акб",
+        "exclusive_groups": []
+    }
+},
+{
+    "model": "worklog.worktype",
+    "pk": 36,
+    "fields": {
+        "name": "Заміна сенсора",
         "exclusive_groups": []
     }
 },
@@ -60620,149 +64054,686 @@
     }
 },
 {
-    "model": "worklog.worklogentry",
-    "pk": 18,
+    "model": "worklog.workprice",
+    "pk": 2506,
     "fields": {
-        "user": 1,
-        "phone_model": 15,
+        "work_type": 6,
+        "phone_model": 13,
+        "points": 0.7
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 2507,
+    "fields": {
+        "work_type": 14,
+        "phone_model": 52,
+        "points": 1.3
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 2508,
+    "fields": {
+        "work_type": 11,
+        "phone_model": 52,
+        "points": 0.4
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 2509,
+    "fields": {
+        "work_type": 36,
+        "phone_model": 42,
+        "points": 0.8
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 2510,
+    "fields": {
+        "work_type": 29,
+        "phone_model": 42,
+        "points": 0.5
+    }
+},
+{
+    "model": "worklog.workprice",
+    "pk": 2511,
+    "fields": {
+        "work_type": 12,
+        "phone_model": 52,
+        "points": 0.8
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 28,
+    "fields": {
+        "user": 13,
+        "phone_model": 23,
         "is_client_device": false,
-        "repair_number": "34637",
-        "date": "2026-06-16",
-        "total_points": 0.68,
+        "repair_number": "151063",
+        "date": "2026-07-03",
+        "total_points": 0.765,
         "works": [
-            1991,
-            2015
+            1624,
+            1720,
+            1798
         ]
     }
 },
 {
     "model": "worklog.worklogentry",
-    "pk": 19,
+    "pk": 29,
+    "fields": {
+        "user": 13,
+        "phone_model": 24,
+        "is_client_device": false,
+        "repair_number": "151192",
+        "date": "2026-07-03",
+        "total_points": 0.935,
+        "works": [
+            1976,
+            1721
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 30,
+    "fields": {
+        "user": 13,
+        "phone_model": 24,
+        "is_client_device": false,
+        "repair_number": "152309",
+        "date": "2026-07-03",
+        "total_points": 1.955,
+        "works": [
+            1721,
+            1760,
+            1799,
+            1823,
+            1856,
+            2024
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 31,
+    "fields": {
+        "user": 14,
+        "phone_model": 33,
+        "is_client_device": false,
+        "repair_number": "149783",
+        "date": "2026-07-03",
+        "total_points": 3.145,
+        "works": [
+            2257,
+            2297,
+            2333,
+            2381,
+            2429
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 32,
+    "fields": {
+        "user": 14,
+        "phone_model": 6,
+        "is_client_device": false,
+        "repair_number": "12316",
+        "date": "2026-07-03",
+        "total_points": 0.68,
+        "works": [
+            1741,
+            1702
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 33,
+    "fields": {
+        "user": 14,
+        "phone_model": 13,
+        "is_client_device": true,
+        "repair_number": "39013",
+        "date": "2026-07-04",
+        "total_points": 0.6,
+        "works": [
+            1710
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 34,
     "fields": {
         "user": 11,
-        "phone_model": 12,
-        "is_client_device": false,
-        "repair_number": "37657",
-        "date": "2026-06-16",
-        "total_points": 1.02,
+        "phone_model": 21,
+        "is_client_device": true,
+        "repair_number": "39012",
+        "date": "2026-07-04",
+        "total_points": 2.142,
         "works": [
-            1811,
-            1916,
+            1623,
+            1719,
+            1758,
+            1926,
+            2022
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 35,
+    "fields": {
+        "user": 11,
+        "phone_model": 13,
+        "is_client_device": true,
+        "repair_number": "39017",
+        "date": "2026-07-04",
+        "total_points": 0.408,
+        "works": [
+            2013,
+            1614
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 36,
+    "fields": {
+        "user": 14,
+        "phone_model": 23,
+        "is_client_device": true,
+        "repair_number": "39016",
+        "date": "2026-07-04",
+        "total_points": 1.44,
+        "works": [
+            2047
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 37,
+    "fields": {
+        "user": 11,
+        "phone_model": 29,
+        "is_client_device": false,
+        "repair_number": "145432",
+        "date": "2026-07-04",
+        "total_points": 0.595,
+        "works": [
+            2413,
+            2317
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 38,
+    "fields": {
+        "user": 11,
+        "phone_model": 32,
+        "is_client_device": false,
+        "repair_number": "152163",
+        "date": "2026-07-04",
+        "total_points": 0.5,
+        "works": [
+            2416
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 39,
+    "fields": {
+        "user": 15,
+        "phone_model": 13,
+        "is_client_device": false,
+        "repair_number": "138617",
+        "date": "2026-07-04",
+        "total_points": 2.38,
+        "works": [
+            2506,
+            2013,
+            2151
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 40,
+    "fields": {
+        "user": 15,
+        "phone_model": 14,
+        "is_client_device": false,
+        "repair_number": "151371",
+        "date": "2026-07-04",
+        "total_points": 0.51,
+        "works": [
+            1711,
+            1615
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 41,
+    "fields": {
+        "user": 14,
+        "phone_model": 23,
+        "is_client_device": true,
+        "repair_number": "142423",
+        "date": "2026-07-06",
+        "total_points": 0.72,
+        "works": [
+            1975
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 42,
+    "fields": {
+        "user": 14,
+        "phone_model": 24,
+        "is_client_device": true,
+        "repair_number": "39019",
+        "date": "2026-07-06",
+        "total_points": 0.612,
+        "works": [
+            1625,
+            1721
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 43,
+    "fields": {
+        "user": 11,
+        "phone_model": 52,
+        "is_client_device": true,
+        "repair_number": "38765",
+        "date": "2026-07-06",
+        "total_points": 1.734,
+        "works": [
+            2507,
+            2508
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 44,
+    "fields": {
+        "user": 11,
+        "phone_model": 33,
+        "is_client_device": false,
+        "repair_number": "139076",
+        "date": "2026-07-06",
+        "total_points": 0.51,
+        "works": [
+            2217,
+            2257
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 45,
+    "fields": {
+        "user": 14,
+        "phone_model": 30,
+        "is_client_device": true,
+        "repair_number": "39018",
+        "date": "2026-07-06",
+        "total_points": 2.142,
+        "works": [
+            2342,
+            2266,
+            2366,
+            2294
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 46,
+    "fields": {
+        "user": 14,
+        "phone_model": 13,
+        "is_client_device": true,
+        "repair_number": "39021",
+        "date": "2026-07-06",
+        "total_points": 0.6,
+        "works": [
+            1710
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 47,
+    "fields": {
+        "user": 14,
+        "phone_model": 12,
+        "is_client_device": true,
+        "repair_number": "39020",
+        "date": "2026-07-06",
+        "total_points": 0.48,
+        "works": [
+            2174
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 48,
+    "fields": {
+        "user": 11,
+        "phone_model": 21,
+        "is_client_device": true,
+        "repair_number": "39022",
+        "date": "2026-07-06",
+        "total_points": 0.612,
+        "works": [
+            1719,
+            1623
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 49,
+    "fields": {
+        "user": 14,
+        "phone_model": 6,
+        "is_client_device": true,
+        "repair_number": "39024",
+        "date": "2026-07-07",
+        "total_points": 0.714,
+        "works": [
+            1606,
+            1702,
+            1582
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 50,
+    "fields": {
+        "user": 11,
+        "phone_model": 29,
+        "is_client_device": true,
+        "repair_number": "38767",
+        "date": "2026-07-07",
+        "total_points": 2.142,
+        "works": [
+            2401,
+            2377,
+            2317,
+            2293
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 51,
+    "fields": {
+        "user": 14,
+        "phone_model": 14,
+        "is_client_device": true,
+        "repair_number": "39025",
+        "date": "2026-07-07",
+        "total_points": 0.918,
+        "works": [
+            1711,
+            2014,
+            1615
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 52,
+    "fields": {
+        "user": 11,
+        "phone_model": 33,
+        "is_client_device": false,
+        "repair_number": "141996",
+        "date": "2026-07-07",
+        "total_points": 0.595,
+        "works": [
+            2217,
+            2269
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 53,
+    "fields": {
+        "user": 11,
+        "phone_model": 42,
+        "is_client_device": true,
+        "repair_number": "39015",
+        "date": "2026-07-07",
+        "total_points": 1.326,
+        "works": [
+            2509,
+            2510
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 54,
+    "fields": {
+        "user": 14,
+        "phone_model": 13,
+        "is_client_device": false,
+        "repair_number": "12423",
+        "date": "2026-07-07",
+        "total_points": 0.4,
+        "works": [
+            1749
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 55,
+    "fields": {
+        "user": 14,
+        "phone_model": 27,
+        "is_client_device": false,
+        "repair_number": "149606",
+        "date": "2026-07-07",
+        "total_points": 1.3,
+        "works": [
+            2423
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 56,
+    "fields": {
+        "user": 11,
+        "phone_model": 28,
+        "is_client_device": false,
+        "repair_number": "143087",
+        "date": "2026-07-07",
+        "total_points": 0.425,
+        "works": [
+            2412,
+            2212
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 58,
+    "fields": {
+        "user": 14,
+        "phone_model": 13,
+        "is_client_device": true,
+        "repair_number": "39021",
+        "date": "2026-07-08",
+        "total_points": 0.918,
+        "works": [
+            2013,
+            1812,
+            1749
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 59,
+    "fields": {
+        "user": 11,
+        "phone_model": 52,
+        "is_client_device": true,
+        "repair_number": "39029",
+        "date": "2026-07-08",
+        "total_points": 0.96,
+        "works": [
+            2511
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 60,
+    "fields": {
+        "user": 14,
+        "phone_model": 31,
+        "is_client_device": true,
+        "repair_number": "39030",
+        "date": "2026-07-08",
+        "total_points": 0.6,
+        "works": [
+            2415
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 61,
+    "fields": {
+        "user": 14,
+        "phone_model": 29,
+        "is_client_device": true,
+        "repair_number": "39031",
+        "date": "2026-07-08",
+        "total_points": 0.48,
+        "works": [
+            2237
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 62,
+    "fields": {
+        "user": 14,
+        "phone_model": 11,
+        "is_client_device": true,
+        "repair_number": "39032",
+        "date": "2026-07-09",
+        "total_points": 1.122,
+        "works": [
+            1708,
+            2085
+        ]
+    }
+},
+{
+    "model": "worklog.worklogentry",
+    "pk": 63,
+    "fields": {
+        "user": 14,
+        "phone_model": 12,
+        "is_client_device": true,
+        "repair_number": "39033",
+        "date": "2026-07-09",
+        "total_points": 0.918,
+        "works": [
+            1748,
             1709
         ]
     }
 },
 {
     "model": "worklog.worklogentry",
-    "pk": 20,
-    "fields": {
-        "user": 1,
-        "phone_model": 10,
-        "is_client_device": false,
-        "repair_number": "35673",
-        "date": "2026-06-17",
-        "total_points": 0.765,
-        "works": [
-            1809,
-            1842,
-            2172
-        ]
-    }
-},
-{
-    "model": "worklog.worklogentry",
-    "pk": 21,
-    "fields": {
-        "user": 14,
-        "phone_model": 9,
-        "is_client_device": true,
-        "repair_number": "1242",
-        "date": "2026-06-17",
-        "total_points": 1.8,
-        "works": [
-            2147
-        ]
-    }
-},
-{
-    "model": "worklog.worklogentry",
-    "pk": 22,
-    "fields": {
-        "user": 1,
-        "phone_model": 21,
-        "is_client_device": true,
-        "repair_number": "8777",
-        "date": "2026-06-17",
-        "total_points": 2.448,
-        "works": [
-            2022,
-            2118,
-            1773,
-            2094,
-            1821,
-            1854
-        ]
-    }
-},
-{
-    "model": "worklog.worklogentry",
-    "pk": 23,
+    "pk": 65,
     "fields": {
         "user": 11,
-        "phone_model": 21,
-        "is_client_device": false,
-        "repair_number": "38765",
-        "date": "2026-06-17",
-        "total_points": 0.68,
+        "phone_model": 23,
+        "is_client_device": true,
+        "repair_number": "39036",
+        "date": "2026-07-09",
+        "total_points": 0.48,
         "works": [
-            1773,
-            1719
+            1672
         ]
     }
 },
 {
     "model": "worklog.worklogentry",
-    "pk": 24,
+    "pk": 66,
     "fields": {
-        "user": 13,
-        "phone_model": 8,
-        "is_client_device": false,
-        "repair_number": "Загальний список",
-        "date": "2026-06-17",
-        "total_points": 0.765,
+        "user": 14,
+        "phone_model": 13,
+        "is_client_device": true,
+        "repair_number": "39035",
+        "date": "2026-07-09",
+        "total_points": 0.36,
         "works": [
-            2007,
-            2079
+            2013
         ]
     }
 },
 {
     "model": "worklog.worklogentry",
-    "pk": 25,
+    "pk": 67,
     "fields": {
-        "user": 13,
-        "phone_model": 7,
+        "user": 11,
+        "phone_model": 52,
         "is_client_device": false,
-        "repair_number": "345",
-        "date": "2026-06-17",
-        "total_points": 0.3,
+        "repair_number": "151684",
+        "date": "2026-07-09",
+        "total_points": 1.445,
         "works": [
-            2168
+            2507,
+            2508
         ]
     }
 },
 {
     "model": "worklog.worklogentry",
-    "pk": 26,
+    "pk": 68,
     "fields": {
-        "user": 13,
-        "phone_model": 7,
-        "is_client_device": false,
-        "repair_number": "345",
-        "date": "2026-06-17",
-        "total_points": 0.3,
+        "user": 11,
+        "phone_model": 6,
+        "is_client_device": true,
+        "repair_number": "39034",
+        "date": "2026-07-09",
+        "total_points": 0.51,
         "works": [
-            2168
+            1702,
+            1606
         ]
     }
 }

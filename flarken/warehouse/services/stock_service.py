@@ -83,7 +83,7 @@ def generate_purchase_list(supplier_id: int, part_type_id: int = None):
 
 
 def generate_list_of_type(part_type_id: int):
-    list_of_part = Part.objects.filter(part_type=part_type_id).order_by('phone_models__release_year')  # Список запчастин певного типу
+    list_of_part = Part.objects.filter(part_type=part_type_id).order_by('phone_models__release_year') # Список запчастин певного типу
 
     result = []
 

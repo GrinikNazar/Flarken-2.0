@@ -66,3 +66,8 @@ python -X utf8 manage.py dumpdata --indent 4 --exclude contenttypes --exclude au
 ```
 python manage.py loaddata data.json
 ```
+### Перезапуск на сервері
+```
+sudo systemctl restart flarken
+sudo systemctl restart flarken-bot
+```

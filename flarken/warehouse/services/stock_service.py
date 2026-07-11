@@ -59,43 +59,47 @@ def write_off_part(
 
 
 def generate_purchase_list(supplier_id: int, part_type_id: int = None):
-    queryset = SupplierPartName.objects.select_related("part", "part__part_type").filter(
-        supplier_id=supplier_id,
-    ).order_by("-part__part_type", 'part__phone_models__release_year')
+    queryset = SupplierPartName.objects.select_related(
+        "part", "part__part_type"
+    ).prefetch_related("part__phone_models").filter(supplier_id=supplier_id).distinct()
+
     if part_type_id:
         queryset = queryset.filter(part__part_type_id=part_type_id)
 
     result = []
-
     for item in queryset:
         part = item.part
+        if part.current_quantity >= part.max_quantity:
+            continue
 
-        if not part.color:
-            part_color = ''
-        else:
-            part_color = ' ' + part.color.name
+        models_str = ' / '.join(m.name for m in part.phone_models.all())
+        part_color = f' {part.color.name}' if part.color else ''
+        to_order = part.max_quantity - part.current_quantity
+        release_year = part.phone_models.all()[0].release_year if part.phone_models.exists() else 0
+        result.append((release_year, f"{item.supplier_name} - {models_str}{part_color} - {to_order}"))
 
-        if part.current_quantity < part.max_quantity:
-            to_order = part.max_quantity - part.current_quantity
-            result.append(f"{item.supplier_name} - {part.phone_models.all()[0]}{part_color} - {to_order}")
-
-    return '\n'.join(result)
+    result.sort(key=lambda x: x[0] or 0)
+    return '\n'.join(text for _, text in result)
 
 
 def generate_list_of_type(part_type_id: int):
-    list_of_part = Part.objects.filter(part_type=part_type_id).order_by('phone_models__release_year') # Список запчастин певного типу
+    list_of_part = Part.objects.filter(
+        part_type=part_type_id
+    ).prefetch_related('phone_models').distinct()
 
     result = []
-
     for part in list_of_part:
-        result.append(
-            f"{part.phone_models.all()[0].name} "
-            f"{part.color or part.chip_type if part.color or part.chip_type else ''} - {part.current_quantity}"
-        )
+        models_str = ' / '.join(m.name for m in part.phone_models.all())
+        extra = part.color or part.chip_type or ''
+        result.append((
+            part.phone_models.all()[0].release_year,
+            f"{models_str} {extra} - {part.current_quantity}"
+        ))
 
-    part_type_name = PartType.objects.get(pk=part_type_id).name  # Назва типу запчастини
+    result.sort(key=lambda x: x[0] or 0)
 
+    part_type_name = PartType.objects.get(pk=part_type_id).name
     return {
         "part_type_name": part_type_name,
-        "list_of_parts": '\n'.join(result)
+        "list_of_parts": '\n'.join(text for _, text in result)
     }

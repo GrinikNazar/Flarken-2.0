@@ -1,5 +1,6 @@
 from django.db import transaction
 from django.core.exceptions import ValidationError
+from django.db.models import F
 
 from warehouse.models import Part, PartType
 from warehouse.models import SupplierPartName
@@ -61,7 +62,9 @@ def write_off_part(
 def generate_purchase_list(supplier_id: int, part_type_id: int = None):
     queryset = SupplierPartName.objects.select_related(
         "part", "part__part_type"
-    ).prefetch_related("part__phone_models").filter(supplier_id=supplier_id).distinct()
+    ).prefetch_related("part__phone_models").filter(supplier_id=supplier_id, part__current_quantity__lt=F(
+        "part__max_quantity")).distinct().order_by(
+        "part__part_type__name", "part__phone_models__release_year")
 
     if part_type_id:
         queryset = queryset.filter(part__part_type_id=part_type_id)
@@ -69,17 +72,15 @@ def generate_purchase_list(supplier_id: int, part_type_id: int = None):
     result = []
     for item in queryset:
         part = item.part
-        if part.current_quantity >= part.max_quantity:
-            continue
-
         models_str = ' / '.join(m.name for m in part.phone_models.all())
         part_color = f' {part.color.name}' if part.color else ''
         to_order = part.max_quantity - part.current_quantity
-        release_year = part.phone_models.all()[0].release_year if part.phone_models.exists() else 0
-        result.append((release_year, f"{item.supplier_name} - {models_str}{part_color} - {to_order}"))
+        result_line = f"{item.supplier_name} - {models_str}{part_color} - {to_order}"
+        if result_line in result:
+            continue
+        result.append(result_line)
 
-    result.sort(key=lambda x: x[0] or 0)
-    return '\n'.join(text for _, text in result)
+    return '\n'.join(text for text in result)
 
 
 def generate_list_of_type(part_type_id: int):

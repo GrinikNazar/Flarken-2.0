@@ -207,8 +207,11 @@ class WorkLogEntryAdmin(admin.ModelAdmin):
             date__month__lte=cutoff_month
         ).delete()
 
-        self.message_user(
-            request,
-            f'✅ Видалено {deleted} записів старших двох місяців',
-            messages.SUCCESS
-        )
+        if not deleted:
+            self.message_user(request, 'Немає старих записів', messages.INFO)
+        else:
+            self.message_user(
+                request,
+                f'Видалено {deleted} записів старших двох місяців',
+                messages.SUCCESS
+            )

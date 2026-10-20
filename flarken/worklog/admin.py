@@ -1,7 +1,8 @@
 from django import forms
-from django.contrib import admin
+from django.contrib import admin, messages
 from django.utils.html import format_html
 from .models import WorkType, WorkPrice, WorkLogEntry, ExclusiveGroup
+from django.utils.timezone import now
 
 
 class WorkLogEntryForm(forms.ModelForm):
@@ -184,3 +185,30 @@ class WorkLogEntryAdmin(admin.ModelAdmin):
 
     def get_queryset(self, request):
         return super().get_queryset(request).prefetch_related("works__work_type")
+
+    actions = ['cleanup_old_entries']
+
+    @admin.action(description='Видалити записи старші двох місяців')
+    def cleanup_old_entries(self, request, queryset):
+        today = now().date()
+
+        if today.month > 2:
+            cutoff_year = today.year
+            cutoff_month = today.month - 2
+        elif today.month == 2:
+            cutoff_year = today.year - 1
+            cutoff_month = 12
+        else:
+            cutoff_year = today.year - 1
+            cutoff_month = 11
+
+        deleted, _ = WorkLogEntry.objects.filter(
+            date__year__lte=cutoff_year,
+            date__month__lte=cutoff_month
+        ).delete()
+
+        self.message_user(
+            request,
+            f'✅ Видалено {deleted} записів старших двох місяців',
+            messages.SUCCESS
+        )

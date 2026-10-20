@@ -216,7 +216,7 @@ class PartAdmin(admin.ModelAdmin):
         "max_quantity",
     )
 
-    ordering = ("current_quantity",)
+    ordering = ("-phone_models__release_year",)
 
     def stock_status(self, obj):
         if obj.current_quantity < obj.min_quantity:
